@@ -1,0 +1,15 @@
+@mixin calc($property, $expression) {
+  #{$property}: -moz-calc(#{$expression});
+  #{$property}: -o-calc(#{$expression});
+  #{$property}: -webkit-calc(#{$expression});
+  #{$property}: calc(#{$expression});
+}
+
+@media (min-width: 0px) and (max-width: 767px){
+
+
+}//end of media query
+@media (min-width: 0px) and (max-width: 400px){
+
+
+}
