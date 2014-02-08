@@ -1,8 +1,11 @@
 @import "compass/css3";
+@import "mixins";
 
 
 body{
   background: url("../images/body-bg.png") repeat;
+  font-size: 14px;
+  font-family: arial, helvetica, "sans serif";
 }
 .wrapper{
   min-width: 0;
@@ -18,20 +21,52 @@ body{
     border-bottom: 4px solid #da0000;
     border-top: 1px solid #d8d9d9;
 
+    .call-us{
+      float: left;
+      margin-top: 83px;
+      @include Houschka_pro_med;
+      font-size: 12px;
+      color: #282727;
+      text-align: left;
+
+
+      h2{
+        @include Houschka_pro_bold;
+        color: #ff0000;
+        font-size: 20px;
+      }
+
+    }
+
     .logo-div{
       max-width: 420px;
       width: 100%;
       margin: 0 auto;
+      margin-top: 20px;
       float: none;
 
-      .logo{
-        width: 100%;
-        margin: 0;
+      a{
 
-        img{
-          max-width: 100%;
+        &.logo{
+          width: 100%;
+          margin: 0;
+
+          img{
+            max-width: 100%;
+          }
         }
       }
+
+    }
+    .top-quick-links{
+      position: absolute;
+      right: 0;
+      top: 10PX;
+      width: AUTO;
+    }
+    .quick-access{
+      float: right;
+      margin-top: 100px;
     }
   }
 }
