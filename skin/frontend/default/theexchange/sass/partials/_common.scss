@@ -15,7 +15,7 @@ body{
   .header{
     width: 100%;
     max-width: 1024px;
-    padding: 10px 30px;
+    padding: 10px 30px 0 30px;
     background:#fefefe;
     box-shadow: 0px -7px 8px 5px #ccc;
     border-bottom: 4px solid #da0000;
@@ -91,7 +91,7 @@ body{
     }
     .quick-access{
       float: right;
-      margin-top: 100px;
+      margin-top: 83px;
 
       .links{
         li{
@@ -112,6 +112,17 @@ body{
             text-indent: -3000px;
             width: 45px;
             height: 38px;
+            background: url("../images/sprite.png") no-repeat;
+
+            &.top-link-home{
+              background-position: 16px -129px;
+            }
+            &.top-link-cart{
+                background-position: 16px -89px;
+            }
+            &.top-link-customer{
+              background-position: 16px -44px;
+            }
 
 
 
@@ -128,6 +139,8 @@ body{
   margin: 0 auto;
   background: #000;
   color: #fff;
+
+
 
   .cms-menu{
     .cl-effect-18{
