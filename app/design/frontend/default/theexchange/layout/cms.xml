@@ -45,6 +45,11 @@ Default layout, loads most of the pages
             <action method="addLink" translate="label title" module="customer"><label>Home</label><title>Home</title><url>cms/index/index</url><prepare/><urlParams/><position>1</position></action>
         </reference>
 
+        <reference name="header">
+            <block type="cms/block" name="header.cms.menu.links" as="header_cms_menu_links" output="toHtml">
+                <action method="setBlockId"><block_id>header_cms_menu_links</block_id></action>
+            </block>
+        </reference>
 
     </default>
     

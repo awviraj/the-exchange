@@ -13,13 +13,14 @@ body{
 }
 .header-container{
   .header{
-    width: 98%;
+    width: 100%;
     max-width: 1024px;
-    padding: 10px 1%;
+    padding: 10px 30px;
     background:#fefefe;
     box-shadow: 0px -7px 8px 5px #ccc;
     border-bottom: 4px solid #da0000;
     border-top: 1px solid #d8d9d9;
+    box-sizing: border-box;
 
     .call-us{
       float: left;
@@ -28,6 +29,7 @@ body{
       font-size: 12px;
       color: #282727;
       text-align: left;
+      //margin-left: 20px;
 
 
       h2{
@@ -60,13 +62,91 @@ body{
     }
     .top-quick-links{
       position: absolute;
-      right: 0;
-      top: 10PX;
+      right: 30px;
+      top: 15px;
       width: AUTO;
+
+      ul{
+        li{
+          display: inline;
+          float: left;
+          line-height: 12px;
+
+          &:first-child{
+            border-right: 1px solid #000;
+            padding-right: 5px;
+            margin-right: 5px;
+
+          }
+
+          a{
+            @include Houschka_alt_bold;
+            font-size: 12px;
+            color: #000;
+            font-weight: normal;
+            text-transform: uppercase;
+          }
+        }
+      }
     }
     .quick-access{
       float: right;
       margin-top: 100px;
+
+      .links{
+        li{
+          background: url("../images/sprite.png") no-repeat 0 0;
+          width: 45px;
+          height: 38px;
+          padding: 0;
+          margin-left: 7px;
+
+          &:first-child{
+            margin-left: 0;
+          }
+
+          a{
+            text-align: left;
+            display: block;
+            float: left;
+            text-indent: -3000px;
+            width: 45px;
+            height: 38px;
+
+
+
+          }
+        }
+      }
     }
   }
+}
+.menu-search-wrapper{
+  width: 100%;
+  max-width: 1024px;
+  padding: 10px 30px;
+  margin: 0 auto;
+  background: #000;
+  color: #fff;
+
+  .cms-menu{
+    .cl-effect-18{
+      a{
+        color: #fff;
+        font-size: 15px;
+        @include Houschka_alt_bold;
+        font-weight: normal;
+
+        &:before{
+          background: #fff;
+          height: 1px;
+        }
+        &:after{
+          background: #fff;
+          height: 1px;
+        }
+      }
+    }
+  }
+
 }
