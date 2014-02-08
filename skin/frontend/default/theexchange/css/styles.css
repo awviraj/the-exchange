@@ -468,7 +468,7 @@ tr.summary-details-excluded { font-style:italic; }
 /* Misc */
 .links li { display:inline; }
 .links li.first { padding-left:0 !important; }
-.links li.last { background:none !important; padding-right:0 !important; }
+.links li.last { }
 
 .link-cart { color:#dc6809 !important; font-weight:bold; }
 .link-wishlist { color:#dc6809 !important; font-weight:bold; }
