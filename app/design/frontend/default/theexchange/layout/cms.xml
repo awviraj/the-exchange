@@ -40,6 +40,12 @@ Default layout, loads most of the pages
                 <action method="setBlockId"><block_id>footer_links</block_id></action>
             </block>
         </reference>
+
+        <reference name="top.links">
+            <action method="addLink" translate="label title" module="customer"><label>Home</label><title>Home</title><url>cms/index/index</url><prepare/><urlParams/><position>1</position></action>
+        </reference>
+
+
     </default>
     
     <cms_page translate="label">
