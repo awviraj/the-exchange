@@ -40,7 +40,12 @@
                 <a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a>
             <?php endif?>
         </div>
-        <div class="top-quick-links"></div>
+        <div class="top-quick-links">
+            <ul>
+                <li class="about"><a href="" >About us</a> </li>
+                <li class="contact"><a href="" >Contact us</a> </li>
+            </ul>
+        </div>
         <div class="quick-access bottom-quick-links">
             <?php //echo $this->getChildHtml('topSearch') ?>
             <p class="welcome-msg"><?php //echo $this->getChildHtml('welcome') ?> <?php //echo $this->getAdditionalHtml() ?></p>
