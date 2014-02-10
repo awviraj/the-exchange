@@ -1,9 +1,16 @@
 @mixin Houschka_pro_med{
   font-family: 'houschkaalt-medium-regular';
+  font-style: normal;
 }
 @mixin Houschka_pro_bold{
   font-family: 'houschka_alt_probold';
+  font-style: normal;
 }
 @mixin Houschka_alt_bold{
   font-family: 'houschkaalt-bold-regular';
+  font-style: normal;
+}
+@mixin Houschka_alt_light{
+  font-family: 'houschkaalt-light-regular';
+  font-style: normal;
 }
