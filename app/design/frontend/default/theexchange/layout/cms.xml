@@ -38,7 +38,7 @@ Default layout, loads most of the pages
                     <action method="setElementClass"><class>custom_footer</class></action>
                 </block>
             </block>
-            <block type="cms/block" name="cms_footer_links" before="custom_footer">
+            <block type="cms/block" name="cms_footer_links" after="custom_footer">
                 <!--
                     The content of this block is taken from the database by its block_id.
                     You can manage it in admin CMS -> Static Blocks
