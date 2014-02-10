@@ -1,0 +1,29 @@
+<config>
+    <modules>
+        <DMS_CommonRewrites>
+            <version>0.0.0.1</version>
+        </DMS_CommonRewrites>
+    </modules>
+    <global>
+        <models>
+            <commonrewrites>
+                <class>DMS_CommonRewrites_Model</class>
+            </commonrewrites>
+        </models>
+        <helpers>
+            <commonrewrites>
+                <class>DMS_CommonRewrites_Helper</class>
+            </commonrewrites>
+        </helpers>
+        <resources>
+            <commonrewrites>
+                <setup>
+                    <module>DMS_CommonRewrites</module>
+                </setup>
+            </commonrewrites>
+        </resources>
+        <blocks>
+            <commonrewrites><class>DMS_CommonRewrites_Block</class></commonrewrites>
+        </blocks>
+    </global>
+</config>

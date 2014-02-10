@@ -32,7 +32,13 @@ Default layout, loads most of the pages
 
     <default>
         <reference name="footer">
-            <block type="cms/block" name="cms_footer_links" before="footer_links">
+            <block type="core/template" name="custom_footer" before="-" template="cms/custom_footer.phtml">
+                <block type="cms/block" name="cms_footer_static">
+                    <action method="setBlockId"><block_id>custom_footer_static</block_id></action>
+                    <action method="setElementClass"><class>custom_footer</class></action>
+                </block>
+            </block>
+            <block type="cms/block" name="cms_footer_links" before="custom_footer">
                 <!--
                     The content of this block is taken from the database by its block_id.
                     You can manage it in admin CMS -> Static Blocks

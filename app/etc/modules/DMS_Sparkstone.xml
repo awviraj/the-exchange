@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * DMS
+ * @category    DMS
+ * @package     DMS_Sparkstone
+ * @copyright   admaduranga@gmail.com (Dilhan Maduranga)
+ */
+-->
+
+<config>
+    <modules>
+        <DMS_Sparkstone>
+            <active>true</active>
+            <codePool>local</codePool>
+        </DMS_Sparkstone>
+    </modules>
+</config>
