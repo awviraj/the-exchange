@@ -48,5 +48,6 @@ body { background: url("../images/body-bg.png") repeat; font-size: 14px; font-fa
 .search-box { position: relative; max-width: 966px; margin: 0 auto; float: none; height: 197px; background: url("../images/search-box-bg.jpg") no-repeat; background-size: 100%; }
 .search-box .black-arrow { position: absolute; left: 50%; margin-left: -32px; width: 64px; top: 0; height: 14px; background: url("../images/sprite.png") no-repeat 0 -186px; }
 .search-box .form-search .search-label { padding-bottom: 15px; padding-top: 38px; font-size: 40px; font-family: 'houschkaalt-light-regular'; font-style: normal; }
-.search-box .form-search .search-inputs { display: inline-block; height: 42px; background: url("../images/search-right-arrow.png") no-repeat right white; border: 2px solid #000000; position: relative; width: 100%; max-width: 538px; }
-.search-box .form-search .search-inputs input { float: left; width: 95%; border: none; }
+.search-box .form-search .search-inputs { display: inline-block; height: 60px; background: url("../images/serach-input-bg.png") repeat-x left top white; border: 2px solid #000000; position: relative; width: 100%; max-width: 538px; }
+.search-box .form-search .search-inputs:after { content: url("../images/search-right-arrow.png"); top: -2px; position: absolute; right: -24px; }
+.search-box .form-search .search-inputs input { float: left; width: 95%; border: none; height: 56px; line-height: 45px; padding: 5px 1%; background: url("../images/serach-input-bg.png") repeat-x left top white; }

@@ -229,18 +229,31 @@ body{
     }
     .search-inputs{
       display:inline-block;
-      height: 42px;
-      background:url("../images/search-right-arrow.png") no-repeat right #fff;
+      height: 60px;
+      background:url("../images/serach-input-bg.png") repeat-x left top #fff;
       border: 2px solid #000000;
       position: relative;
       width: 100%;
       max-width: 538px;
 
 
+      &:after{
+        content:url("../images/search-right-arrow.png");
+        top: -2px;
+        position: absolute;
+        right: -24px;
+        }
+
+
       input{
         float: left;
         width: 95%;
         border:none;
+        height: 56px;
+        line-height: 45px;
+        padding: 5px 1%;
+        background:url("../images/serach-input-bg.png") repeat-x left top #fff;
+
       }
 
 
