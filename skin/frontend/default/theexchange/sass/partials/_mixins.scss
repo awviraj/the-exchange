@@ -1,16 +1,23 @@
 @mixin Houschka_pro_med{
   font-family: 'houschkaalt-medium-regular';
-  font-style: normal;
+  font-weight: normal;
+  font-weight: normal;
 }
 @mixin Houschka_pro_bold{
   font-family: 'houschka_alt_probold';
-  font-style: normal;
+  font-weight: normal;
 }
 @mixin Houschka_alt_bold{
   font-family: 'houschkaalt-bold-regular';
-  font-style: normal;
+  font-weight: normal;
 }
 @mixin Houschka_alt_light{
   font-family: 'houschkaalt-light-regular';
-  font-style: normal;
+  font-weight: normal;
+}
+@mixin calc($property, $expression) {
+  #{$property}: -moz-calc(#{$expression});
+  #{$property}: -o-calc(#{$expression});
+  #{$property}: -webkit-calc(#{$expression});
+  #{$property}: calc(#{$expression});
 }
