@@ -33,12 +33,12 @@ $catalogSearchHelper =  $this->helper('catalogsearch');
         <div class="search-inputs input-group">
             <input id="search" type="text" name="<?php echo $catalogSearchHelper->getQueryParamName() ?>" value="<?php echo $catalogSearchHelper->getEscapedQueryText() ?>" class="input-text form-control" maxlength="<?php echo $catalogSearchHelper->getMaxQueryLength();?>" />
             <div class="input-group-btn">
-                <button type="submit" title="<?php echo $this->__('Search') ?>" class="button btn btn-success"><span class="">..</span></button>
+                <button type="submit" title="<?php echo $this->__('Search') ?>" class="button btn btn-success"><span class="">search</span></button>
             </div>
 
         </div>
         <div id="search_autocomplete" class="search-autocomplete"></div>
-        <a href="" >Filter results</a>
+        <p><a href="" class="filter-results">Filter results</a></p>
 
         <script type="text/javascript">
         //<![CDATA[
