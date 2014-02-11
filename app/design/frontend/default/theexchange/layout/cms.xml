@@ -38,12 +38,34 @@ Default layout, loads most of the pages
                     <action method="setElementClass"><class>custom_footer</class></action>
                 </block>
             </block>
-            <block type="cms/block" name="cms_footer_links" after="custom_footer">
-                <!--
-                    The content of this block is taken from the database by its block_id.
-                    You can manage it in admin CMS -> Static Blocks
-                -->
-                <action method="setBlockId"><block_id>footer_links</block_id></action>
+            <block type="page/html_wrapper" name="footer_links_wrapper" as="footer_links_wrapper" translate="label"> <!-- doesn't work -->
+                <label>Footer Links Wrapper</label>
+                <action method="setElementClass"><value>footer_links_wrapper</value></action>
+
+                <block type="cms/block" name="cms_footer_links" after="custom_footer">
+                    <action method="setBlockId"><block_id>footer_links</block_id></action>
+                </block>
+
+                <block type="page/template_links" name="footer_links" as="footer_links" template="page/template/links.phtml"/>
+
+                <block type="cms/block" name="cms_footer_links_col3">
+                    <action method="setBlockId"><block_id>footer_links_col3</block_id></action>
+                </block>
+
+                <block type="cms/block" name="cms_footer_social_links">
+                    <label>Footer Social Links</label>
+                    <action method="setBlockId"><block_id>cms_footer_social_links</block_id></action>
+                </block>
+            </block>
+
+            <block type="core/template" name="footer_brand_section" template="cms/footer_brands.phtml" translate="label">
+                <label>Footer Brands Section</label>
+
+                <block type="cms/block" name="footer_partner_list">
+                    <label>Footer Partner List</label>
+                    <action method="setBlockId"><block_id>footer_partner_list</block_id></action>
+                </block>
+
             </block>
         </reference>
 
