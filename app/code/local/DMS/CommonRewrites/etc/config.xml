@@ -26,4 +26,13 @@
             <commonrewrites><class>DMS_CommonRewrites_Block</class></commonrewrites>
         </blocks>
     </global>
+    <frontend>
+        <layout>
+            <updates>
+                <commonrewrites>
+                    <file>common.xml</file>
+                </commonrewrites>
+            </updates>
+        </layout>
+    </frontend>
 </config>

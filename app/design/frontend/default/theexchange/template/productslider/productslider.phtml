@@ -39,7 +39,7 @@
 										$short_desc = substr($short_desc, 0, strrpos($short_desc, ' '));
 										$short_desc = $short_desc.'...';	
 									?>
-									<?php echo $short_desc;?>
+									<?php echo '***********************'.$short_desc;?>
 								</div>
 							<?php endif; ?>
 							<?php echo $this->getPriceHtml($_product, true) ?>
@@ -116,6 +116,10 @@
 		 var SKIN_URL = '<?php echo $this->getSkinUrl() ?>';
 		//]]>
 		</script>
+        <style>
+            .selected{background-color: red;}
+        </style>
+
 		<script type="text/javascript">
 			var $newslider = jQuery.noConflict(); 
 			$newslider(document).ready(function(){
@@ -144,15 +148,31 @@
 			$newslider(function() {
 				$newslider('#list-items a.img').lightBox();
 			});
+
+            jQuery(document).ready(function (){
+                productSliderMouseOver();
+            });
+
+            function productSliderMouseOver(){
+                var sliderUL =  jQuery('.product-slider-content').find('.sl-images');
+                jQuery(sliderUL).find('li').mouseover(function() {
+                    jQuery(this).parent().children('li').each(function () {
+                        jQuery(this).find('.price-html').removeClass('selected');
+                    });
+                    jQuery(this).find('.price-html').addClass('selected');
+                    jQuery(this).closest('.product-slider-content').find('.slider-hover-details').html(jQuery(this).find('.product-info').html());
+                });
+            }
+
 		</script>
 		<link rel="stylesheet" type="text/css" href="<?php echo $this->getSkinUrl('css/magebuzz/productslider/slider.css')?>"/>
 		<link rel="stylesheet" type="text/css" href="<?php echo $this->getSkinUrl('css/magebuzz/productslider/jquery.lightbox-0.5.css') ?>" media="screen" />
 		<div id="list-items">
-			<div id="slider-content" style="width:<?php echo $sliderWidth;?>px; height:<?php echo $sliderHeight;?>px;">
+			<div id="slider-content" class="product-slider-content" style="width:<?php echo $sliderWidth;?>px; height:<?php echo $sliderHeight;?>px;">
 				<ul id="sl-screen" style="width:<?php echo $sliderWidth;?>px; height:<?php echo $sliderHeight;?>px;">
 					<li class="nav-left"><a href="#" id="left">&nbsp;</a></li>
 					<li id="sl-view" style="width:<?php echo $sliderWidth;?>px; height:<?php echo $sliderHeight;?>px;">
-						<ul id="sl-images">
+						<ul id="sl-images" class="sl-images">
 							<?php foreach ($productCollection->getItems() as $_product): ?>
 								<li style="width:<?php echo ceil($sliderWidth/3);?>px; height:<?php echo $sliderHeight;?>px;">
 									<div class="item" style="width:<?php echo ceil($sliderWidth/3);?>px; height:<?php echo $sliderHeight;?>px;">
@@ -162,10 +182,22 @@
 											</div>
 										</div>	
 										<div class="product-info">
-											<h3 class="product-name"><a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->htmlEscape($_product->getName()) ?>"><?php echo $this->htmlEscape($_product->getName()) ?></a></h3>
-											<?php echo $this->getPriceHtml($_product, true) ?>
-											<div class="actions">
-												<?php if($_product->isSaleable()): ?>
+											<div class="product-name-wrapper">
+                                                <h3 class="product-name"><a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->htmlEscape($_product->getName()) ?>"><?php echo $this->htmlEscape($_product->getName()) ?></a></h3>
+                                            </div>
+                                            <?php if($isShowDescription == 1):?>
+                                                <div class="desc std">
+                                                    <?php echo nl2br($_product->getShortDescription())?>
+                                                </div>
+                                            <?php endif; ?>
+
+                                            <div class="price-html">
+                                                <?php echo $this->getPriceHtml($_product, true) ?>
+                                            </div>
+
+											<div class="actions slider-action-wrapper">
+                                                <a href="<?php echo $_product->getUrl(); ?>"><?php echo $this->__('Full Specification'); ?></a>
+                                                <?php if($_product->isSaleable()): ?>
 													<button type="button" title="<?php echo $this->__('Add to Cart') ?>" class="btn-cart" onclick="setLocation('<?php echo $this->getAddToCartUrl($_product) ?>')"><span><span><?php echo $this->__('Add to Cart') ?></span></span></button>
 												<?php else: ?>
 													<p class="availability out-of-stock"><span><?php echo $this->__('Out of stock') ?></span></p>
@@ -179,6 +211,9 @@
 					</li>
 					<li class="nav-right"><a href="#" id="right">&nbsp;</a></li>
 				</ul>
+                <div class="slider-hover-details">
+
+                </div>
 			</div>
 		</div>	
 	<?php endif;?>

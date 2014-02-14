@@ -32,12 +32,14 @@ Default layout, loads most of the pages
 
     <default>
         <reference name="footer">
-            <block type="core/template" name="custom_footer" before="-" template="cms/custom_footer.phtml">
-                <block type="cms/block" name="cms_footer_static">
-                    <action method="setBlockId"><block_id>custom_footer_static</block_id></action>
-                    <action method="setElementClass"><class>custom_footer</class></action>
+            <block type="core/template" name="custom_footer_triangle" template="page/html/footer_triangle.phtml" before="-">
+                <block type="cms/block" name="home_our_tweets">
+                    <label>Home Our Tweets</label>
+                    <action method="setBlockId"><block_id>home_our_tweets</block_id></action>
+                    <action method="setElementClass"><class>home_our_tweets</class></action>
                 </block>
             </block>
+
             <block type="page/html_wrapper" name="footer_links_wrapper" as="footer_links_wrapper" translate="label"> <!-- doesn't work -->
                 <label>Footer Links Wrapper</label>
                 <action method="setElementClass"><value>footer_links_wrapper</value></action>
@@ -46,11 +48,11 @@ Default layout, loads most of the pages
                     <action method="setBlockId"><block_id>footer_links</block_id></action>
                 </block>
 
-                <block type="page/template_links" name="footer_links" as="footer_links" template="page/template/links.phtml"/>
-
                 <block type="cms/block" name="cms_footer_links_col3">
-                    <action method="setBlockId"><block_id>footer_links_col3</block_id></action>
+                    <action method="setBlockId"><block_id>footer_links_col2</block_id></action>
                 </block>
+
+                <block type="page/template_links" name="footer_links" as="footer_links" template="page/template/links.phtml"/>
 
                 <block type="cms/block" name="cms_footer_social_links">
                     <label>Footer Social Links</label>
@@ -106,6 +108,22 @@ Default layout, loads most of the pages
 
     <cms_index_index translate="label">
         <label>CMS Home Page</label>
+
+        <reference name="content">
+            <block type="core/template" name="custom_home_footer" after="-" template="cms/home_footer.phtml">
+                <block type="cms/block" name="home_who_we_are">
+                    <label>Home Who We Are</label>
+                    <action method="setBlockId"><block_id>home_who_we_are</block_id></action>
+                    <action method="setElementClass"><class>home_who_we_are</class></action>
+                </block>
+                <!--<block type="cms/block" name="home_our_tweets">-->
+                    <!--<label>Home Our Tweets</label>-->
+                    <!--<action method="setBlockId"><block_id>home_our_tweets</block_id></action>-->
+                    <!--<action method="setElementClass"><class>home_our_tweets</class></action>-->
+                <!--</block>-->
+            </block>
+        </reference>
+
     </cms_index_index>
 
     <cms_index_defaultindex>

@@ -1,0 +1,22 @@
+<?php
+/**
+ * @category    design
+ * @package     default_theexchange
+ * @copyright   admaduranga@gmail.com
+ * @license     admaduranga@gmail.com
+ * @var $this   Mage_Core_Block_Template
+ */
+?>
+<div class="custom_tweets">
+    <?php echo $this->getChildHtml('home_our_tweets'); ?>
+</div>
+<div class="custom_red_line">
+</div>
+
+<div class="custom_red_triangle">
+    <div class="custom_x_logo">X</div>
+    <div class="custom_call_us">
+        <span>Call us on</span>
+        <span class="phone_no"><?php echo $this->helper('commonrewrites')->getStoreConfig('phone'); ?></span>
+    </div>
+</div>
