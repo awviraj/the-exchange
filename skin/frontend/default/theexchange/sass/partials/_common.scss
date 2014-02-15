@@ -131,6 +131,25 @@ body{
       }
     }
   }
+///////////////fixed header ////////////////////////////////
+  &.f-nav{
+    position: fixed;
+    top:0;
+    width: 100%;
+    max-width: 100%;
+
+    .header{
+      max-width: 100%;
+
+      .call-us,.logo-div,.top-quick-links{
+        display: none;
+      }
+      .quick-access{
+        margin-top: 0;
+      }
+    }
+  }
+//////////////////////////////////////////////////////////////
 }
 .menu-search-wrapper{
   width: 100%;
@@ -195,6 +214,18 @@ body{
         }
       }
     }
+  }
+
+  .small-x-logo{
+    float: left;
+    width: 27px;
+    height: 22px;
+    background: url("../images/sprite.png") 0px -503px no-repeat;
+    margin-top: 15px;
+    text-align: left;
+    text-indent: -3000px;
+    margin-left: 19px;
+    display: none;
   }
 
 }
@@ -298,4 +329,162 @@ body{
   max-width: 966px;
   margin: 0 auto;
   border-radius: 0;
+  min-height: 42px;
+
+  .container{
+    width: 100%;
+
+    #nav{
+      width: 100%;
+
+      li{
+        width: 10%;
+        margin: 0 1%;
+        &:hover{
+          background: #342323;
+        }
+        a{
+          @include Houschka_alt_med;
+          line-height: 29px;
+          padding: 5px 20px 6px 20px;
+          color: #e3e3e3;
+          font-size: 16px;
+        }
+      }
+    }
+  }
 }
+
+.main{
+  width: 100%;
+  max-width: 966px;
+  box-sizing: border-box;
+  padding: 20px 65px;
+  background: #f1f2f2;
+  min-height: 0;
+
+}
+
+/////////////////footer/////////////////////
+.footer-container{
+  width: 100%;
+  .footer{
+    width: 100%;
+
+    box-sizing: border-box;
+    padding: 0;
+    min-height: 0;
+
+    .custom_tweets{
+      max-width: 966px;
+      margin: 0 auto;
+      background: #000;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 20px 65px;
+      color: #fff;
+
+      h3{
+        @include Houschka_alt_bold_italic;
+        color: #ff0000;
+        font-size: 16px;
+        font-style: normal;
+        text-align: left;
+
+      }
+      p{
+        font-family: 'houschka_alt_prodemibold';
+        font-size: 14px;
+        text-align: left;
+        line-height: 18px;
+        padding: 10px 0;
+      }
+      .date{
+        font-family: 'houschka_alt_promedium';
+        font-style: normal;
+        font-weight: normal;
+        float: left;
+        font-size: 12px;
+      }
+      .qoute{
+        padding-top: 30px;
+        span{
+          font-family: 'houschkaalt-heavy-italic-regular';
+          font-size: 27px;
+          line-height: 30px;
+          font-style: normal;
+          font-weight: normal;
+          position: relative;
+
+          &:before{
+            content: url("../images/open-qoute.png");
+            position: absolute;
+            left: -23px;
+            top: -8px;
+          }
+          &:after{
+            content: url("../images/close-qoute.png");
+            float: right;
+            position: absolute;
+            right: -22px;
+            top: 7px;
+          }
+        }
+
+
+      }
+    }
+    .custom_red_triangle{
+      margin: 0 auto;
+      max-width: 966px;
+      width: 100%;
+      position: relative;
+      img{
+        width: 100%;
+        max-width: 100%;
+      }
+
+      .call_us{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        bottom: 54px;
+        margin-left: -70px;
+        width: 140px;
+        text-align: center;
+
+        .custom_x_logo{
+          width: 140px;
+          height: 96px;
+          background: url("../images/sprite.png") no-repeat 1px -562px transparent;
+          text-align: left;
+          text-indent: -3000px;
+        }
+        .label{
+          font-family: 'houschka_alt_prodemibold';
+          font-size: 14px;
+          font-style: normal;
+          font-weight: normal;
+          color: #fff;
+        }
+        .phone_no{
+          font-family: 'houschka_alt_probold';
+          font-weight: normal;
+          color: #fff;
+          font-size: 15px;
+        }
+      }
+    }
+    .footer_links_wrapper{
+      margin-top: 58px;
+      width: 100%;
+      border-top: 4px solid #ff0000;
+      background: #fff;
+    }
+    .footer_brand_section{
+      width: 100%;
+      border-top: 4px solid #000;
+    }
+  }
+}
+

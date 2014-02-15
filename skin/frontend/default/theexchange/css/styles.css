@@ -1703,7 +1703,7 @@ tr.summary-details-excluded { font-style:italic; }
 
 
 /* Footer ================================================================================ */
-.footer-container { border-top:15px solid #b6d1e2; }
+.footer-container { }
 .footer { width:930px; margin:0 auto; padding:10px 10px 50px; }
 .footer .store-switcher { display:inline; margin:0 5px 0 0; color:#fff; }
 .footer .store-switcher label { font-weight:bold; vertical-align:middle; }

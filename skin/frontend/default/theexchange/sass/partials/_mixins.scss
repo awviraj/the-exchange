@@ -15,6 +15,16 @@
   font-family: 'houschkaalt-light-regular';
   font-weight: normal;
 }
+@mixin Houschka_alt_med{
+  font-family: 'houschkaalt-medium-regular';
+  font-weight: normal;
+}
+@mixin Houschka_alt_bold_italic{
+  font-family: 'houschkaalt-bold-italic-regular';
+  font-weight: normal;
+}
+
+
 @mixin calc($property, $expression) {
   #{$property}: -moz-calc(#{$expression});
   #{$property}: -o-calc(#{$expression});

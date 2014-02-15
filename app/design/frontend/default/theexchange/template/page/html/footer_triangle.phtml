@@ -10,13 +10,18 @@
 <div class="custom_tweets">
     <?php echo $this->getChildHtml('home_our_tweets'); ?>
 </div>
-<div class="custom_red_line">
-</div>
+<!--<div class="custom_red_line">-->
+<!--</div>-->
 
 <div class="custom_red_triangle">
-    <div class="custom_x_logo">X</div>
-    <div class="custom_call_us">
-        <span>Call us on</span>
-        <span class="phone_no"><?php echo $this->helper('commonrewrites')->getStoreConfig('phone'); ?></span>
+
+    <img src="<?php echo $this->getSkinUrl('images/footer-red-traingle.png') ?>" />
+    <div class="call_us">
+        <div class="custom_x_logo">X</div>
+        <div class="custom_call_us">
+            <div class="label"><?php echo $this->__('Call us on') ?></div>
+            <div class="phone_no"><?php echo $this->helper('commonrewrites')->getStoreConfig('phone'); ?></div>
+        </div>
     </div>
+
 </div>

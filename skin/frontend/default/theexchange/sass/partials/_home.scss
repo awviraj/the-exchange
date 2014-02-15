@@ -1,0 +1,62 @@
+@import "compass/css3";
+@import "mixins";
+
+
+.cms-index-index{
+  .page-title{
+    display: none;
+  }
+  .main{
+    padding: 0;
+  }
+}
+
+.custom_footer_wrapper{
+  margin-top: 5px;
+  padding-top: 38px;
+  box-shadow: 0px -4px 6px #5d5d5d;
+  float: left;
+  width: 100%;
+  .custom_footer_static_block{
+    padding: 38px 65px 20px 65px;
+    width: 100%;
+    box-sizing: border-box;
+    border-top: 1px solid #000;
+    position: relative;
+    float: left;
+    width: 100%;
+
+    h2{
+      position: absolute;
+      top: -25px;
+      left: 0;
+      background:url("../images/btn-sprite.png") no-repeat 0 0 transparent;
+      color: #fff;
+      padding: 0 65px;
+      line-height: 46px;
+      @include Houschka_alt_light;
+      font-size: 30px;
+    }
+    h3{
+      @include Houschka_pro_bold;
+      color: #000;
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+
+    .custom_row1_col1,.custom_row1_col2,.custom_row1_col3{
+      float: left;
+      width: 25%;
+    }
+    .custom_row1_col1{
+      width: 52%;
+    }
+    .custom_row1_col2{
+      width: 16%;
+      text-align: center;
+    }
+    .custom_row1_col3{
+      width: 32%;
+    }
+  }
+}

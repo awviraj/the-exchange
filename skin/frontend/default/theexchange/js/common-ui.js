@@ -11,5 +11,19 @@ jQuery(document).ready(function(){
         )
     });
 
+    ///////fixed header
+
+    var nav = jQuery('.header-container');
+
+    jQuery(window).scroll(function () {
+        if (jQuery(this).scrollTop() > 330) {
+            //nav.addClass("f-nav");
+        } else {
+            //nav.removeClass("f-nav");
+        }
+    });
+
+
+
 
 });

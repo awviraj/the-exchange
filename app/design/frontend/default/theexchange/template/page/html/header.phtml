@@ -30,8 +30,8 @@
 <div class="header-container">
     <div class="header container">
         <div class="call-us">
-            <p>Call Us On</p>
-            <h2>0800 800 800</h2>
+            <p><?php echo $this->__('Call us on') ?></p>
+            <h2><?php echo $this->helper('commonrewrites')->getStoreConfig('phone'); ?></h2>
         </div>
         <div class="logo-div">
             <?php if ($this->getIsHomePage()):?>
@@ -54,15 +54,18 @@
         </div>
         <?php echo $this->getChildHtml('topContainer'); ?>
     </div>
-</div>
-<div class="menu-search-wrapper container">
-    <div class="cms-menu row">
-        <?php echo $this->getChildHtml('header_cms_menu_links'); ?>
-    </div>
-    <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 search-box">
-            <div class="black-arrow"></div>
-            <?php echo $this->getChildHtml('topSearch') ?>
+    <div class="menu-search-wrapper container">
+        <div class="small-x-logo">
+            X
+        </div>
+        <div class="cms-menu row">
+            <?php echo $this->getChildHtml('header_cms_menu_links'); ?>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 search-box">
+                <div class="black-arrow"></div>
+                <?php echo $this->getChildHtml('topSearch') ?>
+            </div>
         </div>
     </div>
 </div>

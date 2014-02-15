@@ -36,6 +36,10 @@ body { background: url("../images/body-bg.png") repeat; font-size: 14px; font-fa
 .header-container .header .quick-access .links li a.top-link-home { background-position: 16px -129px; }
 .header-container .header .quick-access .links li a.top-link-cart { background-position: 16px -89px; }
 .header-container .header .quick-access .links li a.top-link-customer { background-position: 16px -44px; }
+.header-container.f-nav { position: fixed; top: 0; width: 100%; max-width: 100%; }
+.header-container.f-nav .header { max-width: 100%; }
+.header-container.f-nav .header .call-us, .header-container.f-nav .header .logo-div, .header-container.f-nav .header .top-quick-links { display: none; }
+.header-container.f-nav .header .quick-access { margin-top: 0; }
 
 .menu-search-wrapper { width: 100%; max-width: 1024px; margin: 0 auto; color: #fff; position: relative; }
 .menu-search-wrapper:after { content: ''; line-height: 0; font-size: 0; width: 0; height: 0; border-top: 67px solid #000; border-bottom: 0px solid transparent; border-left: 0px solid transparent; border-right: 30px solid transparent; position: absolute; top: 0; right: 0; }
@@ -44,6 +48,7 @@ body { background: url("../images/body-bg.png") repeat; font-size: 14px; font-fa
 .menu-search-wrapper .cms-menu .cl-effect-18 a { color: #fff; font-size: 15px; font-family: 'houschkaalt-bold-regular'; font-weight: normal; font-weight: normal; }
 .menu-search-wrapper .cms-menu .cl-effect-18 a:before { background: #fff; height: 1px; }
 .menu-search-wrapper .cms-menu .cl-effect-18 a:after { background: #fff; height: 1px; }
+.menu-search-wrapper .small-x-logo { float: left; width: 27px; height: 22px; background: url("../images/sprite.png") 0px -503px no-repeat; margin-top: 15px; text-align: left; text-indent: -3000px; margin-left: 19px; display: none; }
 
 .search-box { position: relative; max-width: 966px; margin: 0 auto; float: none; height: 197px; background: url("../images/search-box-bg.jpg") no-repeat; background-size: 100%; }
 .search-box .black-arrow { position: absolute; left: 50%; margin-left: -32px; width: 64px; top: 0; height: 14px; background: url("../images/sprite.png") no-repeat 0 -186px; }
@@ -58,4 +63,42 @@ body { background: url("../images/body-bg.png") repeat; font-size: 14px; font-fa
 .search-box .form-search .search-inputs .input-group-btn button:hover span { background-position: -60px -222px; }
 .search-box .form-search .filter-results { color: #fff; font-family: 'houschkaalt-bold-regular'; font-weight: normal; font-size: 15px; text-decoration: underline; margin-top: 13px; display: inline-block; }
 
-.navbar { max-width: 966px; margin: 0 auto; border-radius: 0; }
+.navbar { max-width: 966px; margin: 0 auto; border-radius: 0; min-height: 42px; }
+.navbar .container { width: 100%; }
+.navbar .container #nav { width: 100%; }
+.navbar .container #nav li { width: 10%; margin: 0 1%; }
+.navbar .container #nav li:hover { background: #342323; }
+.navbar .container #nav li a { font-family: 'houschkaalt-medium-regular'; font-weight: normal; line-height: 29px; padding: 5px 20px 6px 20px; color: #e3e3e3; font-size: 16px; }
+
+.main { width: 100%; max-width: 966px; box-sizing: border-box; padding: 20px 65px; background: #f1f2f2; min-height: 0; }
+
+.footer-container { width: 100%; }
+.footer-container .footer { width: 100%; box-sizing: border-box; padding: 0; min-height: 0; }
+.footer-container .footer .custom_tweets { max-width: 966px; margin: 0 auto; background: #000; width: 100%; box-sizing: border-box; padding: 20px 65px; color: #fff; }
+.footer-container .footer .custom_tweets h3 { font-family: 'houschkaalt-bold-italic-regular'; font-weight: normal; color: #ff0000; font-size: 16px; font-style: normal; text-align: left; }
+.footer-container .footer .custom_tweets p { font-family: 'houschka_alt_prodemibold'; font-size: 14px; text-align: left; line-height: 18px; padding: 10px 0; }
+.footer-container .footer .custom_tweets .date { font-family: 'houschka_alt_promedium'; font-style: normal; font-weight: normal; float: left; font-size: 12px; }
+.footer-container .footer .custom_tweets .qoute { padding-top: 30px; }
+.footer-container .footer .custom_tweets .qoute span { font-family: 'houschkaalt-heavy-italic-regular'; font-size: 27px; line-height: 30px; font-style: normal; font-weight: normal; position: relative; }
+.footer-container .footer .custom_tweets .qoute span:before { content: url("../images/open-qoute.png"); position: absolute; left: -23px; top: -8px; }
+.footer-container .footer .custom_tweets .qoute span:after { content: url("../images/close-qoute.png"); float: right; position: absolute; right: -22px; top: 7px; }
+.footer-container .footer .custom_red_triangle { margin: 0 auto; max-width: 966px; width: 100%; position: relative; }
+.footer-container .footer .custom_red_triangle img { width: 100%; max-width: 100%; }
+.footer-container .footer .custom_red_triangle .call_us { position: absolute; bottom: 0; left: 50%; bottom: 54px; margin-left: -70px; width: 140px; text-align: center; }
+.footer-container .footer .custom_red_triangle .call_us .custom_x_logo { width: 140px; height: 96px; background: url("../images/sprite.png") no-repeat 1px -562px transparent; text-align: left; text-indent: -3000px; }
+.footer-container .footer .custom_red_triangle .call_us .label { font-family: 'houschka_alt_prodemibold'; font-size: 14px; font-style: normal; font-weight: normal; color: #fff; }
+.footer-container .footer .custom_red_triangle .call_us .phone_no { font-family: 'houschka_alt_probold'; font-weight: normal; color: #fff; font-size: 15px; }
+.footer-container .footer .footer_links_wrapper { margin-top: 58px; width: 100%; border-top: 4px solid #ff0000; background: #fff; }
+.footer-container .footer .footer_brand_section { width: 100%; border-top: 4px solid #000; }
+
+.cms-index-index .page-title { display: none; }
+.cms-index-index .main { padding: 0; }
+
+.custom_footer_wrapper { margin-top: 5px; padding-top: 38px; box-shadow: 0px -4px 6px #5d5d5d; float: left; width: 100%; }
+.custom_footer_wrapper .custom_footer_static_block { padding: 38px 65px 20px 65px; width: 100%; box-sizing: border-box; border-top: 1px solid #000; position: relative; float: left; width: 100%; }
+.custom_footer_wrapper .custom_footer_static_block h2 { position: absolute; top: -25px; left: 0; background: url("../images/btn-sprite.png") no-repeat 0 0 transparent; color: #fff; padding: 0 65px; line-height: 46px; font-family: 'houschkaalt-light-regular'; font-weight: normal; font-size: 30px; }
+.custom_footer_wrapper .custom_footer_static_block h3 { font-family: 'houschka_alt_probold'; font-weight: normal; color: #000; font-size: 18px; margin-bottom: 15px; }
+.custom_footer_wrapper .custom_footer_static_block .custom_row1_col1, .custom_footer_wrapper .custom_footer_static_block .custom_row1_col2, .custom_footer_wrapper .custom_footer_static_block .custom_row1_col3 { float: left; width: 25%; }
+.custom_footer_wrapper .custom_footer_static_block .custom_row1_col1 { width: 52%; }
+.custom_footer_wrapper .custom_footer_static_block .custom_row1_col2 { width: 16%; text-align: center; }
+.custom_footer_wrapper .custom_footer_static_block .custom_row1_col3 { width: 32%; }
