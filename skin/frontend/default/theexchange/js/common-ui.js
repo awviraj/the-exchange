@@ -23,7 +23,15 @@ jQuery(document).ready(function(){
         }
     });
 
+    jQuery( "#search" ).focus(function() {
+        searchOverlay()
+    });
+    function searchOverlay(){
+        var overlay = jQuery('<div id="overlay"> </div>');
+        overlay.appendTo(document.body)
 
+        jQuery('.search-box').addClass('overlay');
+    }
 
 
 });
