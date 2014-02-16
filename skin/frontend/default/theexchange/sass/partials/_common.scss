@@ -488,8 +488,70 @@ body{
       background: #fff;
     }
     .footer_brand_section{
+      padding-top: 27px;
       width: 100%;
       border-top: 4px solid #000;
+
+      h3{
+        padding-bottom: 23px;
+        font-family: 'houschka_alt_probold';
+        font-size: 12px;
+        font-weight: normal;
+        text-transform: uppercase;
+       color:#000;
+      }
+
+      ul{
+        li{
+          display: inline-block;
+          margin: 0 10px;
+
+          a{
+            max-width: 87px;
+            display: block;
+
+            img{
+              max-width: 100%;
+            }
+          }
+        }
+      }
+    }
+    .footer-bottom{
+      text-align: center;
+      padding: 30px 0 15px;
+
+      .logo{
+        width: 235px;
+        margin: 0 auto;
+        float: none;
+        display: block;
+
+        img{
+          max-width: 100%;
+        }
+      }
+      .footer_copyright_links{
+        padding-top: 20px;
+        color: #6d6d6d;
+
+        ul{
+          li{
+            display: inline-block;
+            a{
+              color: #6d6d6d;
+              text-transform: uppercase;
+            }
+
+            &:first-child{
+              padding-right: 10px;
+              margin-right: 10px;
+              border-right: 1px solid #6d6d6d;
+            }
+
+          }
+        }
+      }
     }
   }
 }
