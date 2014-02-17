@@ -54,9 +54,13 @@ Default layout, loads most of the pages
 
                 <block type="page/template_links" name="footer_links" as="footer_links" template="page/template/links_footer.phtml"/>
 
-                <block type="cms/block" name="cms_footer_social_links">
-                    <label>Footer Social Links</label>
-                    <action method="setBlockId"><block_id>cms_footer_social_links</block_id></action>
+                <block type="page/html_wrapper" name="footer_social_newsletter" as="footer_social_newsletter" translate="label">
+                    <label>Footer Social Links And Newsletter Wrapper</label>
+                    <action method="setElementClass"><class>footer_social_newsletter</class></action>
+                    <block type="cms/block" name="cms_footer_social_links">
+                        <label>Footer Social Links</label>
+                        <action method="setBlockId"><block_id>cms_footer_social_links</block_id></action>
+                    </block>
                 </block>
             </block>
 
