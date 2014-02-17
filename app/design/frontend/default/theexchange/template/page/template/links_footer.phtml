@@ -32,7 +32,7 @@
 <div class="config_footer_links">
     <?php $_links = $this->getLinks(); ?>
     <?php if(count($_links)>0): ?>
-        <h4><strong>My Account</strong></h4>
+        <h4><strong><?php echo $this->__('My Account'); ?></strong></h4>
         <ul class="links"<?php if($this->getName()): ?> id="<?php echo $this->getName() ?>"<?php endif;?>>
             <?php foreach($_links as $_link): ?>
                 <?php if ($_link instanceof Mage_Core_Block_Abstract):?>
