@@ -44,24 +44,29 @@ Default layout, loads most of the pages
                 <label>Footer Links Wrapper</label>
                 <action method="setElementClass"><value>footer_links_wrapper</value></action>
 
-                <block type="cms/block" name="cms_footer_links" after="custom_footer">
-                    <action method="setBlockId"><block_id>footer_links</block_id></action>
-                </block>
+                <block type="page/html_wrapper" name="footer_links_subwrapper" as="footer_links_subwrapper" translate="label">
+                    <label>Footer Links Sub Wrapper</label>
+                    <action method="setElementClass"><value>footer_links_subwrapper</value></action>
 
-                <block type="cms/block" name="cms_footer_links_col3">
-                    <action method="setBlockId"><block_id>footer_links_col2</block_id></action>
-                </block>
+                    <block type="cms/block" name="cms_footer_links" after="custom_footer">
+                        <action method="setBlockId"><block_id>footer_links</block_id></action>
+                    </block>
 
-                <block type="page/template_links" name="footer_links" as="footer_links" template="page/template/links_footer.phtml"/>
+                    <block type="cms/block" name="cms_footer_links_col3">
+                        <action method="setBlockId"><block_id>footer_links_col2</block_id></action>
+                    </block>
 
-                <block type="page/html_wrapper" name="footer_social_newsletter" as="footer_social_newsletter" translate="label">
-                    <label>Footer Social Links And Newsletter Wrapper</label>
-                    <action method="setElementClass"><class>footer_social_newsletter</class></action>
+                    <block type="page/template_links" name="footer_links" as="footer_links" template="page/template/links_footer.phtml"/>
 
-                    <block type="core/template" name="cms_footer_social_wrapper" template="page/html/footer_social.phtml">
-                        <block type="cms/block" name="cms_footer_social_links">
-                            <label>Footer Social Links</label>
-                            <action method="setBlockId"><block_id>cms_footer_social_links</block_id></action>
+                    <block type="page/html_wrapper" name="footer_social_newsletter" as="footer_social_newsletter" translate="label">
+                        <label>Footer Social Links And Newsletter Wrapper</label>
+                        <action method="setElementClass"><class>footer_social_newsletter</class></action>
+
+                        <block type="core/template" name="cms_footer_social_wrapper" template="page/html/footer_social.phtml">
+                            <block type="cms/block" name="cms_footer_social_links">
+                                <label>Footer Social Links</label>
+                                <action method="setBlockId"><block_id>cms_footer_social_links</block_id></action>
+                            </block>
                         </block>
                     </block>
                 </block>
