@@ -13,7 +13,7 @@
 	</div>
 	<link rel="stylesheet" type="text/css" href="<?php echo $this->getSkinUrl('css/magebuzz/productslider.css');?>" media="all" />
 	<?php if($sliderType == 'simple-slider'):?>
-		<script type="text/javascript" src="<?php echo $this->getJsUrl('magebuzz/jquery/jquery-latest.js') ?>"></script>
+<!--		<script type="text/javascript" src="--><?php //echo $this->getJsUrl('magebuzz/jquery/jquery-latest.js') ?><!--"></script>-->
 		<script type="text/javascript" src="<?php echo $this->getJsUrl('magebuzz/jquery/jquery.bxSlider.js') ?>"></script>
 		<link rel="stylesheet" type="text/css" href="<?php echo $this->getSkinUrl('css/magebuzz/productslider/simple-slider.css');?>" media="all" />
 		<script type="text/javascript">
@@ -56,7 +56,7 @@
 			</ul>
 		</div>
 	<?php elseif ($sliderType == 'slider-scrollbar'):?>
-		<script type="text/javascript" src="<?php echo $this->getJsUrl('magebuzz/jquery/jquery-latest.js') ?>"></script>
+<!--		<script type="text/javascript" src="--><?php //echo $this->getJsUrl('magebuzz/jquery/jquery-latest.js') ?><!--"></script>-->
 		<script type="text/javascript" src="<?php echo $this->getJsUrl('magebuzz/jquery/jquery-ui-1.7.2.custom.min.js') ?>"></script>
 		<script type="text/javascript">
 			var $sl = jQuery.noConflict();	
@@ -107,7 +107,7 @@
 			<div id="slider"></div>
 		</div>
 	<?php elseif ($sliderType == 'slider-lightbox'):?>
-		<script type="text/javascript" src="<?php echo $this->getJsUrl('magebuzz/jquery/jquery-latest.js') ?>"></script>
+<!--		<script type="text/javascript" src="--><?php //echo $this->getJsUrl('magebuzz/jquery/jquery-latest.js') ?><!--"></script>-->
 		<script type="text/javascript" src="<?php echo $this->getJsUrl('magebuzz/jquery/jquery.scrollShow.js') ?>"></script>
 		<script type="text/javascript" src="<?php echo $this->getJsUrl('magebuzz/jquery/jquery.scrollTo-min.js') ?>"></script>
 		<script type="text/javascript" src="<?php echo $this->getJsUrl('magebuzz/jquery/lightbox/jquery.lightbox-0.5.js') ?>"></script>

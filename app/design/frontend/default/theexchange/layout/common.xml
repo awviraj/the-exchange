@@ -8,4 +8,10 @@
             <action method="addLink" translate="label title" module="catalog"><label>Change Details</label><url helper="customer/getEditUrl"/><title>Change Details</title></action>
         </reference>
     </default>
+
+    <cms_index_index>
+        <reference name="content">
+            <block type="youama_slider/slider" name="youamaslider" alias="youamaslider" before="-" template="youama/slider/slider.phtml"/>
+        </reference>
+    </cms_index_index>
 </layout>
