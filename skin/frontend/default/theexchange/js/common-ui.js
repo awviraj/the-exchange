@@ -15,17 +15,31 @@ jQuery(document).ready(function(){
 
     var nav = jQuery('.header-container');
 
-    jQuery(window).scroll(function () {
-        if (jQuery(this).scrollTop() > 330) {
-            //nav.addClass("f-nav");
-        } else {
-            //nav.removeClass("f-nav");
-        }
-    });
+//    jQuery(window).scroll(function () {
+//
+//
+//        if (jQuery(this).scrollTop() > 250) {
+//            console.log(nav);
+//            if (!nav.hasClass('f-nav')) {
+//                nav.addClass("f-nav");
+//            }
+//        } else {
+//            if (nav.hasClass('f-nav')) {
+//                nav.removeClass("f-nav");
+//            }
+//        }
+//    });
 
     jQuery( "#search" ).focus(function() {
-        searchOverlay()
+        searchOverlay();
     });
+
+    jQuery( "#search" ).blur(function() {
+        jQuery('#overlay').remove();
+        jQuery('.search-box').removeClass('overlay');
+    });
+
+
     function searchOverlay(){
         var overlay = jQuery('<div id="overlay"> </div>');
         overlay.appendTo(document.body)
