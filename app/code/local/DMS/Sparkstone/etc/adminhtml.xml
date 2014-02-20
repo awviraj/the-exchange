@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category   DMS
+ * @package    DMS_Sparkstone
+ * @copyright  admaduranga@gmail.com
+ * @license    admaduranga@gmail.com
+ */
+-->
+<config>
+    <acl>
+        <resources>
+            <all>
+                <title>DMS Lanka Modules</title>
+            </all>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <sparkstone translate="title">
+                                        <title>Sparkstone Product Import</title>
+                                        <sort_order>1</sort_order>
+                                    </sparkstone>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

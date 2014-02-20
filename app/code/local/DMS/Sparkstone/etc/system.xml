@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category   DMS
+ * @package    DMS_Sparkstone
+ * @copyright  admaduranga@gmail.com
+ * @license    admaduranga@gmail.com
+ */
+-->
+<config>
+    <tabs>
+        <dms translate="label" module="customer">
+            <label>DMS Lanka &#9733;</label>
+            <sort_order>2</sort_order>
+        </dms>
+    </tabs>
+    <sections>
+        <sparkstone translate="label">
+            <label>Sparkstone Productimport</label>
+            <tab>dms</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>1</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+
+            <groups>
+                <api translate="label">
+                    <label>API URL</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>0</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+
+                    <fields>
+                        <apiurl>
+                            <label>API URL</label>
+                            <comment>
+                                <![CDATA[API URL for the live import]]>
+                            </comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </apiurl>
+                        <apiurl>
+                            <label>API Sandbox URL</label>
+                            <comment>
+                                <![CDATA[API URL for the Sandbox]]>
+                            </comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </apiurl>
+                        <csvmapper translate="label comment">
+                            <label>CSV Colomn Mapper</label>
+                            <comment>
+                                <![CDATA[Upload CSV mapping the colomns for import {{File_Col, Import_Field}}]]>
+                            </comment>
+                            <frontend_type>file</frontend_type>
+                            <backend_model>sparkstone/adminhtml_system_config_backend_file</backend_model>
+                            <upload_dir config="system/filesystem/media" scope_info="1">dms/sparkstone</upload_dir>
+                            <base_url type="media" scope_info="1">youama/slider</base_url>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </csvmapper>
+                    </fields>
+                </api>
+            </groups>
+        </sparkstone>
+    </sections>
+</config>

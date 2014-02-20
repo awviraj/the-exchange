@@ -12,22 +12,37 @@ class DMS_Sparkstone_Model_Stock extends Mage_Core_Model_Abstract
 {
     CONST TYPE_STOCK_LIST = 'GetXMLStockList';
     protected $_soapUrl;
+    protected $_colMap;
+    protected $_mediaPrefix = 'dms/sparkstone/';
+    protected $_exportPath = 'var/import/';
+    protected $_ready = false;
+    protected $_colmapHasHeader = true;
+
 
     public function init() {
         $this->_soapUrl = 'http://retailservices.sparkstone.co.uk/SparkstoneRetailStock.asmx?WSDL';
     }
 
-    public function getStockData() {
+    public function prepareStockFile() {
+        $this->init();
+        $productXml = $this->getProductData();
+        if ($productXml) {
+            $this->saveResponse($productXml);
+            $this->_formatProductData($productXml);
+        }
+    }
+
+    public function setReady($ready) {
+        $this->_ready = $ready;
+    }
+
+    public function getProductData() {
         $client = new SoapClient($this->_soapUrl);//GetXMLStockList
         $strStockList = $client->GetXMLStockList()->GetXMLStockListResult->any;
         try {
             $xml = simplexml_load_string($strStockList);
-            $this->saveResponse($strStockList);
-
             if ($xml) {
-                foreach ($xml as $key => $product) {
-                    $this->saveProduct($product);
-                }
+                return $xml;
             }
         }
         catch(Exception $ex) {
@@ -54,31 +69,50 @@ class DMS_Sparkstone_Model_Stock extends Mage_Core_Model_Abstract
         return $this;
     }
 
-    public function saveProduct($objProduct) {
-        $product = Mage::getModel('catalog/product');
-        $simple = 'simple';
-        $product->setAttributeSetId(4);
-        $product->setSku($objProduct->StockCode);
-        $product->setName($objProduct->ShortName);
-        $product->setTypeId($simple);
-        $product->setPrice($objProduct->NetSellPrice);
-        $product->setValue($objProduct->CostPrice);
-        $product->setDescription($objProduct->LongDescription);
-        $product->setShortDescription($objProduct->LongDescription);
-        $product->setWeight(100);
-        $product->setVisibility(Mage_Catalog_Model_Product_Visibility::VISIBILITY_NOT_VISIBLE);
-        $product->setStatus(Mage_Catalog_Model_Product_Status::STATUS_ENABLED);
-        $product->setTaxClassId(2);
-        $product->setStockData(array(
-            'is_in_stock' => 1,
-            'qty' => $objProduct->QuantityInStock
-        ));
 
-        try {
-            $product->save();
+    protected function _formatProductData($xml)
+    {
+        $mappingFile = Mage::helper('sparkstone')->getStoreConfig('csvmapper', 'sparkstone/api/');
+        $mappingCols = Mage::helper('sparkstone/csv')->getCsvData(Mage::getBaseUrl('media').$this->_mediaPrefix.$mappingFile);
+        $colMapHeader = null;
+        $csvData = array();
+        $csvHeader = array();
+        $counter = 0;
+
+        if ($this->_colmapHasHeader && empty($colMapHeader)) {
+            $colMapHeader = array_shift($mappingCols);
         }
-        catch (Exception $ex) {
-            Mage::logException($ex);
+
+        try{
+            if (!empty($xml) && !empty($mappingCols)) {
+
+                foreach ($xml as $key => $element) {
+                    $element = (array) $element;
+                    $counter++;
+
+                    foreach ($mappingCols as $key => $mapped) {
+
+                        if (!empty($mapped[0])) {
+                            $value = !empty($element[$mapped[1]]) ? $element[$mapped[1]] : $mapped[2];
+                            $csvData[0][$key] = $mapped[0];
+                            $csvData[$counter][$mapped[0]] = strVal($value);
+
+                        }
+                    }
+                }
+                Mage::helper('sparkstone/csv')->putCsvData($csvData, $this->_exportPath .'import.csv');
+                $this->setReady(true);
+            }
+        } catch (Exception $e) {
+            Mage::logException($e);
+        }
+
+    }
+
+    public function importProducts() {
+        if ($this->_ready) {
+            chdir('magmi/cli/');
+            include_once('magmi_run_from_code.php');
         }
     }
 }
