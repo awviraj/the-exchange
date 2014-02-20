@@ -749,15 +749,15 @@ tr.summary-details-excluded { font-style:italic; }
 .block-gr-search button.button span { border-color:#406a83; background:#618499; }
 
 /* Block: Tags */
-.block-tags .block-title strong { background-image:url(../images/i_block-tags.gif); }
+.block-tags .block-title strong { }
 .block-tags .block-content .tags-list { background:none; border:0; font-size:12px; }
 .block-tags .block-content a { color:#1b2d3b; }
 .block-tags .actions { text-align:right; }
 .block-tags .actions a { float:none; }
 
 /* Block: Subscribe */
-.block-subscribe .block-content { padding:5px 10px; }
-.block-subscribe .block-title strong { background-image:url(../images/i_block-subscribe.gif); }
+.block-subscribe .block-content { }
+.block-subscribe .block-title strong { }
 .block-subscribe label { font-weight:bold; color:#666; }
 .block-subscribe input.input-text { display:block; width:167px; margin:3px 0; }
 .block-subscribe .actions { background:none; padding:0; margin:3px 0 0; text-align:left; }
@@ -765,7 +765,7 @@ tr.summary-details-excluded { font-style:italic; }
 .block-subscribe .actions button.button span { border-color:#406a83; background:#618499; }
 
 /* Block: Reorder */
-.block-reorder .block-title strong { background-image:url(../images/i_block-list.gif); }
+.block-reorder .block-title strong {  }
 .block-reorder input.checkbox { float:left; margin:2px -20px 0 0; }
 .block-reorder .product-name { margin-left:20px; }
 .block-reorder .validation-advice { margin:3px 9px 7px; }
@@ -775,7 +775,7 @@ tr.summary-details-excluded { font-style:italic; }
 .block-banner .block-content { padding:0; text-align:center; }
 
 /* Block: Login */
-.block-login .block-title strong { background-image:url(../images/i_ma-info.gif); }
+.block-login .block-title strong { }
 .block-login .block-content { padding:5px 10px; }
 .block-login label { font-weight:bold; color:#666; }
 .block-login input.input-text { display:block; width:167px; margin:3px 0; }

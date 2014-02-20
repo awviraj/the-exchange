@@ -487,6 +487,7 @@ body{
       border-top: 4px solid #ff0000;
       background: #fff;
       float: left;
+      padding-bottom: 20px;
 
       .footer_links_subwrapper{
         padding: 23px 5% 32px;
@@ -530,7 +531,7 @@ body{
               height: 19px;
               background:url("../images/sprite.png") no-repeat -3px -740px;
               position: absolute;
-              top: 11px;
+              top: 6px;
               right: 9px;
               z-index: 1000;
               text-align: left;
@@ -546,6 +547,61 @@ body{
               font-style: normal;
               line-height: 14px;
               position: relative;
+              margin: 0px 0;
+            }
+          }
+          .footer_social_links{
+            text-align: left;
+
+            h4{
+              float: left;
+              display: block;
+              line-height: 30px;
+              margin-bottom: 0;
+            }
+            ul{
+              float: left;
+              padding-left: 22px;
+              li{
+                float: left;
+                width: 25px;
+                height: 25px;
+                margin-left: 10px;
+                padding: 0;
+
+                &:first-child{
+                  margin-left: 0;
+                }
+
+                a{
+                  display: block;
+                  text-align: left;
+                  text-indent: -3000px;
+                  background: url("../images/sprite.png") no-repeat 3px -790px;
+                  height: 25px;
+                  width: 25px;
+
+                }
+                &.fb{
+                  a{
+                    background-position:3px -790px ;
+
+                    &:hover{
+                      background-position:-63px  -790px ;
+                    }
+                  }
+
+                }
+                &.twitter{
+                  a{
+                    background-position:-26px -790px ;
+
+                    &:hover{
+                      background-position:-96px -790px ;
+                    }
+                  }
+                }
+              }
             }
           }
         }
@@ -595,6 +651,7 @@ body{
     .footer_brand_section{
       float: left;
       padding-top: 27px;
+      padding-bottom: 30px;
       width: 100%;
       border-top: 4px solid #000;
 
