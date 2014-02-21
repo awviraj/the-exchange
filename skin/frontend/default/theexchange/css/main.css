@@ -135,9 +135,30 @@ body { background: url("../images/body-bg.png") repeat; font-size: 14px; font-fa
 .cms-index-index .main #product-slider .head h2 { position: absolute; top: 14px; left: 0; background: url("../images/btn-sprite.png") no-repeat 0 -86px transparent; color: #fff; padding: 0 65px; line-height: 46px; font-family: 'houschkaalt-light-regular'; font-weight: normal; font-size: 30px; z-index: 300; }
 .cms-index-index .main #product-slider #list-items { border-top: 1px solid #ff0000; padding-top: 33px; }
 .cms-index-index .main #product-slider #list-items #slider-content { width: 100% !important; height: auto !important; background: #fff; border: none; }
+.cms-index-index .main #product-slider #list-items #slider-content #sl-screen { height: 171px !important; }
 .cms-index-index .main #product-slider #list-items #slider-content #sl-screen #left { background: url("../images/sprite.png") 9px -823px black; left: 0px; }
 .cms-index-index .main #product-slider #list-items #slider-content #sl-screen #right { background: url("../images/sprite.png") -55px -823px black; right: 0px; }
+.cms-index-index .main #product-slider #list-items #slider-content #sl-screen .jq-ss-crop { width: 100% !important; }
+.cms-index-index .main #product-slider #list-items #slider-content #sl-images li { max-width: 120px; margin: 0 16px; }
 .cms-index-index .main #product-slider #list-items #slider-content #sl-images li .item button.btn-cart { display: none; }
+.cms-index-index .main #product-slider #list-items #slider-content #sl-images li .item { width: 100% !important; }
+.cms-index-index .main #product-slider #list-items #slider-content #sl-images li .item .product-img { width: 100% !important; }
+.cms-index-index .main #product-slider #list-items #slider-content #sl-images li .item .product-img .product-image { width: 100% !important; background: none; }
+.cms-index-index .main #product-slider #list-items #slider-content #sl-images li .item .product-img .product-image a { display: block; width: 100%; }
+.cms-index-index .main #product-slider #list-items #slider-content #sl-images li .item .product-img .product-image a img { max-width: 100%; margin: 0 auto; height: auto; }
+.cms-index-index .main #product-slider #list-items #slider-content #sl-images li .item .product-info { text-align: center; }
+.cms-index-index .main #product-slider #list-items #slider-content #sl-images li .item .product-info .product-name a { font-family: 'houschka_alt_prodemibold'; font-weight: normal; font-size: 12px; color: #000; }
+.cms-index-index .main #product-slider #list-items #slider-content #sl-images li .item .product-info .price-box span { font-size: 22px; font-family: 'houschka_alt_probold'; font-weight: normal; }
+.cms-index-index .main #product-slider #list-items #slider-content #sl-images li .item .product-info .price-box span.regular-price { color: #ff0000; }
+.cms-index-index .main #product-slider #list-items #slider-content #sl-images li .item .product-info .slider-action-wrapper { display: none; }
+.cms-index-index .main #product-slider #list-items #slider-hover-details { display: none; float: left; width: 100%; color: #fff; background: #ff0000; padding: 18px 5%; }
+.cms-index-index .main #product-slider #list-items #slider-hover-details .price-name-wrapper { float: left; width: 65%; }
+.cms-index-index .main #product-slider #list-items #slider-hover-details .price-name-wrapper .product-name a { color: #fff; font-family: 'houschka_alt_probold'; font-weight: normal; font-size: 18px; padding-bottom: 10px; }
+.cms-index-index .main #product-slider #list-items #slider-hover-details .price-name-wrapper .desc { color: #fff; font-family: 'houschka_alt_prolight'; font-size: 14px; font-weight: normal; line-height: 18px; }
+.cms-index-index .main #product-slider #list-items #slider-hover-details .price-name-wrapper .price-box span { color: #fff; }
+.cms-index-index .main #product-slider #list-items #slider-hover-details .slider-action-wrapper { float: right; width: 228px; }
+.cms-index-index .main #product-slider #list-items #slider-hover-details .slider-action-wrapper a { display: block; width: 100%; }
+.cms-index-index .main #product-slider #list-items #slider-hover-details .slider-action-wrapper button { width: 100%; }
 
 .youama-slider-block { box-shadow: 0px 5px 5px #5d5d5d; float: left; width: 100%; }
 
