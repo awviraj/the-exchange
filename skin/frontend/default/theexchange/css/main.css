@@ -45,9 +45,10 @@ body { background: url("../images/body-bg.png") repeat; font-size: 14px; font-fa
 .menu-search-wrapper:after { content: ''; line-height: 0; font-size: 0; width: 0; height: 0; border-top: 67px solid #000; border-bottom: 0px solid transparent; border-left: 0px solid transparent; border-right: 30px solid transparent; position: absolute; top: 0; right: 0; }
 .menu-search-wrapper:before { content: ''; line-height: 0; font-size: 0; width: 0; height: 0; border-top: 67px solid #000; border-bottom: 0px solid transparent; border-left: 30px solid transparent; border-right: 0px solid transparent; position: absolute; top: 0; left: 0; }
 .menu-search-wrapper .cms-menu { background: #000; padding: 11px 26px; max-width: 964px; margin: 0 auto; }
-.menu-search-wrapper .cms-menu .cl-effect-18 a { color: #fff; font-size: 15px; font-family: 'houschkaalt-bold-regular'; font-weight: normal; font-weight: normal; }
-.menu-search-wrapper .cms-menu .cl-effect-18 a:before { background: #fff; height: 1px; }
-.menu-search-wrapper .cms-menu .cl-effect-18 a:after { background: #fff; height: 1px; }
+.menu-search-wrapper .cms-menu .cl-effect-21 a { color: #fff; font-size: 15px; font-family: 'houschkaalt-bold-regular'; font-weight: normal; font-weight: normal; text-decoration: none; }
+.menu-search-wrapper .cms-menu .cl-effect-21 a:hover { text-decoration: none; }
+.menu-search-wrapper .cms-menu .cl-effect-21 a:before { background: #fff; height: 1px; }
+.menu-search-wrapper .cms-menu .cl-effect-21 a:after { background: #fff; height: 1px; }
 .menu-search-wrapper .small-x-logo { float: left; width: 27px; height: 22px; background: url("../images/sprite.png") 0px -503px no-repeat; margin-top: 15px; text-align: left; text-indent: -3000px; margin-left: 19px; display: none; }
 
 .search-box { position: relative; max-width: 966px; margin: 0 auto; float: none; height: 197px; background: url("../images/search-box-bg.jpg") no-repeat; background-size: 100%; }

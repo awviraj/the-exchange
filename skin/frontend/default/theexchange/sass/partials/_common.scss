@@ -197,12 +197,17 @@ body{
 
 
   .cms-menu{
-    .cl-effect-18{
+    .cl-effect-21{
       a{
         color: #fff;
         font-size: 15px;
         @include Houschka_alt_bold;
         font-weight: normal;
+        text-decoration: none;
+
+        &:hover{
+          text-decoration: none;
+        }
 
         &:before{
           background: #fff;
