@@ -116,10 +116,6 @@
 		 var SKIN_URL = '<?php echo $this->getSkinUrl() ?>';
 		//]]>
 		</script>
-        <style>
-            .selected{background-color: red;}
-        </style>
-
 		<script type="text/javascript">
 			var $newslider = jQuery.noConflict(); 
 			$newslider(document).ready(function(){
@@ -157,9 +153,9 @@
                 var sliderUL =  jQuery('.product-slider-content').find('.sl-images');
                 jQuery(sliderUL).find('li').mouseover(function() {
                     jQuery(this).parent().children('li').each(function () {
-                        jQuery(this).find('.price-html').removeClass('selected');
+                        jQuery(this).find('.product-info').removeClass('selected');
                     });
-                    jQuery(this).find('.price-html').addClass('selected');
+                    jQuery(this).find('.product-info').addClass('selected');
                     jQuery('#slider-hover-details').show();
                     jQuery('#slider-hover-details').html(jQuery(this).find('.product-info').html());
                 });
