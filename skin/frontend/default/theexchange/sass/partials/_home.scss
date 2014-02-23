@@ -34,6 +34,8 @@
       }
 
       #list-items{
+        float: left;
+        width: 100%;
         border-top: 1px solid #ff0000;
         padding-top: 33px;
         #slider-content{
@@ -44,6 +46,9 @@
 
           #sl-screen {
             height: 171px !important;
+            #sl-view{
+              height: auto !important;
+            }
             #left{
               background: url("../images/sprite.png") 9px -823px #000000;
               left: 0px;
@@ -60,6 +65,7 @@
             li {
               max-width: 120px;
               margin: 0 16px;
+              height: 186px !important;
               .item button{
                 &.btn-cart{
                   display: none;
