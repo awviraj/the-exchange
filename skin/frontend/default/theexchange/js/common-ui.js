@@ -15,20 +15,14 @@ jQuery(document).ready(function(){
 
     var nav = jQuery('.header-container');
 
-//    jQuery(window).scroll(function () {
-//
-//
-//        if (jQuery(this).scrollTop() > 250) {
-//            console.log(nav);
-//            if (!nav.hasClass('f-nav')) {
-//                nav.addClass("f-nav");
-//            }
-//        } else {
-//            if (nav.hasClass('f-nav')) {
-//                nav.removeClass("f-nav");
-//            }
-//        }
-//    });
+    jQuery(window).bind('scroll', function() {
+        if (jQuery(window).scrollTop() > 155) {
+            jQuery('.header-container').addClass('f-nav');
+        }
+        else {
+            jQuery('.header-container').removeClass('f-nav');
+        }
+    });
 
     jQuery( "#search" ).focus(function() {
         searchOverlay();
