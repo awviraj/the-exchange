@@ -15,12 +15,21 @@ jQuery(document).ready(function(){
 
     var nav = jQuery('.header-container');
 
-    jQuery(window).bind('scroll', function() {
-        if (jQuery(window).scrollTop() > 155) {
-            jQuery('.header-container').addClass('f-nav');
+    jQuery(window).bind('scroll', function(event) {
+        var top = jQuery(window).scrollTop();
+        var header = jQuery('.header-container');
+        if (top > 155) {
+            if (top >= 691 ){
+                event.preventDefault();
+            }
+            header.addClass('f-nav');
+            header.find('.header').hide();
         }
         else {
-            jQuery('.header-container').removeClass('f-nav');
+            if (header.hasClass('f-nav')) {
+                header.removeClass('f-nav');
+                header.find('.header').show();
+            }
         }
     });
 
