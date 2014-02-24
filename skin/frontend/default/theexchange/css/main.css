@@ -36,10 +36,11 @@ body { background: url("../images/body-bg.png") repeat; font-size: 14px; font-fa
 .header-container .header .quick-access .links li a.top-link-home { background-position: 16px -129px; }
 .header-container .header .quick-access .links li a.top-link-cart { background-position: 16px -89px; }
 .header-container .header .quick-access .links li a.top-link-customer { background-position: 16px -44px; }
-.header-container.f-nav { position: fixed; top: 0; width: 100%; max-width: 100%; }
+.header-container.f-nav { position: fixed; top: 0; width: 100%; max-width: 100%; z-index: 999; }
 .header-container.f-nav .header { max-width: 100%; }
 .header-container.f-nav .header .call-us, .header-container.f-nav .header .logo-div, .header-container.f-nav .header .top-quick-links { display: none; }
 .header-container.f-nav .header .quick-access { margin-top: 0; }
+.header-container.f-nav .search-box { display: none; }
 
 .menu-search-wrapper { width: 100%; max-width: 1024px; margin: 0 auto; color: #fff; position: relative; }
 .menu-search-wrapper:after { content: ''; line-height: 0; font-size: 0; width: 0; height: 0; border-top: 67px solid #000; border-bottom: 0px solid transparent; border-left: 0px solid transparent; border-right: 30px solid transparent; position: absolute; top: 0; right: 0; }
@@ -54,8 +55,14 @@ body { background: url("../images/body-bg.png") repeat; font-size: 14px; font-fa
 .search-box { position: relative; max-width: 966px; margin: 0 auto; float: none; height: 197px; background: url("../images/search-box-bg.jpg") no-repeat; background-size: 100%; }
 .search-box .black-arrow { position: absolute; left: 50%; margin-left: -32px; width: 64px; top: 0; height: 14px; background: url("../images/sprite.png") no-repeat 0 -186px; }
 .search-box .form-search .search-label { padding-bottom: 15px; padding-top: 38px; font-size: 40px; font-family: 'houschkaalt-light-regular'; font-weight: normal; }
-.search-box .form-search .search-inputs { display: inline-block; height: 60px; background: url("../images/serach-input-bg.png") repeat-x left top white; border: 2px solid #000000; position: relative; width: 100%; max-width: 538px; }
-.search-box .form-search .search-inputs:after { content: url("../images/search-right-arrow.png"); top: -2px; position: absolute; right: -24px; }
+.search-box .form-search .arrow_box { position: relative; background: #88b7d5; border: 4px solid #c2e1f5; }
+.search-box .form-search .arrow_box:after, .search-box .form-search .arrow_box:before { left: 100%; top: 50%; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; }
+.search-box .form-search .arrow_box:after { border-color: rgba(136, 183, 213, 0); border-left-color: #88b7d5; border-width: 89px; margin-top: -89px; }
+.search-box .form-search .arrow_box:before { border-color: rgba(194, 225, 245, 0); border-left-color: #c2e1f5; border-width: 95px; margin-top: -95px; }
+.search-box .form-search .search-inputs { position: relative; background: #fff; border: 2px solid #000000; display: inline-block; height: 64px; border: 2px solid #000000; position: relative; width: 100%; max-width: 538px; }
+.search-box .form-search .search-inputs:after, .search-box .form-search .search-inputs:before { left: 100%; top: 50%; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; }
+.search-box .form-search .search-inputs:after { border-color: rgba(255, 255, 255, 0); border-left-color: #fff; border-width: 31px; margin-top: -32px; }
+.search-box .form-search .search-inputs:before { border-color: rgba(0, 0, 0, 0); border-left-color: #000000; border-width: 31px; margin-top: -32px; }
 .search-box .form-search .search-inputs input { float: left; width: 95%; width: -moz-calc(98% - 40px); width: -o-calc(98% - 40px); width: -webkit-calc(98% - 40px); width: calc(98% - 40px); border: none; height: 56px; line-height: 45px; padding: 5px 1%; background: url("../images/serach-input-bg.png") repeat-x left top white; }
 .search-box .form-search .search-inputs .input-group-btn { float: right; width: 40px; margin-top: 18px; }
 .search-box .form-search .search-inputs .input-group-btn button { width: 100%; background-color: transparent; }
