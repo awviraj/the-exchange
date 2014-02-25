@@ -20,7 +20,7 @@ body { background: url("../images/body-bg.png") repeat; font-size: 14px; font-fa
 .wrapper { min-width: 0; width: 100%; }
 
 .header-container { background: url("../images/page-bg.png") repeat-x top; padding-top: 2px; }
-.header-container .header { width: 100%; max-width: 1024px; padding: 7px 29px 0 29px; background: url("../images/header-bg.png") repeat-x bottom #fefefe; box-shadow: 0px -7px 8px 5px #ccc; border-bottom: 4px solid #da0000; border-top: 1px solid #d8d9d9; box-sizing: border-box; }
+.header-container .header { width: 100%; margin-top: -9px; max-width: 1024px; padding: 0 29px 0 29px; background: url("../images/header-bg.png") repeat-x bottom #fefefe; box-shadow: 0 0 0px 0px white, 0 -9px 0px 0px white, 12px 0 15px -4px rgba(204, 204, 204, 0.8), -12px 0 15px -4px rgba(204, 204, 204, 0.8); border-bottom: 4px solid #da0000; border-top: 1px solid #d8d9d9; box-sizing: border-box; }
 .header-container .header .call-us { float: left; margin-top: 83px; font-family: 'houschkaalt-medium-regular'; font-weight: normal; font-weight: normal; font-size: 12px; color: #282727; text-align: left; }
 .header-container .header .call-us h2 { font-family: 'houschka_alt_probold'; font-weight: normal; color: #ff0000; font-size: 20px; }
 .header-container .header .logo-div { max-width: 420px; width: 100%; margin: 0 auto; margin-top: 20px; float: none; }
@@ -42,6 +42,7 @@ body { background: url("../images/body-bg.png") repeat; font-size: 14px; font-fa
 .header-container.f-nav .header { max-width: 100%; }
 .header-container.f-nav .header .call-us, .header-container.f-nav .header .logo-div, .header-container.f-nav .header .top-quick-links { display: none; }
 .header-container.f-nav .header .quick-access { margin-top: 0; }
+.header-container.f-nav .search-box { display: none; }
 .header-container.f-nav .menu-search-wrapper { max-width: 100%; background: url("../images/fixed-header.png") repeat-x; }
 .header-container.f-nav .menu-search-wrapper:after, .header-container.f-nav .menu-search-wrapper:before { border: none; }
 .header-container.f-nav .cms-menu { background: transparent; max-width: 966px; }
