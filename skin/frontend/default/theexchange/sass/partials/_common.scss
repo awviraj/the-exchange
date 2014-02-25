@@ -133,13 +133,16 @@ body{
       }
     }
   }
+  .fixed-nav-links{
+    display: none;
+  }
 ///////////////fixed header ////////////////////////////////
   &.f-nav{
     position: fixed;
     top:0;
     width: 100%;
     max-width: 100%;
-    z-index: 999;
+    z-index: 1001;
 
     .header{
       max-width: 100%;
@@ -152,7 +155,7 @@ body{
       }
     }
     .search-box{
-      display: none;
+      //display: none;
     }
     .menu-search-wrapper{
       max-width: 100%;
@@ -177,6 +180,9 @@ body{
 
     }
     .small-x-logo{
+      display: block;
+    }
+    .fixed-nav-links{
       display: block;
     }
     .quick-access{
