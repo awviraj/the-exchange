@@ -18,7 +18,7 @@ jQuery(document).ready(function(){
     jQuery(window).bind('scroll', function(event) {
         var top = jQuery(window).scrollTop();
         var header = jQuery('.header-container');
-        if (top > 155) {
+        if (top > 472) {
             if (top >= 691 ){
                 event.preventDefault();
             }
