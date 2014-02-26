@@ -1,0 +1,265 @@
+<style>
+.hd{background-color:#D2B9D3; padding:3px; color:#FFFFFF; font-size:14px; font-weight:bold;}
+.close{text-decoration:none; color:#FFFFFF; font-weight:none; font-size:10px; vertical-align:middle;}
+td.share a{border:0; text-decoration:none;}
+td.share a img{border:0; text-decoration:none; padding:3px; height:30px; width:30px;}
+</style>
+
+<?php
+		$productid = Mage::app()->getRequest()->getParam('id');
+		if(isset($productid) && $productid!='')
+		{
+			// echo "Product-".$productid.'<br>';
+		}
+		else
+		{
+			$productid = 1;
+		}
+		
+		$model = Mage::getModel('catalog/product'); //getting product model
+
+		$_product = $model->load($productid); //getting product object for particular product id
+
+		// var_dump(get_class_methods(Mage::helper('checkout/cart')->getQuote()));
+		// echo "<br>----".Mage::helper('checkout/cart')->getSummaryCount();
+		// $quote = Mage::getModel('checkout/session')->getQuote();
+		// echo "<br>----".$total = $quote->getGrandTotal();
+		// echo "<br>----". $this->helper('checkout')->formatPrice(Mage::helper('checkout/cart')->getQuote()->getTotals());
+		// var_dump(get_class($this));exit
+
+		// echo $_product->getShortDescription(); //product’s short description
+		// echo $_product->getDescription(); // product’s long description
+		// echo $_product->getName(); //product name
+		// echo $_product->getPrice(); //product’s regular Price
+		// echo $_product->getSpecialPrice(); //product’s special Price
+		// echo $_product->getProductUrl(); //product url
+		// echo $_product->getImageUrl(); //product’s image url
+		// echo $_product->getSmallImageUrl(); //product’s small image url
+		// echo $_product->getThumbnailUrl(); //product’s thumbnail image url
+		
+?>
+
+<html>
+<body>
+
+<table cellpadding="0" cellspacing="0" width="100%">
+	<tr>
+		<td style="text-align:left;" class="hd">
+			Product Overview
+		</td>
+		<td style="text-align:right;" class="hd">
+			<a href="#" class="close">Close</a>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			<table cellpadding="0" cellspacing="0" width="100%" style="text-align:left; vertical-align:top;">
+				<tr>
+					<td style="vertical-align:top;">
+						<div class="product-img-box" style="margin:5px; width=265px; vertical-align:top;" >
+							<p class="product-image" style="vertical-align:top;">
+							<img title="<?php echo $_product->getName() ?>" alt="<?php echo $_product->getName() ?>" src="<?php echo $_product->getImageUrl() ?>"></p>
+						</div>
+					</td>
+					<td style="text-align:left;">
+						<div class="product-shop">
+							<div class="product-name">
+								<h1><?php echo $_product->getName() ?></h1>
+							</div>
+
+							<?php
+							if($_product->isSaleable()){
+								if($_product->stock_item->is_in_stock == 1){
+									echo '<p class="availability in-stock"><span>'.$this->__('Availability: In stock.').'</span></p>';
+								}else{
+									echo '<p class="availability in-stock"><span>'.$this->__('Availability: Temporarily out of stock.').'</span></p>';
+								}
+							}
+							?>
+
+							<div class="price-box">
+								<span class="regular-price">
+									<span class="price"><?php echo $this->helper('checkout')->formatPrice($_product->getPrice()); ?></span>
+								</span>
+							</div>
+
+							<?php
+							if($_product->isSaleable())
+							{
+							?>
+								<div class="add-to-cart">
+								<label for="qty">Qty:</label>
+								<input type="text" class="input-text qty" title="Qty" value="1" maxlength="12" id="qty_<?php echo $productid ?>" name="qty">
+								<button class="button btn-cart" id="<?php echo $_product->getId() ?>" title="Add to Cart" type="button"><span><span>Add to Cart</span></span></button>
+								<span style="padding:3px;" id="addingCart_<?php echo $productid ?>"></span>
+								</div>
+							<?php
+							}
+							?>
+						</div>
+						<div class="short-description" style="margin-top:15px;">
+							<h2 class="hd">Quick Overview</h2>
+							<div class="std"><?php echo $_product->getShortDescription() ?></div>
+						</div>
+
+						<div style="margin-top:15px;">
+							<h2 class="hd">Current Cart Status</h2>
+							<div id="cartInfo"></div>
+						</div>
+						
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" class="hd">
+			Share This Product
+		</td>
+	</tr>
+	<tr>
+		<td class="share" style="width:100%;">
+			<a href="http://www.facebook.com/sharer.php?u=<?php echo $_product->getProductUrl() ?>&title=<?php echo urlencode($_product->getName()) ?>" target="_blank">
+				<img border="0" src="http://3.bp.blogspot.com/_vLeiVavkV_M/SnleIlLdGwI/AAAAAAAABd8/RfHnWIGGMEY/s200/facebook.png" alt="Post item information on Facebook" title="Post item information on Facebook" />
+			</a>
+
+			<a href="http://twitter.com/home?status=Currently buying <?php echo $_product->getProductUrl() ?>" title="Click to send this product to Twitter!" target="_blank">
+				<img border="0" src="http://www.cbc.ca/news/yourvoice/assets/images/yourvoice-twitter.png" alt="Add To Twiiter" title="Add To Twiiter">
+			</a>
+
+			<a title="Add To Del.icio.us" target="_blank" href="http://del.icio.us/post?url=<?php echo $_product->getProductUrl() ?>&amp;title=<?php echo urlencode($_product->getName()) ?>">
+				<img border="0" src="http://2.bp.blogspot.com/_vLeiVavkV_M/Snld35mPSDI/AAAAAAAABds/ccrOpOmP9Zk/s200/delicious.png" alt="Add To Del.icio.us" title="Add To Del.icio.us">
+			</a>
+			
+			<a title="Stumble This" target="_blank" href="http://www.stumbleupon.com/refer.php?url=<?php echo $_product->getProductUrl() ?>&amp;title=<?php echo urlencode($_product->getName()) ?>">
+				<img border="0" src="http://2.bp.blogspot.com/_vLeiVavkV_M/SnleiulEMVI/AAAAAAAABeU/kO09nNTlQeo/s200/stumbleupon.png" alt="Stumble This" title="Stumble This">
+			</a>
+
+			<a title="Digg This" target="_blank" href="http://digg.com/submit?phase=2&amp;url=<?php echo $_product->getProductUrl() ?>&amp;title=<?php echo urlencode($_product->getName()) ?>">
+				<img border="0" src="http://3.bp.blogspot.com/_vLeiVavkV_M/Snld_x-wXoI/AAAAAAAABd0/cTsGU_Y-zQ8/s200/digg.png" alt="Digg This" title="Digg This">
+			</a>
+
+			<a title="Add To Reddit" target="_blank" href="http://reddit.com/submit?url=<?php echo $_product->getProductUrl() ?>&amp;title=<?php echo urlencode($_product->getName()) ?>">
+				<img border="0" src="http://3.bp.blogspot.com/_vLeiVavkV_M/SnleX1tMMtI/AAAAAAAABeM/gQSYdrmSc3k/s200/reddit.png" alt="Add To Reddit" title="Add To Reddit">
+			</a>
+
+			<a title="Add To Yahoo" target="_blank" href="http://myweb2.search.yahoo.com/myresults/bookmarklet?t=<?php echo $_product->getProductUrl() ?>&amp;title=<?php echo urlencode($_product->getName()) ?>">
+				<img border="0" src="http://1.bp.blogspot.com/_vLeiVavkV_M/SnlexsGX2QI/AAAAAAAABes/ai6zvzZKCgw/s200/yahoo.png" alt="Add To Yahoo" title="Add To Yahoo">
+			</a>
+
+		</td>
+	</tr>
+</table>
+</body>
+</html>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js" language="javascript"></script>
+
+<script>
+ 
+$(document).ready(function() { 
+ 
+	var baseUrl = '<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_LINK); ?>';
+	$('.button').click(function(){
+			var pid = $(this).attr('id');
+			var qty = $('#qty_'+pid).val();
+		
+			$('#addingCart_'+pid).html('Adding to cart...');
+			$.ajax({
+				type: "POST",
+				url: baseUrl+"checkout/cart/add",
+				data: 'product='+pid+'&qty='+qty,
+				success: function(msg){
+					$('#addingCart_'+pid).html('Added to cart.');
+					cartInfo();
+				}
+			});
+	});
+	
+	function cartInfo()
+	{
+		$('#cartInfo').empty().html('Updating cart info...');
+		$.ajax({
+		type: "POST",
+		url: baseUrl+"productbook/index/cartinfo",
+		// data: 'product='+pid+'&qty='+qty,
+		success: function(msg){
+			$('#cartInfo').empty().html(msg);
+			}
+		});
+	}
+
+    //if close button is clicked
+    $('.window .close').click(function (e) {
+        //Cancel the link behavior
+        e.preventDefault();
+		$('#product_data').empty();
+        $('#mask, .window').hide();
+    });    
+
+});
+ 
+</script>
+            <?php
+                
+                /*
+                    This shows how to load specific fields from a record in the database.
+                    1) Note the load(15), this corresponds to saying "select * from table where table_id = 15"
+                    2) You can then just use the get(fieldname) to pull specific data from the table.
+                    3) If you have a field named news_id, then it becomes getNewsId, etc.
+                */
+                /*
+                $news = Mage::getModel('productbook/productbook')->load(15);
+                echo $news->getNewsId();
+                echo $news->getTitle();
+                echo $news->getContent();
+                echo $news->getStatus();
+                */
+                
+                /*
+                    This shows an alternate way of loading datas from a record using the database the "Magento Way" (using blocks and controller).
+ 					Uncomment blocks in /app/code/local/Namespace/Module/controllers/IndexController.php if you want to use it.
+
+               */
+                /*
+                $object = $this->getProductbook();
+                echo 'id: '.$object['test_id'].'<br/>';
+				echo 'title: '.$object['title'].'<br/>';
+				echo 'content: '.$object['content'].'<br/>';
+				echo 'status: '.$object['status'].'<br/>';
+                */            
+            
+            
+                /*
+                    This shows how to load multiple rows in a collection and save a change to them.
+                    1) The setPageSize function will load only 5 records per page and you can set the current Page with the setCurPage function.
+                    2) The $collection->walk('save') allows you to save everything in the collection after all changes have been made.
+                */
+                /*
+                $i = 0;
+                
+                $collection = Mage::getModel('productbook/productbook')->getCollection();
+                $collection->setPageSize(5);
+                $collection->setCurPage(2);
+                $size = $collection->getSize();
+                $cnt = count($collection);
+                foreach ($collection as $item) {
+                    $i = $i+1;
+                    $item->setTitle($i);
+                    echo $item->getTitle();
+                }
+
+                $collection->walk('save');
+                */
+                
+                /*
+                    This shows how to load a single record and save a change.
+                    1) Note the setTitle, this corresponds to the table field name, title, and then you pass it the text to change.
+                    2) Call the save() function only on a single record.
+                */
+                /*
+                $object = Mage::getModel('productbook/productbook')->load(1);
+                $object->setTitle('This is a changed title');
+                $object->save();
+				*/
+
+            ?> 
