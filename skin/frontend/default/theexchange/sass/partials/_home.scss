@@ -115,6 +115,34 @@
 
 
                   }
+                  &.selected{
+                    position: relative;
+                    background: #ff0000;
+                    padding: 0 5px;
+                    height: 54px;
+                    padding-right: 5px;
+                    color: #fff;
+                    margin: 0;
+                    width: 95px;
+
+                    &:after {
+                      bottom: 100%;
+                      left: 50%;
+                      border: solid transparent;
+                      content: " ";
+                      height: 0;
+                      width: 0;
+                      position: absolute;
+                      pointer-events: none;
+                      border-color: rgba(255, 0, 0, 0);
+                      border-bottom-color: #ff0000;
+                      border-width: 47px;
+                      margin-left: -47px;
+                    }
+                    .product-name-wrapper{
+                      display: none;
+                    }
+                  }
                 }
               }
             }
