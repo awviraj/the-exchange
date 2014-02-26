@@ -1,0 +1,39 @@
+<?php
+$_products = $this->getProductList();
+if ($_products && count($_products)) :?>
+<div class="product-widget-main">
+    <div class="widget widget-static-block product-widget">
+        <h2><?php echo str_replace('|',' ',$this->getDisplayTitle()) ?></h2>
+        <div class="best-seller">
+        <div class="productScrollLeft"></div>
+            <div class="productScrollWrap">
+                <ul class="bestseller_wrapper" >
+                    <?php
+                        foreach ($_products as $_product) :
+                            $_isSaleable = $_product->getData('stock_status');
+                            if(!$_isSaleable) continue;
+                            ?>
+                            <li class="bestseller_productwrapper">
+                                <div class="bestseller_imagewrapper">
+                                    <a href="<?php echo $this->getProductUrl($_product) ?>">
+                                        <img src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize(216,258);?>"
+                                             alt="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>"
+                                            />
+                                    </a>
+                                </div>
+                                <div class="bestseller_details">
+                                    <div class="product-details">
+                                        <a href="<?php echo $this->getProductUrl($_product) ?>" class="bestseller_name" ><?php echo $_product->getName(); ?></a>
+                                        <span class="bestseller_price"><?php echo $this->getPriceHtml($_product); ?></span>
+                                    </div>
+                                </div>
+                            </li>
+                        <?php endforeach;?>
+                </ul>
+            </div>
+            <div class="productScrollRight"></div>
+        </div>
+    </div>
+    <div class="quickview-view-wrapper-place"></div>
+</div>
+<?php endif;?>
