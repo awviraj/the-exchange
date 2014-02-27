@@ -172,21 +172,31 @@ body { background: url("../images/body-bg.png") repeat; font-size: 14px; font-fa
 .cms-index-index .main #product-slider #list-items #slider-content #sl-images li .item .product-img .product-image a { display: block; width: 100%; }
 .cms-index-index .main #product-slider #list-items #slider-content #sl-images li .item .product-img .product-image a img { max-width: 100%; margin: 0 auto; height: auto; }
 .cms-index-index .main #product-slider #list-items #slider-content #sl-images li .item .product-info { text-align: center; }
-.cms-index-index .main #product-slider #list-items #slider-content #sl-images li .item .product-info .product-name a { font-family: 'houschka_alt_prodemibold'; font-weight: normal; font-size: 12px; color: #000; }
+.cms-index-index .main #product-slider #list-items #slider-content #sl-images li .item .product-info .product-name { height: 31px; overflow: hidden; }
+.cms-index-index .main #product-slider #list-items #slider-content #sl-images li .item .product-info .product-name a { font-family: 'houschka_alt_prodemibold'; font-weight: normal; font-size: 12px; color: #000; width: 100%; line-height: 15px; display: block; text-transform: lowercase; }
 .cms-index-index .main #product-slider #list-items #slider-content #sl-images li .item .product-info .price-box span { font-size: 22px; font-family: 'houschka_alt_probold'; font-weight: normal; }
 .cms-index-index .main #product-slider #list-items #slider-content #sl-images li .item .product-info .price-box span.regular-price { color: #ff0000; }
 .cms-index-index .main #product-slider #list-items #slider-content #sl-images li .item .product-info .slider-action-wrapper { display: none; }
-.cms-index-index .main #product-slider #list-items #slider-content #sl-images li .item .product-info.selected { position: relative; background: #ff0000; padding: 0 5px; height: 54px; padding-right: 5px; color: #fff; margin: 0; width: 95px; }
+.cms-index-index .main #product-slider #list-items #slider-content #sl-images li .item .product-info.selected { position: relative; background: #ff0000; padding: 0 5px; height: 58px; z-index: 999; padding-right: 5px; color: #fff; margin: 0; width: 95px; }
 .cms-index-index .main #product-slider #list-items #slider-content #sl-images li .item .product-info.selected:after { bottom: 100%; left: 50%; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: rgba(255, 0, 0, 0); border-bottom-color: #ff0000; border-width: 47px; margin-left: -47px; }
 .cms-index-index .main #product-slider #list-items #slider-content #sl-images li .item .product-info.selected .product-name-wrapper { display: none; }
+.cms-index-index .main #product-slider #list-items #slider-content #sl-images li .item .product-info.selected .price-name-wrapper { margin-top: 16px; }
+.cms-index-index .main #product-slider #list-items #slider-content #sl-images li .item .product-info.selected .price-name-wrapper .price-html .price-box span { color: #fff; }
 .cms-index-index .main #product-slider #list-items #slider-hover-details { display: none; float: left; width: 100%; color: #fff; background: #ff0000; padding: 18px 5%; }
 .cms-index-index .main #product-slider #list-items #slider-hover-details .price-name-wrapper { float: left; width: 65%; }
-.cms-index-index .main #product-slider #list-items #slider-hover-details .price-name-wrapper .product-name a { color: #fff; font-family: 'houschka_alt_probold'; font-weight: normal; font-size: 18px; padding-bottom: 10px; }
+.cms-index-index .main #product-slider #list-items #slider-hover-details .price-name-wrapper .product-name a { color: #fff; font-family: 'houschka_alt_probold'; font-weight: normal; font-size: 18px; padding-bottom: 10px; text-decoration: none; }
+.cms-index-index .main #product-slider #list-items #slider-hover-details .price-name-wrapper .product-name a:hover { text-decoration: none; }
 .cms-index-index .main #product-slider #list-items #slider-hover-details .price-name-wrapper .desc { color: #fff; font-family: 'houschka_alt_prolight'; font-size: 14px; font-weight: normal; line-height: 18px; }
 .cms-index-index .main #product-slider #list-items #slider-hover-details .price-name-wrapper .price-box span { color: #fff; }
 .cms-index-index .main #product-slider #list-items #slider-hover-details .slider-action-wrapper { float: right; width: 228px; }
-.cms-index-index .main #product-slider #list-items #slider-hover-details .slider-action-wrapper a { display: block; width: 100%; }
-.cms-index-index .main #product-slider #list-items #slider-hover-details .slider-action-wrapper button { width: 100%; }
+.cms-index-index .main #product-slider #list-items #slider-hover-details .slider-action-wrapper a, .cms-index-index .main #product-slider #list-items #slider-hover-details .slider-action-wrapper button { display: block; width: 100%; position: relative; background: #fff; padding-right: 15px; display: block; width: 221px; text-align: right; line-height: 36px; height: 36px; font-family: 'houschka_alt_prodemibold'; font-weight: normal; font-size: 16px; color: #ff0000; padding-left: 10px; }
+.cms-index-index .main #product-slider #list-items #slider-hover-details .slider-action-wrapper a:after, .cms-index-index .main #product-slider #list-items #slider-hover-details .slider-action-wrapper button:after { right: 100%; top: 50%; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: rgba(255, 255, 255, 0); border-right-color: #fff; border-width: 18px; margin-top: -18px; }
+.cms-index-index .main #product-slider #list-items #slider-hover-details .slider-action-wrapper a { margin-bottom: 3px; }
+.cms-index-index .main #product-slider #list-items #slider-hover-details .slider-action-wrapper a:before { content: url("../images/full-desc.png"); float: left; line-height: 42px; }
+.cms-index-index .main #product-slider #list-items #slider-hover-details .slider-action-wrapper a:hover { text-decoration: none; }
+.cms-index-index .main #product-slider #list-items #slider-hover-details .slider-action-wrapper button span { float: none; background: none; }
+.cms-index-index .main #product-slider #list-items #slider-hover-details .slider-action-wrapper button span span { font-family: 'houschka_alt_prodemibold'; color: #ff0000; font-size: 16px; text-align: right; }
+.cms-index-index .main #product-slider #list-items #slider-hover-details .slider-action-wrapper button:before { content: url("../images/add-to-bag.png"); float: left; line-height: 42px; }
 
 .youama-slider-block { box-shadow: 0px 5px 5px #5d5d5d; float: left; width: 100%; }
 

@@ -93,11 +93,17 @@
                   text-align: center;
 
                   .product-name{
+                    height: 31px;
+                    overflow: hidden;
                     a{
                       font-family: 'houschka_alt_prodemibold';
                       font-weight: normal;
                       font-size: 12px;
                       color: #000;
+                      width: 100%;
+                      line-height: 15px;
+                      display: block;
+                      text-transform: lowercase;
                     }
                   }
                   .price-box{
@@ -119,7 +125,8 @@
                     position: relative;
                     background: #ff0000;
                     padding: 0 5px;
-                    height: 54px;
+                    height: 58px;
+                    z-index: 999;
                     padding-right: 5px;
                     color: #fff;
                     margin: 0;
@@ -141,6 +148,17 @@
                     }
                     .product-name-wrapper{
                       display: none;
+                    }
+                    .price-name-wrapper{
+                      margin-top: 16px;
+
+                      .price-html{
+                        .price-box{
+                          span{
+                            color: #fff;
+                          }
+                        }
+                      }
                     }
                   }
                 }
@@ -167,6 +185,10 @@
                 font-weight: normal;
                 font-size: 18px;
                 padding-bottom: 10px;
+                text-decoration: none;
+                &:hover{
+                  text-decoration: none;
+                }
               }
             }
             .desc{
@@ -187,12 +209,68 @@
             float: right;
             width: 228px;
 
-            a{
+            a,button{
               display: block;
               width: 100%;
+               position: relative;
+               background: #fff;
+              padding-right: 15px;
+              display: block;
+              width: 221px;
+              text-align: right;
+              line-height: 36px;
+              height:  36px;
+              font-family: 'houschka_alt_prodemibold';
+              font-weight: normal;
+              font-size: 16px;
+              color: #ff0000;
+              padding-left: 10px;
+
+              &:after {
+                right: 100%;
+                top: 50%;
+                border: solid transparent;
+                content: " ";
+                height: 0;
+                width: 0;
+                position: absolute;
+                pointer-events: none;
+                border-color: rgba(255, 255, 255, 0);
+                border-right-color: #fff;
+                border-width: 18px;
+                margin-top: -18px;
+
+
+              }
+            }
+            a{
+              margin-bottom: 3px;
+              &:before{
+                content:url("../images/full-desc.png");
+                float: left;
+                line-height: 42px;
+              }
+              &:hover{
+                text-decoration: none;
+              }
             }
             button{
-              width: 100%;
+              //width: 100%;
+              span{
+                float: none;
+                background: none;
+                span{
+                  font-family: 'houschka_alt_prodemibold';
+                  color: #ff0000;
+                  font-size: 16px;
+                  text-align: right;
+                }
+              }
+              &:before{
+                content:url("../images/add-to-bag.png");
+                float: left;
+                line-height: 42px;
+              }
 
             }
           }
