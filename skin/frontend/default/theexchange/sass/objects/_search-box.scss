@@ -1,0 +1,150 @@
+.search-box{
+  position: relative;
+  max-width: 966px;
+  margin: 0 auto;
+  float: none;
+  height: 197px;
+  background: url("../images/search-box-bg.jpg") no-repeat ;
+  background-size: 100%;
+
+  .black-arrow{
+    position: absolute;
+    left: 50%;
+    margin-left: -32px;
+    width: 64px;
+    top:0;
+    height: 14px;
+    background: url("../images/sprite.png") no-repeat 0 -186px;
+  }
+
+  .form-search{
+    // padding-top: 38px;
+
+    .search-label{
+      padding-bottom: 15px;
+      padding-top: 38px;
+      font-size: 40px;
+      @include Houschka_alt_light;
+
+    }
+    .arrow_box {
+      position: relative;
+      background: #88b7d5;
+      border: 4px solid #c2e1f5;
+    }
+    .arrow_box:after, .arrow_box:before {
+      left: 100%;
+      top: 50%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+    }
+
+    .arrow_box:after {
+      border-color: rgba(136, 183, 213, 0);
+      border-left-color: #88b7d5;
+      border-width: 89px;
+      margin-top: -89px;
+    }
+    .arrow_box:before {
+      border-color: rgba(194, 225, 245, 0);
+      border-left-color: #c2e1f5;
+      border-width: 95px;
+      margin-top: -95px;
+    }
+    .search-inputs{
+      position: relative;
+      background: #fff;
+      border: 2px solid #000000;
+      display:inline-block;
+      height: 64px;
+      //background:url("../images/serach-input-bg.png") repeat-x left top #fff;
+      border: 2px solid #000000;
+      position: relative;
+      width: 100%;
+      max-width: 538px;
+
+      &:after,&:before{
+        left: 100%;
+        top: 53%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+      }
+
+
+      &:after{
+        border-color: rgba(255, 255, 255, 0);
+        border-left-color: #fff;
+        border-width: 30px;
+        margin-top: -32px;
+      }
+      &:before{
+        border-color: rgba(0, 0, 0, 0);
+        border-left-color: #000000;
+        border-width: 33px;
+        margin-top: -35px;
+      }
+
+
+      input{
+        float: left;
+        width: 95%;
+        @include calc (width,'98% - 40px');
+        border:none;
+        height: 56px;
+        line-height: 45px;
+        padding: 5px 1%;
+        //background:url("../images/serach-input-bg.png") repeat-x left top #fff;
+
+      }
+      .input-group-btn{
+        float: right;
+        width: 40px;
+        margin-top: 18px;
+        button{
+          width: 100%;
+          background-color: transparent;
+          span{
+            display: block;
+            width: 100%;
+            height: 30px;
+            text-align: left;
+            text-indent: -3000px;
+            background:url('../images/sprite.png')0 -222px transparent no-repeat;
+            border: none;
+          }
+
+          &:hover{
+            background: none;
+
+            span{
+              background-position: -60px -222px;
+            }
+          }
+        }
+      }
+
+    }
+    .filter-results{
+      color: #fff;
+      @include Houschka_alt_bold;
+      font-size: 15px;
+      text-decoration: underline;
+      margin-top: 13px;
+      display: inline-block;
+    }
+  }
+  &.overlay{
+    .search-label,.search-inputs,.filter-results{
+      z-index: 9999;
+      position: relative;
+    }
+  }
+}
