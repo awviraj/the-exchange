@@ -61,6 +61,19 @@
                         <?php echo $_helper->productAttribute($_product, $_product->getShortDescription(), 'short_description') ?>
                         <a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $_productNameStripped ?>" class="link-learn"><?php echo $this->__('Learn More') ?></a>
                     </div>
+                    <ul class="add-to-links">
+<!--                        --><?php //if ($this->helper('wishlist')->isAllow()) : ?>
+<!--                            <li><a href="--><?php //echo $this->helper('wishlist')->getAddUrl($_product) ?><!--" class="link-wishlist">--><?php //echo $this->__('Add to Wishlist') ?><!--</a></li>-->
+<!--                        --><?php //endif; ?>
+<!--                        --><?php //if($_compareUrl=$this->getAddToCompareUrl($_product)): ?>
+<!--                            <li><span class="separator">|</span> <a href="--><?php //echo $_compareUrl ?><!--" class="link-compare">--><?php //echo $this->__('Add to Compare') ?><!--</a></li>-->
+<!--                        --><?php //endif; ?>
+                        <li>
+                            <!-- #dialog is the id of a DIV defined in the code below -->
+                            <a href="#dialog" class="product_quickview" name="modal" id="<?php echo $_product->getId() ?>">Quickshop</a>
+
+                        </li>
+                    </ul>
                 </div>
             </div>
         </li>
@@ -85,6 +98,16 @@
                 <?php echo $this->getReviewsSummaryHtml($_product, 'short') ?>
                 <?php endif; ?>
                 <?php echo $this->getPriceHtml($_product, true) ?>
+
+                <div class="actions">
+                    <ul class="add-to-links">
+                        <li>
+                            <!-- #dialog is the id of a DIV defined in the code below -->
+                            <a href="#dialog" class="product_quickview" name="modal" id="<?php echo $_product->getId() ?>">Quickshop</a>
+
+                        </li>
+                    </ul>
+                </div>
 
             </li>
         <?php if ($i%$_columnCount==0 || $i==$_collectionSize): ?>

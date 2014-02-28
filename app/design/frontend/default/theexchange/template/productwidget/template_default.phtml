@@ -10,8 +10,7 @@ if ($_products && count($_products)) :?>
                 <ul class="bestseller_wrapper" >
                     <?php
                         foreach ($_products as $_product) :
-                            $_isSaleable = $_product->getData('stock_status');
-                            if(!$_isSaleable) continue;
+                            if(!$_product->isSaleable()) continue;
                             ?>
                             <li class="bestseller_productwrapper">
                                 <div class="bestseller_imagewrapper">
