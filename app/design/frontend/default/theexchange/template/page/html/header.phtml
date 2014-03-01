@@ -34,9 +34,22 @@
                 X
             </div>
             <?php echo $this->getChildHtml('header_cms_menu_links'); ?>
-            <div class="fixed-nav-links quick-access">
-                <?php echo $this->getChildHtml('topLinks') ?>
+            <div class="quick-buttons">
+                <div class="fixed-nav-links quick-access">
+                    <?php echo $this->getChildHtml('topLinks') ?>
+                </div>
+                <div class="action-btns-div">
+                    <ul>
+                        <li class="search">
+                            <a href="" class="f-nav-search"></a>
+                        </li>
+                        <li>
+                            <a href="" class="f-nav-menu-link"></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
+
         </div>
     </div>
     <div class="header container">
@@ -81,10 +94,12 @@
         </div>
     </div>
 </div>
-<div class="navbar navbar-inverse" role="navigation">
-    <div class="container">
-        <?php echo $this->getChildHtml('topMenu') ?>
+<div class="navbar-container">
+    <div class="navbar navbar-inverse" role="navigation">
+        <div class="container">
+            <?php echo $this->getChildHtml('topMenu') ?>
+        </div>
     </div>
-
 </div>
+
 

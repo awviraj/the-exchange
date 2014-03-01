@@ -93,6 +93,7 @@
       a{
         line-height: 10px;
         padding: 3px 10px;
+        margin: 15px 15px ;
       }
     }
 
@@ -103,15 +104,19 @@
   .fixed-nav-links{
     display: block;
   }
-  .quick-access{
+  .quick-buttons{
     float: right;
     margin-top: 0;
+    //width: 249px;
+  }
+  .quick-access{
+    float: left;width: 159px;
 
     .links{
       li{
         float: left;
-        background: url("../images/sprite.png") no-repeat 0 -297px;
-        width: 45px;
+        background: url("../images/sprite.png") no-repeat 0 -290px;
+        width: 48px;
         height: 57px;
         padding: 0;
         margin-left: 7px;
@@ -125,7 +130,7 @@
           display: block;
           float: left;
           text-indent: -3000px;
-          width: 45px;
+          width: 48px;
           height: 38px;
           background: url("../images/sprite.png") no-repeat;
 
@@ -141,6 +146,43 @@
 
 
 
+        }
+      }
+    }
+  }
+  .action-btns-div{
+    float: left;
+    width: 106px;
+    margin-left: 4px;
+
+    ul{
+      li{
+        float: left;
+        width: 49px;
+        &.search{
+          text-align: left;
+          display: block;
+          float: left;
+          text-indent: -3000px;
+          width: 49px;
+          height: 56px;
+          background: url("../images/sprite.png") no-repeat;
+          background-position: 0 -362px;
+
+          a{
+            display: block;
+            width: 100%;
+            height: 56px;
+            background: url("../images/sprite.png") no-repeat;
+            background-position: 13px -438px;
+          }
+        }
+        .f-nav-menu-link{
+          display: block;
+          width: 100%;
+          height: 56px;
+          background: url("../images/sprite.png") no-repeat;
+          background-position: 13px -865px;
         }
       }
     }
