@@ -1,0 +1,79 @@
+@import "../partials/mixins";
+.quickview-wrapper {
+  background-color: #ffffff;
+  padding:20px;
+
+  .line-2{
+    .product-img-box {
+      float: left;
+      max-width: 45%;
+      width: 45%;
+      margin: 0 0 0 10px;
+      border-right: 1px solid #d9d9d9;
+
+      img {
+        max-width:90%
+      }
+    }
+
+    .product-shop {
+      max-width: 45%;
+      width: 45%;
+      float: left;
+      padding: 0 0 0 20px;
+
+      .product-name{
+        h2{
+          font-family: 'houschka_alt_prodemibold';
+          color: #000000;
+          font-size: 20px;
+        }
+      }
+
+      .short-desc {
+        font-size: 14px;
+        padding: 18px 0 0 0;
+      }
+
+      .long-desc {
+        padding-top: 19px;
+        font-size: 14px;
+        padding: 18px 0 18px 0;
+        border-bottom: 1px solid #d9d9d9;
+      }
+
+      .price-box {
+        padding: 18px 0 0 0;
+
+        .price {
+          font-family: 'houschka_alt_prodemibold';
+          color: #FF0000;
+          font-size: 30px;
+        }
+
+        .availability {
+          padding: 10px 0 0 0;
+
+          &.in-stock {
+            color:#489900;
+            font-weight:normal;
+            font-size: 14px;
+
+            .span {
+              font-weight: normal;
+
+              .qty {
+                font-weight:bold;
+              }
+            }
+          }
+        }
+      }
+    }
+
+
+
+  }
+
+
+}

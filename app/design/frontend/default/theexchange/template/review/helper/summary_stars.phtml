@@ -6,11 +6,8 @@
  * @license     admaduranga@gmail.com
  */
 ?>
-<style>
-    .test_css_find_by_me{background-color: red;}
-</style>
 <?php if ($this->getReviewsCount()): ?>
-    <div class="ratings test_css_find_by_me">
+    <div class="ratings">
         <?php if ($this->getRatingSummary()):?>
             <div class="rating-box">
                 <div class="rating" style="width:<?php echo $this->getRatingSummary() ?>%"></div>

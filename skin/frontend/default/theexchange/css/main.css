@@ -211,3 +211,17 @@ body { background: url("../images/body-bg.png") repeat; font-size: 14px; font-fa
 #list-items #slider-hover-details .slider-action-wrapper button span { float: none; background: none; }
 #list-items #slider-hover-details .slider-action-wrapper button span span { font-family: 'houschka_alt_prodemibold'; color: #ff0000; font-size: 16px; text-align: right; }
 #list-items #slider-hover-details .slider-action-wrapper button:before { content: url("../images/add-to-bag.png"); float: left; line-height: 42px; }
+
+.quickview-wrapper { background-color: #ffffff; padding: 20px; }
+.quickview-wrapper .line-2 .product-img-box { float: left; max-width: 45%; width: 45%; margin: 0 0 0 10px; border-right: 1px solid #d9d9d9; }
+.quickview-wrapper .line-2 .product-img-box img { max-width: 90%; }
+.quickview-wrapper .line-2 .product-shop { max-width: 45%; width: 45%; float: left; padding: 0 0 0 20px; }
+.quickview-wrapper .line-2 .product-shop .product-name h2 { font-family: 'houschka_alt_prodemibold'; color: #000000; font-size: 20px; }
+.quickview-wrapper .line-2 .product-shop .short-desc { font-size: 14px; padding: 18px 0 0 0; }
+.quickview-wrapper .line-2 .product-shop .long-desc { padding-top: 19px; font-size: 14px; padding: 18px 0 18px 0; border-bottom: 1px solid #d9d9d9; }
+.quickview-wrapper .line-2 .product-shop .price-box { padding: 18px 0 0 0; }
+.quickview-wrapper .line-2 .product-shop .price-box .price { font-family: 'houschka_alt_prodemibold'; color: #FF0000; font-size: 30px; }
+.quickview-wrapper .line-2 .product-shop .price-box .availability { padding: 10px 0 0 0; }
+.quickview-wrapper .line-2 .product-shop .price-box .availability.in-stock { color: #489900; font-weight: normal; font-size: 14px; }
+.quickview-wrapper .line-2 .product-shop .price-box .availability.in-stock .span { font-weight: normal; }
+.quickview-wrapper .line-2 .product-shop .price-box .availability.in-stock .span .qty { font-weight: bold; }

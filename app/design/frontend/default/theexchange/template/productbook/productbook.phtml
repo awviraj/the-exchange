@@ -34,90 +34,92 @@ $_product = $this->getProduct();
 $_productId = $_product->getId();
 ?>
 
+<div class="quickview-main">
+    <div class="quickview-wrapper">
+        <div class="row line-1">
+            <div class style="text-align:right;" class="hd">
+                <a href="#" class="close"><?php echo $this->__('Close') ?></a>
+            </div>
+        </div>
 
-<table cellpadding="0" cellspacing="0" width="100%">
-    <tr>
-        <td style="text-align:right;" class="hd">
-            <a href="#" class="close"><?php echo $this->__('Close') ?></a>
-        </td>
-    </tr>
-    <tr>
-        <td colspan="2">
-            <table cellpadding="0" cellspacing="0" width="100%" style="text-align:left; vertical-align:top;">
-                <tr>
-                    <td style="vertical-align:top;">
-                        <div class="product-img-box" style="margin:5px; width=265px; vertical-align:top;">
-                            <a href="<?php echo $_product->getProductUrl(); ?>" title="<?php echo $_product->getName();?>" class="quickview-product-url">
-                                <p class="product-image" style="vertical-align:top;">
-                                    <img title="<?php echo $_product->getName() ?>" alt="<?php echo $_product->getName() ?>"
-                                         src="<?php echo $_product->getImageUrl() ?>"></p>
-                            </a>
-                        </div>
-                    </td>
-                    <td style="text-align:left;">
-                        <div class="product-shop">
-                            <div class="product-name">
-                                <a href="<?php echo $_product->getProductUrl(); ?>" title="<?php echo $_product->getName();?>" class="quickview-product-url">
-                                    <h2><?php echo $_product->getName() ?></h2>
-                                </a>
-                            </div>
-                            <div class="reveiew_summary_quickview">
-                                <?php echo $this->getChild('quickview_review')->getSummaryHtml($_product, 'stars', true);?>
-                            </div>
+        <div class="row line-2">
+            <div class="product-img-box" style="margin:5px; width=265px; vertical-align:top;">
+                <a href="<?php echo $_product->getProductUrl(); ?>"
+                   title="<?php echo $_product->getName(); ?>" class="quickview-product-url">
+                    <p class="product-image" style="vertical-align:top;">
+                        <img title="<?php echo $_product->getName() ?>"
+                             alt="<?php echo $_product->getName() ?>"
+                             src="<?php echo $_product->getImageUrl() ?>"></p>
+                </a>
+            </div>
+            <div class="product-shop">
+                <div class="product-name">
+                    <a href="<?php echo $_product->getProductUrl(); ?>"
+                       title="<?php echo $_product->getName(); ?>" class="quickview-product-url">
+                        <h2><?php echo $_product->getName() ?></h2>
+                    </a>
+                </div>
+                <div class="reveiew_summary_quickview">
+                    <?php echo $this->getChild('quickview_review')->getSummaryHtml($_product, 'stars', true);?>
+                </div>
 
-                            <div class="std short-desc"><?php echo $_product->getShortDescription() ?></div>
-                            <div class="std long-desc"><?php echo $_product->getDescription() ?></div>
+                <div class="std short-desc"><?php echo $_product->getShortDescription() ?></div>
+                <div class="std long-desc"><?php echo $_product->getDescription() ?></div>
 
-                            <div class="price-box">
-								<span class="regular-price">
-									<span
-                                        class="price"><?php echo $this->helper('checkout')->formatPrice($_product->getPrice()); ?></span>
-								</span>
-                            </div>
+                <div class="price-box">
+                    <span class="regular-price">
+                        <span class="price"><?php echo $this->helper('checkout')->formatPrice($_product->getPrice()); ?></span>
+                    </span>
 
-                            <?php if ($_product->isSaleable()) : ?>
-                                <?php if ($productQty = $_product->getStockItem()->getQty()) : ?>
-                                    <p class="availability in-stock"><span><?php echo intVal($productQty) ?> <?php echo $this->__('in stock online') ?></span></p>
-                                <?php else: ?>
-                                    <p class="availability in-stock"><span><?php $this->__('temporarily out of stock.')?></span></p>;
-                                <?php endif; ?>
-
-                                <div class="quickview-full-spec"><a href="<?php echo $_product->getProductUrl() ?>" ><?php echo $this->__('Full specification'); ?></a></div>
-                                <div class="add-to-cart">
-                                    <label for="qty"><?php echo $this->__('Qty')?></label>
-                                    <?php $maxCount = $productQty < 10 ? $productQty : 10; ?>
-                                    <select class="input-text qty" title="Qty" value="1" maxlength="12"
-                                            id="qty_<?php echo $_productId ?>" name="qty">
-                                        <?php for ($cnt = 1; $cnt < $maxCount ; $cnt++) : ?>
-                                            <option value="<?php echo $cnt ?>"><?php echo $cnt; ?></option>
-                                        <?php endfor; ?>
-                                    </select>
-                                    <button class="button btn-cart" id="<?php echo $_product->getId() ?>"
-                                            title="Add to basket" type="button"><span><span><?php echo $this->__('Add to basket'); ?></span></span>
-                                    </button>
-                                    <span style="padding:3px;" id="addingCart_<?php echo $_productId ?>"></span>
-                                </div>
+                    <?php if ($_product->isSaleable()) : ?>
+                        <?php if ($productQty = $_product->getStockItem()->getQty()) : ?>
+                            <p class="availability in-stock">
+                                <span><span class="qty"><?php echo intVal($productQty) ?></span> <?php echo $this->__('in stock online') ?></span>
+                            </p>
+                        <?php else: ?>
+                            <p class="availability out-stock">
+                                <span><?php $this->__('temporarily out of stock.')?></span></p>;
+                        <?php endif; ?>
+                    <?php endif; ?>
+                </div>
 
 
-                            <?php endif; ?>
-                        </div>
-                    </td>
-                </tr>
-            </table>
-        </td>
-    </tr>
-</table>
 
-<script>
+            </div>
+        </div>
 
-    jQuery(document).ready(function () {
+        <div class="row line-3">
+            <div class="quickview-full-spec"><a
+                    href="<?php echo $_product->getProductUrl() ?>"><?php echo $this->__('Full specification'); ?></a>
+            </div>
+            <div class="add-to-cart">
+                <label for="qty"><?php echo $this->__('Qty')?></label>
+                <?php $maxCount = $productQty < 10 ? $productQty : 10; ?>
+                <select class="input-text qty" title="Qty" value="1" maxlength="12"
+                        id="qty_<?php echo $_productId ?>" name="qty">
+                    <?php for ($cnt = 1; $cnt < $maxCount; $cnt++) : ?>
+                        <option value="<?php echo $cnt ?>"><?php echo $cnt; ?></option>
+                    <?php endfor; ?>
+                </select>
+                <button class="button btn-cart" id="<?php echo $_product->getId() ?>"
+                        title="Add to basket" type="button">
+                    <span><span><?php echo $this->__('Add to basket'); ?></span></span>
+                </button>
+                <span style="padding:3px;" id="addingCart_<?php echo $_productId ?>"></span>
+            </div>
+        </div>
+    </div>
 
-        var baseUrl = '<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_LINK); ?>';
-        jQuery('.button').click(function () {
-            var pid = jQuery(this).attr('id');
-            var qty = jQuery('#qty_' + pid).val();
+    <script>
 
-            jQuery('#addingCart_' + pid).html('Adding to cart...');
+        jQuery(document).ready(function () {
+
+            var baseUrl = '<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_LINK); ?>';
+            jQuery('.button').click(function () {
+                var pid = jQuery(this).attr('id');
+                var qty = jQuery('#qty_' + pid).val();
+
+                jQuery('#addingCart_' + pid).html('Adding to cart...');
 //            jQuery.ajax({
 //                type: "POST",
 //                url: baseUrl + "checkout/cart/add",
@@ -127,38 +129,39 @@ $_productId = $_product->getId();
 //                    cartInfo();
 //                }
 //            });
-        jQuery.ajax({
-                type: "GET",
-                url: "<?php echo $this->getAddToCartUrl($_product) ?>qty/" + qty,
-                success: function (msg) {
-                    jQuery('#addingCart_' + pid).html('Added to cart.');
-                    cartInfo();
-                    jQuery('#product_data').empty();
-                    jQuery('#mask, .window').hide();
-                }
+                jQuery.ajax({
+                    type: "GET",
+                    url: "<?php echo $this->getAddToCartUrl($_product) ?>qty/" + qty,
+                    success: function (msg) {
+                        jQuery('#addingCart_' + pid).html('Added to cart.');
+                        cartInfo();
+                        jQuery('#product_data').empty();
+                        jQuery('#mask, .window').hide();
+                    }
+                });
             });
+
+            function cartInfo() {
+                jQuery('#cartInfo').empty().html('Updating cart info...');
+                jQuery.ajax({
+                    type: "POST",
+                    url: baseUrl + "productbook/index/cartinfo",
+                    // data: 'product='+pid+'&qty='+qty,
+                    success: function (msg) {
+                        jQuery('#cartInfo').empty().html(msg);
+                    }
+                });
+            }
+
+            //if close button is clicked
+            jQuery('.window .close').click(function (e) {
+                //Cancel the link behavior
+                e.preventDefault();
+                jQuery('#product_data').empty();
+                jQuery('#mask, .window').hide();
+            });
+
         });
 
-        function cartInfo() {
-            jQuery('#cartInfo').empty().html('Updating cart info...');
-            jQuery.ajax({
-                type: "POST",
-                url: baseUrl + "productbook/index/cartinfo",
-                // data: 'product='+pid+'&qty='+qty,
-                success: function (msg) {
-                    jQuery('#cartInfo').empty().html(msg);
-                }
-            });
-        }
-
-        //if close button is clicked
-        jQuery('.window .close').click(function (e) {
-            //Cancel the link behavior
-            e.preventDefault();
-            jQuery('#product_data').empty();
-            jQuery('#mask, .window').hide();
-        });
-
-    });
-
-</script>
+    </script>
+</div>
