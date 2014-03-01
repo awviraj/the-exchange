@@ -64,7 +64,35 @@
         border-bottom: 1px solid #ff0000;
       }
       .block1{
+        .column{
+          float: left;
+          width: 32%;
+          margin-left: 2%;
 
+          &.first{
+            margin-left: 0;
+          }
+          .itemMenu{
+            a{
+              color: #000;
+              font-family: 'houschka_alt_prodemibold';
+              font-size: 15px;
+              font-weight: normal;
+            }
+          }
+        }
+      }
+    }
+  }
+  .best-seller{
+    .productScrollWrap{
+      float: left;
+      width: 100%;
+
+      .bx-wrapper{
+        .bx-viewport{
+          height: 280px !important;
+        }
       }
     }
   }

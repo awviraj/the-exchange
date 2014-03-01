@@ -3,11 +3,13 @@ $_products = $this->getProductList();
 if ($_products && count($_products)) :?>
 <div class="product-widget-main">
     <div class="widget widget-static-block product-widget">
-        <h2><?php echo str_replace('|',' ',$this->getDisplayTitle()) ?></h2>
+        <div class="block_title">
+            <h2><?php echo str_replace('|',' ',$this->getDisplayTitle()) ?></h2>
+        </div>
         <div class="best-seller">
         <div class="productScrollLeft"></div>
-            <div class="productScrollWrap">
-                <ul class="bestseller_wrapper" >
+            <div class="productScrollWrap " >
+                <ul class="bestseller_wrapper best-seller-slider" >
                     <?php
                         foreach ($_products as $_product) :
                             if(!$_product->isSaleable()) continue;

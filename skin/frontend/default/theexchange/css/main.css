@@ -66,7 +66,7 @@ body { background: url("../images/body-bg.png") repeat; font-size: 14px; font-fa
 .menu-search-wrapper .cms-menu .cl-effect-21 a:hover { text-decoration: none; }
 .menu-search-wrapper .cms-menu .cl-effect-21 a:before { background: #fff; height: 1px; }
 .menu-search-wrapper .cms-menu .cl-effect-21 a:after { background: #fff; height: 1px; }
-.menu-search-wrapper .small-x-logo { float: left; width: 27px; height: 22px; background: url("../images/sprite.png") 0px -503px no-repeat; margin-top: 15px; text-align: left; text-indent: -3000px; margin-left: 19px; display: none; }
+.menu-search-wrapper .small-x-logo { float: left; width: 27px; height: 22px; background: url("../images/sprite.png") 0px -503px no-repeat; margin-top: 11px; text-align: left; text-indent: -3000px; margin-left: 19px; display: none; }
 
 .navbar { max-width: 966px; margin: 0 auto; border-radius: 0; min-height: 42px; }
 .navbar .container { width: 100%; padding: 0; }
@@ -221,6 +221,11 @@ body { background: url("../images/body-bg.png") repeat; font-size: 14px; font-fa
 #custommenu div.wp-custom-menu-popup .block1, #custommenu div.wp-custom-menu-popup .block2 { float: left; width: 49%; }
 #custommenu div.wp-custom-menu-popup .block2 { margin-left: 2%; }
 #custommenu div.wp-custom-menu-popup .block_title, #custommenu div.wp-custom-menu-popup h2 { font-family: 'houschkaalt-bold-italic-regular'; font-weight: normal; font-style: normal; font-size: 25px; color: #000; border-bottom: 1px solid #ff0000; }
+#custommenu div.wp-custom-menu-popup .block1 .column { float: left; width: 32%; margin-left: 2%; }
+#custommenu div.wp-custom-menu-popup .block1 .column.first { margin-left: 0; }
+#custommenu div.wp-custom-menu-popup .block1 .column .itemMenu a { color: #000; font-family: 'houschka_alt_prodemibold'; font-size: 15px; font-weight: normal; }
+#custommenu .best-seller .productScrollWrap { float: left; width: 100%; }
+#custommenu .best-seller .productScrollWrap .bx-wrapper .bx-viewport { height: 280px !important; }
 
 .quickview-wrapper { background-color: #ffffff; padding: 20px; }
 .quickview-wrapper .line-2 .product-img-box { float: left; max-width: 45%; width: 45%; margin: 0 0 0 10px; border-right: 1px solid #d9d9d9; }

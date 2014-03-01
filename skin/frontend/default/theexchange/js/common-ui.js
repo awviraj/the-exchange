@@ -22,13 +22,13 @@ jQuery(document).ready(function(){
             if (top >= 691 ){
                 event.preventDefault();
             }
-            //header.addClass('f-nav');
-            //header.find('.header').hide();
+            header.addClass('f-nav');
+            header.find('.header').hide();
         }
         else {
             if (header.hasClass('f-nav')) {
-                //header.removeClass('f-nav');
-              //  header.find('.header').show();
+                header.removeClass('f-nav');
+               header.find('.header').show();
             }
         }
     });
@@ -50,5 +50,14 @@ jQuery(document).ready(function(){
         jQuery('.search-box').addClass('overlay');
     }
 
-
+    jQuery('.best-seller-slider').bxSlider({
+            nextSelector: '#slider-next',
+            prevSelector: '#slider-prev',
+            nextText: '→',
+            prevText: '←',
+        adaptiveHeight: true,
+        minSlides: 4,
+        slideWidth: 129,
+        slideMargin: 10
+        });
 });
