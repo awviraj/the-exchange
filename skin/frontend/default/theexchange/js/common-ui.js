@@ -22,13 +22,13 @@ jQuery(document).ready(function(){
             if (top >= 691 ){
                 event.preventDefault();
             }
-            header.addClass('f-nav');
-            header.find('.header').hide();
+            //header.addClass('f-nav');
+            //header.find('.header').hide();
         }
         else {
             if (header.hasClass('f-nav')) {
-                header.removeClass('f-nav');
-                header.find('.header').show();
+                //header.removeClass('f-nav');
+              //  header.find('.header').show();
             }
         }
     });

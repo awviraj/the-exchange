@@ -1,0 +1,71 @@
+@import "../partials/mixins";
+
+#custommenu{
+  div{
+    &.menu{
+      width: 10%;
+      margin: 0 1%;
+
+      a{
+        @include Houschka_alt_med;
+        text-transform: capitalize;
+        padding: 5px 20px 6px 20px;
+        color: #e3e3e3;
+        font-size: 16px;
+
+        &:hover{
+          background: #474646;
+        }
+      }
+      &.active a{
+        background: #000 !important;
+        color: #e3e3e3 !important;
+        position: relative;
+        z-index: 20000;
+
+        &:after{
+          top: 100%;
+          left: 50%;
+          border: solid transparent;
+          content: " ";
+          height: 0;
+          width: 0;
+          position: absolute;
+          pointer-events: none;
+          border-color: rgba(0, 0,0, 0);
+          border-top-color: #000;
+          border-width: 15px;
+          margin-left: -15px;
+        }
+      }
+
+    }
+    &.wp-custom-menu-popup{
+      background: #fff;
+      padding: 33px 62px;
+      box-sizing: border-box;
+      top:42px !important;
+
+
+      .block1,.block2{
+        float: left;
+        width: 49%;
+
+      }
+      .block2{
+        margin-left: 2%;
+      }
+      .block_title,h2{
+        font-family: 'houschkaalt-bold-italic-regular';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 25px;
+        color: #000;
+        border-bottom: 1px solid #ff0000;
+      }
+      .block1{
+
+      }
+    }
+  }
+}
