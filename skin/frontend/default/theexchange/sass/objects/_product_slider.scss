@@ -58,6 +58,12 @@
           .product-info{
             text-align: center;
 
+            .price-name-wrapper{
+              .desc{
+                display: none;
+              }
+            }
+
             .product-name{
               height: 31px;
               overflow: hidden;
@@ -119,6 +125,10 @@
               .price-name-wrapper{
                 margin-top: 16px;
 
+                .desc{
+                  display: none;
+                }
+
                 .price-html{
                   .price-box{
                     span{
@@ -161,7 +171,7 @@
       }
       .desc{
         color: #fff;
-        font-family: 'houschka_alt_prolight';
+        font-family: 'houschka_alt_promedium';
         font-size: 14px;
         font-weight: normal;
         line-height: 18px;
