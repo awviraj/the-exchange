@@ -18,6 +18,7 @@ jQuery(document).ready(function(){
     jQuery(window).bind('scroll', function(event) {
         var top = jQuery(window).scrollTop();
         var header = jQuery('.header-container');
+        jQuery('.navbar-container').removeClass('f-nav-sub');
         if (top > 100) {
             if (top >= 691 ){
                 event.preventDefault();
@@ -64,6 +65,8 @@ jQuery(document).ready(function(){
     });
 
     jQuery('.f-nav-menu-link').live('click', function() {
-        jQuery('.navbar-container').toggleClass('f-nav-sub');
+        if (jQuery(window).scrollTop() >= 500 ){
+            jQuery('.navbar-container').toggleClass('f-nav-sub');
+        }
     });
 });
