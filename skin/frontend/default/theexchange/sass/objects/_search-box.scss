@@ -1,3 +1,8 @@
+.cms-index-index{
+  .search-box{
+
+  }
+}
 .search-box{
   position: relative;
   max-width: 966px;
@@ -8,13 +13,13 @@
   background-size: 100%;
 
   .black-arrow{
-    position: absolute;
-    left: 50%;
-    margin-left: -32px;
+   position: absolute;
+   left: 50%;
+   margin-left: -32px;
     width: 64px;
     top:0;
-    height: 14px;
-    background: url("../images/sprite.png") no-repeat 0 -186px;
+   height: 14px;
+   background: url("../images/sprite.png") no-repeat 0 -186px;
   }
 
   .form-search{
