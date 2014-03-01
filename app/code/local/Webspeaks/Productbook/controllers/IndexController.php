@@ -3,47 +3,16 @@ class Webspeaks_Productbook_IndexController extends Mage_Core_Controller_Front_A
 {
     public function indexAction()
     {
-    	
-    	/*
-    	 * Load an object by id 
-    	 * Request looking like:
-    	 * http://site.com/productbook?id=15 
-    	 *  or
-    	 * http://site.com/productbook/id/15 	
-    	 */
-    	/* 
-		$productbook_id = $this->getRequest()->getParam('id');
-
-  		if($productbook_id != null && $productbook_id != '')	{
-			$productbook = Mage::getModel('productbook/productbook')->load($productbook_id)->getData();
-		} else {
-			$productbook = null;
-		}	
-		*/
-		
-		 /*
-    	 * If no param we load a the last created item
-    	 */ 
-    	/*
-    	if($productbook == null) {
-			$resource = Mage::getSingleton('core/resource');
-			$read= $resource->getConnection('core_read');
-			$productbookTable = $resource->getTableName('productbook');
-			
-			$select = $read->select()
-			   ->from($productbookTable,array('productbook_id','title','content','status'))
-			   ->where('status',1)
-			   ->order('created_time DESC') ;
-			   
-			$productbook = $read->fetchRow($select);
-		}
-		Mage::register('productbook', $productbook);
-		*/
-
-		echo $this->getLayout()->createBlock('productbook/productbook')->setTemplate('productbook/productbook.phtml')->toHtml();  
-		
-		// $this->loadLayout();     
-		// $this->renderLayout();
+        $productId = Mage::app()->getRequest()->getParam('id');
+        if (!empty($productId)) {
+            $product = Mage::getModel('catalog/product')->load($productId);
+            Mage::register('product', $product);
+        } else {
+            $this->_forward('defaultNoRoute');
+        }
+        $this->loadLayout();
+        $html =  $this->getLayout()->getBlock('content')->toHtml();//->setTemplate('productbook/productbook.phtml')->toHtml();
+        $this->getResponse()->setBody($html);
     }
 	
 	public function cartinfoAction()

@@ -1,0 +1,22 @@
+<?php
+/**
+ * @category    design
+ * @package     default_theexchange
+ * @copyright   admaduranga@gmail.com
+ * @license     admaduranga@gmail.com
+ */
+?>
+<style>
+    .test_css_find_by_me{background-color: red;}
+</style>
+<?php if ($this->getReviewsCount()): ?>
+    <div class="ratings test_css_find_by_me">
+        <?php if ($this->getRatingSummary()):?>
+            <div class="rating-box">
+                <div class="rating" style="width:<?php echo $this->getRatingSummary() ?>%"></div>
+            </div>
+        <?php endif;?>
+    </div>
+<?php elseif ($this->getDisplayIfEmpty()): ?>
+    <p class="no-rating"><a href="<?php echo $this->getReviewsUrl() ?>#review-form"><?php echo $this->__('Be the first to review this product') ?></a></p>
+<?php endif; ?>

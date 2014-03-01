@@ -2,9 +2,22 @@
 <layout version="0.1.0">
     <default>
     </default>
-	<catalogsearch_result_index translate="label">
+	<!--<catalogsearch_result_index translate="label">-->
+        <!--<reference name="content">-->
+        <!--&lt;!&ndash;    <block type="productbook/productbook" name="productbook" template="productbook/productbook.phtml" />&ndash;&gt;-->
+        <!--</reference>-->
+    <!--</catalogsearch_result_index>-->
+
+    <productbook_index_index translate="label">
         <reference name="content">
-        <!--    <block type="productbook/productbook" name="productbook" template="productbook/productbook.phtml" />-->
+            <block type="productbook/productbook" name="productbook" template="productbook/productbook.phtml">
+                <block type="review/helper" name="quickview_review">
+                    <action method="addTemplate">
+                        <type>stars</type>
+                        <template>review/helper/summary_stars.phtml</template>
+                    </action>
+                </block>
+            </block>
         </reference>
-    </catalogsearch_result_index>
+    </productbook_index_index>
 </layout> 

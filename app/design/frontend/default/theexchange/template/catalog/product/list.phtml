@@ -170,28 +170,28 @@
 }
 </style>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js" language="javascript"></script>
+<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js" language="javascript"></script>-->
 
 <script>
  
-$(document).ready(function() { 
+jQuery(document).ready(function() {
  
     //select all the a tag with name equal to modal
-    $('a[name=modal]').click(function(e) {
+    jQuery('a[name=modal]').click(function(e) {
         //Cancel the link behavior
         e.preventDefault();
 
 /************************************************************************************************************/
 		var baseUrl = '<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_LINK); ?>';
-        var productId = $(this).attr('id');
-		
-		$('#product_data').html('<div style="text-align:center; color:#fff; font-size:14px; font-weight:bold;">Loading Product Information...</div>');
-		$.ajax({
+        var productId = jQuery(this).attr('id');
+
+        jQuery('#product_data').html('<div style="text-align:center; color:#fff; font-size:14px; font-weight:bold;">Loading Product Information...</div>');
+        jQuery.ajax({
 			type: "POST",
 			url: baseUrl+"productbook",
 			data: "id="+productId,
 			success: function(msg){
-				$('#product_data').empty().append(msg);
+                jQuery('#product_data').empty().append(msg);
 				getCartInfo();
 			}
 		});
@@ -202,7 +202,7 @@ $(document).ready(function() {
 		if(Mage::getSingleton('customer/session')->isLoggedIn())
 		{
 		?>
-			$('#cartInfo').empty().html('Updating cart info...');
+        jQuery('#cartInfo').empty().html('Updating cart info...');
 			cartHtml = 'Items in cart: <b><?php echo Mage::getSingleton('checkout/cart')->getQuote()->getItemsSummaryQty() ?></b>&nbsp;&nbsp;&nbsp;&nbsp;<br />Cart total: <b><?php echo $this->helper('checkout')->formatPrice(Mage::getSingleton('checkout/cart')->getQuote()->getGrandTotal()) ?></b>';
 		<?php
 		}
@@ -213,7 +213,7 @@ $(document).ready(function() {
 		<?php
 		}
 		?>
-		$('#cartInfo').empty().html(cartHtml);
+        jQuery('#cartInfo').empty().html(cartHtml);
 	}
 /************************************************************************************************************/
 
@@ -221,44 +221,44 @@ $(document).ready(function() {
 
 
         //Get the A tag
-        var id = $(this).attr('href');
+        var id = jQuery(this).attr('href');
      
         //Get the screen height and width
         var maskHeight = 0;//$(document).height();
         var maskWidth = 0;//$(window).width();
      
         //Set height and width to mask to fill up the whole screen
-        $('#mask').css({'width':maskWidth,'height':maskHeight, 'top':0});
+        jQuery('#mask').css({'width':maskWidth,'height':maskHeight, 'top':0});
          
         //transition effect    
         // $('#mask').fadeIn('fast');
         // $('#mask').fadeTo("slow",1.0); 
      
         //Get the window height and width
-        var winH = $(window).height();
-        var winW = $(window).width();
+        var winH = jQuery(window).height();
+        var winW = jQuery(window).width();
                
         //Set the popup window to center
-        $(id).css('top',  winH/2-$(id).height()/2);
-        $(id).css('left', winW/2-$(id).width()/2);
+        jQuery(id).css('top',  winH/2-jQuery(id).height()/2);
+        jQuery(id).css('left', winW/2-jQuery(id).width()/2);
      
         //transition effect
-        $(id).fadeIn('fast');
+        jQuery(id).fadeIn('fast');
      
     });
      
     //if close button is clicked
-    $('.window .close').click(function (e) {
+    jQuery('.window .close').click(function (e) {
         //Cancel the link behavior
         e.preventDefault();
-		$('#product_data').empty();
-        $('#mask, .window').hide();
+        jQuery('#product_data').empty();
+        jQuery('#mask, .window').hide();
     });    
      
     //if mask is clicked
-    $('#mask').click(function () {
-        $(this).hide();
-        $('.window').hide();
+    jQuery('#mask').click(function () {
+        jQuery(this).hide();
+        jQuery('.window').hide();
     });        
      
 });

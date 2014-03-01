@@ -1,5 +1,5 @@
 <?php
-class Webspeaks_Productbook_Block_Productbook extends Mage_Core_Block_Template
+class Webspeaks_Productbook_Block_Productbook extends Mage_Catalog_Block_Product_View
 {
 	public function _prepareLayout()
     {
