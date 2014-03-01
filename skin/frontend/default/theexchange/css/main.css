@@ -237,7 +237,7 @@ body { background: url("../images/body-bg.png") repeat; font-size: 14px; font-fa
 .fixed-container .menu-search-wrapper:after, .fixed-container .menu-search-wrapper:before { border: none; }
 .fixed-container .cms-menu { background: transparent; max-width: 966px; }
 .fixed-container .cms-menu nav { float: left; }
-.fixed-container .cms-menu nav a { line-height: 10px; padding: 3px 10px; margin: 15px 15px; }
+.fixed-container .cms-menu nav a { line-height: 10px; padding: 3px 10px; margin: 15px 10px; }
 .fixed-container .small-x-logo { display: block; }
 .fixed-container .fixed-nav-links { display: block; }
 .fixed-container .quick-buttons { float: right; margin-top: 0; }
@@ -250,6 +250,9 @@ body { background: url("../images/body-bg.png") repeat; font-size: 14px; font-fa
 .fixed-container .quick-access .links li a.top-link-customer { background-position: 16px -44px; }
 .fixed-container .action-btns-div { float: left; width: 106px; margin-left: 4px; }
 .fixed-container .action-btns-div ul li { float: left; width: 49px; }
-.fixed-container .action-btns-div ul li.search { text-align: left; display: block; float: left; text-indent: -3000px; width: 49px; height: 56px; background: url("../images/sprite.png") no-repeat; background-position: 0 -362px; }
+.fixed-container .action-btns-div ul li.search { margin-right: 8px; text-align: left; display: block; float: left; text-indent: -3000px; width: 49px; height: 56px; background: url("../images/sprite.png") no-repeat; background-position: 0 -362px; }
 .fixed-container .action-btns-div ul li.search a { display: block; width: 100%; height: 56px; background: url("../images/sprite.png") no-repeat; background-position: 13px -438px; }
-.fixed-container .action-btns-div ul li .f-nav-menu-link { display: block; width: 100%; height: 56px; background: url("../images/sprite.png") no-repeat; background-position: 13px -865px; }
+.fixed-container .action-btns-div ul li .f-nav-menu-link { margin-top: 3px; display: block; width: 100%; height: 45px; background: url("../images/sprite.png") no-repeat; background-position: 13px -865px; }
+.fixed-container .action-btns-div ul li .f-nav-menu-link:hover { background-color: #ccc; }
+
+.navbar-container.f-nav-sub { position: fixed; top: 47px; width: 100%; max-width: 100%; z-index: 1000; }
