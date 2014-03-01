@@ -7,6 +7,11 @@
             <action method="addLink" translate="label title" module="catalog"><label>Previous Purchases</label><url>/sales/order/view</url><title>Previous Purchases</title></action>
             <action method="addLink" translate="label title" module="catalog"><label>Change Details</label><url helper="customer/getEditUrl"/><title>Change Details</title></action>
         </reference>
+
+        <reference name="footer_social_newsletter">
+            <block type="core/template" name="left.invite.friend" before="-" template="page/html/invite.phtml"/>
+        </reference>
+
     </default>
 
     <cms_index_index>
