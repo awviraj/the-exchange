@@ -23,9 +23,8 @@ jQuery(document).ready(function(){
                 event.preventDefault();
             }
             header.addClass('f-nav');
-           // header.find('.header').hide();
-           jQuery('.fixed-container').show();
-
+            // header.find('.header').hide();
+            jQuery('.fixed-container').show();
         }
         else {
             if (header.hasClass('f-nav')) {
@@ -54,13 +53,17 @@ jQuery(document).ready(function(){
     }
 
     jQuery('.best-seller-slider').bxSlider({
-            nextSelector: '#slider-next',
-            prevSelector: '#slider-prev',
-            nextText: '→',
-            prevText: '←',
-        adaptiveHeight: true,
-        minSlides: 4,
-        slideWidth: 129,
-        slideMargin: 10
-        });
+        nextSelector: '#slider-next',
+        prevSelector: '#slider-prev',
+        nextText: '→',
+        prevText: '←',
+    adaptiveHeight: true,
+    minSlides: 4,
+    slideWidth: 129,
+    slideMargin: 10
+    });
+
+    jQuery('.f-nav-menu-link').live('click', function() {
+        jQuery('.navbar-container').toggleClass('f-nav-sub');
+    });
 });

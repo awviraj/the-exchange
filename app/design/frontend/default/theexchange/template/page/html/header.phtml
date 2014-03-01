@@ -41,10 +41,10 @@
                 <div class="action-btns-div">
                     <ul>
                         <li class="search">
-                            <a href="" class="f-nav-search"></a>
+                            <a href="#" class="f-nav-search"></a>
                         </li>
                         <li>
-                            <a href="" class="f-nav-menu-link"></a>
+                            <a class="f-nav-menu-link"></a>
                         </li>
                     </ul>
                 </div>
@@ -55,19 +55,25 @@
     <div class="header container">
         <div class="call-us">
             <p><?php echo $this->__('Call us on') ?></p>
+
             <h2><?php echo $this->helper('commonrewrites')->getStoreConfig('phone'); ?></h2>
         </div>
         <div class="logo-div">
-            <?php if ($this->getIsHomePage()):?>
-                <h1 class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a></h1>
-            <?php else:?>
-                <a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a>
+            <?php if ($this->getIsHomePage()): ?>
+                <h1 class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><a
+                        href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>"
+                        class="logo"><img src="<?php echo $this->getLogoSrc() ?>"
+                                          alt="<?php echo $this->getLogoAlt() ?>"/></a></h1>
+            <?php else: ?>
+                <a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>"
+                   class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><img
+                        src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>"/></a>
             <?php endif?>
         </div>
         <div class="top-quick-links">
             <ul>
-                <li class="about"><a href="" >About us</a> </li>
-                <li class="contact"><a href="" >Contact us</a> </li>
+                <li class="about"><a href="">About us</a></li>
+                <li class="contact"><a href="">Contact us</a></li>
             </ul>
         </div>
         <div class="quick-access bottom-quick-links">
