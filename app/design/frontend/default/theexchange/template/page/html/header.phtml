@@ -28,6 +28,17 @@
  */
 ?>
 <div class="header-container">
+    <div class="fixed-container">
+        <div class="cms-menu row fixed-nav">
+            <div class="small-x-logo">
+                X
+            </div>
+            <?php echo $this->getChildHtml('header_cms_menu_links'); ?>
+            <div class="fixed-nav-links quick-access">
+                <?php echo $this->getChildHtml('topLinks') ?>
+            </div>
+        </div>
+    </div>
     <div class="header container">
         <div class="call-us">
             <p><?php echo $this->__('Call us on') ?></p>
@@ -57,9 +68,6 @@
     <div class="menu-search-wrapper container">
 
         <div class="cms-menu row">
-            <div class="small-x-logo">
-                X
-            </div>
             <?php echo $this->getChildHtml('header_cms_menu_links'); ?>
             <div class="fixed-nav-links quick-access">
                 <?php echo $this->getChildHtml('topLinks') ?>

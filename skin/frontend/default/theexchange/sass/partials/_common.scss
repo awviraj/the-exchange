@@ -139,102 +139,7 @@ body{
   .fixed-nav-links{
     display: none;
   }
-///////////////fixed header ////////////////////////////////
-  &.f-nav{
-    position: fixed;
-    top:0;
-    width: 100%;
-    max-width: 100%;
-    z-index: 1001;
 
-    .header{
-      max-width: 100%;
-
-      .call-us,.logo-div,.top-quick-links{
-        display: none;
-      }
-      .quick-access{
-        margin-top: 0;
-      }
-    }
-    .search-box{
-      display: none;
-      //visibility: hidden;
-      //height: 100px;
-    }
-    .menu-search-wrapper{
-      max-width: 100%;
-      background: url("../images/fixed-header.png") repeat-x;
-
-      &:after,&:before{
-        border: none;
-      }
-    }
-    .cms-menu{
-      background: transparent;
-      max-width: 966px;
-
-
-      nav{
-        float: left;
-        a{
-          line-height: 10px;
-          padding: 3px 10px;
-        }
-      }
-
-    }
-    .small-x-logo{
-      display: block;
-    }
-    .fixed-nav-links{
-      display: block;
-    }
-    .quick-access{
-      float: right;
-      margin-top: 0;
-
-      .links{
-        li{
-          float: left;
-          background: url("../images/sprite.png") no-repeat 0 -297px;
-          width: 45px;
-          height: 57px;
-          padding: 0;
-          margin-left: 7px;
-
-          &:first-child{
-            margin-left: 0;
-          }
-
-          a{
-            text-align: left;
-            display: block;
-            float: left;
-            text-indent: -3000px;
-            width: 45px;
-            height: 38px;
-            background: url("../images/sprite.png") no-repeat;
-
-            &.top-link-home{
-              background-position: 16px -129px;
-            }
-            &.top-link-cart{
-              background-position: 16px -89px;
-            }
-            &.top-link-customer{
-              background-position: 16px -44px;
-            }
-
-
-
-          }
-        }
-      }
-    }
-
-}
-//////////////////////////////////////////////////////////////
 }
 .menu-search-wrapper{
   width: 100%;
@@ -272,51 +177,7 @@ body{
     left: 0;
   }
 
-  .cms-menu{
-    background: #000;
-    padding: 1px 26px;
-    max-width: 964px;
-    margin: 0 auto;
-  }
 
-
-
-  .cms-menu{
-    .cl-effect-21{
-      a{
-        color: #fff;
-        font-size: 15px;
-        @include Houschka_alt_bold;
-        font-weight: normal;
-        text-decoration: none;
-
-        &:hover{
-          text-decoration: none;
-        }
-
-        &:before{
-          background: #fff;
-          height: 1px;
-        }
-        &:after{
-          background: #fff;
-          height: 1px;
-        }
-      }
-    }
-  }
-
-  .small-x-logo{
-    float: left;
-    width: 27px;
-    height: 22px;
-    background: url("../images/sprite.png") 0px -503px no-repeat;
-    margin-top: 11px;
-    text-align: left;
-    text-indent: -3000px;
-    margin-left: 19px;
-    display: none;
-  }
 
 }
 
