@@ -40,14 +40,17 @@
     <?php echo $this->getChildHtml('global_notices') ?>
     <div class="page">
         <?php echo $this->getChildHtml('header') ?>
-        <div class="main-container col2-left-layout">
+        <div class="main-container col2-left-layout container">
             <div class="main">
                 <?php echo $this->getChildHtml('breadcrumbs') ?>
-                <div class="col-main">
-                    <?php echo $this->getChildHtml('global_messages') ?>
-                    <?php echo $this->getChildHtml('content') ?>
+                <div class="row">
+                    <div class="col-left sidebar col-xs-12 col-sm-12 col-md-3"><?php echo $this->getChildHtml('left') ?></div>
+                    <div class="col-main col-xs-12 col-sm-12 col-md-9 fill">
+                        <?php echo $this->getChildHtml('global_messages') ?>
+                        <?php echo $this->getChildHtml('content') ?>
+                    </div>
                 </div>
-                <div class="col-left sidebar"><?php echo $this->getChildHtml('left') ?></div>
+
             </div>
         </div>
         <?php echo $this->getChildHtml('footer') ?>

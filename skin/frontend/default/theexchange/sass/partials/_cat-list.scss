@@ -1,3 +1,4 @@
+@import "mixins";
 .search-box{
   position: relative;
   max-width: 966px;
@@ -7,14 +8,23 @@
   background: url("../images/search-box-bg.jpg") no-repeat ;
   background-size: 100%;
 
-  .black-arrow{
+}
 
-  }
+.main-container{
+  .col-main{
+    .category-products{
+      .products-grid{
+        width: 100%;
+        float: left;
 
-  .form-search{
-
-  }
-  &.overlay{
-
+        li{
+          &.item{
+            width: 22%;
+            float: left;
+            margin: 1%;
+          }
+        }
+      }
+    }
   }
 }
