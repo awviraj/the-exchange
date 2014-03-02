@@ -51,13 +51,7 @@ Default layout, loads most of the pages
 
         </reference>
         <!-- Mage_Catalog -->
-        <reference name="left">
-            <block type="core/template" name="left.permanent.callout" template="callouts/left_col.phtml">
-                <!--<action method="setImgSrc"><src>images/media/col_left_callout.jpg</src></action>-->
-                <!--<action method="setImgAlt" translate="alt" module="catalog"><alt>Our customer service is available 24/7. Call us at (555) 555-0123.</alt></action>-->
-                <!--<action method="setLinkUrl"><url>checkout/cart</url></action>-->
-            </block>
-        </reference>
+
         <reference name="right">
             <block type="catalog/product_compare_sidebar" before="cart_sidebar" name="catalog.compare.sidebar" template="catalog/product/compare/sidebar.phtml"/>
             <block type="core/template" name="right.permanent.callout" template="callouts/right_col.phtml">
@@ -116,6 +110,7 @@ Category layered navigation layout
         <label>Catalog Category (Anchor)</label>
         <reference name="left">
             <block type="catalog/layer_view" name="catalog.leftnav" after="currency" template="catalog/layer/view.phtml"/>
+            <remove name="left.newsletter"/>
         </reference>
         <reference name="content">
             <block type="catalog/category_view" name="category.products" template="catalog/category/view.phtml">
