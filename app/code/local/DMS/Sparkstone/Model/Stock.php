@@ -70,6 +70,10 @@ class DMS_Sparkstone_Model_Stock extends Mage_Core_Model_Abstract
     }
 
 
+    /**
+     * @param $xml
+     * Format Data
+     */
     protected function _formatProductData($xml)
     {
         $mappingFile = Mage::helper('sparkstone')->getStoreConfig('csvmapper', 'sparkstone/api/');
@@ -85,18 +89,24 @@ class DMS_Sparkstone_Model_Stock extends Mage_Core_Model_Abstract
 
         try{
             if (!empty($xml) && !empty($mappingCols)) {
+                foreach ($xml as $baseKey => $element) {
 
-                foreach ($xml as $key => $element) {
                     $element = (array) $element;
                     $counter++;
 
                     foreach ($mappingCols as $key => $mapped) {
-
                         if (!empty($mapped[0])) {
                             $value = !empty($element[$mapped[1]]) ? $element[$mapped[1]] : $mapped[2];
                             $csvData[0][$key] = $mapped[0];
                             $csvData[$counter][$mapped[0]] = strVal($value);
 
+                        }
+
+                        if ($mapped[0] == 'category_ids') {
+                            $categoryIds = $this->fetchCategoryIds($element, $mapped);
+                            if ($categoryIds) {
+                                $csvData[$counter][$mapped[0]] = implode(',', $categoryIds);
+                            }
                         }
                     }
                 }
@@ -109,10 +119,34 @@ class DMS_Sparkstone_Model_Stock extends Mage_Core_Model_Abstract
 
     }
 
+    /**
+     * Run Magmi Import
+     */
     public function importProducts() {
         if ($this->_ready) {
             chdir('magmi/cli/');
             include_once('magmi_run_from_code.php');
         }
+    }
+
+    /**
+     * @param $xml
+     * @param $mapped
+     * @return array
+     */
+    public function fetchCategoryIds($xml, $mapped) {
+        $categoryIds = array();
+        $decoder = Mage::getSingleton('sparkstone/categoryDecoder');
+        $categoryFields = explode(',', $mapped[1]);
+        if (is_array($categoryFields)) {
+            foreach ($categoryFields as $label) {
+                $label = trim($label);
+                if (!empty($xml[$label])) {
+                    $categoryIds[] = $decoder->decode($xml[$label]);
+                }
+
+            }
+        }
+        return $categoryIds;
     }
 }
