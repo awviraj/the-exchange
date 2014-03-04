@@ -1,0 +1,39 @@
+.col-left {
+  &.sidebar{
+    .block-content{
+      background: none;
+
+      dl{
+        dt{
+          padding: 10px 0 10px 0;
+          font-size: 18px ;
+          color: #ff0000;
+          font-family: 'houschka_alt_probold';
+          font-weight: normal;
+          text-align: left;
+          font-style: normal;
+          text-transform: capitalize;
+          border-bottom: 1px solid #ed0606;
+        }
+        dd{
+          padding:0 0 10px 0;
+
+          ol{
+            li{
+              border-bottom: 1px solid #f02626;
+              line-height: 37px;
+
+              a{
+                font-size: 14x;
+                color: #000;
+                font-family: 'houschka_alt_promedium';
+                font-weight: normal;
+                font-style: normal;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

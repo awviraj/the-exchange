@@ -107,3 +107,34 @@
 
 
 }
+
+
+
+///////////////////plugin styles///////////////////
+#dialog{margin:3px;}
+/* Z-index of #mask must lower than #boxes .window */
+#mask {
+  z-index:9000;
+  background-color:#000;
+  display:none;
+}
+
+#boxes .window {
+  position:fixed;
+  width:0px;
+  height:0px;
+  display:none;
+  z-index:9999;
+  padding:5px;
+}
+
+
+/* Customize your modal window here, you can add background image too */
+#boxes #dialog {
+  border:5px solid #D2B9D3;
+  background-color:#EBDDE2;
+  width:550px;
+  height:400px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}

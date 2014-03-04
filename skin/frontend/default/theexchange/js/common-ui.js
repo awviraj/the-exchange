@@ -19,7 +19,7 @@ jQuery(document).ready(function(){
         var top = jQuery(window).scrollTop();
         var header = jQuery('.header-container');
         jQuery('.navbar-container').removeClass('f-nav-sub');
-        if (top > 100) {
+        if (top > 400) {
             if (top >= 691 ){
                 event.preventDefault();
             }

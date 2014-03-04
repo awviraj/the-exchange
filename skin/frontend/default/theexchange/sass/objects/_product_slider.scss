@@ -116,8 +116,8 @@
                 pointer-events: none;
                 border-color: rgba(255, 0, 0, 0);
                 border-bottom-color: #ff0000;
-                border-width: 47px;
-                margin-left: -47px;
+                border-width: 0 48.5px 28px 48.5px;
+                margin-left: -49px;
               }
               .product-name-wrapper{
                 display: none;
@@ -130,6 +130,7 @@
                 }
 
                 .price-html{
+                  padding-top: 5px;
                   .price-box{
                     span{
                       color: #fff;
@@ -215,8 +216,8 @@
           pointer-events: none;
           border-color: rgba(255, 255, 255, 0);
           border-right-color: #fff;
-          border-width: 18px;
-          margin-top: -18px;
+          border-width: 19px 11px 19px 0;
+          margin-top: -19px;
 
 
         }
