@@ -181,8 +181,8 @@ jQuery(document).ready(function() {
         var id = jQuery(this).attr('href');
      
         //Get the screen height and width
-        var maskHeight = 0;//$(document).height();
-        var maskWidth = 0;//$(window).width();
+        var maskHeight = jQuery(document).height();
+        var maskWidth = jQuery(window).width();
      
         //Set height and width to mask to fill up the whole screen
         jQuery('#mask').css({'width':maskWidth,'height':maskHeight, 'top':0});
