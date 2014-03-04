@@ -94,13 +94,8 @@ $_productId = $_product->getId();
             </div>
             <div class="add-to-cart">
                 <label for="qty"><?php echo $this->__('Qty')?></label>
-                <?php $maxCount = $productQty < 10 ? $productQty : 10; ?>
-                <select class="input-text qty" title="Qty" value="1" maxlength="12"
-                        id="qty_<?php echo $_productId ?>" name="qty">
-                    <?php for ($cnt = 1; $cnt < $maxCount; $cnt++) : ?>
-                        <option value="<?php echo $cnt ?>"><?php echo $cnt; ?></option>
-                    <?php endfor; ?>
-                </select>
+                <input type="number" class="input-text qty" title="Qty" value="1" maxlength="12" id="qty_<?php echo $_productId ?>" name="qty">
+
                 <button class="button btn-cart" id="<?php echo $_product->getId() ?>"
                         title="Add to basket" type="button">
                     <span><span><?php echo $this->__('Add to basket'); ?></span></span>

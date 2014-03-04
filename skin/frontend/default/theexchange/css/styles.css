@@ -1798,3 +1798,15 @@ tr.summary-details-excluded { font-style:italic; }
 /* ======================================================================================= */
 
 .guest-select {width:305px !important;}
+
+
+/* Product Tabs */
+.product-tabs { margin-bottom:15px; border-bottom:1px solid #666; background:#f2f2f2 url(../images/bkg_tabs.gif) 0 100% repeat-x; }
+.product-tabs li { float:left; border-right:1px solid #a4a4a4; border-left:1px solid #fff; font-size:1.1em; line-height:1em; }
+.product-tabs li.first { border-left:0; }
+.product-tabs li.last { border-right:0; }
+.product-tabs a { display:block; padding:6px 15px; color:#444; }
+.product-tabs a:hover { background-color:#ddd; text-decoration:none; color:#444; }
+.product-tabs li.active a,
+.product-tabs li.active a:hover { background-color:#666; font-weight:bold; color:#fff; }
+.product-tabs-content h2 { display:none; font-size:12px; font-weight:bold; }
