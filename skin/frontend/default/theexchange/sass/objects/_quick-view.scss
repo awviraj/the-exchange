@@ -1,4 +1,23 @@
 @import "../partials/mixins";
+.quickview-main{
+    position: relative;
+  .close{
+    display: block;
+    position: absolute;
+    top:0;
+    right: 0;
+    background:#000 url("../images/sprite.png") no-repeat -52px -979px;
+    height: 31px;
+    width:35px;
+    text-align: center;
+    text-indent: -3000px;
+    opacity: 1;
+
+    &:hover{
+      opacity: 0.5;
+    }
+  }
+}
 .quickview-wrapper {
   background-color: #ffffff;
   padding:20px;
@@ -25,11 +44,21 @@
       .product-name{
         a {
           text-decoration: none;
+          text-transform: capitalize;
 
           h2{
-            font-family: 'houschka_alt_prodemibold';
+            font-family: 'houschka_alt_probold';
             color: #000000;
-            font-size: 20px;
+            font-size: 18px;
+            line-height: 25px;
+            font-weight: normal;
+          }
+        }
+      }
+      .reveiew_summary_quickview{
+        .no-rating{
+          a{
+            font-size: 11px;
           }
         }
       }
@@ -80,28 +109,37 @@
     .quickview-full-spec {
       float: left;
       display: block;
-      width: 150px;
-      background-color: black;
-      height: 40px;
+      width: 45%;
+      height: 49px;
       margin-left: -6px;
       text-decoration: none;
+      position: relative;
+
+
+
+
 
       a {
         line-height: 40px;
         font-family: 'houschka_alt_prodemibold';
         color: #FFFFFF;
         font-size: 14px;
-        padding: 0 0 0 15px;
+        padding: 0 32px 0 15px;
         text-decoration: none;
+        line-height: 49px;
+        background: url("../images/btn-sprite.png") no-repeat 0 -177px;
+        display: block;
+        width: 100%;
+
       }
     }
 
 
 
     .add-to-cart {
-      float: right;
+      float: rigt;
       display: block;
-      width: 150px;
+      width: 50%;
     }
   }
 
@@ -111,7 +149,10 @@
 
 
 ///////////////////plugin styles///////////////////
-#dialog{margin:3px;}
+#dialog{margin:3px;
+
+
+}
 /* Z-index of #mask must lower than #boxes .window */
 #mask {
   z-index:9000;
@@ -131,10 +172,12 @@
 
 /* Customize your modal window here, you can add background image too */
 #boxes #dialog {
-  border:5px solid #D2B9D3;
-  background-color:#EBDDE2;
+  border:1px solid #D2B9D3;
+  background-color:#ffffff;
   width:550px;
   height:400px;
   overflow-x: hidden;
   overflow-y: auto;
+  box-shadow: 0px 0px 8px 3px #1f1f1f;
+  padding: 0;
 }

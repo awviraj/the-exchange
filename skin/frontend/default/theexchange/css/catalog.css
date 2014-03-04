@@ -4,12 +4,13 @@
 .main-container .col-main .category-products .products-grid li.item { margin-bottom: 30px; }
 .main-container .col-main .category-products .products-grid li.item .prod-image { position: relative; }
 .main-container .col-main .category-products .products-grid li.item .prod-image .product-image { height: 233px; }
-.main-container .col-main .category-products .products-grid li.item .prod-image img { max-width: 100%; }
+.main-container .col-main .category-products .products-grid li.item .prod-image img { max-width: 100%; transition: opacity 1s ease-in-out; }
 .main-container .col-main .category-products .products-grid li.item .product-name { margin-top: 10px; text-align: center; height: 42px; overflow: hidden; }
-.main-container .col-main .category-products .products-grid li.item .product-name h2 { font-family: 'houschka_alt_prodemibold'; font-weight: normal; color: #000; font-size: 15px; line-height: 100%; }
+.main-container .col-main .category-products .products-grid li.item .product-name h2 { font-family: 'houschka_alt_prodemibold'; font-weight: normal; color: #000; font-size: 15px; line-height: 150%; }
 .main-container .col-main .category-products .products-grid li.item .price-box { border-top: 1px solid #dbdbdb; border-bottom: 1px solid #dbdbdb; padding: 10px 10px; width: 100%; margin: 0; text-align: center; }
 .main-container .col-main .category-products .products-grid li.item .price-box span { font-size: 22px; font-family: 'houschka_alt_probold'; font-weight: normal; color: #ff0000; }
-.main-container .col-main .category-products .products-grid li.item .product_quickview { display: block; height: 43px; width: 50px; text-align: left; text-indent: -3333px; background: url("../images/sprite.png") no-repeat 0 -930px; left: 50%; margin-left: -25px; margin-top: -21px; position: absolute; top: 50%; opacity: 0; }
+.main-container .col-main .category-products .products-grid li.item .product_quickview { display: block; height: 43px; width: 50px; text-align: left; text-indent: -3333px; background: url("../images/sprite.png") no-repeat 0 -930px; left: 50%; margin-left: -25px; margin-top: -21px; position: absolute; top: 50%; opacity: 0; transition: opacity 0.5s ease-in-out; }
+.main-container .col-main .category-products .products-grid li.item .product_quickview:hover { background-position: -90px -930px; }
 .main-container .col-main .category-products .products-grid li.item.active .prod-image .product-image img { opacity: 0.3; }
 .main-container .col-main .category-products .products-grid li.item.active .product_quickview { opacity: 1; }
 .main-container .col-main .category-products .toolbar { padding-bottom: 25px; padding-top: 25px; }

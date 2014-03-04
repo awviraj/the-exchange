@@ -34,6 +34,7 @@
 
               img{
                 max-width: 100%;
+                transition: opacity 1s ease-in-out;
               }
             }
             .product-name{
@@ -47,7 +48,7 @@
                 font-weight: normal;
                 color: #000;
                 font-size: 15px;
-                line-height: 100%;
+                line-height: 150%;
               }
             }
             .price-box{
@@ -81,6 +82,11 @@
               position: absolute;
               top: 50%;
               opacity: 0;
+              transition: opacity 0.5s ease-in-out;
+
+              &:hover{
+                background-position: -90px -930px;
+              }
 
             }
             &.active{

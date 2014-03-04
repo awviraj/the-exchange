@@ -35,13 +35,8 @@ $_productId = $_product->getId();
 ?>
 
 <div class="quickview-main">
+    <a href="#" class="close"><?php echo $this->__('Close') ?></a>
     <div class="quickview-wrapper">
-        <div class="row line-1">
-            <div class style="text-align:right;" class="hd">
-                <a href="#" class="close"><?php echo $this->__('Close') ?></a>
-            </div>
-        </div>
-
         <div class="row line-2">
             <div class="product-img-box" style="margin:5px; width=265px; vertical-align:top;">
                 <a href="<?php echo $_product->getProductUrl(); ?>"
@@ -93,12 +88,15 @@ $_productId = $_product->getId();
                     href="<?php echo $_product->getProductUrl() ?>"><?php echo $this->__('Full specification'); ?></a>
             </div>
             <div class="add-to-cart">
-                <label for="qty"><?php echo $this->__('Qty')?></label>
-                <input type="number" class="input-text qty" title="Qty" value="1" maxlength="12" id="qty_<?php echo $_productId ?>" name="qty">
+                <div class="add-qty">
+                    <label for="qty"><?php echo $this->__('Qty')?></label>
+                    <input type="number" class="input-text qty" title="Qty" value="1" maxlength="12" id="qty_<?php echo $_productId ?>" name="qty">
+                </div>
 
-                <button class="button btn-cart" id="<?php echo $_product->getId() ?>"
+
+                <button class="button btn-cart btn" id="<?php echo $_product->getId() ?>"
                         title="Add to basket" type="button">
-                    <span><span><?php echo $this->__('Add to basket'); ?></span></span>
+                    <?php echo $this->__('Add to basket'); ?>
                 </button>
                 <span style="padding:3px;" id="addingCart_<?php echo $_productId ?>"></span>
             </div>
