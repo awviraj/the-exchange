@@ -81,6 +81,17 @@
               position: absolute;
               top: 50%;
               opacity: 0;
+
+            }
+            &.active{
+              .prod-image .product-image{
+                img{
+                  opacity: 0.3;
+                }
+              }
+              .product_quickview{
+                opacity: 1;
+              }
             }
           }
         }

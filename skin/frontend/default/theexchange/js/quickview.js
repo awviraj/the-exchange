@@ -10,7 +10,7 @@ jQuery(document).ready(function () {
 //        jQuery(this).addClass('category-list-hover');
 //    });
 
-    jQuery('.products-grid li').hover(function (){
+    jQuery('.products-grid li.item').hover(function (){
         jQuery(this).addClass('active');
     },
     function (){
