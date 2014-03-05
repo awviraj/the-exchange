@@ -50,7 +50,7 @@ body { background: url("../images/body-bg.png") repeat; font-size: 14px; font-fa
 .navbar .container #nav li:hover { background: #342323; }
 .navbar .container #nav li a { font-family: 'houschkaalt-medium-regular'; font-weight: normal; line-height: 29px; padding: 5px 20px 6px 20px; color: #e3e3e3; font-size: 16px; }
 
-.main { width: 100%; max-width: 966px; box-sizing: border-box; padding: 20px 65px; background: #f1f2f2; min-height: 0; }
+.main { width: 100%; max-width: 966px; box-sizing: border-box; padding: 20px 1%; background: #ffffff; min-height: 0; }
 
 .footer-container { width: 100%; }
 .footer-container .footer { width: 100%; box-sizing: border-box; padding: 0; min-height: 0; }

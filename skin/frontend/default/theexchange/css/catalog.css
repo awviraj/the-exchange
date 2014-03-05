@@ -44,10 +44,21 @@
 .col-left.sidebar .block-content dl dt { padding: 10px 0 10px 0; font-size: 18px; color: #ff0000; font-family: 'houschka_alt_probold'; font-weight: normal; text-align: left; font-style: normal; text-transform: capitalize; border-bottom: 1px solid #ed0606; float: left; width: 100%; }
 .col-left.sidebar .block-content dl dt:first-of-type .plus-minus { background-position: -2px -1025px; }
 .col-left.sidebar .block-content dl dt .filter-title { float: left; }
-.col-left.sidebar .block-content dl dt .plus-minus { float: right; background: url("../images/sprite.png") no-repeat -32px -1025px; width: 12px; height: 12px; display: block; cursor: pointer; }
+.col-left.sidebar .block-content dl dt .plus-minus { float: right; background: url("../images/sprite.png") no-repeat -32px -1025px; width: 12px; height: 12px; display: block; cursor: pointer; margin-top: 2px; }
 .col-left.sidebar .block-content dl dt .plus-minus.plus { background-position: -32px -1025px; }
 .col-left.sidebar .block-content dl dt .plus-minus.minus { background-position: -2px -1025px; }
 .col-left.sidebar .block-content dl dd { padding: 0 0 10px 0; display: none; }
 .col-left.sidebar .block-content dl dd:first-of-type { display: block; }
 .col-left.sidebar .block-content dl dd ol li { border-bottom: 1px solid #f02626; line-height: 37px; }
 .col-left.sidebar .block-content dl dd ol li a { font-size: 14x; color: #000; font-family: 'houschka_alt_promedium'; font-weight: normal; font-style: normal; }
+
+.col1-layout .col-main { width: 100%; max-width: 966px; margin: 0 auto; }
+
+.product-view .product-img-box .product-image { padding: 20px 1%; border: 1px solid #dedede; text-align: center; }
+.product-view .product-img-box .more-views ul { margin-left: 0; }
+.product-view .product-img-box .more-views ul li { margin-left: 3%; width: 31%; border: 1px solid #dedede; float: left; padding: 0 1%; }
+.product-view .product-img-box .more-views ul li:first-child { margin-left: 0; }
+.product-view .product-img-box .more-views ul li a { padding: 10px; display: block; width: 100%; height: 83px; text-align: center; }
+.product-view .product-img-box .more-views ul li a img { max-width: 100%; }
+.product-view .product-shop .rating-row { float: left; width: 100%; }
+.product-view .product-shop .rating-row .ratings { float: left; }
