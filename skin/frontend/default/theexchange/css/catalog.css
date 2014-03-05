@@ -41,7 +41,13 @@
 .main-container .col-main .category-products .toolbar-bottom .toolbar .pager .limiter { display: none; }
 
 .col-left.sidebar .block-content { background: none; }
-.col-left.sidebar .block-content dl dt { padding: 10px 0 10px 0; font-size: 18px; color: #ff0000; font-family: 'houschka_alt_probold'; font-weight: normal; text-align: left; font-style: normal; text-transform: capitalize; border-bottom: 1px solid #ed0606; }
-.col-left.sidebar .block-content dl dd { padding: 0 0 10px 0; }
+.col-left.sidebar .block-content dl dt { padding: 10px 0 10px 0; font-size: 18px; color: #ff0000; font-family: 'houschka_alt_probold'; font-weight: normal; text-align: left; font-style: normal; text-transform: capitalize; border-bottom: 1px solid #ed0606; float: left; width: 100%; }
+.col-left.sidebar .block-content dl dt:first-of-type .plus-minus { background-position: -2px -1025px; }
+.col-left.sidebar .block-content dl dt .filter-title { float: left; }
+.col-left.sidebar .block-content dl dt .plus-minus { float: right; background: url("../images/sprite.png") no-repeat -32px -1025px; width: 12px; height: 12px; display: block; cursor: pointer; }
+.col-left.sidebar .block-content dl dt .plus-minus.plus { background-position: -32px -1025px; }
+.col-left.sidebar .block-content dl dt .plus-minus.minus { background-position: -2px -1025px; }
+.col-left.sidebar .block-content dl dd { padding: 0 0 10px 0; display: none; }
+.col-left.sidebar .block-content dl dd:first-of-type { display: block; }
 .col-left.sidebar .block-content dl dd ol li { border-bottom: 1px solid #f02626; line-height: 37px; }
 .col-left.sidebar .block-content dl dd ol li a { font-size: 14x; color: #000; font-family: 'houschka_alt_promedium'; font-weight: normal; font-style: normal; }

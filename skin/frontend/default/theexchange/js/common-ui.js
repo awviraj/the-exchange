@@ -69,4 +69,21 @@ jQuery(document).ready(function(){
             jQuery('.navbar-container').toggleClass('f-nav-sub');
         }
     });
+
+    ///////////////////////////////
+
+    jQuery("#narrow-by-list dt .plus-minus").each(function(){
+        jQuery(this).click(function(){
+            if(jQuery(this).parent().next("dd").css('display') == 'none'){
+                jQuery(this).parent().next("dd").show();
+               // alert('hide');
+                jQuery(this).addClass('minus');
+
+            } else {
+                jQuery(this).parent().next("dd").hide();
+                jQuery(this).removeClass('minus');
+                jQuery(this).addClass('plus');
+            }
+        })
+    })
 });

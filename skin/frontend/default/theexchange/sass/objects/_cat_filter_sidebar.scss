@@ -14,9 +14,42 @@
           font-style: normal;
           text-transform: capitalize;
           border-bottom: 1px solid #ed0606;
+          float: left;
+          width: 100%;
+
+          &:first-of-type{
+            .plus-minus{
+              background-position: -2px -1025px;
+            }
+          }
+
+          .filter-title{
+            float: left;
+          }
+          .plus-minus{
+            float: right;
+            background: url('../images/sprite.png') no-repeat -32px -1025px;
+            width: 12px;
+            height: 12px;
+            display: block;
+            cursor: pointer;
+
+            &.plus{
+              background-position: -32px -1025px;
+            }
+            &.minus{
+              background-position: -2px -1025px;
+            }
+          }
         }
         dd{
           padding:0 0 10px 0;
+          display: none;
+          //overflow: visible !important;
+
+          &:first-of-type{
+            display: block;
+          }
 
           ol{
             li{
