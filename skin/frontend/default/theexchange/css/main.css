@@ -230,6 +230,7 @@ body { background: url("../images/body-bg.png") repeat; font-size: 14px; font-fa
 .quickview-main .close:hover { opacity: 0.5; }
 
 .quickview-wrapper { background-color: #ffffff; padding: 20px; }
+.quickview-wrapper .line-2 { min-height: 306px; }
 .quickview-wrapper .line-2 .product-img-box { float: left; max-width: 45%; width: 45%; margin: 0 0 0 10px; border-right: 1px solid #d9d9d9; }
 .quickview-wrapper .line-2 .product-img-box img { max-width: 90%; }
 .quickview-wrapper .line-2 .product-shop { max-width: 45%; width: 45%; float: left; padding: 0 0 0 20px; }
@@ -244,9 +245,14 @@ body { background: url("../images/body-bg.png") repeat; font-size: 14px; font-fa
 .quickview-wrapper .line-2 .product-shop .price-box .availability.in-stock { color: #489900; font-weight: normal; font-size: 14px; }
 .quickview-wrapper .line-2 .product-shop .price-box .availability.in-stock span { font-weight: normal; }
 .quickview-wrapper .line-2 .product-shop .price-box .availability.in-stock span .qty { font-weight: bold; }
+.quickview-wrapper .line-3 { margin-right: -27px; }
 .quickview-wrapper .line-3 .quickview-full-spec { float: left; display: block; width: 45%; height: 49px; margin-left: -6px; text-decoration: none; position: relative; }
 .quickview-wrapper .line-3 .quickview-full-spec a { line-height: 40px; font-family: 'houschka_alt_prodemibold'; color: #FFFFFF; font-size: 14px; padding: 0 32px 0 15px; text-decoration: none; line-height: 49px; background: url("../images/btn-sprite.png") no-repeat 0 -177px; display: block; width: 100%; }
-.quickview-wrapper .line-3 .add-to-cart { float: rigt; display: block; width: 50%; }
+.quickview-wrapper .line-3 .add-to-cart { float: right; display: block; width: 50%; }
+.quickview-wrapper .line-3 .add-to-cart .add-qty { float: left; width: 89px; }
+.quickview-wrapper .line-3 .add-to-cart .add-qty label { float: left; width: 100%; display: block; font-family: 'houschka_alt_probold'; color: #2f2f2f; font-size: 16px; font-weight: normal; margin-bottom: 5px; }
+.quickview-wrapper .line-3 .add-to-cart .add-qty .qty { padding: 5px 10px; width: 76px; }
+.quickview-wrapper .line-3 .add-to-cart .btn-cart { background: url("../images/btn-sprite.png") no-repeat 0 -249px; width: 180px; height: 49px; float: left; font-family: 'houschka_alt_probold'; font-weight: normal; font-size: 14px; color: #fff; text-align: right; padding-right: 25px; line-height: 49px; }
 
 #dialog { margin: 3px; }
 

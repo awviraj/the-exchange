@@ -23,6 +23,7 @@
   padding:20px;
 
   .line-2{
+    min-height: 306px;
     .product-img-box {
       float: left;
       max-width: 45%;
@@ -106,6 +107,7 @@
   }
 
   .line-3 {
+    margin-right: -27px;
     .quickview-full-spec {
       float: left;
       display: block;
@@ -137,9 +139,43 @@
 
 
     .add-to-cart {
-      float: rigt;
+      float: right;
       display: block;
       width: 50%;
+
+      .add-qty{
+        float: left;
+        width: 89px;
+
+        label{
+          float: left;
+          width: 100%;
+          display: block;
+          font-family: 'houschka_alt_probold';
+          color: #2f2f2f;
+          font-size: 16px;
+          font-weight: normal;
+          margin-bottom: 5px;
+        }
+        .qty{
+          padding: 5px 10px;
+          width: 76px;
+        }
+
+      }
+      .btn-cart{
+        background:url("../images/btn-sprite.png") no-repeat  0 -249px;
+        width: 180px;
+        height: 49px;
+        float: left;
+        font-family: 'houschka_alt_probold';
+        font-weight: normal;
+        font-size: 14px;
+        color: #fff;
+        text-align: right;
+        padding-right: 25px;
+        line-height: 49px;
+      }
     }
   }
 
