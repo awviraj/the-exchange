@@ -28,7 +28,15 @@
 <?php $_product = $this->getProduct() ?>
 
 <?php echo $this->getChildHtml('product_type_data_extra') ?>
-<?php echo $this->getPriceHtml($_product) ?>
+<div class="price_wrapper">
+    <div class="sell_price">
+        <?php echo $this->getPriceHtml($_product) ?>
+    </div>
+    <div class="buy_price">
+
+    </div>
+</div>
+
 
 
 <?php if ($this->displayProductStockStatus()): ?>

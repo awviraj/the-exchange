@@ -111,7 +111,7 @@
 								<div id="boxes">
 								 
 									<!-- Do not remove div#mask, because you'll need it to fill the whole screen --> 
-									<div id="mask"></div>
+<!--									<div id="mask"></div>-->
 									 
 									<!-- #customize your modal window here -->
 								 
@@ -210,16 +210,23 @@ jQuery(document).ready(function() {
         e.preventDefault();
         jQuery('#product_data').empty();
         jQuery('#mask, .window').hide();
-    });    
+        removeOverlay(this);
+    });
      
     //if mask is clicked
     jQuery('#mask').click(function () {
         jQuery(this).hide();
         jQuery('.window').hide();
+        removeOverlay(this);
     });        
      
 });
- 
+
+
+
+    jQuery('.product_quickview').click(function () {
+        searchOverlay(this);
+    });
 </script>
 
 

@@ -152,6 +152,7 @@ $_productId = $_product->getId();
                 e.preventDefault();
                 jQuery('#product_data').empty();
                 jQuery('#mask, .window').hide();
+                removeOverlay(this);
             });
 
         });

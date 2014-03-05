@@ -37,21 +37,15 @@ jQuery(document).ready(function(){
     });
 
     jQuery( "#search" ).focus(function() {
-        searchOverlay();
+        searchOverlay(this);
     });
 
     jQuery( "#search" ).blur(function() {
-        jQuery('#overlay').remove();
-        jQuery('.search-box').removeClass('overlay');
+        removeOverlay(jQuery('.search-box'));
     });
 
 
-    function searchOverlay(){
-        var overlay = jQuery('<div id="overlay"> </div>');
-        overlay.appendTo(document.body)
 
-        jQuery('.search-box').addClass('overlay');
-    }
 
     jQuery('.best-seller-slider').bxSlider({
         nextSelector: '#slider-next',
@@ -87,3 +81,15 @@ jQuery(document).ready(function(){
         })
     })
 });
+
+function searchOverlay(elm){
+    var overlay = jQuery('<div id="overlay"> </div>');
+    overlay.appendTo(document.body)
+
+    jQuery(elm).addClass('overlay');
+}
+
+function removeOverlay(elm){
+    jQuery('#overlay').remove();
+    jQuery(elm).removeClass('overlay');
+}
