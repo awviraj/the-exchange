@@ -88,9 +88,12 @@ $_productId = $_product->getId();
                     href="<?php echo $_product->getProductUrl() ?>"><?php echo $this->__('Full specification'); ?></a>
             </div>
             <div class="add-to-cart">
+                <label for="qty"><?php echo $this->__('Qty')?></label>
                 <div class="add-qty">
-                    <label for="qty"><?php echo $this->__('Qty')?></label>
-                    <input type="number" class="input-text qty" title="Qty" value="1" maxlength="12" id="qty_<?php echo $_productId ?>" name="qty">
+                    <div class="qty-wrapper">
+                        <input type="number" class="input-text qty" title="Qty" value="1" maxlength="12" id="qty_<?php echo $_productId ?>" name="qty">
+                    </div>
+
                 </div>
 
 
