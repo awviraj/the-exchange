@@ -51,6 +51,7 @@ Default layout, loads most of the pages
 
                 <block type="page/js_cookie" name="js_cookies" template="page/js/cookie.phtml"/>
 
+                <action method="addItem"><type>skin_js</type><name>js/modernizr.js</name><group>js</group></action>
                 <action method="addItem"><type>skin_js</type><name>js/common-ui.js</name><group>js</group></action>
                 <action method="addItem"><type>skin_js</type><name>js/jquery.bxslider.min.js</name><group>js</group></action>
                 <action method="addItem"><type>skin_js</type><name>js/modernizr.custom.js</name><group>plugin</group></action>

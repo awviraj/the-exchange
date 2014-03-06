@@ -63,3 +63,19 @@
 .product-view .product-shop .product-name h1 { font-size: 29px; font-family: 'houschka_alt_probold'; font-weight: normal; text-transform: capitalize; font-style: normal; line-height: 150%; }
 .product-view .product-shop .rating-row { float: left; width: 100%; }
 .product-view .product-shop .rating-row .ratings { float: left; }
+.product-view .product-shop .add-to-box .add-to-cart label { line-height: 51px; font-family: 'houschka_alt_probold'; font-weight: normal; font-size: 20px; text-transform: uppercase; color: #2f2f2f; }
+.product-view .product-shop .add-to-box .qty-wrapper { background: url("../images/btn-sprite.png") no-repeat -11px -309px; width: 132px; height: 51px; float: left; }
+.product-view .product-shop .add-to-box .qty-wrapper .qty { float: left; margin-right: 5px; border: none; max-width: 100px; margin-left: 6px; text-align: center; line-height: 30px; margin-top: 10px; font-family: 'houschka_alt_probold'; font-weight: normal; font-size: 18px; color: #000; }
+.product-view .product-shop .add-to-box .btn-cart { background: url("../images/btn-sprite.png") no-repeat 0 -378px; width: 210px; height: 49px; float: left; font-family: 'houschka_alt_probold'; font-weight: normal; font-size: 18px; color: #fff; text-align: right; padding-right: 25px; line-height: 49px; margin-left: -4px; }
+.product-view .product-shop .add-to-box .btn-cart:hover { opacity: 0.8; }
+.product-view .product-shop .short-description { font-family: arial, helvetica; font-size: 14px; line-height: 19px; float: left; width: 100%; }
+.product-view .product-shop .short-description p { margin-bottom: 15px; }
+
+.product-collateral .product-tabs { border-bottom: 3px solid #ff0000; background: #000; float: left; width: 100%; }
+
+.box-collateral.box-reviews h2 { font-size: 16px; font-family: 'houschka_alt_probold'; font-weight: normal; text-transform: capitalize; font-style: normal; line-height: 150%; color: #000; }
+.box-collateral.box-reviews .form-list .form-group { width: 100%; max-width: 300px; }
+.box-collateral.box-reviews .form-list .form-group label { margin-bottom: 5px; font-size: 14px; font-family: 'houschka_alt_probold'; font-weight: normal; color: #000; }
+.box-collateral.box-reviews .form-list .form-group button { background: #ff0000; color: #fff; font-size: 14px; font-family: 'houschka_alt_probold'; font-weight: normal; }
+.box-collateral.box-reviews .form-list .form-group textarea { width: 100%; }
+.box-collateral.box-reviews table th { font-family: 'houschka_alt_prodemibold'; font-size: 14px; font-weight: normal; }
