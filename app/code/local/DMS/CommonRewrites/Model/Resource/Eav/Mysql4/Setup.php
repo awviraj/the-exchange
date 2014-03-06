@@ -26,7 +26,7 @@ class DMS_CommonRewrites_Model_Resource_Eav_Mysql4_Setup extends Mage_Eav_Model_
                     'buying_price' => array(
                         'group'             => 'Prices',
                         'label'             => 'Buying Price',
-                        'type'              => 'dec',
+                        'type'              => 'decimal',
                         'input'             => 'text',
                         'default'           => '0',
                         'class'             => '',
