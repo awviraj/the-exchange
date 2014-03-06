@@ -30,19 +30,33 @@
 <?php echo $this->getChildHtml('product_type_data_extra') ?>
 <div class="price_wrapper">
     <div class="sell_price">
-        <?php echo $this->getPriceHtml($_product) ?>
+        <span><?php echo $this->__('Selling Price'); ?></span>
+        <div class="price-stock">
+            <div class="price">
+                <?php echo $this->getPriceHtml($_product) ?>
+            </div>
+
+            <?php if ($productQty = $_product->getStockItem()->getQty()) : ?>
+                <p class="availability in-stock">
+                    <span><span class="qty"><?php echo intVal($productQty) ?></span> <?php echo $this->__(' in stock online') ?></span>
+                </p>
+            <?php else: ?>
+                <p class="availability out-stock">
+                    <span><?php $this->__('temporarily out of stock.')?></span>
+                </p>;
+            <?php endif; ?>
+        </div>
     </div>
     <div class="buy_price">
+        <span><?php echo $this->__('Buying Price'); ?></span>
 
+        <div class="price-know-more">
+            <div class="price">
+                <?php echo $_product->getBuyingPrice(); ?>
+            </div>
+            <p class="know-more">
+                <span><?php echo $this->__('Know more');?></span><span class="arrow">&nbsp;</span>
+            </p>
+        </div>
     </div>
 </div>
-
-
-
-<?php if ($this->displayProductStockStatus()): ?>
-    <?php if ($_product->isAvailable()): ?>
-        <p class="availability in-stock"><?php echo $this->__('Availability:') ?> <span><?php echo $this->__('In stock') ?></span></p>
-    <?php else: ?>
-        <p class="availability out-of-stock"><?php echo $this->__('Availability:') ?> <span><?php echo $this->__('Out of stock') ?></span></p>
-    <?php endif; ?>
-<?php endif; ?>

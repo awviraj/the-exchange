@@ -1,7 +1,7 @@
 <config>
     <modules>
         <DMS_CommonRewrites>
-            <version>0.0.0.1</version>
+            <version>0.0.2</version>
         </DMS_CommonRewrites>
     </modules>
     <global>
@@ -16,11 +16,15 @@
             </commonrewrites>
         </helpers>
         <resources>
-            <commonrewrites>
+            <commonrewrites_product_setup>
                 <setup>
                     <module>DMS_CommonRewrites</module>
+                    <class>DMS_CommonRewrites_Model_Resource_Eav_Mysql4_Setup</class>
                 </setup>
-            </commonrewrites>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </commonrewrites_product_setup>
         </resources>
         <blocks>
             <commonrewrites><class>DMS_CommonRewrites_Block</class></commonrewrites>
