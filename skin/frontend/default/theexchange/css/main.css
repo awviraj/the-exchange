@@ -247,12 +247,14 @@ body { background: url("../images/body-bg.png") repeat; font-size: 14px; font-fa
 .quickview-wrapper .line-2 .product-shop .price-box .availability.in-stock span .qty { font-weight: bold; }
 .quickview-wrapper .line-3 { margin-right: -27px; }
 .quickview-wrapper .line-3 .quickview-full-spec { float: left; display: block; width: 45%; height: 49px; margin-left: -6px; text-decoration: none; position: relative; }
-.quickview-wrapper .line-3 .quickview-full-spec a { line-height: 40px; font-family: 'houschka_alt_prodemibold'; color: #FFFFFF; font-size: 14px; padding: 0 32px 0 15px; text-decoration: none; line-height: 49px; background: url("../images/btn-sprite.png") no-repeat 0 -177px; display: block; width: 100%; }
-.quickview-wrapper .line-3 .add-to-cart { float: right; display: block; width: 50%; }
-.quickview-wrapper .line-3 .add-to-cart .add-qty { float: left; width: 89px; }
-.quickview-wrapper .line-3 .add-to-cart .add-qty label { float: left; width: 100%; display: block; font-family: 'houschka_alt_probold'; color: #2f2f2f; font-size: 16px; font-weight: normal; margin-bottom: 5px; }
+.quickview-wrapper .line-3 .quickview-full-spec a { margin-top: 22px; line-height: 40px; font-family: 'houschka_alt_prodemibold'; color: #FFFFFF; font-size: 14px; padding: 0 32px 0 15px; text-decoration: none; line-height: 49px; background: url("../images/btn-sprite.png") no-repeat 0 -177px; display: block; width: 100%; }
+.quickview-wrapper .line-3 .add-to-cart { float: right; display: block; width: 283px; }
+.quickview-wrapper .line-3 .add-to-cart label { float: left; width: 100%; display: block; font-family: 'houschka_alt_probold'; color: #2f2f2f; font-size: 16px; font-weight: normal; margin-bottom: 5px; }
+.quickview-wrapper .line-3 .add-to-cart .add-qty { float: left; width: 104px; }
+.quickview-wrapper .line-3 .add-to-cart .add-qty .qty-wrapper { background: url("../images/btn-sprite.png") no-repeat -161px -309px; width: 101px; height: 51px; float: left; }
+.quickview-wrapper .line-3 .add-to-cart .add-qty .qty-wrapper .qty { float: left; margin-right: 5px; border: none; width: 72px; margin-left: 6px; text-align: center; line-height: 21px; margin-top: 12px; font-family: 'houschka_alt_probold'; font-weight: normal; font-size: 18px; color: #000; }
 .quickview-wrapper .line-3 .add-to-cart .add-qty .qty { padding: 5px 10px; width: 76px; }
-.quickview-wrapper .line-3 .add-to-cart .btn-cart { background: url("../images/btn-sprite.png") no-repeat 0 -249px; width: 180px; height: 49px; float: left; font-family: 'houschka_alt_probold'; font-weight: normal; font-size: 14px; color: #fff; text-align: right; padding-right: 25px; line-height: 49px; }
+.quickview-wrapper .line-3 .add-to-cart .btn-cart { background: url("../images/btn-sprite.png") no-repeat 0 -249px; width: 180px; height: 49px; float: left; font-family: 'houschka_alt_probold'; font-weight: normal; font-size: 14px; color: #fff; text-align: right; padding-right: 25px; line-height: 49px; margin-left: -7px; }
 
 #dialog { margin: 3px; }
 
