@@ -13,10 +13,21 @@
       padding: 20px 1%;
       border: 1px solid #dedede;
       text-align: center;
+      position: relative;
 
       img{
         max-width: 100%;
       }
+    }
+    .zoom-notice{
+      position: absolute;
+      bottom: 12px;
+      left: 12px;
+      width: 16px;
+      height: 18px;
+      background: url("../images/sprite.png") 0 -500px;
+      text-align: left;
+      text-indent: -3000px;
     }
     .more-views{
       position: relative;

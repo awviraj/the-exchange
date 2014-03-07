@@ -56,11 +56,12 @@ if (count($galleryImages) > 0) {
             echo $_helper->productAttribute($_product, $_img, 'image');
             ?>
         </a>
-    </p>
     <?php if (isset($gallery)): ?>
-        <p class="zoom-notice" id="track_hint"><?php echo $this->__('Click on above image to view full picture') ?></p>
+        <p class="zoom-notice" id="track_hint"><?php echo $this->__('zoom') ?></p>
         <?php echo $gallery; ?>
     <?php endif; ?>
+    </p>
+
 <?php else: ?>
     <p class="product-image">
         <?php

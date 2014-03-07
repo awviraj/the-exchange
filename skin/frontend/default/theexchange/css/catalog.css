@@ -54,8 +54,9 @@
 
 .col1-layout .col-main { width: 100%; max-width: 966px; margin: 0 auto; }
 
-.product-view .product-img-box .product-image { padding: 20px 1%; border: 1px solid #dedede; text-align: center; }
+.product-view .product-img-box .product-image { padding: 20px 1%; border: 1px solid #dedede; text-align: center; position: relative; }
 .product-view .product-img-box .product-image img { max-width: 100%; }
+.product-view .product-img-box .zoom-notice { position: absolute; bottom: 12px; left: 12px; width: 16px; height: 18px; background: url("../images/sprite.png") 0 -500px; text-align: left; text-indent: -3000px; }
 .product-view .product-img-box .more-views { position: relative; }
 .product-view .product-img-box .more-views h2 { display: none; }
 .product-view .product-img-box .more-views ul { margin-left: 0; }
