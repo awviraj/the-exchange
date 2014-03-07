@@ -45,18 +45,44 @@ jQuery(document).ready(function(){
     });
 
 
+jQuery('.parentMenu').each(function(){
+    jQuery(this).hover(
+        function() {
+            //bxcall();
+        }, function() {
+            //jQuery( this ).removeClass('open' );
+        }
+    )
+})
+    bxcall();
 
+    function bxcall(){
+        jQuery('.best-seller-slider').bxSlider({
+            nextSelector: '#slider-next',
+            prevSelector: '#slider-prev',
+            nextText: '→',
+            prevText: '←',
+            adaptiveHeight: true,
+              maxSlides: 3,
+            slideMargin: 15
+           // pager:false,
+        });
+    }
 
-    jQuery('.best-seller-slider').bxSlider({
-        nextSelector: '#slider-next',
-        prevSelector: '#slider-prev',
-        nextText: '→',
-        prevText: '←',
-    adaptiveHeight: true,
-    minSlides: 4,
-    slideWidth: 129,
-    slideMargin: 10
+    jQuery(".more-views ul").bxSlider({
+        auto:false,
+        pager:false,
+        slideWidth: 99,
+        minSlides: 3,
+        maxSlides: 5,
+        controls: true,
+        slideMargin:12,
+        moveSlides:1,
+       nextSelector: '#more-views-next',
+       prevSelector: '#more-views-prev'
     });
+
+
 
     jQuery('.f-nav-menu-link').live('click', function() {
         if (jQuery(window).scrollTop() >= 500 ){

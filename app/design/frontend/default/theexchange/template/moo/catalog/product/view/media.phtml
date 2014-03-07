@@ -33,6 +33,7 @@ $i = 0; //counter
 $galleryImages = $this->getGalleryImages();
 if (count($galleryImages) > 0) {
     $gallery = '<div class="more-views">';
+    $gallery .= '<span class="more-views-prev more-views-control" id="more-views-prev"></span>';
     $gallery .= '<h2>' . $this->__('More Views') . '</h2>';
     $gallery .= '<ul>';
     foreach ($galleryImages as $_image) {
@@ -43,7 +44,7 @@ if (count($galleryImages) > 0) {
                 . '<img src="' . $this->helper('catalog/image')->init($this->getProduct(), 'thumbnail', $_image->getFile())->resize(56) . '" width="56" height="56" alt="' . $this->htmlEscape($_image->getLabel()) . '" />'
                 . '</a></li>';
     }
-    $gallery .= '</ul></div>';
+    $gallery .= '</ul><span class="more-views-next more-views-control" id="more-views-next"></span></div>';
 }
 ?>
 

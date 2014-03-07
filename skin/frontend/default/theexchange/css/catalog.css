@@ -55,23 +55,52 @@
 .col1-layout .col-main { width: 100%; max-width: 966px; margin: 0 auto; }
 
 .product-view .product-img-box .product-image { padding: 20px 1%; border: 1px solid #dedede; text-align: center; }
+.product-view .product-img-box .product-image img { max-width: 100%; }
+.product-view .product-img-box .more-views { position: relative; }
+.product-view .product-img-box .more-views h2 { display: none; }
 .product-view .product-img-box .more-views ul { margin-left: 0; }
-.product-view .product-img-box .more-views ul li { margin-left: 3%; width: 31%; border: 1px solid #dedede; float: left; padding: 0 1%; }
+.product-view .product-img-box .more-views ul li { border: 1px solid #dedede; float: left; }
 .product-view .product-img-box .more-views ul li:first-child { margin-left: 0; }
-.product-view .product-img-box .more-views ul li a { padding: 10px; display: block; width: 100%; height: 83px; text-align: center; }
-.product-view .product-img-box .more-views ul li a img { max-width: 100%; }
+.product-view .product-img-box .more-views ul li a { width: 100%; height: 81px; overflow: hidden; display: block; text-align: center; padding: 5px; box-sizing: border-box; }
+.product-view .product-img-box .more-views ul li a img { max-width: 100%; margin: 0 auto; }
+.product-view .product-img-box .more-views .more-views-control { display: block; position: absolute; height: 32px; width: 32px; z-index: 100; }
+.product-view .product-img-box .more-views .more-views-control a { display: block; height: 32px; width: 32px; background: url("../images/sprite.png") 9px -823px black; text-align: left; text-indent: -3000px; }
+.product-view .product-img-box .more-views .more-views-control.more-views-prev { top: 50%; left: 0; margin-top: -16px; }
+.product-view .product-img-box .more-views .more-views-control.more-views-next { top: 50%; right: 7px; margin-top: -16px; }
+.product-view .product-img-box .more-views .more-views-control.more-views-next a { background-position: -55px -823px; }
 .product-view .product-shop .product-name h1 { font-size: 29px; font-family: 'houschka_alt_probold'; font-weight: normal; text-transform: capitalize; font-style: normal; line-height: 150%; }
 .product-view .product-shop .rating-row { float: left; width: 100%; }
 .product-view .product-shop .rating-row .ratings { float: left; }
+.product-view .product-shop .add-to-box { float: left; width: 100%; }
+.product-view .product-shop .add-to-box .add-to-cart { float: right; }
 .product-view .product-shop .add-to-box .add-to-cart label { line-height: 51px; font-family: 'houschka_alt_probold'; font-weight: normal; font-size: 20px; text-transform: uppercase; color: #2f2f2f; }
 .product-view .product-shop .add-to-box .qty-wrapper { background: url("../images/btn-sprite.png") no-repeat -11px -309px; width: 132px; height: 51px; float: left; }
 .product-view .product-shop .add-to-box .qty-wrapper .qty { float: left; margin-right: 5px; border: none; max-width: 100px; margin-left: 6px; text-align: center; line-height: 30px; margin-top: 10px; font-family: 'houschka_alt_probold'; font-weight: normal; font-size: 18px; color: #000; }
 .product-view .product-shop .add-to-box .btn-cart { background: url("../images/btn-sprite.png") no-repeat 0 -378px; width: 210px; height: 49px; float: left; font-family: 'houschka_alt_probold'; font-weight: normal; font-size: 18px; color: #fff; text-align: right; padding-right: 25px; line-height: 49px; margin-left: -4px; }
 .product-view .product-shop .add-to-box .btn-cart:hover { opacity: 0.8; }
-.product-view .product-shop .short-description { font-family: arial, helvetica; font-size: 14px; line-height: 19px; float: left; width: 100%; }
+.product-view .product-shop .short-description { margin: 0; font-family: arial, helvetica; font-size: 14px; line-height: 19px; float: left; width: 100%; padding: 20px 0; }
 .product-view .product-shop .short-description p { margin-bottom: 15px; }
+.product-view .product-shop .price_wrapper { float: left; width: 100%; border-top: 4px solid #ff1414; border-bottom: 4px solid #ff1414; padding: 8px 0; }
+.product-view .product-shop .price_wrapper .sell_price { float: left; width: 49%; }
+.product-view .product-shop .price_wrapper .sell_price label { float: left; line-height: 29px; font-size: 18px; font-family: 'houschka_alt_probold'; font-weight: normal; color: #000; }
+.product-view .product-shop .price_wrapper .sell_price .price-stock { float: left; margin-left: 5px; }
+.product-view .product-shop .price_wrapper .sell_price .price-stock .price .price-box { margin: 0; }
+.product-view .product-shop .price_wrapper .sell_price .price-stock .price span { font-family: 'houschka_alt_probold'; font-weight: normal; font-size: 30px; color: #ff0000; line-height: 30px; margin: 0; }
+.product-view .product-shop .price_wrapper .sell_price .price-stock .availability { font-family: arial; font-size: 14px; margin: 0; }
+.product-view .product-shop .price_wrapper .sell_price .price-stock .availability.in-stock { color: #489900; }
+.product-view .product-shop .price_wrapper .sell_price .price-stock .availability.out-stock { color: #ff0000; }
+.product-view .product-shop .price_wrapper .buy_price { float: right; width: 49%; }
+.product-view .product-shop .price_wrapper .buy_price label { float: left; line-height: 30px; font-size: 18px; font-family: 'houschka_alt_probold'; font-weight: normal; color: #000; }
+.product-view .product-shop .price_wrapper .buy_price .price-know-more { float: left; margin-left: 5px; }
+.product-view .product-shop .price_wrapper .buy_price .price-know-more .price { font-family: 'houschka_alt_probold'; font-weight: normal; font-size: 30px; color: #ff0000; line-height: 30px; margin: 0; }
+.product-view .product-shop .price_wrapper .buy_price .price-know-more .know-more { float: right; text-align: right; }
 
-.product-collateral .product-tabs { border-bottom: 3px solid #ff0000; background: #000; float: left; width: 100%; }
+.product-collateral { background: none; padding: 0; }
+.product-collateral .product-tabs { border-bottom: 3px solid #ff0000; background: #000; float: left; width: 100%; padding: 0 35px; }
+.product-collateral .product-tabs li { border-left: none; }
+.product-collateral .product-tabs li.active { border: none; }
+.product-collateral .product-tabs li.active a { background: #ff0000; }
+.product-collateral .product-tabs a { line-height: 44px; font-family: 'houschka_alt_probold'; font-weight: normal; font-size: 15px; color: #fff; text-transform: uppercase; }
 
 .box-collateral.box-reviews h2 { font-size: 16px; font-family: 'houschka_alt_probold'; font-weight: normal; text-transform: capitalize; font-style: normal; line-height: 150%; color: #000; }
 .box-collateral.box-reviews .form-list .form-group { width: 100%; max-width: 300px; }
