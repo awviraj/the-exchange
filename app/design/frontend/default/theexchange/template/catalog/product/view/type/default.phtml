@@ -48,15 +48,17 @@
         </div>
     </div>
     <div class="buy_price">
-        <label><?php echo $this->__('Buying Price'); ?></label>
-
-        <div class="price-know-more">
-            <div class="price">
-                <?php echo $_product->getBuyingPrice(); ?>
+        <?php if ($_product->getBuyingPrice()): ?>
+            <label><?php echo $this->__('Buying Price'); ?></label>
+            <div class="price-know-more">
+                <div class="price">
+                    <?php echo Mage::helper('core')->currency($_product->getBuyingPrice(), true, false); ?>
+                </div>
+                <p class="know-more">
+                    <span><?php echo $this->__('Know more');?></span><span class="arrow">&nbsp;</span>
+                </p>
             </div>
-            <p class="know-more">
-                <span><?php echo $this->__('Know more');?></span><span class="arrow">&nbsp;</span>
-            </p>
-        </div>
+        <?php endif; ?>
     </div>
+
 </div>

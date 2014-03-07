@@ -5,14 +5,68 @@
  * @copyright   Copyright (c) 2013 Magento Inc. (http://www.magentocommerce.com)
  * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
-//
-//$installer = $this;
-/* @var $installer Mage_Catalog_Model_Entity_Setup */
-//$installer = Mage::getResourceModel('catalog/setup', 'catalog_setup');
-//$installer->removeAttribute('catalog_product','buying_price');
-$installer = $this;
+$installer = Mage::getResourceModel('catalog/setup','core_setup');
+$installer->startSetup();
 $installer->removeAttribute('catalog_product','buying_price');
-$installer->installEntities();
+
+$installer->addAttribute('catalog_product', 'buying_price', array(
+    'type'              => 'decimal',
+    'group'             => 'Prices',
+    'input'             => 'price',
+    'backend'            => 'catalog/product_attribute_backend_price',
+    'frontend'          => '',
+    'source'            => '',
+    'label'             => 'Buying Price',
+    'global'            => Mage_Catalog_Model_Resource_Eav_Attribute::SCOPE_WEBSITE,
+    'required'          => '0',
+    'user_defined'      => '1',
+    'searchable'        => '1',
+    'filterable'        => '1',
+    'comparable'        => '1',
+    'apply_to' => implode(',',
+        array(
+            Mage_Catalog_Model_Product_Type::TYPE_SIMPLE,
+            Mage_Catalog_Model_Product_Type::TYPE_CONFIGURABLE
+        )
+    ),
+    'visible_on_front'  => '1',
+    'visible_in_advanced_search' => '1',
+    'unique'            => '0',
+    'used_in_product_listing'    => '1',
+));
+
+$installer->removeAttribute('catalog_product','product_specifications');
+$installer->addAttribute('catalog_product', 'product_specifications', array(
+    'type'              => 'text',
+    'group'             => 'General',
+    'input'             => 'textarea',
+    'backend'            => '',
+    'frontend'          => '',
+    'source'            => '',
+    'label'             => 'Product Specifications',
+    'global'            => Mage_Catalog_Model_Resource_Eav_Attribute::SCOPE_WEBSITE,
+    'required'          => '0',
+    'user_defined'      => '1',
+    'searchable'        => '0',
+    'filterable'        => '0',
+    'comparable'        => '0',
+    'apply_to' => implode(',',
+        array(
+            Mage_Catalog_Model_Product_Type::TYPE_SIMPLE,
+            Mage_Catalog_Model_Product_Type::TYPE_CONFIGURABLE
+        )
+    ),
+    'visible_on_front'  => '1',
+    'visible_in_advanced_search' => '1',
+    'unique'            => '0',
+    'used_in_product_listing'    => '1',
+    'is_wysiwyg_enabled' => '1',
+    'is_html_allowed_on_front' => '1',
+    'sort_order'                 => 5
+));
+
+$installer->updateAttribute('catalog_product', 'product_specifications', 'is_wysiwyg_enabled', 1);
+$installer->updateAttribute('catalog_product', 'product_specifications', 'is_html_allowed_on_front', 1);
 
 //
 //$installer = new Mage_Catalog_Model_Resource_Eav_Mysql4_Setup('core_setup');

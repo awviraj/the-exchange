@@ -1,0 +1,21 @@
+<?php
+/**
+ * DMS
+ * @category    design
+ * @package     default_theexchange
+ * @copyright   admaduranga@gmail.com
+ * @license     admaduranga@gmail.com
+ */
+
+/**
+ * Product description template
+ *
+ * @see Mage_Catalog_Block_Product_View_Description
+ */
+?>
+<?php $_description = $this->getProduct()->getProductSpecifications(); ?>
+<?php if ($_description): ?>
+    <div class="std">
+        <?php echo $this->helper('catalog/output')->productAttribute($this->getProduct(), $_description, 'description') ?>
+    </div>
+<?php endif; ?>

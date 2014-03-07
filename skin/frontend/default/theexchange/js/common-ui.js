@@ -1,6 +1,5 @@
 jQuery(document).ready(function(){
 
-
     jQuery('.navbar-nav > li.parent').each(function(){
         jQuery(this).hover(
             function() {
@@ -54,34 +53,34 @@ jQuery('.parentMenu').each(function(){
         }
     )
 })
-    bxcall();
 
-    function bxcall(){
-        jQuery('.best-seller-slider').bxSlider({
-            nextSelector: '#slider-next',
-            prevSelector: '#slider-prev',
-            nextText: '→',
-            prevText: '←',
-            adaptiveHeight: true,
-              maxSlides: 3,
-            slideMargin: 15
-           // pager:false,
-        });
-    }
 
-    jQuery(".more-views ul").bxSlider({
-        auto:false,
-        pager:false,
-        slideWidth: 99,
-        minSlides: 3,
-        maxSlides: 5,
-        controls: true,
-        slideMargin:12,
-        moveSlides:1,
-       nextSelector: '#more-views-next',
-       prevSelector: '#more-views-prev'
+    jQuery('.best-seller-slider').bxSlider({
+        nextSelector: '#slider-next',
+        prevSelector: '#slider-prev',
+        nextText: '→',
+        prevText: '←',
+        adaptiveHeight: true,
+        maxSlides: 3,
+        slideMargin: 15
+        // pager:false,
     });
 
+    //Product Media More views Thumbnail Slider
+    if (jQuery(".more-views li").length > 3) {
+        jQuery(".more-views ul").bxSlider({
+            auto:false,
+            pager:false,
+            slideWidth: 99,
+            minSlides: 3,
+            maxSlides: 5,
+            controls: true,
+            slideMargin:12,
+            moveSlides:1,
+            nextSelector: '#more-views-next',
+            prevSelector: '#more-views-prev'
+        });
+    }
 
 
     jQuery('.f-nav-menu-link').live('click', function() {
@@ -108,13 +107,14 @@ jQuery('.parentMenu').each(function(){
     })
 });
 
+//Popup menu background shading
 function searchOverlay(elm){
     var overlay = jQuery('<div id="overlay"> </div>');
     overlay.appendTo(document.body)
 
     jQuery(elm).addClass('overlay');
 }
-
+//Popup menu background shading removal
 function removeOverlay(elm){
     jQuery('#overlay').remove();
     jQuery(elm).removeClass('overlay');

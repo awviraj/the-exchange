@@ -255,6 +255,12 @@ Product view
                         <block>catalog/product_view_attributes</block>
                         <template>catalog/product/view/attributes.phtml</template>
                     </action>
+                    <action method="addTab" translate="title" module="catalog">
+                        <alias>product_specifications</alias>
+                        <title>Specifications</title>
+                        <block>catalog/product_view_description</block>
+                        <template>catalog/product/view/specifications.phtml</template>
+                    </action>
                 </block>
 
                 <block type="core/template_facade" name="product.info.container1" as="container1">
