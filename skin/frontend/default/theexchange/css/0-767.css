@@ -4,7 +4,7 @@
   .wrapper .header-container .fixed-container nav { display: none; }
   .wrapper .menu-search-wrapper { margin-top: 157px; }
   .wrapper .menu-search-wrapper .cms-menu { display: none; }
-  .wrapper .menu-search-wrapper .search-box { background-size: auto; }
+  .wrapper .menu-search-wrapper .search-box { background-size: auto; display: none; }
   .wrapper .menu-search-wrapper .search-box .form-search .search-inputs { max-width: 88%; }
   .wrapper .menu-search-wrapper .search-box .form-search .search-label { display: none; }
   .wrapper .menu-search-wrapper .search-box .form-search .search-close { display: block; }
