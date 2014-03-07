@@ -43,6 +43,13 @@ jQuery(document).ready(function(){
         removeOverlay(jQuery('.search-box'));
     });
 
+    jQuery(".form-search .search-close").click(function(){
+        jQuery(".search-box").slideUp();
+    })
+    jQuery(".fixed-container li.search a").click(function(){
+        jQuery(".search-box").slideToggle();
+    })
+
 
 jQuery('.parentMenu').each(function(){
     jQuery(this).hover(

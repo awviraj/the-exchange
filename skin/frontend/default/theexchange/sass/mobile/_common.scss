@@ -1,0 +1,66 @@
+@import "../partials/mixins";
+
+.wrapper{
+  .header-container {
+    .header{
+      .top-quick-links,.call-us,.quick-access{
+        display: none;
+      }
+      height: 113px;
+      border-bottom: none;
+      position: fixed;
+      top: 3px;
+      z-index: 9999;
+      border-top: 2px Solid #000;
+    }
+    .fixed-container{
+      display: block !important;
+      top: 112px;
+
+      nav{
+        display: none;
+      }
+    }
+  }
+  .menu-search-wrapper{
+    margin-top: 157px;
+    .cms-menu{
+      display: none;
+    }
+    .search-box{
+     background-size: auto;
+
+      .form-search {
+        .search-inputs{
+          max-width: 88%;
+        }
+        .search-label{
+          display: none;
+        }
+        .search-close{
+          display: block;
+        }
+        .mobile-search-label{
+          display: block;
+          padding-bottom: 15px;
+          padding-top: 38px;
+          font-size: 40px;
+          float: none;
+          width: 100%;
+          text-align: center;
+          line-height: 43px;
+          font-family: 'houschkaalt-light-regular';
+          font-weight: normal;
+        }
+      }
+
+      .black-arrow{
+        display: none;
+      }
+    }
+    &:after,&:before{
+      display: none;
+    }
+
+  }
+}
