@@ -10,8 +10,12 @@ class DMS_Sparkstone_Model_Observer
 {
     public function sparkstoneProductImport()
     {
+        echo 'Cron Job is Starting';
         $sparkStone = Mage::getModel('sparkstone/stock');
         $sparkStone->prepareStockFile();
+        echo 'Prepared XML';
+        echo 'Importing';
         $sparkStone->importProducts();
+        echo 'Done';
     }
 }
