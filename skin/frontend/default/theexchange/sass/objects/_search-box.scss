@@ -144,6 +144,19 @@
 
   .form-search{
     padding-top: 25px;
+    position: relative;
+
+    .search-close{
+      display: none;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 13px;
+      height: 13px;
+      background: url("../images/sprite.png") no-repeat -62px -987px;
+      text-align: left;
+      text-indent: -3000px;
+    }
 
     .search-label{
       float: left;
@@ -153,6 +166,9 @@
       font-size: 30px;
       @include Houschka_alt_light;
 
+    }
+    .mobile-search-label{
+      display: none;
     }
     .arrow_box {
       position: relative;

@@ -54,9 +54,9 @@
 
 .col1-layout .col-main { width: 100%; max-width: 966px; margin: 0 auto; }
 
-.product-view .product-img-box .product-image { padding: 20px 1%; border: 1px solid #dedede; text-align: center; position: relative; }
+.product-view .product-img-box .product-image { padding: 20px 1%; border: 1px solid #dedede; text-align: center; position: relative; height: 300px; width: 100%; }
 .product-view .product-img-box .product-image img { max-width: 100%; }
-.product-view .product-img-box .zoom-notice { position: absolute; bottom: 12px; left: 12px; width: 16px; height: 18px; background: url("../images/sprite.png") 0 -500px; text-align: left; text-indent: -3000px; }
+.product-view .product-img-box .zoom-notice { position: absolute; bottom: 2px; left: 12px; width: 16px; height: 18px; background: url("../images/sprite.png") 0 -2270px; text-align: left; text-indent: -3000px; z-index: 9999; }
 .product-view .product-img-box .more-views { position: relative; }
 .product-view .product-img-box .more-views h2 { display: none; }
 .product-view .product-img-box .more-views ul { margin-left: 0; }
@@ -97,11 +97,13 @@
 .product-view .product-shop .price_wrapper .buy_price .price-know-more .know-more { float: right; text-align: right; }
 
 .product-collateral { background: none; padding: 0; }
-.product-collateral .product-tabs { border-bottom: 3px solid #ff0000; background: #000; float: left; width: 100%; padding: 0 35px; }
-.product-collateral .product-tabs li { border-left: none; }
+.product-collateral .product-tabs { border-bottom: 3px solid #ff0000; background: #000; float: left; width: 100%; padding: 0 35px; margin-bottom: 0; }
+.product-collateral .product-tabs li { border-left: none; border-right: none; }
 .product-collateral .product-tabs li.active { border: none; }
 .product-collateral .product-tabs li.active a { background: #ff0000; }
 .product-collateral .product-tabs a { line-height: 44px; font-family: 'houschka_alt_probold'; font-weight: normal; font-size: 15px; color: #fff; text-transform: uppercase; }
+.product-collateral .product-tabs-content { font-size: 14px; line-height: 20px; float: left; width: 100%; padding: 30px 24px; border: 1px solid #dbdbdb; }
+.product-collateral .product-tabs-content p { margin-bottom: 20px; }
 
 .box-collateral.box-reviews h2 { font-size: 16px; font-family: 'houschka_alt_probold'; font-weight: normal; text-transform: capitalize; font-style: normal; line-height: 150%; color: #000; }
 .box-collateral.box-reviews .form-list .form-group { width: 100%; max-width: 300px; }

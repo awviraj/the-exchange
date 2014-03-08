@@ -14,6 +14,8 @@
       border: 1px solid #dedede;
       text-align: center;
       position: relative;
+      height: 300px;
+      width: 100%;
 
       img{
         max-width: 100%;
@@ -21,13 +23,14 @@
     }
     .zoom-notice{
       position: absolute;
-      bottom: 12px;
+      bottom: 2px;
       left: 12px;
       width: 16px;
       height: 18px;
-      background: url("../images/sprite.png") 0 -500px;
+      background: url("../images/sprite.png") 0 -2270px;
       text-align: left;
       text-indent: -3000px;
+      z-index: 9999;
     }
     .more-views{
       position: relative;
@@ -278,9 +281,11 @@
     float: left;
     width: 100%;
     padding: 0 35px;
+    margin-bottom: 0;
 
     li{
       border-left:none ;
+      border-right:none ;
       &.active{
         border: none;
 
@@ -297,6 +302,18 @@
       font-size: 15px;
       color: #fff;
       text-transform: uppercase;
+    }
+  }
+  .product-tabs-content{
+    font-size: 14px;
+    line-height: 20px;
+    float: left;
+    width: 100%;
+    padding:30px 24px ;
+    border: 1px solid #dbdbdb;
+
+    p{
+      margin-bottom: 20px;
     }
   }
 }

@@ -147,8 +147,10 @@ body { background: url("../images/body-bg.png") repeat; font-size: 14px; font-fa
 
 .search-box { position: relative; max-width: 966px; margin: 0 auto; float: none; height: 86px; background: url("../images/search-box-bg.jpg") no-repeat; background-size: 100%; }
 .search-box .black-arrow { position: absolute; left: 50%; margin-left: -32px; width: 64px; top: 0; height: 14px; background: url("../images/sprite.png") no-repeat 0 -186px; }
-.search-box .form-search { padding-top: 25px; }
+.search-box .form-search { padding-top: 25px; position: relative; }
+.search-box .form-search .search-close { display: none; position: absolute; top: 10px; right: 10px; width: 13px; height: 13px; background: url("../images/sprite.png") no-repeat -62px -987px; text-align: left; text-indent: -3000px; }
 .search-box .form-search .search-label { float: left; width: 50%; text-align: right; line-height: 43px; font-size: 30px; font-family: 'houschkaalt-light-regular'; font-weight: normal; }
+.search-box .form-search .mobile-search-label { display: none; }
 .search-box .form-search .arrow_box { position: relative; background: #88b7d5; border: 4px solid #c2e1f5; }
 .search-box .form-search .arrow_box:after, .search-box .form-search .arrow_box:before { left: 100%; top: 50%; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; }
 .search-box .form-search .arrow_box:after { border-color: rgba(136, 183, 213, 0); border-left-color: #88b7d5; border-width: 89px; margin-top: -89px; }

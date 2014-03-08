@@ -29,7 +29,9 @@ $catalogSearchHelper =  $this->helper('catalogsearch');
 ?>
 <form id="search_mini_form" action="<?php echo $catalogSearchHelper->getResultUrl() ?>" method="get">
     <div class="form-search">
+        <span class="search-close">X</span>
         <div class="search-label"><?php echo $this->__('Search The Exchange') ?></div>
+        <div class="mobile-search-label"><?php echo $this->__('Search') ?></div>
         <div class="search-inputs input-group">
             <input id="search" type="text" name="<?php echo $catalogSearchHelper->getQueryParamName() ?>" value="<?php echo $catalogSearchHelper->getEscapedQueryText() ?>" class="input-text form-control" maxlength="<?php echo $catalogSearchHelper->getMaxQueryLength();?>" />
             <div class="input-group-btn">
