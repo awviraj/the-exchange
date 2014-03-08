@@ -11,18 +11,33 @@
 class DMS_Sparkstone_Model_Stock extends Mage_Core_Model_Abstract
 {
     CONST TYPE_STOCK_LIST = 'GetXMLStockList';
-    protected $_soapUrl;
+    protected $_soapUrl = 'http://retailservices.sparkstone.co.uk/SparkstoneRetailStock.asmx?WSDL';
     protected $_colMap;
     protected $_mediaPrefix = 'dms/sparkstone/';
     protected $_exportPath = 'var/import/';
     protected $_ready = false;
     protected $_colmapHasHeader = true;
+    protected $_debugMode;
+    protected $_logFile = 'sparkstone.log';
+    protected $_sandbox = true;
 
 
     public function init() {
-        $this->_soapUrl = 'http://retailservices.sparkstone.co.uk/SparkstoneRetailStock.asmx?WSDL';
+        $this->_sandbox = Mage::helper('sparkstone')->getStoreConfig('sandbox', 'sparkstone/api/');
+        $apiUrlPrefix = $this->sandboxMode() ? 'sandboxurl' : 'apiurl';
+        if ($apiUrlPrefix = Mage::helper('sparkstone')->getStoreConfig($apiUrlPrefix, 'sparkstone/api/') ) {
+            $this->_soapUrl = $apiUrlPrefix;
+        }
+        $this->_debugMode = Mage::helper('sparkstone')->getStoreConfig('debug', 'sparkstone/api/') ? true : false;
     }
 
+    public function debugMode() {
+        return $this->_debugMode;
+    }
+
+    public function sandboxMode() {
+        return $this->_sandbox;
+    }
     public function prepareStockFile() {
         $this->init();
         $productXml = $this->getProductData();
@@ -37,15 +52,34 @@ class DMS_Sparkstone_Model_Stock extends Mage_Core_Model_Abstract
     }
 
     public function getProductData() {
-        $client = new SoapClient($this->_soapUrl);//GetXMLStockList
-        $strStockList = $client->GetXMLStockList()->GetXMLStockListResult->any;
         try {
+            $session = null;
+            $client = new SoapClient($this->_soapUrl);//GetXMLStockList
+            if ($this->debugMode()) {
+                $functions = $client->__getFunctions ();
+                Mage::log($functions, null, $this->_logFile);
+                Mage::log($this->_soapUrl, null, $this->_logFile);
+            }
+
+            if (!$this->sandboxMode()) {
+                $userName = Mage::helper('sparkstone')->getStoreConfig('username', 'sparkstone/api/');
+                $pass = Mage::helper('sparkstone')->getStoreConfig('password', 'sparkstone/api/');
+                $session = $client->login( $userName, $pass );
+            }
+
+            $strStockList = $client->GetXMLStockList()->GetXMLStockListResult->any;
+
+            if ($this->debugMode()) {
+                Mage::log($strStockList, null, $this->_logFile);
+            }
+
             $xml = simplexml_load_string($strStockList);
             if ($xml) {
                 return $xml;
             }
         }
         catch(Exception $ex) {
+            Mage::logException($ex);
             echo "Unable to process xml file because of the following error<br /><br /> $ex";
             exit;
         }
@@ -123,10 +157,15 @@ class DMS_Sparkstone_Model_Stock extends Mage_Core_Model_Abstract
      * Run Magmi Import
      */
     public function importProducts() {
-        if ($this->_ready) {
-            chdir('magmi/cli/');
-            include_once('magmi_run_from_code.php');
+        try{
+            if ($this->_ready) {
+                chdir('magmi/cli/');
+                include_once('magmi_run_from_code.php');
+            }
+        } catch (Exception $e) {
+            Mage::logException($e);
         }
+
     }
 
     /**

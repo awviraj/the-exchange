@@ -53,4 +53,12 @@
             </updates>
         </layout>
     </frontend>
+    <crontab>
+        <jobs>
+            <sparkstone_productsc>
+                <schedule><cron_expr>0,15,30,45 * * * *</cron_expr></schedule>
+                <run><model>sparkstone/observer::sparkstoneProductImport</model></run>
+            </sparkstone_productsc>
+        </jobs>
+    </crontab>
 </config>

@@ -45,17 +45,51 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </apiurl>
-                        <apiurl>
+                        <sandbox translate="label">
+                            <label>Sand box mode</label>
+                            <frontend_type>select</frontend_type>
+                            <comment>
+                                <![CDATA[Use the sandbox mode]]>
+                            </comment>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </sandbox>
+                        <sandboxurl>
                             <label>API Sandbox URL</label>
                             <comment>
                                 <![CDATA[API URL for the Sandbox]]>
                             </comment>
                             <frontend_type>text</frontend_type>
-                            <sort_order>1</sort_order>
+                            <sort_order>100</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
-                        </apiurl>
+                        </sandboxurl>
+                        <username>
+                            <label>Username</label>
+                            <comment>
+                                <![CDATA[API Username]]>
+                            </comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>110</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </username>
+                        <password>
+                            <label>Password</label>
+                            <comment>
+                                <![CDATA[API Password]]>
+                            </comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>120</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </password>
                         <csvmapper translate="label comment">
                             <label>CSV Colomn Mapper</label>
                             <comment>
@@ -65,11 +99,23 @@
                             <backend_model>sparkstone/adminhtml_system_config_backend_file</backend_model>
                             <upload_dir config="system/filesystem/media" scope_info="1">dms/sparkstone</upload_dir>
                             <base_url type="media" scope_info="1">youama/slider</base_url>
-                            <sort_order>1</sort_order>
+                            <sort_order>150</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </csvmapper>
+                        <debug translate="label">
+                            <label>Debug Mode</label>
+                            <frontend_type>select</frontend_type>
+                            <comment>
+                                <![CDATA[Debug messages are logged into sparkstone.log]]>
+                            </comment>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>200</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </debug>
                     </fields>
                 </api>
             </groups>
