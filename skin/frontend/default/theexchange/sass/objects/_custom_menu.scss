@@ -3,7 +3,7 @@
 #custommenu{
   div{
     &.menu{
-      width: 10%;
+      width: 10.5%;
       margin: 0 1%;
 
       a{
@@ -15,6 +15,10 @@
 
         &:hover{
           background: #474646;
+        }
+
+        span{
+          color: #fff;
         }
       }
       &.active a{
@@ -88,6 +92,21 @@
     .productScrollWrap{
       float: left;
       width: 100%;
+
+      .bestseller_wrapper{
+        li{
+          float: left;
+          width: 33%;
+          padding-left: 10px;
+          padding-right: 10px;
+
+          a{
+            img{
+              max-width: 100%;
+            }
+          }
+        }
+      }
 
       .bx-wrapper{
         .bx-viewport{

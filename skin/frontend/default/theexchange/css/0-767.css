@@ -1,6 +1,8 @@
 @media (min-width: 0px) and (max-width: 767px) { .wrapper .header-container .header { height: 113px; border-bottom: none; position: fixed; top: 3px; z-index: 9999; border-top: 2px Solid #000; }
   .wrapper .header-container .header .top-quick-links, .wrapper .header-container .header .call-us, .wrapper .header-container .header .quick-access { display: none; }
   .wrapper .header-container .fixed-container { display: block !important; top: 112px; }
+  .wrapper .header-container .fixed-container .cms-menu { padding: 1px 5px; }
+  .wrapper .header-container .fixed-container .cms-menu .small-x-logo { margin-left: 5px; }
   .wrapper .header-container .fixed-container nav { display: none; }
   .wrapper .menu-search-wrapper { margin-top: 157px; }
   .wrapper .menu-search-wrapper .cms-menu { display: none; }

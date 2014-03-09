@@ -17,6 +17,14 @@
       display: block !important;
       top: 112px;
 
+      .cms-menu{
+        padding: 1px 5px;
+
+        .small-x-logo{
+          margin-left: 5px;
+        }
+      }
+
       nav{
         display: none;
       }

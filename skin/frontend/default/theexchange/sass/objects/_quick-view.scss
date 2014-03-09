@@ -23,7 +23,7 @@
   padding:20px;
 
   .line-2{
-    min-height: 306px;
+    min-height: 280px;
     .product-img-box {
       float: left;
       max-width: 45%;
@@ -229,12 +229,12 @@
 
 /* Customize your modal window here, you can add background image too */
 #boxes #dialog {
-  border:1px solid #D2B9D3;
+ // border:1px solid #D2B9D3;
   background-color:#ffffff;
   width:550px;
   height:400px;
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: hidden;
   box-shadow: 0px 0px 8px 3px #1f1f1f;
   padding: 0;
 }

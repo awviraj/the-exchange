@@ -62,16 +62,16 @@ jQuery('.parentMenu').each(function(){
 })
 
 
-    jQuery('.best-seller-slider').bxSlider({
-        nextSelector: '#slider-next',
-        prevSelector: '#slider-prev',
-        nextText: '→',
-        prevText: '←',
-        adaptiveHeight: true,
-        maxSlides: 3,
-        slideMargin: 15
-        // pager:false,
-    });
+//    jQuery('.best-seller-slider').bxSlider({
+//        nextSelector: '#slider-next',
+//        prevSelector: '#slider-prev',
+//        nextText: '→',
+//        prevText: '←',
+//        adaptiveHeight: true,
+//        maxSlides: 3,
+//        slideMargin: 15
+//        // pager:false,
+//    });
 
     //Product Media More views Thumbnail Slider
     if (jQuery(".more-views li").length > 3) {
