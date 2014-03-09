@@ -71,8 +71,6 @@
 }
 #slider-content #sl-images li img{
     border: 0 none;
-    height: 123px;
-    width: 161px;
 }
 #slider-content #sl-images li .item .price-box .price{color:#f4453c; font-size:15px;}
 #slider-content #sl-images li .item button.btn-cart {

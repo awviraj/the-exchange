@@ -124,6 +124,23 @@ body{
             }
             &.top-link-cart{
                 background-position: 16px -89px;
+              position: relative;
+
+              .cart-count{
+                font-family: 'houschka_alt_probold';
+                display: block;
+                width: 13px;
+                height: 13px;
+                background: #000;
+                position: absolute;
+                right: 8px;
+                text-indent: 0;
+                font-size: 12px;
+                color: #fff;
+                top: 10px;
+                line-height: 13px;
+                text-align: center;
+              }
             }
             &.top-link-customer{
               background-position: 16px -44px;
