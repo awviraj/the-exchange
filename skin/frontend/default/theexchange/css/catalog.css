@@ -97,7 +97,7 @@
 .product-view .product-shop .price_wrapper .buy_price .price-know-more .know-more { float: right; text-align: right; }
 
 .product-collateral { background: none; padding: 0; }
-.product-collateral .product-tabs { border-bottom: 3px solid #ff0000; background: #000; float: left; width: 100%; padding: 0 35px; margin-bottom: 0; }
+.product-collateral .product-tabs { border-bottom: 3px solid #ff0000; background: #000; float: left; width: 100%; padding: 0; margin-bottom: 0; }
 .product-collateral .product-tabs li { border-left: none; border-right: none; }
 .product-collateral .product-tabs li.active { border: none; }
 .product-collateral .product-tabs li.active a { background: #ff0000; }

@@ -174,7 +174,7 @@
 									<div class="item" style="width:<?php echo ceil($sliderWidth/3);?>px; height:<?php echo $sliderHeight;?>px;">
 										<div class="product-img" style="width:<?php echo ceil($sliderWidth/3);?>px;">
 											<div class="product-image">
-												<a class="img" href="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize(500); ?>" title="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>"><img src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize(161,123); ?>" width="161" height="123" alt="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" /></a>
+												<a class="img" href="<?php echo $this->helper('catalog/image')->init($_product, 'small_image') ?>" title="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>"><img src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')?>"  alt="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" /></a>
 											</div>
 										</div>	
 										<div class="product-info">
