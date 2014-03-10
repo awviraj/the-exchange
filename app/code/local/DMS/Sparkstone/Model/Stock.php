@@ -14,7 +14,7 @@ class DMS_Sparkstone_Model_Stock extends Mage_Core_Model_Abstract
     protected $_soapUrl = 'http://retailservices.sparkstone.co.uk/SparkstoneRetailStock.asmx?WSDL';
     protected $_colMap;
     protected $_mediaPrefix = 'dms/sparkstone/';
-    protected $_exportPath = 'var/import/';
+    protected $_exportPath;
     protected $_ready = false;
     protected $_colmapHasHeader = true;
     protected $_debugMode;
@@ -23,12 +23,18 @@ class DMS_Sparkstone_Model_Stock extends Mage_Core_Model_Abstract
 
 
     public function init() {
+        $this->_exportPath = Mage::getBaseDir('var').'/import/';
+
         $this->_sandbox = Mage::helper('sparkstone')->getStoreConfig('sandbox', 'sparkstone/api/');
         $apiUrlPrefix = $this->sandboxMode() ? 'sandboxurl' : 'apiurl';
         if ($apiUrlPrefix = Mage::helper('sparkstone')->getStoreConfig($apiUrlPrefix, 'sparkstone/api/') ) {
             $this->_soapUrl = $apiUrlPrefix;
         }
         $this->_debugMode = Mage::helper('sparkstone')->getStoreConfig('debug', 'sparkstone/api/') ? true : false;
+    }
+
+    public function logger($msg) {
+        echo $msg."\r\n";
     }
 
     public function debugMode() {
@@ -42,7 +48,9 @@ class DMS_Sparkstone_Model_Stock extends Mage_Core_Model_Abstract
         $this->init();
         $productXml = $this->getProductData();
         if ($productXml) {
+            $this->logger('Saving response to database');
             $this->saveResponse($productXml);
+
             $this->_formatProductData($productXml);
         }
     }
@@ -54,6 +62,8 @@ class DMS_Sparkstone_Model_Stock extends Mage_Core_Model_Abstract
     public function getProductData() {
         try {
             $session = null;
+            //$session = Mage::getModel('api/server_handler');
+            //$result = Mage::getModel('api/server_handler')->call(null, 'GetXMLStockList', '1');
             $client = new SoapClient($this->_soapUrl);//GetXMLStockList
             if ($this->debugMode()) {
                 $functions = $client->__getFunctions ();
@@ -67,7 +77,9 @@ class DMS_Sparkstone_Model_Stock extends Mage_Core_Model_Abstract
                 $session = $client->login( $userName, $pass );
             }
 
+            $this->logger('Retrieving Data Via SoapClient');
             $strStockList = $client->GetXMLStockList()->GetXMLStockListResult->any;
+            $this->logger('Data retrieved...');
 
             if ($this->debugMode()) {
                 Mage::log($strStockList, null, $this->_logFile);
@@ -110,6 +122,7 @@ class DMS_Sparkstone_Model_Stock extends Mage_Core_Model_Abstract
      */
     protected function _formatProductData($xml)
     {
+        $this->logger('Formatting Data...');
         $mappingFile = Mage::helper('sparkstone')->getStoreConfig('csvmapper', 'sparkstone/api/');
         $mappingCols = Mage::helper('sparkstone/csv')->getCsvData(Mage::getBaseUrl('media').$this->_mediaPrefix.$mappingFile);
         $colMapHeader = null;
@@ -144,7 +157,9 @@ class DMS_Sparkstone_Model_Stock extends Mage_Core_Model_Abstract
                         }
                     }
                 }
+                $this->logger('Finishing up formatted data');
                 Mage::helper('sparkstone/csv')->putCsvData($csvData, $this->_exportPath .'import.csv');
+                echo  $this->_exportPath .'import.csv';
                 $this->setReady(true);
             }
         } catch (Exception $e) {
@@ -158,10 +173,12 @@ class DMS_Sparkstone_Model_Stock extends Mage_Core_Model_Abstract
      */
     public function importProducts() {
         try{
+            $this->logger('Start Importing Data...');
             if ($this->_ready) {
-                chdir('magmi/cli/');
+                chdir(Mage::getBaseDir().'/magmi/cli/');
                 include_once('magmi_run_from_code.php');
             }
+            $this->logger('Finished Importing Data');
         } catch (Exception $e) {
             Mage::logException($e);
         }

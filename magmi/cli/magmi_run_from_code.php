@@ -5,8 +5,6 @@
         'engine'=>'magmi_productimportengine:Magmi_ProductImportEngine'
     );
 
-    //var_dump($params);exit;
-	//$params=$_REQUEST;
 	ini_set("display_errors",1);
 	require_once("../inc/magmi_defs.php");
 	require_once("../inc/magmi_statemanager.php");
