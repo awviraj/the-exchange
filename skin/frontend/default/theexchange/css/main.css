@@ -182,7 +182,7 @@ body { background: url("../images/body-bg.png") repeat; font-size: 14px; font-fa
 #list-items #slider-content #sl-images li .item { width: 100% !important; }
 #list-items #slider-content #sl-images li .item .product-img { width: 100% !important; }
 #list-items #slider-content #sl-images li .item .product-img .product-image { width: 100% !important; background: none; }
-#list-items #slider-content #sl-images li .item .product-img .product-image a { display: block; width: 100%; height: 100%; }
+#list-items #slider-content #sl-images li .item .product-img .product-image a { display: block; width: 100%; height: 100%; text-align: center; }
 #list-items #slider-content #sl-images li .item .product-img .product-image a img { max-width: 100%; margin: 0 auto; height: 100%; }
 #list-items #slider-content #sl-images li .item .product-info { text-align: center; }
 #list-items #slider-content #sl-images li .item .product-info .price-name-wrapper .desc { display: none; }

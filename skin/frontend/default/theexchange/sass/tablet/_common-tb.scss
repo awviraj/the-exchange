@@ -1,0 +1,36 @@
+@import "../partials/mixins";
+
+.wrapper{
+  .header-container {
+    .header{
+      .top-quick-links,.call-us,.quick-access{
+       // display: none;
+      }
+
+    }
+    .fixed-container{
+      .cms-menu{
+        .small-x-logo{
+
+        }
+      }
+
+      nav{
+
+      }
+    }
+  }
+  .menu-search-wrapper{
+    //margin-top: 157px;
+    .cms-menu{
+      //display: none;
+    }
+    .search-box{
+
+    }
+    &:after,&:before{
+      display: none;
+    }
+
+  }
+}

@@ -2,7 +2,10 @@
   .wrapper .header-container .header .top-quick-links, .wrapper .header-container .header .call-us, .wrapper .header-container .header .quick-access { display: none; }
   .wrapper .header-container .fixed-container { display: block !important; top: 112px; }
   .wrapper .header-container .fixed-container .cms-menu { padding: 1px 5px; }
-  .wrapper .header-container .fixed-container .cms-menu .small-x-logo { margin-left: 5px; }
+  .wrapper .header-container .fixed-container .cms-menu .small-x-logo { display: none; margin-left: 5px; }
+  .wrapper .header-container .fixed-container .cms-menu .m-nav-menu-link { margin-top: 3px; display: block; width: 47px; height: 45px; background: url("../images/sprite.png") no-repeat; background-position: 13px -865px; cursor: pointer; float: left; }
+  .wrapper .header-container .fixed-container .cms-menu .action-btns-div { width: 51px; }
+  .wrapper .header-container .fixed-container .cms-menu .action-btns-div ul LI.menu-link { display: none; }
   .wrapper .header-container .fixed-container nav { display: none; }
   .wrapper .menu-search-wrapper { margin-top: 157px; }
   .wrapper .menu-search-wrapper .cms-menu { display: none; }

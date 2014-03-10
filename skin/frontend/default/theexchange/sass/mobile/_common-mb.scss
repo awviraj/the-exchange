@@ -21,7 +21,28 @@
         padding: 1px 5px;
 
         .small-x-logo{
+          display: none;
           margin-left: 5px;
+        }
+        .m-nav-menu-link{
+          margin-top: 3px;
+          display: block;
+          width: 47px;
+          height: 45px;
+          background: url("../images/sprite.png") no-repeat;
+          background-position: 13px -865px;
+          cursor: pointer;
+          float: left;
+        }
+        .action-btns-div{
+          width: 51px;
+          ul{
+            LI{
+              &.menu-link{
+                display: none;
+              }
+            }
+          }
         }
       }
 

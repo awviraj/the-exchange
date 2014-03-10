@@ -89,7 +89,13 @@ jQuery('.parentMenu').each(function(){
         });
     }
 
+    jQuery('.home-slider').bxSlider({
+        auto: true,
+        autoControls: false,
+        pause: 3000,
+        pager:false
 
+    });
     jQuery('.f-nav-menu-link').live('click', function() {
         if (jQuery(window).scrollTop() >= 500 ){
             jQuery('.navbar-container').toggleClass('f-nav-sub');
