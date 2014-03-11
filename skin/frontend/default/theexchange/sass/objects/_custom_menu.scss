@@ -59,13 +59,14 @@
       .block2{
         margin-left: 2%;
       }
-      .block_title,h2{
+      .block_title{
         font-family: 'houschkaalt-bold-italic-regular';
         font-weight: normal;
         font-style: normal;
         font-size: 25px;
         color: #000;
         border-bottom: 1px solid #ff0000;
+        margin-bottom: 20px;
       }
       .block1{
         .column{
@@ -112,6 +113,27 @@
         .bx-viewport{
           height: 280px !important;
         }
+      }
+    }
+    .product-details{
+
+      a{
+        text-align: center;
+        font-family: 'houschka_alt_prodemibold';
+        font-size: 14px;
+        line-height: 120%;
+        color: #000;
+      }
+      .bestseller_price{
+        display: block;
+        border-top: 1px solid #bbbbbb;
+        float: left;
+        width: 100%;
+        @include Houschka_alt_bold;
+        color: #ff0000;
+        text-align: center;
+        padding: 8px 5px;
+        line-height: 120%;
       }
     }
   }

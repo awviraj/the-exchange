@@ -223,7 +223,7 @@ body { background: url("../images/body-bg.png") repeat; font-size: 14px; font-fa
 #custommenu div.wp-custom-menu-popup { background: #fff; padding: 33px 62px; box-sizing: border-box; top: 42px !important; }
 #custommenu div.wp-custom-menu-popup .block1, #custommenu div.wp-custom-menu-popup .block2 { float: left; width: 49%; }
 #custommenu div.wp-custom-menu-popup .block2 { margin-left: 2%; }
-#custommenu div.wp-custom-menu-popup .block_title, #custommenu div.wp-custom-menu-popup h2 { font-family: 'houschkaalt-bold-italic-regular'; font-weight: normal; font-style: normal; font-size: 25px; color: #000; border-bottom: 1px solid #ff0000; }
+#custommenu div.wp-custom-menu-popup .block_title { font-family: 'houschkaalt-bold-italic-regular'; font-weight: normal; font-style: normal; font-size: 25px; color: #000; border-bottom: 1px solid #ff0000; margin-bottom: 20px; }
 #custommenu div.wp-custom-menu-popup .block1 .column { float: left; width: 32%; margin-left: 2%; }
 #custommenu div.wp-custom-menu-popup .block1 .column.first { margin-left: 0; }
 #custommenu div.wp-custom-menu-popup .block1 .column .itemMenu a { color: #000; font-family: 'houschka_alt_prodemibold'; font-size: 15px; font-weight: normal; }
@@ -231,6 +231,8 @@ body { background: url("../images/body-bg.png") repeat; font-size: 14px; font-fa
 #custommenu .best-seller .productScrollWrap .bestseller_wrapper li { float: left; width: 33%; padding-left: 10px; padding-right: 10px; }
 #custommenu .best-seller .productScrollWrap .bestseller_wrapper li a img { max-width: 100%; }
 #custommenu .best-seller .productScrollWrap .bx-wrapper .bx-viewport { height: 280px !important; }
+#custommenu .best-seller .product-details a { text-align: center; font-family: 'houschka_alt_prodemibold'; font-size: 14px; line-height: 120%; color: #000; }
+#custommenu .best-seller .product-details .bestseller_price { display: block; border-top: 1px solid #bbbbbb; float: left; width: 100%; font-family: 'houschkaalt-bold-regular'; font-weight: normal; color: #ff0000; text-align: center; padding: 8px 5px; line-height: 120%; }
 
 .quickview-main { position: relative; }
 .quickview-main .close { display: block; position: absolute; top: 0; right: 0; background: black url("../images/sprite.png") no-repeat -52px -979px; height: 31px; width: 35px; text-align: center; text-indent: -3000px; opacity: 1; }
