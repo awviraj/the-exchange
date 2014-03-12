@@ -284,7 +284,7 @@ body { background: url("../images/body-bg.png") repeat; font-size: 14px; font-fa
 
 .small-x-logo { float: left; width: 27px; height: 22px; background: url("../images/sprite.png") 0px -503px no-repeat; margin-top: 11px; text-align: left; text-indent: -3000px; margin-left: 19px; display: none; }
 
-.fixed-container { position: fixed; display: none; top: 0; width: 100%; max-width: 100%; z-index: 1001; background: url("../images/fixed-header.png") repeat-x; }
+.fixed-container { position: fixed; top: 0; width: 100%; max-width: 100%; z-index: 1001; background: url("../images/fixed-header.png") repeat-x; }
 .fixed-container .header { max-width: 100%; }
 .fixed-container .header .call-us, .fixed-container .header .logo-div, .fixed-container .header .top-quick-links { display: none; }
 .fixed-container .header .quick-access { margin-top: 0; }
