@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <layout version="0.1.0">
     <default>
-		<reference name="content">
-			<block type="productslider/position" before="-" name="home.productslider"/>
-		</reference>	
+		<!--<reference name="content">-->
+			<!--<block type="productslider/position" before="-" name="home.productslider"/>-->
+		<!--</reference>	-->
 	</default>
     <productslider_index_index>
         <reference name="content">

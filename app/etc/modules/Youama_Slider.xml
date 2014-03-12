@@ -30,7 +30,7 @@
 <config>
     <modules>
         <Youama_Slider>
-            <active>true</active>
+            <active>false</active>
             <codePool>community</codePool>
         </Youama_Slider>
     </modules>
