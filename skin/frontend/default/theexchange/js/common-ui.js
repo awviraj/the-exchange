@@ -36,11 +36,11 @@ jQuery(document).ready(function(){
     });
 
     jQuery( "#search" ).focus(function() {
-        searchOverlay(this);
+        //searchOverlay(this);
     });
 
     jQuery( "#search" ).blur(function() {
-        removeOverlay(jQuery('.search-box'));
+        //removeOverlay(jQuery('.search-box'));
     });
 
     jQuery(".form-search .search-close").click(function(){
