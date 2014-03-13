@@ -1,0 +1,45 @@
+////bx slider style overwrite
+
+.bx-wrapper {
+  margin-bottom: 0;
+  .bx-prev{
+      background: url("../images/sprite.png") no-repeat 3px -1113px;
+
+    &:hover{
+      background-position:-82px -1113px ;
+    }
+  }
+  .bx-next{
+    background: url("../images/sprite.png") no-repeat -42px -1113px;
+    &:hover{
+      background-position:-123px -1113px ;
+    }
+  }
+  .bx-pager{
+    bottom: 11px;
+  }
+}
+
+.cms-index-index{
+  .bx-wrapper {
+    .bx-pager{
+      text-align: right;
+
+      .bx-pager-item{
+        a{
+          text-align: left;
+          text-indent: -3000px;
+        }
+      }
+      &.bx-default-pager {
+        a{
+          background: #767676;
+
+          &.active{
+            background: #ff0000;
+          }
+        }
+      }
+    }
+  }
+}

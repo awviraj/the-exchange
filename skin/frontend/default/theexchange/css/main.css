@@ -311,3 +311,15 @@ body { background: url("../images/body-bg.png") repeat; font-size: 14px; font-fa
 .fixed-container .action-btns-div ul li .f-nav-menu-link:hover { background-color: #ccc; }
 
 .navbar-container.f-nav-sub { position: fixed; top: 47px; width: 100%; max-width: 100%; z-index: 1000; }
+
+.bx-wrapper { margin-bottom: 0; }
+.bx-wrapper .bx-prev { background: url("../images/sprite.png") no-repeat 3px -1113px; }
+.bx-wrapper .bx-prev:hover { background-position: -82px -1113px; }
+.bx-wrapper .bx-next { background: url("../images/sprite.png") no-repeat -42px -1113px; }
+.bx-wrapper .bx-next:hover { background-position: -123px -1113px; }
+.bx-wrapper .bx-pager { bottom: 11px; }
+
+.cms-index-index .bx-wrapper .bx-pager { text-align: right; }
+.cms-index-index .bx-wrapper .bx-pager .bx-pager-item a { text-align: left; text-indent: -3000px; }
+.cms-index-index .bx-wrapper .bx-pager.bx-default-pager a { background: #767676; }
+.cms-index-index .bx-wrapper .bx-pager.bx-default-pager a.active { background: #ff0000; }

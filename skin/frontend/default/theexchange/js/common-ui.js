@@ -93,7 +93,9 @@ jQuery('.parentMenu').each(function(){
         auto: true,
         autoControls: false,
         pause: 3000,
-        pager:false
+        pager:false,
+        controls: true,
+        pager:true
 
     });
     jQuery('.f-nav-menu-link').live('click', function() {
