@@ -40,6 +40,9 @@
         float: none;
         text-align: center;
         border-right: 0;
+        z-index: 9999;
+
+
 
         &:after,&:before{
           left: 100%;
@@ -77,6 +80,12 @@
           padding: 5px 1%;
           //background:url("../images/serach-input-bg.png") repeat-x left top #fff;
 
+
+          &:focus{
+            box-shadow: none;
+            border-color: transparent;
+          }
+
         }
         .input-group-btn{
           float: right;
@@ -104,6 +113,12 @@
             }
           }
         }
+        #search{
+          &.overlay{
+            z-index: 99999;
+            position: relative;
+          }
+        }
 
       }
       .filter-results{
@@ -113,12 +128,6 @@
         text-decoration: underline;
         margin-top: 13px;
         display: inline-block;
-      }
-    }
-    &.overlay{
-      .search-label,.search-inputs,.filter-results{
-        z-index: 9999;
-        position: relative;
       }
     }
   }
@@ -283,6 +292,8 @@
 
     }
   }
+}
+body{
   &.overlay{
     .search-label,.search-inputs,.filter-results{
       z-index: 9999;

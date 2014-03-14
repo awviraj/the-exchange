@@ -39,11 +39,11 @@ jQuery(document).ready(function(){
     });
 
     jQuery( "#search" ).focus(function() {
-        //searchOverlay(this);
+        searchOverlay(this);
     });
 
     jQuery( "#search" ).blur(function() {
-        //removeOverlay(jQuery('.search-box'));
+        removeOverlay(jQuery('.search-box'));
     });
 
     jQuery(".form-search .search-close").click(function(){
@@ -132,10 +132,10 @@ function searchOverlay(elm){
     var overlay = jQuery('<div id="overlay"> </div>');
     overlay.appendTo(document.body)
 
-    jQuery(elm).addClass('overlay');
+    jQuery('body').addClass('overlay');
 }
 //Popup menu background shading removal
 function removeOverlay(elm){
     jQuery('#overlay').remove();
-    jQuery(elm).removeClass('overlay');
+    jQuery('body').removeClass('overlay');
 }
