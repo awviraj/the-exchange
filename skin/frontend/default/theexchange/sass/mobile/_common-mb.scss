@@ -17,6 +17,8 @@
       display: block !important;
       top: 112px;
 
+
+
       .quick-access {
         width: 116px;
         .links {
@@ -47,6 +49,7 @@
         }
         .action-btns-div{
           width: 51px;
+          display: none;
           ul{
             li{
               &.menu-link{
@@ -58,6 +61,21 @@
             }
           }
         }
+        .welcome-msg{
+          display: block;
+          float: right;
+          @include calc(width,'100% - 116px');
+
+          p{
+            color: #fff;
+            line-height: 38px;
+            font-size: 15px;
+            font-family: 'houschka_alt_promedium';
+            font-style: normal;
+            font-weight: normal;
+          }
+        }
+
       }
 
       nav{
