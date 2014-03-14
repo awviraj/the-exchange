@@ -145,19 +145,30 @@
 			});
 
             jQuery(document).ready(function (){
-                productSliderMouseOver();
+                productSliderMouseOver.mouseOver();
             });
 
-            function productSliderMouseOver(){
-                var sliderUL =  jQuery('.product-slider-content').find('.sl-images');
-                jQuery(sliderUL).find('li').mouseover(function() {
-                    jQuery(this).parent().children('li').each(function () {
+
+            var productSliderMouseOver = {
+                self: null,
+                getSliderUL : function () {
+                    return jQuery('.product-slider-content').find('.sl-images');
+                },
+                mouseOver : function () {
+                    self = this;
+                    self.highlightItem(this.getSliderUL().find('li').first());
+                    jQuery(this.getSliderUL()).find('li').mouseover(function() {
+                        self.highlightItem(this);
+                    });
+                },
+                 highlightItem : function (elm) {
+                    jQuery(elm).parent().children('li').each(function () {
                         jQuery(this).find('.product-info').removeClass('selected');
                     });
-                    jQuery(this).find('.product-info').addClass('selected');
+                    jQuery(elm).find('.product-info').addClass('selected');
                     jQuery('#slider-hover-details').show();
-                    jQuery('#slider-hover-details').html(jQuery(this).find('.product-info').html());
-                });
+                    jQuery('#slider-hover-details').html(jQuery(elm).find('.product-info').html());
+                }
             }
 
 		</script>

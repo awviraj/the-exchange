@@ -3,8 +3,6 @@ jQuery(document).ready(function(){
 
     ///////////newly added slider//////////////
 
-    jQuery('#slider-content #sl-images li:first-child').find('.product-info').addClass('selected');
-
     jQuery('.navbar-nav > li.parent').each(function(){
         jQuery(this).hover(
             function() {
