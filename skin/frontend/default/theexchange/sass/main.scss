@@ -1,10 +1,13 @@
+/////////compass reset styles///////////
 @import "compass/reset";
 @import "compass/css3";
 
-
+//////////////main styles files//////////////////
 @import "partials/common";
 @import "partials/home";
 
+
+///////////objects used on trough out the site///////////////////
 @import "objects/search-box";
 @import "objects/product_slider";
 @import "objects/custom_menu";
@@ -12,3 +15,7 @@
 @import "objects/cms_menu";
 @import "objects/fixed_nav";
 @import "objects/bx_slider";
+
+
+/////////desktop only ////////////
+@import "desktop_only";

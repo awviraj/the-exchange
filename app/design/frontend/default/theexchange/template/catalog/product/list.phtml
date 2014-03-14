@@ -83,7 +83,7 @@
     <?php $_columnCount = $this->getColumnCount(); ?>
     <ul class="products-grid row">
     <?php $i=0; foreach ($_productCollection as $_product): ?>
-            <li class="col-xs-12 col-sm-3 col-md-3 item<?php if(($i-1)%$_columnCount==0): ?> first<?php elseif($i%$_columnCount==0): ?> last<?php endif; ?>">
+            <li class="col-xs-6 col-sm-3 col-md-3 item<?php if(($i-1)%$_columnCount==0): ?> first<?php elseif($i%$_columnCount==0): ?> last<?php endif; ?>">
                 <div class="prod-image">
                     <a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" class="product-image"><img src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image') ?>"  alt="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" /></a>
                     <a href="#dialog" class="product_quickview" name="modal" id="<?php echo $_product->getId() ?>">Quickshop</a>
