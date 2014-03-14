@@ -1,0 +1,44 @@
+.catalog-category-view{
+  .main-container{
+    padding:0;
+
+    .main{
+      .row{
+        margin: 0;
+      }
+      .col-main{
+        .category-products {
+          padding: 15px 0;
+          .toolbar{
+            display: none;
+          }
+          .toolbar-bottom{
+            .toolbar{
+              display: block;
+
+              .pager{
+                float: left;
+                width: 100%;
+
+              }
+            }
+          }
+          .products-grid {
+            li{
+              &.item {
+                .product_quickview{
+                  display: none !important;
+                }
+                .prod-image {
+                  img{
+                    opacity: 1 !important;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
