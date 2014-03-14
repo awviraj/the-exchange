@@ -215,9 +215,9 @@ body { background: url("../images/body-bg.png") repeat; font-size: 14px; font-fa
 #list-items #slider-hover-details .slider-action-wrapper button:before { content: url("../images/add-to-bag.png"); float: left; line-height: 42px; }
 
 #custommenu div.menu { width: 10.5%; margin: 0 1%; }
-#custommenu div.menu a { font-family: 'houschkaalt-medium-regular'; font-weight: normal; text-transform: capitalize; padding: 5px 20px 6px 20px; color: #e3e3e3; font-size: 16px; }
+#custommenu div.menu a { font-family: 'houschkaalt-medium-regular'; font-weight: normal; text-transform: capitalize; padding: 0px 20px 0px 20px; color: #e3e3e3; font-size: 16px; }
 #custommenu div.menu a:hover { background: #474646; }
-#custommenu div.menu a span { color: #fff; }
+#custommenu div.menu a span { color: #fff; line-height: 40px; padding-top: 0; height: auto; }
 #custommenu div.menu.active a { background: #000 !important; color: #e3e3e3 !important; position: relative; z-index: 20000; }
 #custommenu div.menu.active a:after { top: 100%; left: 50%; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: rgba(0, 0, 0, 0); border-top-color: #000; border-width: 15px; margin-left: -15px; }
 #custommenu div.wp-custom-menu-popup { background: #fff; padding: 33px 62px; box-sizing: border-box; top: 42px !important; }
@@ -231,8 +231,10 @@ body { background: url("../images/body-bg.png") repeat; font-size: 14px; font-fa
 #custommenu .best-seller .productScrollWrap .bestseller_wrapper li { float: left; width: 33%; padding-left: 10px; padding-right: 10px; }
 #custommenu .best-seller .productScrollWrap .bestseller_wrapper li a img { max-width: 100%; }
 #custommenu .best-seller .productScrollWrap .bx-wrapper .bx-viewport { height: 280px !important; }
-#custommenu .best-seller .product-details a { text-align: center; font-family: 'houschka_alt_prodemibold'; font-size: 14px; line-height: 120%; color: #000; }
+#custommenu .best-seller .product-details a { text-align: center; font-family: 'houschka_alt_prodemibold'; font-size: 14px; line-height: 120%; color: #000; display: block; height: 40px; padding: 5px 0; overflow: hidden; }
 #custommenu .best-seller .product-details .bestseller_price { display: block; border-top: 1px solid #bbbbbb; float: left; width: 100%; font-family: 'houschkaalt-bold-regular'; font-weight: normal; color: #ff0000; text-align: center; padding: 8px 5px; line-height: 120%; }
+#custommenu .best-seller .product-details .bestseller_price .price-box .regular-price { font-family: 'houschkaalt-bold-regular'; font-weight: normal; color: #ff0000; }
+#custommenu .best-seller .product-details .bestseller_price .price-box .regular-price span { font-family: 'houschkaalt-bold-regular'; font-weight: normal; color: #ff0000; font-size: 22px; font-weight: normal; }
 
 .quickview-main { position: relative; }
 .quickview-main .close { display: block; position: absolute; top: 0; right: 0; background: black url("../images/sprite.png") no-repeat -52px -979px; height: 31px; width: 35px; text-align: center; text-indent: -3000px; opacity: 1; }
@@ -318,6 +320,7 @@ body { background: url("../images/body-bg.png") repeat; font-size: 14px; font-fa
 .bx-wrapper .bx-next { background: url("../images/sprite.png") no-repeat -42px -1113px; }
 .bx-wrapper .bx-next:hover { background-position: -123px -1113px; }
 .bx-wrapper .bx-pager { bottom: 11px; }
+.bx-wrapper .bx-controls-direction a { z-index: 999; }
 
 .cms-index-index .bx-wrapper .bx-pager { text-align: right; }
 .cms-index-index .bx-wrapper .bx-pager .bx-pager-item a { text-align: left; text-indent: -3000px; }

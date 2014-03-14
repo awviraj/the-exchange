@@ -93,6 +93,12 @@
     }
 
   }
+  #list-items {
+    #slider-content{
+      overflow-x: hidden;
+      padding-bottom: 0;
+    }
+  }
 }
 
 .custom_footer_wrapper {
@@ -110,6 +116,8 @@
   }
 }
 
+
+/////////////////////////////footer////////////////////
 .footer-container {
   .footer {
     .custom_tweets {
@@ -149,6 +157,13 @@
           margin-bottom: 25px;
         }
       }
+    }
+    .custom_red_triangle{
+      img{
+        display: none;
+      }
+      background: url("../images/footer-red-traingle.png") top center no-repeat;
+      min-height: 324px;;
     }
   }
 }

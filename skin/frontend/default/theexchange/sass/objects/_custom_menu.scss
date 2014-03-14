@@ -9,9 +9,10 @@
       a{
         @include Houschka_alt_med;
         text-transform: capitalize;
-        padding: 5px 20px 6px 20px;
+        padding: 0px 20px 0px 20px;
         color: #e3e3e3;
         font-size: 16px;
+
 
         &:hover{
           background: #474646;
@@ -19,6 +20,9 @@
 
         span{
           color: #fff;
+          line-height: 40px;
+          padding-top: 0;
+          height: auto;
         }
       }
       &.active a{
@@ -123,6 +127,10 @@
         font-size: 14px;
         line-height: 120%;
         color: #000;
+        display: block;
+        height: 40px;
+        padding: 5px 0;
+        overflow: hidden;
       }
       .bestseller_price{
         display: block;
@@ -134,6 +142,19 @@
         text-align: center;
         padding: 8px 5px;
         line-height: 120%;
+
+        .price-box{
+          .regular-price{
+            @include Houschka_alt_bold;
+            color: #ff0000;
+            span{
+              @include Houschka_alt_bold;
+              color: #ff0000;
+              font-size: 22px;
+              font-weight: normal;
+            }
+          }
+        }
       }
     }
   }

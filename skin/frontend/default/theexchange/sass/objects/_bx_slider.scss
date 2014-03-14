@@ -18,6 +18,11 @@
   .bx-pager{
     bottom: 11px;
   }
+  .bx-controls-direction {
+    a{
+      z-index: 999;
+    }
+  }
 }
 
 .cms-index-index{
