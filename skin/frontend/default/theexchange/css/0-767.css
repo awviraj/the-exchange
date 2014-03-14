@@ -1,5 +1,6 @@
 @media (min-width: 0px) and (max-width: 767px) { .wrapper .header-container .header { height: 113px; border-bottom: none; position: fixed; top: 3px; z-index: 9999; border-top: 2px Solid #000; }
   .wrapper .header-container .header .top-quick-links, .wrapper .header-container .header .call-us, .wrapper .header-container .header .quick-access { display: none; }
+  .wrapper .header-container .header .logo-div { margin-top: 18px; }
   .wrapper .header-container .fixed-container { display: block !important; top: 112px; }
   .wrapper .header-container .fixed-container .quick-access { width: 116px; }
   .wrapper .header-container .fixed-container .quick-access .links li:first-child { display: none; }
@@ -51,3 +52,4 @@
   .cms-index-index .wrapper .menu-search-wrapper .search-box .form-search .mobile-search-label { display: block; padding-bottom: 15px; padding-top: 38px; font-size: 40px; float: none; width: 100%; text-align: center; line-height: 43px; font-family: 'houschkaalt-light-regular'; font-weight: normal; }
   .cms-index-index .wrapper .menu-search-wrapper .search-box .black-arrow { display: none; }
   .cms-index-index .wrapper .menu-search-wrapper:after, .cms-index-index .wrapper .menu-search-wrapper:before { display: none; } }
+@media (min-width: 0px) and (max-width: 767px) and (max-width: 340px) { .wrapper .header-container .header .logo-div { margin-top: 30px; } }

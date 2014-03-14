@@ -2,7 +2,7 @@
 ///////////////fixed header ////////////////////////////////
 .fixed-container{
   position: fixed;
- // display: none;
+ display: none;
   top:0;
   width: 100%;
   max-width: 100%;
@@ -91,6 +91,10 @@
           }
           &.top-link-customer{
             background-position: 16px -44px;
+
+            &.logged-in{
+              background-position: -18px -44px;
+            }
           }
 
 

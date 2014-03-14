@@ -12,6 +12,9 @@
       top: 3px;
       z-index: 9999;
       border-top: 2px Solid #000;
+      .logo-div{
+        margin-top: 18px;
+      }
     }
     .fixed-container{
       display: block !important;
@@ -156,6 +159,13 @@
       background: url("../images/footer-red-traingle.png") top center no-repeat;
       min-height: 324px;;
     }
+  }
+}
+
+@media (max-width: 340px){
+
+  .wrapper .header-container .header .logo-div {
+    margin-top: 30px;
   }
 }
 
