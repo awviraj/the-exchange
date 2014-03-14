@@ -1,11 +1,14 @@
 @media (min-width: 0px) and (max-width: 767px) { .wrapper .header-container .header { height: 113px; border-bottom: none; position: fixed; top: 3px; z-index: 9999; border-top: 2px Solid #000; }
   .wrapper .header-container .header .top-quick-links, .wrapper .header-container .header .call-us, .wrapper .header-container .header .quick-access { display: none; }
   .wrapper .header-container .fixed-container { display: block !important; top: 112px; }
+  .wrapper .header-container .fixed-container .quick-access { width: 116px; }
+  .wrapper .header-container .fixed-container .quick-access .links li:first-child { display: none; }
   .wrapper .header-container .fixed-container .cms-menu { padding: 1px 5px; }
   .wrapper .header-container .fixed-container .cms-menu .small-x-logo { display: none; margin-left: 5px; }
   .wrapper .header-container .fixed-container .cms-menu .m-nav-menu-link { margin-top: 3px; display: block; width: 47px; height: 45px; background: url("../images/sprite.png") no-repeat; background-position: 13px -865px; cursor: pointer; float: left; }
   .wrapper .header-container .fixed-container .cms-menu .action-btns-div { width: 51px; }
-  .wrapper .header-container .fixed-container .cms-menu .action-btns-div ul LI.menu-link { display: none; }
+  .wrapper .header-container .fixed-container .cms-menu .action-btns-div ul li.menu-link { display: none; }
+  .wrapper .header-container .fixed-container .cms-menu .action-btns-div ul li.search { display: none; }
   .wrapper .header-container .fixed-container nav { display: none; }
   .wrapper #list-items #slider-content { overflow-x: hidden; padding-bottom: 0; }
   .custom_footer_wrapper .custom_footer_static_block .custom_row1_col1, .custom_footer_wrapper .custom_footer_static_block .custom_row1_col2, .custom_footer_wrapper .custom_footer_static_block .custom_row1_col3 { width: 100%; margin-bottom: 10px; }

@@ -17,6 +17,17 @@
       display: block !important;
       top: 112px;
 
+      .quick-access {
+        width: 116px;
+        .links {
+          li{
+            &:first-child{
+              display: none;
+            }
+          }
+        }
+
+      }
       .cms-menu{
         padding: 1px 5px;
 
@@ -37,8 +48,11 @@
         .action-btns-div{
           width: 51px;
           ul{
-            LI{
+            li{
               &.menu-link{
+                display: none;
+              }
+              &.search{
                 display: none;
               }
             }
