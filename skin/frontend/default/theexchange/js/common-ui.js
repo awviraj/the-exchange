@@ -101,7 +101,9 @@ jQuery('.parentMenu').each(function(){
         pager:true
 
     });
-    jQuery('.f-nav-menu-link').live('click', function() {
+
+    jQuery( document ).on( "click", ".f-nav-menu-link", function() {
+    //jQuery('.f-nav-menu-link').live('click', function() {
         if (jQuery(window).scrollTop() >= 500 ){
             jQuery('.navbar-container').toggleClass('f-nav-sub');
         }
