@@ -1,7 +1,7 @@
 @media (min-width: 0px) and (max-width: 767px) { .wrapper .header-container .header { height: 113px; border-bottom: none; position: fixed; top: 3px; z-index: 9999; border-top: 2px Solid #000; }
   .wrapper .header-container .header .top-quick-links, .wrapper .header-container .header .call-us, .wrapper .header-container .header .quick-access { display: none; }
   .wrapper .header-container .header .logo-div { margin-top: 18px; }
-  .wrapper .header-container .fixed-container { display: block !important; top: 112px; }
+  .wrapper .header-container .fixed-container { display: block !important; top: 112px; z-index: 9999; }
   .wrapper .header-container .fixed-container .quick-access { width: 116px; }
   .wrapper .header-container .fixed-container .quick-access .links li:first-child { display: none; }
   .wrapper .header-container .fixed-container .cms-menu { padding: 1px 5px; }
@@ -35,7 +35,7 @@
   .catalog-category-view .main-container .main .col-main .category-products .products-grid li.item .prod-image img { opacity: 1 !important; }
   .wrapper .menu-search-wrapper { margin-top: 157px; }
   .wrapper .menu-search-wrapper .cms-menu { display: none; }
-  .wrapper .menu-search-wrapper .search-box { background-size: auto; display: none; height: 100px; }
+  .wrapper .menu-search-wrapper .search-box { background-size: auto; height: 100px; }
   .wrapper .menu-search-wrapper .search-box .form-search { padding-top: 0px; }
   .wrapper .menu-search-wrapper .search-box .form-search .search-inputs { max-width: 88%; width: 88%; }
   .wrapper .menu-search-wrapper .search-box .form-search .search-label { display: none; }
@@ -45,7 +45,7 @@
   .wrapper .menu-search-wrapper:after, .wrapper .menu-search-wrapper:before { display: none; }
   .cms-index-index .wrapper .menu-search-wrapper { margin-top: 157px; }
   .cms-index-index .wrapper .menu-search-wrapper .cms-menu { display: none; }
-  .cms-index-index .wrapper .menu-search-wrapper .search-box { background-size: auto; display: none; height: 197px; }
+  .cms-index-index .wrapper .menu-search-wrapper .search-box { background-size: auto; height: 197px; }
   .cms-index-index .wrapper .menu-search-wrapper .search-box .form-search .search-inputs { max-width: 88%; }
   .cms-index-index .wrapper .menu-search-wrapper .search-box .form-search .search-label { display: none; }
   .cms-index-index .wrapper .menu-search-wrapper .search-box .form-search .search-close { display: block; }
