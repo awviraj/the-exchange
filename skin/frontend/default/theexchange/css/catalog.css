@@ -3,7 +3,7 @@
 .main-container .col-main .category-products .products-grid { width: 100%; float: left; }
 .main-container .col-main .category-products .products-grid li.item { margin-bottom: 30px; }
 .main-container .col-main .category-products .products-grid li.item .prod-image { position: relative; }
-.main-container .col-main .category-products .products-grid li.item .prod-image .product-image { height: 233px; }
+.main-container .col-main .category-products .products-grid li.item .prod-image .product-image { height: 233px; text-align: center; }
 .main-container .col-main .category-products .products-grid li.item .prod-image img { max-width: 100%; transition: opacity 1s ease-in-out; }
 .main-container .col-main .category-products .products-grid li.item .product-name { margin-top: 10px; text-align: center; height: 42px; overflow: hidden; }
 .main-container .col-main .category-products .products-grid li.item .product-name h2 { font-family: 'houschka_alt_prodemibold'; font-weight: normal; color: #000; font-size: 15px; line-height: 150%; }
