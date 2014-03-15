@@ -19,7 +19,7 @@ class DMS_CommonRewrites_Block_Page_Html_Welcome extends Mage_Core_Block_Templat
             if (Mage::isInstalled() && Mage::getSingleton('customer/session')->isLoggedIn()) {
                 $this->_data['welcome'] = $this->__('Welcome, %s!', $this->escapeHtml(Mage::getSingleton('customer/session')->getCustomer()->getFirstname()));
             } else {
-                $this->_data['welcome'] = Mage::getStoreConfig('design/header/welcome');
+                $this->_data['welcome'] = ''; //Mage::getStoreConfig('design/header/welcome');
             }
         }
 
