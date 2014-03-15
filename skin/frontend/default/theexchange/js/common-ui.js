@@ -139,3 +139,16 @@ function removeOverlay(elm){
     jQuery('#overlay').remove();
     jQuery('body').removeClass('overlay');
 }
+
+function showLoader(selector) {
+    var parentElm = jQuery(selector);
+    var wrapper = '<div class="ajax-submit-loader" >'
+        + '<div class="loading-overlay"></div>'
+        + '<span class="loader"></span>';
+    +'</div>';
+    jQuery(parentElm).append(wrapper);
+}
+
+function hideLoader(selector) {
+    jQuery(selector).find('.ajax-submit-loader').remove();
+}
