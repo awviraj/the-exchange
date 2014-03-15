@@ -68,6 +68,31 @@
           }
         }
       }
+
+      .currently{
+        .block-subtitle{
+          font-size: 14px;
+          line-height: 169%;
+          color: #000;
+          font-family: 'houschka_alt_probold';
+          font-weight: normal;
+        }
+        ol{
+          li{
+            padding: 5px 0 ;
+            .label,.value{
+              color: #ff0000;
+              padding: 0 5px 0 0;
+              font-size: 12px;
+              line-height: 16px;
+              font-family: 'houschka_alt_promedium';
+            }
+            .value{
+              color: #000;
+            }
+          }
+        }
+      }
     }
   }
 }
