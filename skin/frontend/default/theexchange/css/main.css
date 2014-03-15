@@ -134,7 +134,7 @@ body { background: url("../images/body-bg.png") repeat; font-size: 14px; font-fa
 .cms-index-index .search-box .form-search { padding-top: 0; }
 .cms-index-index .search-box .form-search .search-label { padding-bottom: 15px; padding-top: 38px; font-size: 40px; float: none; width: 100%; text-align: center; line-height: 43px; }
 .cms-index-index .search-box .form-search .arrow_box:after, .cms-index-index .search-box .form-search .arrow_box:before { left: 100%; top: 50%; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; }
-.cms-index-index .search-box .form-search .search-inputs { position: relative; background: #fff; border: 2px solid #000000; display: inline-block; height: 64px; border: 2px solid #000000; position: relative; width: 100%; max-width: 538px; float: none; text-align: center; border-right: 0; z-index: 9999; }
+.cms-index-index .search-box .form-search .search-inputs { position: relative; background: #fff; border: 2px solid #000000; display: inline-block; height: 64px; border: 2px solid #000000; position: relative; width: 100%; max-width: 538px; float: none; text-align: center; border-right: 0; z-index: 9998; }
 .cms-index-index .search-box .form-search .search-inputs:after, .cms-index-index .search-box .form-search .search-inputs:before { left: 100%; top: 53%; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; }
 .cms-index-index .search-box .form-search .search-inputs:after { border-color: rgba(255, 255, 255, 0); border-left-color: #fff; border-width: 30px; margin-top: -32px; }
 .cms-index-index .search-box .form-search .search-inputs:before { border-color: rgba(0, 0, 0, 0); border-left-color: #000000; border-width: 33px; margin-top: -35px; }
@@ -170,7 +170,7 @@ body { background: url("../images/body-bg.png") repeat; font-size: 14px; font-fa
 .search-box .form-search .search-inputs .input-group-btn button:hover span { background-position: -60px -222px; }
 .search-box .form-search .filter-results { display: none; }
 
-body.overlay .search-label, body.overlay .search-inputs, body.overlay .filter-results { z-index: 9999; position: relative; }
+body.overlay .search-label, body.overlay .search-inputs, body.overlay .filter-results { z-index: 9998; position: relative; }
 
 #list-items { float: left; width: 100%; border-top: 1px solid #ff0000; padding-top: 33px; }
 #list-items #slider-content { width: 100% !important; height: auto !important; background: #f1f2f2; border: none; }
