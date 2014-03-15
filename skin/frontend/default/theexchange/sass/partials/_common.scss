@@ -144,6 +144,10 @@ body{
             }
             &.top-link-customer{
               background-position: 16px -44px;
+
+              &.logged-in{
+                background-position: -18px -44px;
+              }
             }
 
 

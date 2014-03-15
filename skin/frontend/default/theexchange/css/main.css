@@ -38,6 +38,7 @@ body { background: url("../images/body-bg.png") repeat; font-size: 14px; font-fa
 .header-container .header .quick-access .links li a.top-link-cart { background-position: 16px -89px; position: relative; }
 .header-container .header .quick-access .links li a.top-link-cart .cart-count { font-family: 'houschka_alt_probold'; display: block; width: 13px; height: 13px; background: #000; position: absolute; right: 8px; text-indent: 0; font-size: 12px; color: #fff; top: 10px; line-height: 13px; text-align: center; }
 .header-container .header .quick-access .links li a.top-link-customer { background-position: 16px -44px; }
+.header-container .header .quick-access .links li a.top-link-customer.logged-in { background-position: -18px -44px; }
 .header-container .fixed-nav-links { display: none; }
 
 .menu-search-wrapper { width: 100%; max-width: 1024px; margin: 0 auto; color: #fff; position: relative; }
@@ -287,7 +288,7 @@ body.overlay .search-label, body.overlay .search-inputs, body.overlay .filter-re
 
 .small-x-logo { float: left; width: 27px; height: 22px; background: url("../images/sprite.png") 0px -503px no-repeat; margin-top: 11px; text-align: left; text-indent: -3000px; margin-left: 19px; display: none; }
 
-.fixed-container { position: fixed; top: 0; width: 100%; max-width: 100%; z-index: 1001; background: url("../images/fixed-header.png") repeat-x; }
+.fixed-container { position: fixed; display: none; top: 0; width: 100%; max-width: 100%; z-index: 1001; background: url("../images/fixed-header.png") repeat-x; }
 .fixed-container .header { max-width: 100%; }
 .fixed-container .header .call-us, .fixed-container .header .logo-div, .fixed-container .header .top-quick-links { display: none; }
 .fixed-container .header .quick-access { margin-top: 0; }
@@ -306,6 +307,7 @@ body.overlay .search-label, body.overlay .search-inputs, body.overlay .filter-re
 .fixed-container .quick-access .links li a.top-link-home { background-position: 16px -129px; }
 .fixed-container .quick-access .links li a.top-link-cart { background-position: 16px -89px; }
 .fixed-container .quick-access .links li a.top-link-customer { background-position: 16px -44px; }
+.fixed-container .quick-access .links li a.top-link-customer.logged-in { background-position: -18px -44px; }
 .fixed-container .action-btns-div { float: left; width: 106px; margin-left: 4px; }
 .fixed-container .action-btns-div ul li { float: left; width: 49px; }
 .fixed-container .action-btns-div ul li.search { margin-right: 8px; text-align: left; display: block; float: left; text-indent: -3000px; width: 49px; height: 56px; background: url("../images/sprite.png") no-repeat; background-position: 0 -362px; }
