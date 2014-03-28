@@ -21,16 +21,27 @@
     }
   }
   .menu-search-wrapper{
-    //margin-top: 157px;
+    max-width: 100%;
+    padding: 0;
     .cms-menu{
+      max-width: 100%;
       //display: none;
     }
+    .search-row{
+      margin-right: 0;
+      margin-left: 0;
+    }
     .search-box{
-
+      max-width: 100%;
     }
     &:after,&:before{
       display: none;
     }
 
+  }
+  .navbar-container{
+    .navbar{
+      max-width: 100%;
+    }
   }
 }
