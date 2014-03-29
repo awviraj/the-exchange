@@ -33,6 +33,8 @@
   .catalog-category-view .main-container .main .col-main .category-products .toolbar-bottom .toolbar .pager { float: left; width: 100%; }
   .catalog-category-view .main-container .main .col-main .category-products .products-grid li.item .product_quickview { display: none !important; }
   .catalog-category-view .main-container .main .col-main .category-products .products-grid li.item .prod-image img { opacity: 1 !important; }
+  .page .product-view .mobile-title { display: block; }
+  .page .product-view .product-img-box { float: left; width: 100%; }
   .wrapper .menu-search-wrapper, .cms-index-index .wrapper .menu-search-wrapper { margin-top: 157px; }
   .wrapper .menu-search-wrapper .cms-menu, .cms-index-index .wrapper .menu-search-wrapper .cms-menu { display: none; }
   .wrapper .menu-search-wrapper .search-box, .cms-index-index .wrapper .menu-search-wrapper .search-box { background-size: auto; padding-top: 30px; height: 100px; }

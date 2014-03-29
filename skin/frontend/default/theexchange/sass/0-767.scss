@@ -2,7 +2,9 @@
 @media (min-width: 0px) and (max-width: 767px){
 @import "mobile/_common-mb"; /////////////////common responsive style changes for mobiles
 @import "mobile/cat_listing"; ////////////////mobile style for category list page
+@import "mobile/prod_detail_mob";  ////////////////Mobile styles for product detail page
 @import "mobile/search_box";
+
 
 }//end of media query
 @media (min-width: 0px) and (max-width: 400px){

@@ -8,6 +8,27 @@
 }
 
 .product-view{
+  .mobile-title{
+    display: none;
+  }
+  .product-name{
+    h2{
+      font-size: 29px;
+      font-family: 'houschka_alt_probold';
+      font-weight: normal;
+      text-transform: capitalize;
+      font-style: normal;
+      line-height: 150%;
+    }
+  }
+  .rating-row{
+    float: left;
+    width: 100%;
+
+    .ratings{
+      float: left;
+    }
+  }
   .product-img-box{
     .product-image{
       padding: 20px 1%;
@@ -98,25 +119,6 @@
     }
   }
   .product-shop{
-
-    .product-name{
-      h1{
-        font-size: 29px;
-        font-family: 'houschka_alt_probold';
-        font-weight: normal;
-        text-transform: capitalize;
-        font-style: normal;
-        line-height: 150%;
-      }
-    }
-    .rating-row{
-      float: left;
-      width: 100%;
-
-      .ratings{
-        float: left;
-      }
-    }
     .add-to-box{
       float: left;
       width: 100%;

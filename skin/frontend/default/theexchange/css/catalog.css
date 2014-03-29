@@ -58,6 +58,10 @@
 
 .col1-layout .col-main { width: 100%; max-width: 966px; margin: 0 auto; }
 
+.product-view .mobile-title { display: none; }
+.product-view .product-name h2 { font-size: 29px; font-family: 'houschka_alt_probold'; font-weight: normal; text-transform: capitalize; font-style: normal; line-height: 150%; }
+.product-view .rating-row { float: left; width: 100%; }
+.product-view .rating-row .ratings { float: left; }
 .product-view .product-img-box .product-image { padding: 20px 1%; border: 1px solid #dedede; text-align: center; position: relative; height: 300px; width: 100%; }
 .product-view .product-img-box .product-image img { max-width: 100%; }
 .product-view .product-img-box .zoom-notice { position: absolute; bottom: 2px; left: 12px; width: 16px; height: 18px; background: url("../images/sprite.png") 0 -2270px; text-align: left; text-indent: -3000px; z-index: 9999; }
@@ -73,9 +77,6 @@
 .product-view .product-img-box .more-views .more-views-control.more-views-prev { top: 50%; left: 0; margin-top: -16px; }
 .product-view .product-img-box .more-views .more-views-control.more-views-next { top: 50%; right: 7px; margin-top: -16px; }
 .product-view .product-img-box .more-views .more-views-control.more-views-next a { background-position: -55px -823px; }
-.product-view .product-shop .product-name h1 { font-size: 29px; font-family: 'houschka_alt_probold'; font-weight: normal; text-transform: capitalize; font-style: normal; line-height: 150%; }
-.product-view .product-shop .rating-row { float: left; width: 100%; }
-.product-view .product-shop .rating-row .ratings { float: left; }
 .product-view .product-shop .add-to-box { float: left; width: 100%; }
 .product-view .product-shop .add-to-box .add-to-cart { float: right; }
 .product-view .product-shop .add-to-box .add-to-cart label { line-height: 51px; font-family: 'houschka_alt_probold'; font-weight: normal; font-size: 20px; text-transform: uppercase; color: #2f2f2f; }
