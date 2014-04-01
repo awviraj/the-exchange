@@ -1,1 +1,6 @@
-@media (min-width: 768px) and (max-width: 1024px) { .wrapper .menu-search-wrapper:after, .wrapper .menu-search-wrapper:before { display: none; } }
+@media (min-width: 768px) and (max-width: 1024px) { .wrapper .menu-search-wrapper { max-width: 100%; padding: 0; }
+  .wrapper .menu-search-wrapper .cms-menu { max-width: 100%; }
+  .wrapper .menu-search-wrapper .search-row { margin-right: 0; margin-left: 0; }
+  .wrapper .menu-search-wrapper .search-box { max-width: 100%; }
+  .wrapper .menu-search-wrapper:after, .wrapper .menu-search-wrapper:before { display: none; }
+  .wrapper .navbar-container .navbar { max-width: 100%; } }

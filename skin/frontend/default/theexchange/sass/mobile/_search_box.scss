@@ -1,4 +1,4 @@
-.wrapper{
+.wrapper,.cms-index-index .wrapper{
   .menu-search-wrapper{
     margin-top: 157px;
     .cms-menu{
@@ -6,14 +6,75 @@
     }
     .search-box{
       background-size: auto;
-
+      padding-top: 30px;
       height: 100px;
 
       .form-search {
         padding-top: 0px;
+
+        .filter-results{
+          display: none;
+        }
         .search-inputs{
           max-width: 88%;
           width: 88%;
+          float: none;
+          margin: 0 auto;
+          position: relative;
+          background: #fff;
+          border: 2px solid #000000;
+          display:inline-block;
+          height: 42px;
+          //background:url("../images/serach-input-bg.png") repeat-x left top #fff;
+          border: 2px solid #000000;
+          position: relative;
+          border-right: 0;
+
+          &:after,&:before{
+            left: 100%;
+            top: 50%;
+            border: solid transparent;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+          }
+
+
+          &:after{
+            border-color: rgba(255, 255, 255, 0);
+            border-left-color: #fff;
+            border-width: 18px;
+            margin-top: -18px;
+          }
+          &:before{
+            border-color: rgba(0, 0, 0, 0);
+            border-left-color: #000;
+            border-width: 21px;
+            margin-top: -21px;
+          }
+
+
+          input{
+            float: left;
+            width: 95%;
+            @include calc (width,'98% - 40px');
+            border:none;
+            height: 37px;
+            line-height: 32px;
+            padding: 5px 1%;
+            //background:url("../images/serach-input-bg.png") repeat-x left top #fff;
+
+            &:focus{
+              box-shadow: none;
+              border-color: transparent;
+            }
+
+          }
+          .input-group-btn{
+            margin-top: 8px;
+          }
         }
         .search-label{
           display: none;
@@ -46,52 +107,59 @@
   }
 
 }
-.cms-index-index{
-  .wrapper{
-    .menu-search-wrapper{
-      margin-top: 157px;
-      .cms-menu{
-        display: none;
-      }
-      .search-box{
-        background-size: auto;
-        height: 197px;
-
-        .form-search {
-          .search-inputs{
-            max-width: 88%;
-          }
-          .search-label{
-            display: none;
-          }
-          .search-close{
-            display: block;
-          }
-          .mobile-search-label{
-            display: block;
-            padding-bottom: 15px;
-            padding-top: 38px;
-            font-size: 40px;
-            float: none;
-            width: 100%;
-            text-align: center;
-            line-height: 43px;
-            font-family: 'houschkaalt-light-regular';
-            font-weight: normal;
-          }
-        }
-
-        .black-arrow{
-          display: none;
-        }
-      }
-      &:after,&:before{
-        display: none;
-      }
-
-    }
-  }
-
-}
+//.cms-index-index{
+//  .wrapper{
+//    .menu-search-wrapper{
+//      margin-top: 157px;
+//      .cms-menu{
+//        display: none;
+//      }
+//      .search-box{
+//        background-size: auto;
+//
+//        height: 100px;
+//
+//        .form-search {
+//          padding-top: 0px;
+//
+//          .filter-results{
+//            display: none;
+//          }
+//          .search-inputs{
+//            max-width: 64%;
+//            width: 88%;
+//          }
+//          .search-label{
+//            display: none;
+//          }
+//          .search-close{
+//            display: block;
+//          }
+//          .mobile-search-label{
+//            display: block;
+//            padding-bottom: 5px;
+//            padding-top: 5px;
+//            font-size: 28px;
+//            float: none;
+//            width: 100%;
+//            text-align: center;
+//            line-height: 33px;
+//            font-family: 'houschkaalt-light-regular';
+//            font-weight: normal;
+//          }
+//        }
+//
+//        .black-arrow{
+//          display: none;
+//        }
+//      }
+//      &:after,&:before{
+//        display: none;
+//      }
+//
+//    }
+//  }
+//
+//}
 
 
