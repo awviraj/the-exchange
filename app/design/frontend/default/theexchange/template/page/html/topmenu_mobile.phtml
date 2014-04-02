@@ -33,9 +33,8 @@
 ?>
 <?php $_menu = $this->getHtml('level-top') ?>
 <?php if($_menu): ?>
-    <div >
 
-<div class="nav-container-mobile" id="menu">
+<div class="nav-container-mobile" id="mobile-menu">
     <nav>
         <h2><i class="fa fa-reorder"></i><?php echo $this->__('All Categories') ?></h2>
         <ul>
@@ -48,7 +47,7 @@
 <script>
     jQuery(document).ready(function(){
         // HTML markup implementation, overlap mode
-        jQuery( '#menu' ).multilevelpushmenu({
+        jQuery( '#mobile-menu' ).multilevelpushmenu({
             containersToPush: [jQuery( '#pushobj' )]
         });
     });

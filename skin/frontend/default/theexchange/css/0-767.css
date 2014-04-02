@@ -35,12 +35,12 @@
   .catalog-category-view .main-container .main .col-main .category-products .products-grid li.item .prod-image img { opacity: 1 !important; }
   .page .product-view .mobile-title { display: block; }
   .page .product-view .product-img-box { float: left; width: 100%; }
-  .wrapper .menu-search-wrapper, .cms-index-index .wrapper .menu-search-wrapper { margin-top: 157px; }
+  .wrapper .menu-search-wrapper, .cms-index-index .wrapper .menu-search-wrapper { margin-top: 157px; box-sizing: border-box; -webkit-box-sizing: border-box; }
   .wrapper .menu-search-wrapper .cms-menu, .cms-index-index .wrapper .menu-search-wrapper .cms-menu { display: none; }
   .wrapper .menu-search-wrapper .search-box, .cms-index-index .wrapper .menu-search-wrapper .search-box { background-size: auto; padding-top: 30px; height: 100px; }
   .wrapper .menu-search-wrapper .search-box .form-search, .cms-index-index .wrapper .menu-search-wrapper .search-box .form-search { padding-top: 0px; }
   .wrapper .menu-search-wrapper .search-box .form-search .filter-results, .cms-index-index .wrapper .menu-search-wrapper .search-box .form-search .filter-results { display: none; }
-  .wrapper .menu-search-wrapper .search-box .form-search .search-inputs, .cms-index-index .wrapper .menu-search-wrapper .search-box .form-search .search-inputs { max-width: 88%; width: 88%; float: none; margin: 0 auto; position: relative; background: #fff; border: 2px solid #000000; display: inline-block; height: 42px; border: 2px solid #000000; position: relative; border-right: 0; }
+  .wrapper .menu-search-wrapper .search-box .form-search .search-inputs, .cms-index-index .wrapper .menu-search-wrapper .search-box .form-search .search-inputs { max-width: 82%; width: 82%; float: none; margin: 0 auto; position: relative; background: #fff; border: 2px solid #000000; display: inline-block; height: 42px; border: 2px solid #000000; position: relative; border-right: 0; }
   .wrapper .menu-search-wrapper .search-box .form-search .search-inputs:after, .wrapper .menu-search-wrapper .search-box .form-search .search-inputs:before, .cms-index-index .wrapper .menu-search-wrapper .search-box .form-search .search-inputs:after, .cms-index-index .wrapper .menu-search-wrapper .search-box .form-search .search-inputs:before { left: 100%; top: 50%; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; }
   .wrapper .menu-search-wrapper .search-box .form-search .search-inputs:after, .cms-index-index .wrapper .menu-search-wrapper .search-box .form-search .search-inputs:after { border-color: rgba(255, 255, 255, 0); border-left-color: #fff; border-width: 18px; margin-top: -18px; }
   .wrapper .menu-search-wrapper .search-box .form-search .search-inputs:before, .cms-index-index .wrapper .menu-search-wrapper .search-box .form-search .search-inputs:before { border-color: rgba(0, 0, 0, 0); border-left-color: #000; border-width: 21px; margin-top: -21px; }

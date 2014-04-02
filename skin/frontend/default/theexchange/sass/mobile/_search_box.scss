@@ -1,6 +1,8 @@
 .wrapper,.cms-index-index .wrapper{
   .menu-search-wrapper{
     margin-top: 157px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     .cms-menu{
       display: none;
     }
@@ -16,8 +18,8 @@
           display: none;
         }
         .search-inputs{
-          max-width: 88%;
-          width: 88%;
+          max-width: 82%;
+          width: 82%;
           float: none;
           margin: 0 auto;
           position: relative;
