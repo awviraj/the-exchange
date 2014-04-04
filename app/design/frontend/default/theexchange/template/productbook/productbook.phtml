@@ -115,7 +115,7 @@ $_productId = $_product->getId();
                 var pid = jQuery(this).attr('id');
                 var qty = jQuery('#qty_' + pid).val();
 
-                showLoader('.quickview-main .line-2');
+                showLoader('.quickview-main');
                // jQuery('#addingCart_' + pid).html('Adding to cart...');
 //            jQuery.ajax({
 //                type: "POST",
@@ -151,7 +151,7 @@ $_productId = $_product->getId();
                         console.log(msg);
                         console.log(msg.cart_count);
                         if (msg.cart_count) {
-                            jQuery('.top-link-cart .cart-count').html(msg.cart_count);
+                            jQuery('.top-link-cart').find('.cart-count').html(msg.cart_count);
                         }
                         jQuery('#cartInfo').empty().html(msg);
                     }
