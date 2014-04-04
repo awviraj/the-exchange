@@ -165,10 +165,10 @@ function removeOverlay(elm){
 function showLoader(selector) {
     var parentElm = jQuery(selector);
     var wrapper = '<div class="ajax-submit-loader" >'
-        + '<div class="loading-overlay"></div>'
+        + '<div class="loading-overlay" style="width:300px; height: 300px; background-color: red;">DILHAN</div>'
         + '<span class="loader"></span>';
     +'</div>';
-    jQuery(parentElm).append(wrapper);
+    parentElm.append(wrapper);
 }
 
 function hideLoader(selector) {
