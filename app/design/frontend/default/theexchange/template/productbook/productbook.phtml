@@ -115,7 +115,8 @@ $_productId = $_product->getId();
                 var pid = jQuery(this).attr('id');
                 var qty = jQuery('#qty_' + pid).val();
 
-                jQuery('#addingCart_' + pid).html('Adding to cart...');
+                showLoader('.quickview-main .line-2');
+               // jQuery('#addingCart_' + pid).html('Adding to cart...');
 //            jQuery.ajax({
 //                type: "POST",
 //                url: baseUrl + "checkout/cart/add",
@@ -134,6 +135,7 @@ $_productId = $_product->getId();
                         jQuery('#product_data').empty();
                         jQuery('#mask, .window').hide();
                         removeOverlay(this);
+                        hideLoader('.quickview-main .line-2');
                     }
                 });
             });
@@ -142,9 +144,15 @@ $_productId = $_product->getId();
                 jQuery('#cartInfo').empty().html('Updating cart info...');
                 jQuery.ajax({
                     type: "POST",
+                    dataType:"json",
                     url: baseUrl + "productbook/index/cartinfo",
                     // data: 'product='+pid+'&qty='+qty,
                     success: function (msg) {
+                        console.log(msg);
+                        console.log(msg.cart_count);
+                        if (msg.cart_count) {
+                            jQuery('.top-link-cart .cart-count').html(msg.cart_count);
+                        }
                         jQuery('#cartInfo').empty().html(msg);
                     }
                 });
