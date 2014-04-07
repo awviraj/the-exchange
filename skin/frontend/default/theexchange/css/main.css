@@ -306,7 +306,8 @@ body.overlay .search-label, body.overlay .search-inputs, body.overlay .filter-re
 .fixed-container .quick-access .links li:first-child { margin-left: 0; }
 .fixed-container .quick-access .links li a { text-align: left; display: block; float: left; text-indent: -3000px; width: 48px; height: 38px; background: url("../images/sprite.png") no-repeat; }
 .fixed-container .quick-access .links li a.top-link-home { background-position: 16px -129px; }
-.fixed-container .quick-access .links li a.top-link-cart { background-position: 16px -89px; }
+.fixed-container .quick-access .links li a.top-link-cart { background-position: 16px -89px; position: relative; }
+.fixed-container .quick-access .links li a.top-link-cart .cart-count { font-family: 'houschka_alt_probold'; display: block; width: 13px; height: 13px; background: #000; position: absolute; right: 8px; text-indent: 0; font-size: 12px; color: #fff; top: 10px; line-height: 13px; text-align: center; }
 .fixed-container .quick-access .links li a.top-link-customer { background-position: 16px -44px; }
 .fixed-container .quick-access .links li a.top-link-customer.logged-in { background-position: -18px -44px; }
 .fixed-container .action-btns-div { float: left; width: 106px; margin-left: 4px; }
