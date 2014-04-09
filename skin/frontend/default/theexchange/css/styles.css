@@ -1199,7 +1199,7 @@ tr.summary-details-excluded { font-style:italic; }
 .cart-table .btn-continue { float:left; }
 .cart-table .btn-empty span,
 .cart-table .btn-continue span,
-.cart-table .btn-update span { border-color:#406a83; background:#618499; }
+.cart-table .btn-update span {  }
 .cart-table .btn-update,
 .cart-table .btn-empty { float:right; }
 .cart-table .btn-update { margin-left:10px; }

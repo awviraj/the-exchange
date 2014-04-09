@@ -20,8 +20,8 @@
          color: #000;
        }
      }
-     tfoot{
-       border-top: 3px solid #ff0000;
+     tbody{
+       border-bottom: 3px solid #ff0000;
      }
      td{
        .product-name{
@@ -37,6 +37,38 @@
          font-size: 16px;
          font-family: 'houschka_alt_probold';
          font-weight: normal;
+       }
+       input{
+         &.qty{
+           color: #ff0000;
+           text-align: center;
+         }
+       }
+       button{
+         &.btn-update{
+           margin-top: 10px;
+           margin-left: 0;
+           height: 29px;
+           background: #000000;
+           color: #ffffff;
+           font-size: 14px;
+           font-family: 'houschka_alt_probold';
+           font-weight: normal;
+           border: none;
+           padding: 5px 0;
+           width: 100%;
+
+           span{
+             padding: 0;
+             background: #000000;
+             color: #ffffff;
+             font-size: 14px;
+             font-family: 'houschka_alt_probold';
+             font-weight: normal;
+             border: none;
+           }
+
+         }
        }
 
      }
