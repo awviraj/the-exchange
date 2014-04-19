@@ -961,13 +961,13 @@ All this is done for any sub-level being entered.
 /* Colors for demos */
 
 /* Demo 1 */
-.demo-1 .dl-menuwrapper button {
+.cms-menu .dl-menuwrapper button {
 	background: #c62860;
 }
 
-.demo-1 .dl-menuwrapper button:hover,
-.demo-1 .dl-menuwrapper button.dl-active,
-.demo-1 .dl-menuwrapper ul {
+.cms-menu  .dl-menuwrapper button:hover,
+.cms-menu  .dl-menuwrapper button.dl-active,
+.cms-menu  .dl-menuwrapper ul {
 	background: #9e1847;
 }
 

@@ -66,7 +66,8 @@
 		},
 		_config : function() {
 			this.open = false;
-			this.$trigger = this.$el.children( '.dl-trigger' );
+//			this.$trigger = this.$el.children( '.dl-trigger' ); //changee this to get the trigger button out
+            this.$trigger = jQuery('.dl-trigger' );
 			this.$menu = this.$el.children( 'ul.dl-menu' );
 			this.$menuitems = this.$menu.find( 'li:not(.dl-back)' );
 			this.$el.find( 'ul.dl-submenu' ).prepend( '<li class="dl-back"><a href="#">back</a></li>' );

@@ -79,6 +79,59 @@
             font-weight: normal;
           }
         }
+        .dl-menuwrapper {
+          button {
+            background: #c62860;
+            &:hover,.dl-active{
+              background: #9e1847;
+            }
+          }
+          ul {
+            background: #9e1847;
+
+            li{
+              a{
+                @include Houschka_alt_med;
+                text-transform: capitalize;
+                color: #e3e3e3;
+                font-size: 16px;
+
+                &:not(:only-child){
+                  &:after{
+                    position: absolute;
+                    top: 0;
+                    line-height: 50px;
+                    font-family: 'icomoon';
+                    speak: none;
+                    -webkit-font-smoothing: antialiased;
+                    content: "\e000";
+                    color: #fff;
+                  }
+                }
+              }
+              &.dl-back {
+                  &:after{
+                    position: absolute;
+                    top: 0;
+                    line-height: 50px;
+                    font-family: 'icomoon';
+                    speak: none;
+                    -webkit-font-smoothing: antialiased;
+                    content: "\e000";
+                  }
+              }
+              .dl-menuwrapper li.dl-back:after, .dl-menuwrapper li > a:not(:only-child):after {
+                position: absolute;
+                top: 0;
+                line-height: 50px;
+                font-family: 'icomoon';
+                speak: none;
+                -webkit-font-smoothing: antialiased;
+                content: "\e000";
+              }
+            }
+          }
+        }
 
       }
 
