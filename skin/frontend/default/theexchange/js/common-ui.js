@@ -86,7 +86,9 @@ jQuery('.parentMenu').each(function(){
     )
 })
 
-
+    jQuery( '#dl-menu' ).dlmenu({
+        animationClasses : { classin : 'dl-animate-in-2', classout : 'dl-animate-out-2' }
+    });
 //    jQuery('.best-seller-slider').bxSlider({
 //        nextSelector: '#slider-next',
 //        prevSelector: '#slider-prev',

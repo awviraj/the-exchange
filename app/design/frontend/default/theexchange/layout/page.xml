@@ -55,12 +55,16 @@ Default layout, loads most of the pages
                 <block type="page/js_cookie" name="js_cookies" template="page/js/cookie.phtml"/>
 
                 <action method="addItem"><type>skin_js</type><name>js/modernizr.js</name><group>js</group></action>
-                <action method="addItem"><type>skin_js</type><name>js/common-ui.js</name><group>js</group></action>
+
                 <action method="addItem"><type>skin_js</type><name>js/jquery.bxslider.min.js</name><group>js</group></action>
-                <action method="addItem"><type>skin_js</type><name>js/modernizr.custom.js</name><group>plugin</group></action>
-                <action method="addItem"><type>skin_js</type><name>js/jquery.multilevelpushmenu.min.js</name><group>plugin</group></action>
+                <!--<action method="addItem"><type>skin_js</type><name>js/modernizr.custom.js</name><group>plugin</group></action>-->
+                <!--<action method="addItem"><type>skin_js</type><name>js/jquery.multilevelpushmenu.min.js</name><group>plugin</group></action>-->
+                <action method="addItem"><type>skin_js</type><name>js/jquery.dlmenu.js</name><group>plugin</group></action>
+                <action method="addItem"><type>skin_js</type><name>js/common-ui.js</name><group>js</group></action>
 
                 <action method="addItem"><type>skin_css</type><name>css/component.css</name><media>plugin</media></action>
+                <action method="addItem"><type>skin_css</type><name>css/default-menu.css</name><media>plugin</media></action>
+                <action method="addItem"><type>skin_css</type><name>css/component_menu.css</name><media>plugin</media></action>
                 <action method="addItem"><type>skin_css</type><name>css/normalize.css</name><media>plugin</media></action>
                 <action method="addItem"><type>skin_css</type><name>css/jquery.bxslider.css</name><media>plugin</media></action>
                 <action method="addCss"><stylesheet>css/styles.css</stylesheet></action>
