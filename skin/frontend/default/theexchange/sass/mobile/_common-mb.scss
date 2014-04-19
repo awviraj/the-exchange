@@ -50,6 +50,11 @@
           background-position: 13px -865px;
           cursor: pointer;
           float: left;
+
+          &:hover,&:focus,:active{
+            opacity: 0.5;
+            outline: #fff;
+          }
         }
         .action-btns-div{
           width: 51px;
@@ -81,13 +86,13 @@
         }
         .dl-menuwrapper {
           button {
-            background: #c62860;
+            background: #000;
             &:hover,.dl-active{
-              background: #9e1847;
+              background: #000;
             }
           }
           ul {
-            background: #9e1847;
+            background: #000;
 
             li{
               a{
@@ -110,6 +115,9 @@
                 }
               }
               &.dl-back {
+                a{
+                  text-transform: uppercase;
+                }
                   &:after{
                     position: absolute;
                     top: 0;
@@ -118,6 +126,7 @@
                     speak: none;
                     -webkit-font-smoothing: antialiased;
                     content: "\e000";
+                    color: #fff;
                   }
               }
               .dl-menuwrapper li.dl-back:after, .dl-menuwrapper li > a:not(:only-child):after {
@@ -140,7 +149,9 @@
       }
     }
   }
-
+.navbar-container{
+  display: none;
+}
   #list-items {
     #slider-content{
       overflow-x: hidden;
