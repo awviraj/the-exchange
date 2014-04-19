@@ -9,19 +9,22 @@
   .wrapper .header-container .fixed-container .cms-menu { padding: 1px 5px; }
   .wrapper .header-container .fixed-container .cms-menu .small-x-logo { display: none; margin-left: 5px; }
   .wrapper .header-container .fixed-container .cms-menu .m-nav-menu-link { margin-top: 3px; display: block; width: 47px; height: 45px; background: url("../images/sprite.png") no-repeat; background-position: 13px -865px; cursor: pointer; float: left; }
+  .wrapper .header-container .fixed-container .cms-menu .m-nav-menu-link:hover, .wrapper .header-container .fixed-container .cms-menu .m-nav-menu-link:focus, .wrapper .header-container .fixed-container .cms-menu .m-nav-menu-link :active { opacity: 0.5; outline: #fff; }
   .wrapper .header-container .fixed-container .cms-menu .action-btns-div { width: 51px; display: none; }
   .wrapper .header-container .fixed-container .cms-menu .action-btns-div ul li.menu-link { display: none; }
   .wrapper .header-container .fixed-container .cms-menu .action-btns-div ul li.search { display: none; }
   .wrapper .header-container .fixed-container .cms-menu .welcome-msg { display: block; float: right; width: -moz-calc(100% - 116px); width: -o-calc(100% - 116px); width: -webkit-calc(100% - 116px); width: calc(100% - 116px); }
   .wrapper .header-container .fixed-container .cms-menu .welcome-msg p { color: #fff; line-height: 47px; font-size: 15px; font-family: 'houschka_alt_promedium'; font-style: normal; font-weight: normal; }
-  .wrapper .header-container .fixed-container .cms-menu .dl-menuwrapper button { background: #c62860; }
-  .wrapper .header-container .fixed-container .cms-menu .dl-menuwrapper button:hover, .wrapper .header-container .fixed-container .cms-menu .dl-menuwrapper button .dl-active { background: #9e1847; }
-  .wrapper .header-container .fixed-container .cms-menu .dl-menuwrapper ul { background: #9e1847; }
+  .wrapper .header-container .fixed-container .cms-menu .dl-menuwrapper button { background: #000; }
+  .wrapper .header-container .fixed-container .cms-menu .dl-menuwrapper button:hover, .wrapper .header-container .fixed-container .cms-menu .dl-menuwrapper button .dl-active { background: #000; }
+  .wrapper .header-container .fixed-container .cms-menu .dl-menuwrapper ul { background: #000; }
   .wrapper .header-container .fixed-container .cms-menu .dl-menuwrapper ul li a { font-family: 'houschkaalt-medium-regular'; font-weight: normal; text-transform: capitalize; color: #e3e3e3; font-size: 16px; }
   .wrapper .header-container .fixed-container .cms-menu .dl-menuwrapper ul li a:not(:only-child):after { position: absolute; top: 0; line-height: 50px; font-family: 'icomoon'; speak: none; -webkit-font-smoothing: antialiased; content: "\e000"; color: #fff; }
-  .wrapper .header-container .fixed-container .cms-menu .dl-menuwrapper ul li.dl-back:after { position: absolute; top: 0; line-height: 50px; font-family: 'icomoon'; speak: none; -webkit-font-smoothing: antialiased; content: "\e000"; }
+  .wrapper .header-container .fixed-container .cms-menu .dl-menuwrapper ul li.dl-back a { text-transform: uppercase; }
+  .wrapper .header-container .fixed-container .cms-menu .dl-menuwrapper ul li.dl-back:after { position: absolute; top: 0; line-height: 50px; font-family: 'icomoon'; speak: none; -webkit-font-smoothing: antialiased; content: "\e000"; color: #fff; }
   .wrapper .header-container .fixed-container .cms-menu .dl-menuwrapper ul li .dl-menuwrapper li.dl-back:after, .wrapper .header-container .fixed-container .cms-menu .dl-menuwrapper ul li .dl-menuwrapper li > a:not(:only-child):after { position: absolute; top: 0; line-height: 50px; font-family: 'icomoon'; speak: none; -webkit-font-smoothing: antialiased; content: "\e000"; }
   .wrapper .header-container .fixed-container nav { display: none; }
+  .wrapper .navbar-container { display: none; }
   .wrapper #list-items #slider-content { overflow-x: hidden; padding-bottom: 0; }
   .custom_footer_wrapper .custom_footer_static_block .custom_row1_col1, .custom_footer_wrapper .custom_footer_static_block .custom_row1_col2, .custom_footer_wrapper .custom_footer_static_block .custom_row1_col3 { width: 100%; margin-bottom: 10px; }
   .custom_footer_wrapper .custom_footer_static_block .custom_row1_col2 { text-align: center; }
