@@ -1,3 +1,6 @@
+.qty-wrapper { background: url("../images/btn-sprite.png") no-repeat -11px -309px; width: 132px; height: 51px; float: left; }
+.qty-wrapper .qty { float: left; margin-right: 5px; border: none; max-width: 100px; margin-left: 6px; text-align: center; line-height: 30px; margin-top: 10px; font-family: 'houschka_alt_probold'; font-weight: normal; font-size: 18px; color: #000; }
+
 .main-container .col-main .category-title h1 { padding-bottom: 10px; border-bottom: 4px solid #ff1100; font-family: 'houschkaalt-bold-italic-regular'; font-size: 29px; font-style: normal; }
 .main-container .col-main .category-products { padding-right: 15px; float: left; width: 100%; }
 .main-container .col-main .category-products .products-grid { width: 100%; float: left; }
@@ -55,6 +58,9 @@
 .col-left.sidebar .block-content .currently ol li { padding: 5px 0; }
 .col-left.sidebar .block-content .currently ol li .label, .col-left.sidebar .block-content .currently ol li .value { color: #ff0000; padding: 0 5px 0 0; font-size: 12px; line-height: 16px; font-family: 'houschka_alt_promedium'; }
 .col-left.sidebar .block-content .currently ol li .value { color: #000; }
+
+.qty-wrapper { background: url("../images/btn-sprite.png") no-repeat -11px -309px; width: 132px; height: 51px; float: left; }
+.qty-wrapper .qty { float: left; margin-right: 5px; border: none; max-width: 100px; margin-left: 6px; text-align: center; line-height: 30px; margin-top: 10px; font-family: 'houschka_alt_probold'; font-weight: normal; font-size: 18px; color: #000; }
 
 .col1-layout .col-main { width: 100%; max-width: 966px; margin: 0 auto; }
 

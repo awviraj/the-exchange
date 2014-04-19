@@ -1,4 +1,6 @@
-@media (min-width: 0px) and (max-width: 767px) { .wrapper .header-container .header { height: 113px; border-bottom: none; position: fixed; top: 3px; z-index: 9999; border-top: 2px Solid #000; }
+@media (min-width: 0px) and (max-width: 767px) { .qty-wrapper { background: url("../images/btn-sprite.png") no-repeat -11px -309px; width: 132px; height: 51px; float: left; }
+  .qty-wrapper .qty { float: left; margin-right: 5px; border: none; max-width: 100px; margin-left: 6px; text-align: center; line-height: 30px; margin-top: 10px; font-family: 'houschka_alt_probold'; font-weight: normal; font-size: 18px; color: #000; }
+  .wrapper .header-container .header { height: 113px; border-bottom: none; position: fixed; top: 3px; z-index: 9999; border-top: 2px Solid #000; }
   .wrapper .header-container .header .top-quick-links, .wrapper .header-container .header .call-us, .wrapper .header-container .header .quick-access { display: none; }
   .wrapper .header-container .header .logo-div { margin-top: 18px; }
   .wrapper .header-container .fixed-container { display: block !important; top: 112px; z-index: 9999; }
@@ -25,6 +27,8 @@
   .footer-container .footer .footer_brand_section ul li { float: left; width: 42%; margin-bottom: 25px; }
   .footer-container .footer .custom_red_triangle { background: url("../images/footer-red-traingle.png") top center no-repeat; min-height: 324px; }
   .footer-container .footer .custom_red_triangle img { display: none; }
+  .qty-wrapper { background: url("../images/btn-sprite.png") no-repeat -11px -309px; width: 132px; height: 51px; float: left; }
+  .qty-wrapper .qty { float: left; margin-right: 5px; border: none; max-width: 100px; margin-left: 6px; text-align: center; line-height: 30px; margin-top: 10px; font-family: 'houschka_alt_probold'; font-weight: normal; font-size: 18px; color: #000; }
   .catalog-category-view .main-container { padding: 0; }
   .catalog-category-view .main-container .main .row { margin: 0; }
   .catalog-category-view .main-container .main .col-main .category-products { padding: 15px 0; }

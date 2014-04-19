@@ -2,8 +2,30 @@
 .checkout-cart-index .cart #shopping-cart-table thead { border-bottom: 3px solid #ff0000; border-top: 3px solid #ff0000; }
 .checkout-cart-index .cart #shopping-cart-table thead th { font-size: 16px; font-family: 'houschka_alt_probold'; color: #000; }
 .checkout-cart-index .cart #shopping-cart-table tbody { border-bottom: 3px solid #ff0000; }
+.checkout-cart-index .cart #shopping-cart-table td { padding-top: 32px; }
 .checkout-cart-index .cart #shopping-cart-table td .product-name a { color: #ff0000; font-size: 16px; font-family: 'houschka_alt_probold'; font-weight: normal; }
 .checkout-cart-index .cart #shopping-cart-table td .cart-price { color: #ff0000; font-size: 16px; font-family: 'houschka_alt_probold'; font-weight: normal; }
 .checkout-cart-index .cart #shopping-cart-table td input.qty { color: #ff0000; text-align: center; }
-.checkout-cart-index .cart #shopping-cart-table td button.btn-update { margin-top: 10px; margin-left: 0; height: 29px; background: #000000; color: #ffffff; font-size: 14px; font-family: 'houschka_alt_probold'; font-weight: normal; border: none; padding: 5px 0; width: 100%; }
+.checkout-cart-index .cart #shopping-cart-table td button.btn-update { margin-top: 10px; margin-left: 0; height: 29px; background: #000000; color: #ffffff; font-size: 14px; font-family: 'houschka_alt_probold'; font-weight: normal; border: none; padding: 5px 0; width: 100%; max-width: 104px; }
 .checkout-cart-index .cart #shopping-cart-table td button.btn-update span { padding: 0; background: #000000; color: #ffffff; font-size: 14px; font-family: 'houschka_alt_probold'; font-weight: normal; border: none; }
+.checkout-cart-index .cart #shopping-cart-table td a.btn-remove { width: 28px; height: 28px; display: block; background: url("../images/sprite.png") 0 -1175px no-repeat; }
+.checkout-cart-index .cart #shopping-cart-table td a.btn-remove:hover { opacity: 0.8; }
+.checkout-cart-index .cart #shopping-cart-table td .qty-wrapper { max-width: 104px; background: none; height: 43px; border: 3px solid #dedede; }
+.checkout-cart-index .cart #shopping-cart-table td .qty-wrapper input { width: 100%; max-width: 97px; margin-left: 0px; margin-right: -4px; margin-top: 2px; }
+.checkout-cart-index .cart .btn-continue { background: #000000; background: #000000; width: 100%; line-height: 45px; color: #ffffff; font-size: 16px; font-family: 'houschka_alt_probold'; font-weight: normal; }
+.checkout-cart-index .cart .btn-continue:hover { opacity: 0.8; }
+.checkout-cart-index .cart .discount { background: none; border: 2px solid #cacaca; width: 100%; padding: 0px 15px; float: left; }
+.checkout-cart-index .cart .discount input { float: left; width: 75%; padding: 10px 0; border: none; color: #000; font-size: 16px; font-family: 'houschka_alt_probold'; font-weight: normal; line-height: 22px; }
+.checkout-cart-index .cart .discount button { background: #ff0000; color: #fff; font-size: 13px; font-family: 'houschka_alt_probold'; width: 24%; float: right; text-align: center; height: 24px; margin-top: 10px; border-radius: 0; }
+.checkout-cart-index .cart .discount button:hover { opacity: 0.8; }
+.checkout-cart-index .cart .discount input::-webkit-input-placeholder { color: #000; }
+.checkout-cart-index .cart .cart-collaterals { padding: 0; }
+.checkout-cart-index .cart .cart-collaterals .totals { float: right; background: none; width: auto; border: none; }
+.checkout-cart-index .cart .cart-collaterals .totals tr td { font-family: 'houschka_alt_probold'; color: #000; font-size: 18px; }
+.checkout-cart-index .cart .cart-collaterals .totals tr td span.price { color: #ff0000; }
+.checkout-cart-index .cart .cart-collaterals .totals tbody tr { border-bottom: #ff0000 solid 3px; }
+.checkout-cart-index .cart .cart-collaterals .totals tbody tr td { padding: 25px 10px; }
+.checkout-cart-index .cart .cart-collaterals tfoot tr td { padding: 25px 10px; }
+.checkout-cart-index .cart .cart-collaterals tfoot tr td span.price { font-size: 30px; }
+.checkout-cart-index .cart .cart-collaterals .checkout-types button { width: 290px; height: 50px; font-family: 'houschka_alt_probold'; color: #fff; font-size: 18px; font-style: normal; font-weight: normal; background: url("../images/btn-sprite.png") no-repeat 0 -458px; }
+.checkout-cart-index .cart .cart-collaterals .checkout-types button:hover { opacity: 0.8; }
