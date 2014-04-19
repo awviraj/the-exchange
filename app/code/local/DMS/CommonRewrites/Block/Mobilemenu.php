@@ -38,20 +38,18 @@ class DMS_CommonRewrites_Block_Mobilemenu extends Mage_Page_Block_Html_Topmenu
             }
 
             $html .= '<li>';
-            $html .= '<a href="' . $child->getUrl() . '" ><i class="fa fa-laptop"></i>'
-                . $this->escapeHtml($child->getName()) . '</a>';
-            $html .= '<h2><i class="fa fa-laptop"></i>'.$this->escapeHtml($child->getName()).'</h2>';
+            $html .= '<a href="' . $child->getUrl() . '" >'. $this->escapeHtml($child->getName()) . '</a>';
 
             if ($child->hasChildren()) {
                 if (!empty($childrenWrapClass)) {
                     //$html .= '<div class="' . $childrenWrapClass . '">';
                 }
-                $html .= '<ul>';
+                $html .= '<ul class="'.$childrenWrapClass.'">';
                 $html .= $this->_getHtml($child, $childrenWrapClass);
                 $html .= '</ul>';
 
                 if (!empty($childrenWrapClass)) {
-                    $html .= '</div>';
+                    //$html .= '</div>';
                 }
             }
             $html .= '</li>';
@@ -59,8 +57,9 @@ class DMS_CommonRewrites_Block_Mobilemenu extends Mage_Page_Block_Html_Topmenu
             $counter++;
         }
 
-        Mage::log($html);
         return $html;
     }
 
 }
+
+

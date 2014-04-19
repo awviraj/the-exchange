@@ -31,24 +31,11 @@
  * @see Mage_Page_Block_Html_Topmenu
  */
 ?>
-<?php $_menu = $this->getHtml('level-top') ?>
+<?php $_menu = $this->getHtml('dl-menu', 'dl-submenu') ?>
 <?php if($_menu): ?>
-
-<!--<div class="nav-container-mobile" id="mobile-menu">-->
-<!--    <nav>-->
-<!--        <h2><i class="fa fa-reorder"></i>--><?php //echo $this->__('All Categories') ?><!--</h2>-->
-<!--        <ul>-->
-<!--            --><?php //echo $_menu ?>
-<!--        </ul>-->
-<!--    </nav>-->
-<!--</div>-->
+    <div id="dl-menu" class="dl-menuwrapper">
+        <ul class="dl-menu">
+            <?php echo $_menu ?>
+        </ul>
+    </div><!-- /dl-menuwrapper -->
 <?php endif ?>
-
-<!--<script>-->
-<!--    jQuery(document).ready(function(){-->
-<!--        // HTML markup implementation, overlap mode-->
-<!--        jQuery( '#mobile-menu' ).multilevelpushmenu({-->
-<!--            containersToPush: [jQuery( '#pushobj' )]-->
-<!--        });-->
-<!--    });-->
-<!--</script>-->
