@@ -48,22 +48,17 @@ Default layout, loads most of the pages
                 <action method="addJs"><script>varien/menu.js</script></action>
                 <action method="addJs"><script>mage/translate.js</script></action>
                 <action method="addJs"><script>mage/cookies.js</script></action>
-                <!--<action method="addJs"><script>dms/jquery-1-7-1.js</script></action>-->
                 <action method="addJs"><script>dms/jquery-ui-1-10-4.js</script></action>
 
 
                 <block type="page/js_cookie" name="js_cookies" template="page/js/cookie.phtml"/>
 
                 <action method="addItem"><type>skin_js</type><name>js/modernizr.js</name><group>js</group></action>
-
                 <action method="addItem"><type>skin_js</type><name>js/jquery.bxslider.min.js</name><group>js</group></action>
-                <!--<action method="addItem"><type>skin_js</type><name>js/modernizr.custom.js</name><group>plugin</group></action>-->
-                <!--<action method="addItem"><type>skin_js</type><name>js/jquery.multilevelpushmenu.min.js</name><group>plugin</group></action>-->
                 <action method="addItem"><type>skin_js</type><name>js/jquery.dlmenu.js</name><group>plugin</group></action>
                 <action method="addItem"><type>skin_js</type><name>js/common-ui.js</name><group>js</group></action>
 
                 <action method="addItem"><type>skin_css</type><name>css/component.css</name><media>plugin</media></action>
-                <action method="addItem"><type>skin_css</type><name>css/default-menu.css</name><media>plugin</media></action>
                 <action method="addItem"><type>skin_css</type><name>css/component_menu.css</name><media>plugin</media></action>
                 <action method="addItem"><type>skin_css</type><name>css/normalize.css</name><media>plugin</media></action>
                 <action method="addItem"><type>skin_css</type><name>css/jquery.bxslider.css</name><media>plugin</media></action>
@@ -73,7 +68,6 @@ Default layout, loads most of the pages
                 <action method="addItem"><type>skin_css</type><name>css/main.css</name><media>common</media></action>
                 <action method="addItem"><type>skin_css</type><name>css/0-767.css</name><media>common</media></action>
                 <action method="addItem"><type>skin_css</type><name>css/768-1024.css</name><media>common</media></action>
-                <action method="addItem"><type>skin_css</type><name>css/jquery.multilevelpushmenu.css</name><media>common</media></action>
 
                 <action method="addItem"><type>skin_css</type><name>css/styles-ie.css</name><params/><if>lt IE 8</if></action>
                 <action method="addCss"><stylesheet>css/widgets.css</stylesheet></action>

@@ -354,4 +354,5 @@ body.overlay .search-label, body.overlay .search-inputs, body.overlay .filter-re
 .cms-index-index .bx-wrapper .bx-pager.bx-default-pager a { background: #767676; }
 .cms-index-index .bx-wrapper .bx-pager.bx-default-pager a.active { background: #ff0000; }
 
-@media (min-width: 1025px) { .col2-left-layout .col-left { width: 24%; } }
+@media (min-width: 1025px) { .col2-left-layout .col-left { width: 24%; }
+  .dl-menuwrapper { display: none !important; } }
