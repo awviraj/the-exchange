@@ -18,7 +18,13 @@ jQuery.fn.scrollTo = function( target, options, callback ){
 
 jQuery(document).ready(function(){
 
+///my account drop down
 
+    jQuery(".quick-access .links li a.top-link-customer").click(function(){
+        jQuery('.account-drop-down').slideToggle(300);
+        jQuery(this).toggleClass('clicked');
+        jQuery(this).preventDefault();
+    })
     ///////////newly added slider//////////////
 
     jQuery('.navbar-nav > li.parent').each(function(){
