@@ -271,7 +271,7 @@ body.overlay .search-label, body.overlay .search-inputs, body.overlay .filter-re
 .quickview-wrapper .line-2 .product-shop .product-name a { text-decoration: none; text-transform: capitalize; }
 .quickview-wrapper .line-2 .product-shop .product-name a h2 { font-family: 'houschka_alt_probold'; color: #000000; font-size: 18px; line-height: 25px; font-weight: normal; }
 .quickview-wrapper .line-2 .product-shop .reveiew_summary_quickview .no-rating a { font-size: 11px; }
-.quickview-wrapper .line-2 .product-shop .short-desc { font-size: 14px; padding: 18px 0 0 0; }
+.quickview-wrapper .line-2 .product-shop .short-desc { font-size: 14px; padding: 18px 0 0 0; line-height: 18px; }
 .quickview-wrapper .line-2 .product-shop .long-desc { padding-top: 19px; font-size: 14px; padding: 18px 0 18px 0; border-bottom: 1px solid #d9d9d9; }
 .quickview-wrapper .line-2 .product-shop .price-box { padding: 18px 0 0 0; }
 .quickview-wrapper .line-2 .product-shop .price-box .price { font-family: 'houschka_alt_prodemibold'; color: #FF0000; font-size: 30px; }
@@ -289,6 +289,9 @@ body.overlay .search-label, body.overlay .search-inputs, body.overlay .filter-re
 .quickview-wrapper .line-3 .add-to-cart .add-qty .qty-wrapper .qty { float: left; margin-right: 5px; border: none; width: 72px; margin-left: 6px; text-align: center; line-height: 21px; margin-top: 12px; font-family: 'houschka_alt_probold'; font-weight: normal; font-size: 18px; color: #000; }
 .quickview-wrapper .line-3 .add-to-cart .add-qty .qty { padding: 5px 10px; width: 76px; }
 .quickview-wrapper .line-3 .add-to-cart .btn-cart { background: url("../images/btn-sprite.png") no-repeat 0 -249px; width: 180px; height: 49px; float: left; font-family: 'houschka_alt_probold'; font-weight: normal; font-size: 14px; color: #fff; text-align: right; padding-right: 25px; line-height: 49px; margin-left: -7px; }
+
+.ajax-submit-loader .loading-overlay { width: 100%; height: 400px; background-color: #fff; text-align: center; opacity: 0.8; color: #000; }
+.ajax-submit-loader .loading-overlay .loader { position: absolute; top: 50%; left: 50%; display: block; width: 66px; height: 66px; margin-top: -33px; margin-left: -33px; color: #000; background: url("../images/ajax-loader-large.gif") no-repeat; }
 
 #dialog { margin: 3px; }
 
