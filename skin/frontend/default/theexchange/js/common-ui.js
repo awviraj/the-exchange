@@ -18,7 +18,13 @@ jQuery.fn.scrollTo = function( target, options, callback ){
 
 jQuery(document).ready(function(){
 
+///my account drop down
 
+    jQuery(".quick-access .links li a.top-link-customer").click(function(){
+        jQuery('.account-drop-down').slideToggle(300);
+        jQuery(this).toggleClass('clicked');
+        jQuery(this).preventDefault();
+    })
     ///////////newly added slider//////////////
 
     jQuery('.navbar-nav > li.parent').each(function(){
@@ -86,9 +92,14 @@ jQuery('.parentMenu').each(function(){
     )
 })
 
+    ///////////mobile menu
     jQuery( '#dl-menu' ).dlmenu({
         animationClasses : { classin : 'dl-animate-in-2', classout : 'dl-animate-out-2' }
     });
+
+    var docHeight= jQuery('body').height();
+    jQuery('.dl-menuwrapper ul').height(docHeight);
+
 //    jQuery('.best-seller-slider').bxSlider({
 //        nextSelector: '#slider-next',
 //        prevSelector: '#slider-prev',
