@@ -13,7 +13,11 @@ body{
   min-width: 0;
   width: 100%;
 }
-
+button,input{
+ &:focus {
+    outline: 0 !important;
+  }
+}
 .menu-search-wrapper{
   width: 100%;
   max-width: 1024px;

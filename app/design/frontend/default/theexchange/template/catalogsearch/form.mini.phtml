@@ -44,7 +44,7 @@ $catalogSearchHelper =  $this->helper('catalogsearch');
 
         <script type="text/javascript">
         //<![CDATA[
-            var searchForm = new Varien.searchForm('search_mini_form', 'search', '<?php echo $this->__('Search entire store here...') ?>');
+            var searchForm = new Varien.searchForm('search_mini_form', 'search', '<?php echo $this->__('Type your product name here') ?>');
             searchForm.initAutocomplete('<?php echo $catalogSearchHelper->getSuggestUrl() ?>', 'search_autocomplete');
         //]]>
         </script>

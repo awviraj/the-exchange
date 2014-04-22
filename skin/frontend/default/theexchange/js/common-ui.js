@@ -77,20 +77,8 @@ jQuery(document).ready(function(){
         jQuery('html, body').animate({
             scrollTop: jQuery(".search-box").offset().top
         }, 400);
-        //jQuery(".search-box").slideToggle();
 
     })
-
-
-jQuery('.parentMenu').each(function(){
-    jQuery(this).hover(
-        function() {
-            //bxcall();
-        }, function() {
-            //jQuery( this ).removeClass('open' );
-        }
-    )
-})
 
     ///////////mobile menu
     jQuery( '#dl-menu' ).dlmenu({
@@ -100,16 +88,6 @@ jQuery('.parentMenu').each(function(){
     var docHeight= jQuery('body').height();
     jQuery('.dl-menuwrapper ul').height(docHeight);
 
-//    jQuery('.best-seller-slider').bxSlider({
-//        nextSelector: '#slider-next',
-//        prevSelector: '#slider-prev',
-//        nextText: '→',
-//        prevText: '←',
-//        adaptiveHeight: true,
-//        maxSlides: 3,
-//        slideMargin: 15
-//        // pager:false,
-//    });
 
     //Product Media More views Thumbnail Slider
     if (jQuery(".more-views li").length > 3) {
