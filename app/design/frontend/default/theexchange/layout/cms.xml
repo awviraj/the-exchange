@@ -86,7 +86,7 @@ Default layout, loads most of the pages
         <reference name="top.links">
             <action method="addLink" translate="label title" module="customer">
                 <label>Home</label>
-                <url>cms/index/index</url>
+                <url>/</url>
                 <title>Home</title>
                 <prepare/>
                 <urlParams/>
