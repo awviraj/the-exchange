@@ -86,7 +86,11 @@ jQuery(document).ready(function(){
     });
 
     var docHeight= jQuery('body').height();
+    var bodyWidth= jQuery('.wrapper').width();
+
+    console.log(bodyWidth);
     jQuery('.dl-menuwrapper ul').height(docHeight);
+    jQuery('.dl-menuwrapper ul').width(bodyWidth - 45);
 
 
     //Product Media More views Thumbnail Slider

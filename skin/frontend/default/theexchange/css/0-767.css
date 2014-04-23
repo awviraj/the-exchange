@@ -25,7 +25,7 @@
   .wrapper .header-container .fixed-container .cms-menu .dl-menuwrapper ul li.title { background: #e60000; height: auto; font-family: 'houschkaalt-bold-italic-regular'; line-height: 20px; font-weight: normal; font-size: 20px; text-align: left; color: #fff; padding: 12px 20px; }
   .wrapper .header-container .fixed-container .cms-menu .dl-menuwrapper ul li > a:not(:only-child):after { position: absolute; top: 0; line-height: 50px; font-family: 'icomoon'; speak: none; -webkit-font-smoothing: antialiased; content: "\e000"; }
   .wrapper .header-container .fixed-container .cms-menu .dl-menuwrapper ul li a { font-family: 'houschka_alt_prodemibold'; text-transform: capitalize; color: #e3e3e3; font-size: 15px; padding: 12px 20px; text-align: left; font-weight: normal; }
-  .wrapper .header-container .fixed-container .cms-menu .dl-menuwrapper ul li a:not(:only-child):after { position: absolute; top: 0; line-height: 50px; font-family: 'icomoon'; speak: none; -webkit-font-smoothing: antialiased; content: "\e000"; color: #fff; font-size: 12px; }
+  .wrapper .header-container .fixed-container .cms-menu .dl-menuwrapper ul li a:not(:only-child):after { position: absolute; top: 0; line-height: 50px; font-family: 'icomoon'; speak: none; -webkit-font-smoothing: antialiased; content: "\e000"; color: #fff; font-size: 12px; right: 20px; }
   .wrapper .header-container .fixed-container .cms-menu .dl-menuwrapper ul li.dl-back:after { position: absolute; top: 0; font-family: 'icomoon'; speak: none; -webkit-font-smoothing: antialiased; content: "\e000"; color: #fff; left: 3px; line-height: 43px; font-size: 12px; }
   .wrapper .header-container .fixed-container nav { display: none; }
   .wrapper .navbar-container { display: none; }
