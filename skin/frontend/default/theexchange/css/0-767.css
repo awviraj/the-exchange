@@ -52,6 +52,7 @@
   .catalog-category-view .main-container .main .col-main .category-products .products-grid li.item .product_quickview { display: none !important; }
   .catalog-category-view .main-container .main .col-main .category-products .products-grid li.item .prod-image img { opacity: 1 !important; }
   .page .product-view .mobile-title { display: block; }
+  .page .product-view .mobile-title h2 { padding-left: 15px; }
   .page .product-view .product-img-box { float: left; width: 100%; }
   .wrapper .menu-search-wrapper, .cms-index-index .wrapper .menu-search-wrapper { margin-top: 157px; box-sizing: border-box; -webkit-box-sizing: border-box; }
   .wrapper .menu-search-wrapper .cms-menu, .cms-index-index .wrapper .menu-search-wrapper .cms-menu { display: none; }
