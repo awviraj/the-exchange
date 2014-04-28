@@ -20,10 +20,10 @@ jQuery(document).ready(function(){
 
 ///my account drop down
 
-    jQuery(".quick-access .links li a.top-link-customer").click(function(){
+    jQuery(".quick-access .links li a.top-link-customer").click(function(event){
         jQuery('.account-drop-down').slideToggle(300);
         jQuery(this).toggleClass('clicked');
-        jQuery(this).preventDefault();
+        event.preventDefault();
     })
     ///////////newly added slider//////////////
 

@@ -2,7 +2,6 @@
 <layout version="0.1.0">
     <default>
         <reference name="footer_links">
-
             <action method="addLink" translate="label title" module="catalog"><label>Basket</label><url>/checkout/cart</url><title>Basket</title></action>
             <action method="addLink" translate="label title" module="catalog"><label>Previous Purchases</label><url>/sales/order/view</url><title>Previous Purchases</title></action>
             <action method="addLink" translate="label title" module="catalog"><label>Change Details</label><url helper="customer/getEditUrl"/><title>Change Details</title></action>

@@ -61,6 +61,10 @@ Load this update on every page when customer is logged in
         <reference name="top.links">
             <action method="addLink" translate="label title" module="customer"><label>My Account</label><url helper="customer/getAccountUrl"/><title>My Account</title><prepare/><urlParams/><position>10000</position><liParams/><aParams>class="top-link-customer logged-in"</aParams></action>
         </reference>
+        <reference name="topLinks_submenu">
+            <action method="addLink" translate="label title" module="customer"><label>My Account</label><url helper="customer/getAccountUrl"/><title>My Account</title><prepare/><urlParams/><position>10000</position><liParams/><aParams>class="top-account-submenu logged-in"</aParams></action>
+            <action method="addLink" translate="label title" module="customer"><label>Logout</label><url helper="customer/getLogoutUrl"/><title>Logout</title><prepare/><urlParams/><position>10000</position><liParams/><aParams>class="top-account-submenu log-out"</aParams></action>
+        </reference>
         <reference name="footer_links">
             <action method="addLink" translate="label title" module="customer"><label>Go to My Account</label><url helper="customer/getAccountUrl"/><title>Go to My Account</title><prepare/><urlParams/><position>1</position></action>
         </reference>
@@ -75,6 +79,11 @@ Load this update on every page when customer is logged out
             <action method="addLink" translate="label title" module="customer"><label>My Account</label><url helper="customer/getAccountUrl"/><title>My Account</title><prepare/><urlParams/><position>10000</position><liParams/><aParams>class="top-link-customer"</aParams></action>
         </reference>
         <reference name="footer_links">
+            <action method="addLink" translate="label title" module="customer"><label>Login</label><url helper="customer/getLoginUrl"/><title>Login</title><prepare/><urlParams/><position>1</position></action>
+            <action method="addLink" translate="label title" module="customer"><label>Create An Account</label><url helper="customer/getRegisterUrl"/><title>Create An Account</title><prepare/><urlParams/><position>1</position></action>
+        </reference>
+
+        <reference name="topLinks_submenu">
             <action method="addLink" translate="label title" module="customer"><label>Login</label><url helper="customer/getLoginUrl"/><title>Login</title><prepare/><urlParams/><position>1</position></action>
             <action method="addLink" translate="label title" module="customer"><label>Create An Account</label><url helper="customer/getRegisterUrl"/><title>Create An Account</title><prepare/><urlParams/><position>1</position></action>
         </reference>
