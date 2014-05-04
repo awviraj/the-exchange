@@ -97,8 +97,18 @@
 
             }
             &.selected{
+//              position: relative;
+//              background: #ff0000;
+//              padding: 0 5px;
+//              height: 58px;
+//              z-index: 999;
+//              padding-right: 5px;
+//              color: #fff;
+//              margin: 0;
+//              width: 94px;
+//              box-sizing: border-box;
               position: relative;
-              background: #ff0000;
+              background:#ff0000;
               padding: 0 5px;
               height: 58px;
               z-index: 999;
@@ -107,6 +117,19 @@
               margin: 0;
               width: 94px;
               box-sizing: border-box;
+              bottom: 0px;
+              -webkit-animation: moveUp 1s;
+              -moz-animation: moveUp 1s;
+              @-webkit-keyframes moveUp/* Safari and Chrome */
+              {
+                from {bottom: -77px;}
+                to {bottom: 0px;}
+              }
+              @-moz-keyframes moveUp/* Mozilla */
+              {
+                from {bottom: -77px;}
+                to {bottom: 0px;}
+              }
 
               &:after {
                 bottom: 100%;
