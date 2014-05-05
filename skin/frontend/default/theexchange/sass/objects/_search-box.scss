@@ -128,6 +128,7 @@
 
       }
       .filter-results{
+        display: none;
         color: #fff;
         @include Houschka_alt_bold;
         font-size: 15px;

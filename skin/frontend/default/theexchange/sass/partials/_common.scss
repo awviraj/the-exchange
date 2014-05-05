@@ -14,10 +14,13 @@ body{
   width: 100%;
 }
 button,input{
+  -moz-outline:none !important;
  &:focus {
     outline: 0 !important;
+   -moz-outline:none !important;
   }
 }
+
 .menu-search-wrapper{
   width: 100%;
   max-width: 1024px;
@@ -491,5 +494,12 @@ button,input{
   display: none;
   &:hover {
     color: #999999;
+  }
+}
+.breadcrumbs{
+  li{
+    a{
+      color: #ff0000;
+    }
   }
 }

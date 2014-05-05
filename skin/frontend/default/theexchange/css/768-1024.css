@@ -1,4 +1,4 @@
-@media (min-width: 768px) and (max-width: 1024px) { .qty-wrapper { background: url("../images/btn-sprite.png") no-repeat -11px -309px; width: 132px; height: 51px; float: left; }
+@media (min-width: 768px) and (max-width: 1140px) { .qty-wrapper { background: url("../images/btn-sprite.png") no-repeat -11px -309px; width: 132px; height: 51px; float: left; }
   .qty-wrapper .qty { float: left; margin-right: 5px; border: none; max-width: 100px; margin-left: 6px; text-align: center; line-height: 30px; margin-top: 10px; font-family: 'houschka_alt_probold'; font-weight: normal; font-size: 18px; color: #000; }
   .wrapper .menu-search-wrapper { max-width: 100%; padding: 0; }
   .wrapper .menu-search-wrapper .cms-menu { max-width: 100%; }
