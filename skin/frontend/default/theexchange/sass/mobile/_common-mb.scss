@@ -8,8 +8,8 @@
       }
       height: 113px;
       border-bottom: none;
-      position: fixed;
-      top: 3px;
+      position: static !important;
+      top: auto !important;
       z-index: 9999;
       border-top: 2px Solid #000;
       .logo-div{
@@ -17,8 +17,9 @@
       }
     }
     .fixed-container{
+      position: relative !important;
       display: block !important;
-      top: 112px;
+      top: auto !important;
       z-index: 9999;
 
 

@@ -29,6 +29,38 @@
  */
 ?>
 <div class="header-container">
+    <div class="header container">
+        <div class="call-us">
+            <p><?php echo $this->__('Call us on') ?></p>
+
+            <h2><?php echo $this->helper('commonrewrites')->getStoreConfig('phone'); ?></h2>
+        </div>
+        <div class="logo-div">
+            <?php if ($this->getIsHomePage()): ?>
+                <h1 class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><a
+                        href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>"
+                        class="logo"><img src="<?php echo $this->getLogoSrc() ?>"
+                                          alt="<?php echo $this->getLogoAlt() ?>"/></a></h1>
+            <?php else: ?>
+                <a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>"
+                   class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><img
+                        src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>"/></a>
+            <?php endif?>
+        </div>
+        <div class="top-quick-links">
+            <ul>
+                <li class="about"><a href="">About us</a></li>
+                <li class="contact"><a href="">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="quick-access bottom-quick-links">
+            <?php //echo $this->getChildHtml('topSearch') ?>
+            <p class="welcome-msg"><?php //echo $this->getChildHtml('welcome') ?> <?php //echo $this->getAdditionalHtml() ?></p>
+            <?php echo $this->getChildHtml('topLinks') ?>
+            <?php //echo $this->getChildHtml('store_language') ?>
+        </div>
+        <?php echo $this->getChildHtml('topContainer'); ?>
+    </div>
     <div class="fixed-container" style="display:none">
         <div class="cms-menu row fixed-nav">
             <div class="small-x-logo">
@@ -62,38 +94,7 @@
 
         </div>
     </div>
-    <div class="header container">
-        <div class="call-us">
-            <p><?php echo $this->__('Call us on') ?></p>
 
-            <h2><?php echo $this->helper('commonrewrites')->getStoreConfig('phone'); ?></h2>
-        </div>
-        <div class="logo-div">
-            <?php if ($this->getIsHomePage()): ?>
-                <h1 class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><a
-                        href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>"
-                        class="logo"><img src="<?php echo $this->getLogoSrc() ?>"
-                                          alt="<?php echo $this->getLogoAlt() ?>"/></a></h1>
-            <?php else: ?>
-                <a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>"
-                   class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><img
-                        src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>"/></a>
-            <?php endif?>
-        </div>
-        <div class="top-quick-links">
-            <ul>
-                <li class="about"><a href="">About us</a></li>
-                <li class="contact"><a href="">Contact us</a></li>
-            </ul>
-        </div>
-        <div class="quick-access bottom-quick-links">
-            <?php //echo $this->getChildHtml('topSearch') ?>
-            <p class="welcome-msg"><?php //echo $this->getChildHtml('welcome') ?> <?php //echo $this->getAdditionalHtml() ?></p>
-            <?php echo $this->getChildHtml('topLinks') ?>
-            <?php //echo $this->getChildHtml('store_language') ?>
-        </div>
-        <?php echo $this->getChildHtml('topContainer'); ?>
-    </div>
     <div class="menu-search-wrapper container">
 
         <div class="cms-menu row">
