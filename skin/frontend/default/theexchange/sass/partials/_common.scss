@@ -478,3 +478,18 @@ button,input{
   z-index: 1000;
 }
 
+
+.scrollup {
+  position: fixed;
+  bottom: 2em;
+  right: 0px;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #ff0000;
+  font-size: 12px;
+  padding: 1em;
+  display: none;
+  &:hover {
+    color: #999999;
+  }
+}
