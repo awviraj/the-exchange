@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category    design
+ * @package     default_theexchange
+ * @copyright   admaduranga@gmail.com
+ * @license     admaduranga@gmail.com
+ */
+
+-->
+<layout version="0.1.0">
+    <dms_productrepairs_index_index>
+        <reference name="root">
+            <action method="setTemplate"><template>page/1column.phtml</template></action>
+        </reference>
+        <reference name="content">
+            <block type="dms_productrepairs/form" name="dms.product.repairs.form" template="productrepairs/form.phtml">
+
+            </block>
+        </reference>
+    </dms_productrepairs_index_index>
+</layout>

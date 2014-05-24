@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * DMS
+ * @category    DMS
+ * @package     DMS_Productrepairs
+ * @copyright   admaduranga@gmail.com (Dilhan Maduranga)
+ */
+-->
+
+<config>
+    <modules>
+        <DMS_Productrepairs>
+            <active>true</active>
+            <codePool>local</codePool>
+        </DMS_Productrepairs>
+    </modules>
+</config>

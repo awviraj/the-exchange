@@ -1,0 +1,66 @@
+<?php
+/**
+ * @author      admaduranga@gmail.com
+ * @copyright   admaduranga@gmail.com
+ * @var $this   DMS_Productrepairs_Block_Form
+ */
+?>
+<div class="dms-productrepair page-wrapper">
+    <h1><?php echo $this->__('Fix It'); ?></h1>
+    <p class="page-description">
+        <?php echo $this->getPageDescription(); ?>
+    </p>
+    <div class="wrapper">
+        <div class="img-wrapper">
+            <img src="<?php echo Mage::getBaseUrl('media').'/wysiwyg/dms/productrepairs/repair-form.jpg'?>" alt="Repair Page"/>
+        </div>
+        <div class="repair-form">
+            <div class="form-group">
+                <label for="repair_brand"><?php echo $this->__('Brand') ?><em>*</em></label>
+                <select class="form-control required-entry"  name="brand" id="repair_brand">
+                    <?php foreach ($this->getBrands() as $brandId => $brand): ?>
+                        <option value="<?php echo $brand; ?>"><?php echo $brand; ?></option>
+                    <?php endforeach; ?>
+                </select>
+
+                <label for="repair_brand"><?php echo $this->__('Model') ?><em>*</em></label>
+                <select class="form-control required-entry"  name="model" id="repair_model">
+                    <?php foreach ($this->getModels() as $modelId => $model): ?>
+                        <option value="<?php echo $model; ?>"><?php echo $brand; ?></option>
+                    <?php endforeach; ?>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="repair_fault"><?php echo $this->__('Fault') ?><em>*</em></label>
+                <input type="text" class="form-control required-entry"  name="fault" id="repair_fault" placeholder="Fault" value="">
+            </div>
+
+            <div class="form-group">
+                <label for="repair_fault_description"><?php echo $this->__('Fault Description') ?><em>*</em></label>
+                <input type="textarea" class="form-control required-entry"  name="fault" id="repair_fault_description" placeholder="Fault Description" value="">
+            </div>
+
+            <div class="form-group">
+                <label for="repair_fullname"><?php echo $this->__('Full Name') ?><em>*</em></label>
+                <input type="text" class="form-control required-entry"  name="full_name" id="repair_fullname" placeholder="Full Name" value="">
+
+                <label for="repair_email"><?php echo $this->__('Email') ?><em>*</em></label>
+                <input type="text" class="form-control required-entry"  name="email" id="repair_email" placeholder="Email" value="">
+            </div>
+
+            <div class="form-group">
+                <label for="repair_contact"><?php echo $this->__('Contact No') ?><em>*</em></label>
+                <input type="text" class="form-control required-entry"  name="contact_no" id="repair_contact" placeholder="Contact No" value="">
+
+                <div class="submit-button-wrapper">
+                    <input type="submit" name="submit" value="Book Now" id="submit_repair_form">
+                </div>
+            </div>
+
+            <span class="required-field-notification">
+                <?php echo $this->__('Required field'); ?><em>*</em>
+            </span>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category   DMS
+ * @package    DMS_Productrepairs
+ * @copyright  admaduranga@gmail.com
+ * @license    admaduranga@gmail.com
+ */
+-->
+<config>
+    <sections>
+        <dms_productrepairs translate="label">
+            <label>Product Repairs</label>
+            <tab>dms</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>1</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+
+            <groups>
+                <productrepairs translate="label">
+                    <label>Settings</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>0</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+
+                    <fields>
+                        <enabled translate="label">
+                            <label>Enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </enabled>
+                        <page-description translate="label">
+                            <label>Page Description</label>
+                            <frontend_type>textarea</frontend_type>
+                            <comment>
+                                <![CDATA[The text appears on top of the repair page]]>
+                            </comment>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>200</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </page-description>
+                    </fields>
+                </productrepairs>
+            </groups>
+        </dms_productrepairs>
+    </sections>
+</config>
