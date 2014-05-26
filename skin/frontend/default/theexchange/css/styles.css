@@ -1387,9 +1387,9 @@ tr.summary-details-excluded { font-style:italic; }
 .opc { position:relative; }
 .opc li.section {}
 
-.opc .step-title { border-width:0 1px; border-style:solid; border-color:#fff #d9dde3 #d9dde3; background:#eee url(../images/bkg_opc-title-off.gif) 0 100% repeat-x; padding:4px 8px 6px; text-align:right; }
+.opc .step-title {}
 .opc .step-title .number { float:left; background:#fff; border:1px solid #fff; padding:0 4px; margin:0 5px 0 0; font:bold 11px/14px arial, helvetica, sans-serif; color:#999; }
-.opc .step-title h2 { float:left; margin:0; font:bold 13px/16px Arial, Helvetica, sans-serif; color:#999; }
+.opc .step-title h2 {}
 .opc .step-title a { display:none; float:right; font-size:11px; line-height:16px; }
 
 .opc .allow .step-title { background:#d0dce1; border:1px solid #a3aeb3; border-bottom:0; color:#a4b3b9; cursor:pointer; }
@@ -1397,17 +1397,17 @@ tr.summary-details-excluded { font-style:italic; }
 .opc .allow .step-title h2 { color:#a4b3b9; }
 /*.opc .allow .step-title a { display:block; }*/
 
-.opc .active .step-title { background:#f9f3e3; border:1px solid #bbafa0; padding-bottom:5px; color:#f18200; cursor:default; }
-.opc .active .step-title .number { background:#f18200; border-color:#f19900; color:#fff; }
-.opc .active .step-title h2 { color:#f18200; }
+.opc .active .step-title {  cursor:default; }
+.opc .active .step-title .number { }
+.opc .active .step-title h2 {  }
 /*.opc .active .step-title a { display:none; }*/
 
-.opc .step { border:1px solid #bbafa0; border-top:0; background:#fbfaf6 url(../images/bkg_checkout.gif) 0 0 repeat-x; padding:15px 30px; position:relative; }
+.opc .step {}
 .opc .step .tool-tip { right:30px; }
 
-#opc-login .buttons-set { border-top:0; }
-#opc-login h3 { font-size:13px; border-bottom:1px solid #e4e4e4; padding-bottom:2px; text-transform:uppercase; }
-#opc-login h4 { font-size:1em; font-weight:bold; margin:0; color:#2f2f2f; }
+#opc-login .buttons-set {  }
+#opc-login h3 {  }
+#opc-login h4 {  }
 
 #opc-shipping_method .buttons-set { border-top:0; }
 .opc .gift-messages-form { margin:0 -30px; background:#f6f1eb; border:1px solid #e9e4de; border-width:1px 0; padding:22px 24px 22px 30px; }
@@ -1416,7 +1416,7 @@ tr.summary-details-excluded { font-style:italic; }
 #opc-review .step { border:0; padding:0; }
 #opc-review .product-name { font-weight:bold; color:#0a263c; }
 #opc-review .item-options { margin:5px 0 0; }
-#opc-review .buttons-set { padding:20px 30px; border:1px solid #d9dde3; border-width:0 1px 1px; }
+#opc-review .buttons-set { padding:20px 30px;  border-width:0 1px 1px; }
 #opc-review .buttons-set p { margin:0; line-height:40px; }
 #opc-review .buttons-set .please-wait { height:40px; line-height:40px; }
 #opc-review .authentication { margin:0 auto; width:570px; }
