@@ -8,8 +8,13 @@
 @import "partials/home";
 @import "partials/account";
 
+///////varaibles and mixins ////////////
+@import "partials/variables";
+@import "partials/mixins";
+
 
 ///////////objects used on trough out the site///////////////////
+@import "objects/elements";
 @import "objects/search-box";
 @import "objects/product_slider";
 @import "objects/custom_menu";

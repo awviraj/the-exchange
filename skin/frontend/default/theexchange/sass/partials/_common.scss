@@ -8,18 +8,11 @@ body{
   font-family: arial, helvetica, "sans serif";
   -webkit-font-smoothing: antialiased;
 }
-
 .wrapper{
   min-width: 0;
   width: 100%;
 }
-button,input{
-  -moz-outline:none !important;
- &:focus {
-    outline: 0 !important;
-   -moz-outline:none !important;
-  }
-}
+
 
 .menu-search-wrapper{
   width: 100%;

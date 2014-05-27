@@ -45,13 +45,39 @@
     margin-right: 5px;
     border: none;
     max-width: 100px;
-    margin-left: 6px;
+    margin-left: 0px;
     text-align: center;
     line-height: 30px;
-    margin-top: 10px;
+    margin-top: 2px;
     font-family: 'houschka_alt_probold';
     font-weight: normal;
     font-size: 18px;
     color: #000;
+  }
+}
+
+@mixin placeholder-text{
+  ::-webkit-input-placeholder {
+    color: #aeaeae;
+    font-size: 16px;
+    @include Houschka_alt_bold_italic;
+  }
+
+  :-moz-placeholder {
+    color: #aeaeae;
+    font-size: 16px;
+    @include Houschka_alt_bold_italic;
+  }
+
+  ::-moz-placeholder {
+    color: #aeaeae;
+    font-size: 16px;
+    @include Houschka_alt_bold_italic;
+  }
+
+  :-ms-input-placeholder {
+    color: #aeaeae;
+    font-size: 16px;
+    @include Houschka_alt_bold_italic;
   }
 }
