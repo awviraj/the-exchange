@@ -74,67 +74,37 @@
               color: #000;
             }
           }
+          button{
+            &.btn{
+              margin-top: 13px;
+              color: #fff;
+              font-family: 'houschka_alt_probold';
+              font-size: 16px;
+              border-radius: 0;
+              float: right;
+              margin-right: 20px;
+              background:url("../images/sprite.png") no-repeat 0 -1307px;
+              width: 130px;
+              height: 34px;
+
+            }
+          }
         }
         &:last-of-type{
           .step-title{
             border-bottom:1px solid $primary-grey ;
           }
         }
-        #checkout-step-login{
-          width: 100%;
-          float:left;
-          .form-list{
-            padding-top: 15px;
-            padding-bottom: 23px;
-          }
-          h4{
-            font-family: 'houschka_alt_probold';
-            padding-left: 20px;
-            font-size: 14px;
-            color: $primary-red;
-             text-transform: uppercase;
-            margin-bottom: 20px;
-          }
-          ul{
-            &.dash-list{
-              padding-left: 20px;
-              li{
-                list-style: none;
-                font-family: 'houschka_alt_promedium';
-                color: #6b6b6b;
-                font-size: 14px;
-                margin-bottom: 12px;
-                &:before{
-                  content: "-";
-                  margin-right: 5px;
-                }
-              }
-            }
-          }
-          .login-div{
-            h4{
-              font-family: 'houschka_alt_promedium';
-              font-weight: bold;
-              font-size: 18px;
-              color: $black;
-              text-transform: none;
-              margin-bottom: 15px;
-              padding-left: 0;
-            }
-            .login-form{
-              .form-group{
-                label{
-                  color: $primary-red;
-                  text-transform: uppercase;
-                  font-size: 12px;
-                  font-family: 'houschka_alt_probold';
-                  margin-bottom: 9px;
-                }
-              }
-            }
-          }
-        }
       }
+    }
+  }
+  .buttons-set{
+    width: 100%;
+    float:left;
+    border: none;
+
+    button{
+
     }
   }
   input{
@@ -174,6 +144,9 @@
       border-radius: 0;
       background: none;
       border: 3px solid #dadada;
+      height: 37px;
+      line-height: 37px;
+      padding-left: 15px;
       &:-webkit-autofill{
        background-color: transparent !important;
       }
