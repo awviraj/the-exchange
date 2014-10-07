@@ -11,6 +11,20 @@ h2{
   margin-bottom: 15px;
 }
   p{
-    line-height: 125%;
+    font-family: 'houschka_alt_prodemibold';
+    font-size: 14px;
+    text-align: left;
+    line-height: 18px;
+    padding: 10px 0;
+  }
+  .buttons-set {
+    button{
+      &.button{
+        float: left;
+      }
+    }
+  }
+  .f-password{
+    font-size: 12px;
   }
 }

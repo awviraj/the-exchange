@@ -3,4 +3,6 @@
 
 .account-login .page-title { border-bottom: none; }
 .account-login h2 { font-family: 'houschka_alt_probold'; font-weight: normal; color: #000; font-size: 18px; margin-bottom: 15px; }
-.account-login p { line-height: 125%; }
+.account-login p { font-family: 'houschka_alt_prodemibold'; font-size: 14px; text-align: left; line-height: 18px; padding: 10px 0; }
+.account-login .buttons-set button.button { float: left; }
+.account-login .f-password { font-size: 12px; }
