@@ -20,7 +20,7 @@ jQuery(document).ready(function(){
 
 ///my account drop down
 
-    jQuery(".quick-access .links li a.top-link-customer").click(function(event){
+    jQuery(".quick-access .links li a.top-link-customer").not(".fixed-nav-links.quick-access .links li a.top-link-customer").click(function(event){
         jQuery('.account-drop-down').slideToggle(300);
         jQuery(this).toggleClass('clicked');
         event.preventDefault();

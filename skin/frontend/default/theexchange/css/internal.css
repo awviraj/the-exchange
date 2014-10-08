@@ -1,0 +1,31 @@
+.qty-wrapper { background: url("../images/btn-sprite.png") no-repeat -11px -309px; width: 132px; height: 51px; float: left; }
+.qty-wrapper .qty { float: left; margin-right: 5px; border: none; max-width: 100px; margin-left: 0px; text-align: center; line-height: 30px; margin-top: 2px; font-family: 'houschka_alt_probold'; font-weight: normal; font-size: 18px; color: #000; }
+
+.qty-wrapper { background: url("../images/btn-sprite.png") no-repeat -11px -309px; width: 132px; height: 51px; float: left; }
+.qty-wrapper .qty { float: left; margin-right: 5px; border: none; max-width: 100px; margin-left: 0px; text-align: center; line-height: 30px; margin-top: 2px; font-family: 'houschka_alt_probold'; font-weight: normal; font-size: 18px; color: #000; }
+
+.login-register .page-title { border-bottom: none; }
+.login-register h2 { font-family: 'houschka_alt_probold'; font-weight: normal; color: #000; font-size: 18px; margin-bottom: 15px; }
+.login-register h3 { font-family: 'houschka_alt_promedium'; font-weight: bold; font-size: 18px; color: #000000; text-transform: none; margin-bottom: 15px; padding-left: 0; }
+.login-register p { font-family: 'houschka_alt_prodemibold'; font-size: 14px; text-align: left; line-height: 18px; padding: 10px 0; }
+.login-register .buttons-set button.button { margin-left: 0; float: left; font-family: 'houschka_alt_probold'; color: #fff; font-size: 14px; font-style: normal; font-weight: normal; background: url("../images/sprite.png") no-repeat 0 -1307px; width: 130px; height: 34px; }
+.login-register .buttons-set button.button:hover { opacity: 0.8; }
+.login-register .buttons-set button.button.btn-login { margin-left: 15px; }
+.login-register .f-password { font-size: 12px; }
+.login-register input[type="checkbox"] { display: none; }
+.login-register input[type="checkbox"] + label { font-size: 16px; color: #000; font-family: 'houschka_alt_probold'; cursor: pointer; line-height: 20px; display: block; }
+.login-register input[type="checkbox"] + label span { display: inline-block; margin: -2px 18px 0 0; vertical-align: middle; background: url("../images/selects.png") no-repeat -2px -40px; background-size: 22px 100px; width: 18px; height: 17px; cursor: pointer; }
+.login-register input[type="checkbox"]:checked + label span { background: url("../images/selects.png") no-repeat -2px -64px; background-size: 22px 100px; width: 18px; height: 18px; }
+.login-register input[type="text"], .login-register input[type="email"], .login-register input[type="password"] { border-radius: 0; background: none; border: 3px solid #dadada; height: 37px; line-height: 20px; padding-left: 15px; }
+.login-register input[type="text"]:-webkit-autofill, .login-register input[type="email"]:-webkit-autofill, .login-register input[type="password"]:-webkit-autofill { background-color: transparent !important; }
+.login-register input[type="text"]::-webkit-input-placeholder, .login-register input[type="email"]::-webkit-input-placeholder, .login-register input[type="password"]::-webkit-input-placeholder { color: #aeaeae; font-size: 16px; font-family: 'houschkaalt-bold-italic-regular'; font-weight: normal; }
+.login-register input[type="text"]:-moz-placeholder, .login-register input[type="email"]:-moz-placeholder, .login-register input[type="password"]:-moz-placeholder { color: #aeaeae; font-size: 16px; font-family: 'houschkaalt-bold-italic-regular'; font-weight: normal; }
+.login-register input[type="text"]::-moz-placeholder, .login-register input[type="email"]::-moz-placeholder, .login-register input[type="password"]::-moz-placeholder { color: #aeaeae; font-size: 16px; font-family: 'houschkaalt-bold-italic-regular'; font-weight: normal; }
+.login-register input[type="text"]:-ms-input-placeholder, .login-register input[type="email"]:-ms-input-placeholder, .login-register input[type="password"]:-ms-input-placeholder { color: #aeaeae; font-size: 16px; font-family: 'houschkaalt-bold-italic-regular'; font-weight: normal; }
+.login-register .form-group label { color: #ff0000; text-transform: uppercase; font-size: 12px; font-family: 'houschka_alt_probold'; margin-bottom: 9px; }
+.login-register a.fogot-pw-link { text-decoration: underline; font-family: 'houschka_alt_promedium'; color: #000; padding: 10px 0; }
+.login-register p.required { color: #12b55b; }
+
+.account-create h2 { padding-left: 15px; }
+.account-create .login-info { margin-top: 30px; }
+.account-create .buttons-set { padding: 20px 15px; }

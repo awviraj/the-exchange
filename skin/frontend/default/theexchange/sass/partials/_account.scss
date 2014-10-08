@@ -1,0 +1,163 @@
+@import "partials/variables";
+@import "partials/mixins";
+
+.login-register{
+  .page-title{
+    border-bottom: none;
+  }
+h2{
+
+  font-family: 'houschka_alt_probold';
+  font-weight: normal;
+  color: #000;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+  h3{
+    font-family: 'houschka_alt_promedium';
+    font-weight: bold;
+    font-size: 18px;
+    color: $black;
+    text-transform: none;
+    margin-bottom: 15px;
+    padding-left: 0;
+  }
+  p{
+    font-family: 'houschka_alt_prodemibold';
+    font-size: 14px;
+    text-align: left;
+    line-height: 18px;
+    padding: 10px 0;
+  }
+  .buttons-set {
+    button{
+      &.button{
+        margin-left: 0;
+        float: left;
+        font-family: 'houschka_alt_probold';
+        color: #fff;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: normal;
+        background: url("../images/sprite.png") no-repeat 0 -1307px;
+        width: 130px;
+        height: 34px;
+        &:hover{
+          opacity: 0.8;
+        }
+        &.btn-login{
+          margin-left: 15px;
+        }
+      }
+    }
+
+  }
+  .f-password{
+    font-size: 12px;
+  }
+  .registered-users{
+
+  }
+  input{
+    &[type="checkbox"] {
+      display:none;
+      + label{
+        font-size: 16px;
+        color: #000;
+        font-family: 'houschka_alt_probold';
+        cursor: pointer;
+        line-height: 20px;
+        display: block;
+
+        span{
+          display:inline-block;
+          margin:-2px 18px 0 0;
+          vertical-align:middle;
+          background: url('../images/selects.png') no-repeat -2px -40px;
+          background-size: 22px 100px;
+          width: 18px;
+          height: 17px;
+          cursor:pointer;
+        }
+      }
+      &:checked{
+        + label {
+          span{
+            background: url('../images/selects.png') no-repeat -2px -64px;
+            background-size: 22px 100px;
+            width: 18px;
+            height: 18px;
+          }
+        }
+      }
+    }
+      &[type="text"],&[type="email"],&[type="password"]{
+      border-radius: 0;
+      background: none;
+      border: 3px solid #dadada;
+      height: 37px;
+      line-height: 20px;
+      padding-left: 15px;
+      &:-webkit-autofill{
+        background-color: transparent !important;
+      }
+      &::-webkit-input-placeholder {
+        color: #aeaeae;
+        font-size: 16px;
+        @include Houschka_alt_bold_italic;
+      }
+
+      &:-moz-placeholder {
+        color: #aeaeae;
+        font-size: 16px;
+        @include Houschka_alt_bold_italic;
+      }
+
+      &::-moz-placeholder {
+        color: #aeaeae;
+        font-size: 16px;
+        @include Houschka_alt_bold_italic;
+      }
+
+      &:-ms-input-placeholder {
+        color: #aeaeae;
+        font-size: 16px;
+        @include Houschka_alt_bold_italic;
+      }
+
+    }
+  }
+  .form-group{
+    label{
+      color: $primary-red;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-family: 'houschka_alt_probold';
+      margin-bottom: 9px;
+    }
+  }
+  a{
+    &.fogot-pw-link{
+      text-decoration: underline;
+      font-family: 'houschka_alt_promedium';
+      color: #000;
+      padding: 10px 0;
+    }
+  }
+  p{
+    &.required{
+      color: #12b55b;
+    }
+  }
+}
+.account-create{
+  h2{
+    padding-left: 15px;
+  }
+  .login-info{
+    margin-top: 30px;
+  }
+  .buttons-set{
+    padding: 20px 15px;
+  }
+}

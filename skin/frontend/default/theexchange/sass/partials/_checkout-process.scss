@@ -1,0 +1,52 @@
+.opc-block-progress{
+  border: 3px solid $primary-red;
+  padding: 0 ;
+
+  .block-title{
+    background-color: $primary-red;
+    height: 35px;
+    margin-bottom: 0;
+    h2{
+      font-size: 16px;
+      color: #ffffff;
+      font-family: 'houschka_alt_probold';
+      line-height: 35px;
+      text-align: center;
+    }
+  }
+  dt{
+    background:none;
+    //height: 38px;
+    line-height: 38px;
+    padding: 0 0 0 15px;
+    margin: 0;
+    border-bottom: 1px solid #e3e3e3;
+    color: #585858;
+    font-family: 'houschka_alt_promedium';
+    font-size: 18px;
+    font-weight: normal;
+
+    &:last-of-type{
+      border-bottom: none;
+    }
+
+    &.complete{
+      background: none;
+      color: $primary-red;
+    }
+    .changelink{
+      display: none;
+    }
+  }
+  dd{
+    border: none;
+    font-family: 'houschka_alt_promedium';
+    background: none;
+    font-size: 14px;
+    color: #000;
+    address{
+      line-height: 18px;
+    }
+  }
+
+}
