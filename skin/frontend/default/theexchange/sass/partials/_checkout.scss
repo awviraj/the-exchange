@@ -201,7 +201,7 @@
         border-radius: 0;
         display: block;
         width: 100%;
-        height: 34px;
+        height: 37px;
         padding: 6px 12px;
         font-size: 14px;
         line-height: 1.428571429;
@@ -220,6 +220,24 @@
       }
     }
     #checkout-step-billing{
+      padding: 25px 0;
+      #co-billing-form{
+        padding: 0 15px;
+
+        .buttons-set{
+          border-right:none ;
+          border-left: none;
+        }
+        .control{
+          &.radio-li{
+            float: left;
+            width: 45%;
+            text-align: right;
+            margin-bottom: 20px;
+
+          }
+        }
+      }
       p{
         &.required{
           float: left;
