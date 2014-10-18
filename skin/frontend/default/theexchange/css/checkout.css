@@ -52,6 +52,7 @@ input:-webkit-autofill { -webkit-box-shadow: 0 0 0px 1000px white inset; }
 .checkout-onepage-index .main ol.opc li.section .step { padding: 25px 15px; border: 1px solid #cccccc; }
 .checkout-onepage-index .main ol.opc li.section .step h3 { font-family: 'houschka_alt_promedium'; font-size: 18px; color: #000; margin-bottom: 14px; }
 .checkout-onepage-index .main ol.opc li.section .step p { font-family: 'houschka_alt_promedium'; font-size: 14px; color: #000; }
+.checkout-onepage-index .main ol.opc li.section .step p.required { color: #12b55b; }
 .checkout-onepage-index .main ol.opc li.section button.btn { margin-top: 13px; color: #fff; font-family: 'houschka_alt_probold'; font-size: 16px; border-radius: 0; float: right; margin-right: 20px; background: url("../images/sprite.png") no-repeat 0 -1307px; width: 130px; height: 34px; }
 .checkout-onepage-index .main ol.opc li:last-of-type .step-title { border-bottom: 1px solid #cccccc; }
 .checkout-onepage-index .main .buttons-set { width: 100%; float: left; border: none; }
@@ -65,6 +66,18 @@ input:-webkit-autofill { -webkit-box-shadow: 0 0 0px 1000px white inset; }
 .checkout-onepage-index .main input[type="text"]:-moz-placeholder, .checkout-onepage-index .main input[type="email"]:-moz-placeholder, .checkout-onepage-index .main input[type="password"]:-moz-placeholder { color: #aeaeae; font-size: 16px; font-family: 'houschkaalt-bold-italic-regular'; font-weight: normal; }
 .checkout-onepage-index .main input[type="text"]::-moz-placeholder, .checkout-onepage-index .main input[type="email"]::-moz-placeholder, .checkout-onepage-index .main input[type="password"]::-moz-placeholder { color: #aeaeae; font-size: 16px; font-family: 'houschkaalt-bold-italic-regular'; font-weight: normal; }
 .checkout-onepage-index .main input[type="text"]:-ms-input-placeholder, .checkout-onepage-index .main input[type="email"]:-ms-input-placeholder, .checkout-onepage-index .main input[type="password"]:-ms-input-placeholder { color: #aeaeae; font-size: 16px; font-family: 'houschkaalt-bold-italic-regular'; font-weight: normal; }
+.checkout-onepage-index .main .form-group label { color: #ff0000; text-transform: uppercase; font-size: 12px; font-family: 'houschka_alt_probold'; margin-bottom: 9px; }
+.checkout-onepage-index .main .form-group input[type="text"] { margin-top: 21px; }
+.checkout-onepage-index .main .form-group label + input[type="text"] { margin-top: 0; }
+.checkout-onepage-index .main .form-group select { border: 3px solid #dadada; border-radius: 0; display: block; width: 100%; height: 37px; padding: 6px 12px; font-size: 14px; line-height: 1.428571429; color: #555; background-color: #fff; background-image: none; -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s; transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s; }
+.checkout-onepage-index .main .field.name-lastname { margin-left: 20px; }
+.checkout-onepage-index .main #checkout-step-billing { padding: 25px 0; }
+.checkout-onepage-index .main #checkout-step-billing #co-billing-form { padding: 0 15px; }
+.checkout-onepage-index .main #checkout-step-billing #co-billing-form .buttons-set { border-right: none; border-left: none; }
+.checkout-onepage-index .main #checkout-step-billing #co-billing-form .control.radio-li { float: left; width: 45%; text-align: right; margin-bottom: 20px; }
+.checkout-onepage-index .main #checkout-step-billing p.required { float: left; text-align: left; }
+.checkout-onepage-index .main #checkout-step-billing .buttons-set { border: 1px solid #cccccc; padding: 15px 0; }
+.checkout-onepage-index .main #checkout-step-billing .buttons-set button.btn { margin-top: 0; }
 
 #checkout-step-login { width: 100%; float: left; }
 #checkout-step-login .form-list { padding-top: 15px; padding-bottom: 23px; }
