@@ -8,7 +8,7 @@
  * To change this template use File | Settings | File Templates.
  */
 
-class DMS_Sparkstone_Model_Stock extends Mage_Core_Model_Abstract
+class DMS_Sparkstone_Model_Stock extends DMS_Sparkstone_Model_Abstract
 {
     CONST TYPE_STOCK_LIST = 'GetXMLStockList';
     protected $_soapUrl = 'http://retailservices.sparkstone.co.uk/SparkstoneRetailStock.asmx?WSDL';
@@ -17,40 +17,11 @@ class DMS_Sparkstone_Model_Stock extends Mage_Core_Model_Abstract
     protected $_exportPath;
     protected $_ready = false;
     protected $_colmapHasHeader = true;
-    protected $_debugMode;
-    protected $_logFile = 'sparkstone.log';
-    protected $_sandbox = true;
 
-
-    public function init() {
-        $this->_exportPath = Mage::getBaseDir('var').'/import/';
-
-        $this->_sandbox = Mage::helper('sparkstone')->getStoreConfig('sandbox', 'sparkstone/api/');
-        $apiUrlPrefix = $this->sandboxMode() ? 'sandboxurl' : 'apiurl';
-        if ($apiUrlPrefix = Mage::helper('sparkstone')->getStoreConfig($apiUrlPrefix, 'sparkstone/api/') ) {
-            $this->_soapUrl = $apiUrlPrefix;
-        }
-        $this->_debugMode = Mage::helper('sparkstone')->getStoreConfig('debug', 'sparkstone/api/') ? true : false;
-    }
-
-    public function logger($msg) {
-        echo $msg."\r\n";
-    }
-
-    public function debugMode() {
-        return $this->_debugMode;
-    }
-
-    public function sandboxMode() {
-        return $this->_sandbox;
-    }
     public function prepareStockFile() {
-        $this->init();
         $productXml = $this->getProductData();
         if ($productXml) {
             $this->logger('Saving response to database');
-            $this->saveResponse($productXml);
-
             $this->_formatProductData($productXml);
         }
     }
@@ -62,28 +33,14 @@ class DMS_Sparkstone_Model_Stock extends Mage_Core_Model_Abstract
     public function getProductData() {
         try {
             $session = null;
-            //$session = Mage::getModel('api/server_handler');
-            //$result = Mage::getModel('api/server_handler')->call(null, 'GetXMLStockList', '1');
-            $client = new SoapClient($this->_soapUrl);//GetXMLStockList
-            if ($this->debugMode()) {
-                $functions = $client->__getFunctions ();
-                Mage::log($functions, null, $this->_logFile);
-                Mage::log($this->_soapUrl, null, $this->_logFile);
-            }
-
-            if (!$this->sandboxMode()) {
-                $userName = Mage::helper('sparkstone')->getStoreConfig('username', 'sparkstone/api/');
-                $pass = Mage::helper('sparkstone')->getStoreConfig('password', 'sparkstone/api/');
-                $session = $client->login( $userName, $pass );
-            }
+            $connector = Mage::getModel('sparkstone/connector');
+            $client = $connector->init();
 
             $this->logger('Retrieving Data Via SoapClient');
-            $strStockList = $client->GetXMLStockList()->GetXMLStockListResult->any;
-            $this->logger('Data retrieved...');
 
-            if ($this->debugMode()) {
-                Mage::log($strStockList, null, $this->_logFile);
-            }
+            $responseData = $client->GetXMLStockList(array('IncludeSecondHand' => true, 'IncludeNonSecondHand' => true));
+            $strStockList = $responseData->GetXMLStockListResult->any;
+            $this->logger('Data retrieved...');
 
             $xml = simplexml_load_string($strStockList);
             if ($xml) {
@@ -125,9 +82,9 @@ class DMS_Sparkstone_Model_Stock extends Mage_Core_Model_Abstract
         $this->logger('Formatting Data...');
         $mappingFile = Mage::helper('sparkstone')->getStoreConfig('csvmapper', 'sparkstone/api/');
         $mappingCols = Mage::helper('sparkstone/csv')->getCsvData(Mage::getBaseUrl('media').$this->_mediaPrefix.$mappingFile);
+
         $colMapHeader = null;
         $csvData = array();
-        $csvHeader = array();
         $counter = 0;
 
         if ($this->_colmapHasHeader && empty($colMapHeader)) {
@@ -136,9 +93,10 @@ class DMS_Sparkstone_Model_Stock extends Mage_Core_Model_Abstract
 
         try{
             if (!empty($xml) && !empty($mappingCols)) {
-                foreach ($xml as $baseKey => $element) {
+                foreach ($xml as $element) {
 
                     $element = (array) $element;
+
                     $counter++;
 
                     foreach ($mappingCols as $key => $mapped) {
@@ -159,6 +117,8 @@ class DMS_Sparkstone_Model_Stock extends Mage_Core_Model_Abstract
                 }
                 $this->logger('Finishing up formatted data');
                 Mage::helper('sparkstone/csv')->putCsvData($csvData, $this->_exportPath .'import.csv');
+
+
                 echo  $this->_exportPath .'import.csv';
                 $this->setReady(true);
             }
@@ -200,7 +160,6 @@ class DMS_Sparkstone_Model_Stock extends Mage_Core_Model_Abstract
                 if (!empty($xml[$label])) {
                     $categoryIds[] = $decoder->decode($xml[$label]);
                 }
-
             }
         }
         return $categoryIds;

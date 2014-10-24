@@ -11,8 +11,8 @@
 class DMS_Sparkstone_IndexController extends Mage_Core_Controller_Front_Action {
 
     public function indexAction() {
-        //$sparkStone = Mage::getModel('sparkstone/stock');
-        //$sparkStone->prepareStockFile();
-        //$sparkStone->importProducts();
+        $sparkStone = Mage::getModel('sparkstone/stock');
+        $sparkStone->prepareStockFile();
+        $sparkStone->importProducts();
     }
 }
