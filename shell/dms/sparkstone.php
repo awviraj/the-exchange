@@ -70,7 +70,8 @@ class DMS_Sparkstone_ProductImport extends Mage_Shell_Abstract
         Mage::app('admin');
         $productImport = new DMS_Sparkstone_Model_Observer();
         $productImport->sparkstoneProductImport();
-        exit;
+		echo 'import completed!';
+        return true;
 
         if ($this->getArg('info')) {
             $processes = $this->_parseIndexerString('all');
