@@ -43,6 +43,7 @@ class DMS_Sparkstone_Model_Stock extends DMS_Sparkstone_Model_Abstract
             $this->logger('Data retrieved...');
 
             $xml = simplexml_load_string($strStockList);
+            //Mage::log($xml);
             if ($xml) {
                 return $xml;
             }
@@ -82,6 +83,8 @@ class DMS_Sparkstone_Model_Stock extends DMS_Sparkstone_Model_Abstract
         $this->logger('Formatting Data...');
         $mappingFile = Mage::helper('sparkstone')->getStoreConfig('csvmapper', 'sparkstone/api/');
         $mappingCols = Mage::helper('sparkstone/csv')->getCsvData(Mage::getBaseUrl('media').$this->_mediaPrefix.$mappingFile);
+        $this->_exportPath = Mage::getBaseDir().'/'.Mage::helper('sparkstone')->getStoreConfig('importpath', 'sparkstone/api/');
+        //echo  $this->_exportPath; exit;
 
         $colMapHeader = null;
         $csvData = array();
@@ -119,7 +122,7 @@ class DMS_Sparkstone_Model_Stock extends DMS_Sparkstone_Model_Abstract
                 Mage::helper('sparkstone/csv')->putCsvData($csvData, $this->_exportPath .'import.csv');
 
 
-                echo  $this->_exportPath .'import.csv';
+                //echo  '***'.$this->_exportPath .'import.csv';exit;
                 $this->setReady(true);
             }
         } catch (Exception $e) {
