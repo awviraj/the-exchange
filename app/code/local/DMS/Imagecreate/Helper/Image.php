@@ -32,14 +32,20 @@ class DMS_Imagecreate_Helper_Image extends Mage_Core_Helper_Abstract
 
     public function saveImage($data, $filePath) {
 
-        if (strpos($data, ',')) {
-            $break = explode(',', $data);
-            $data = $break[1];
+        try {
+            if (strpos($data, ',')) {
+                $break = explode(',', $data);
+                $data = $break[1];
+            }
+            //
+            $data = base64_decode($data);
+            $im = imagecreatefromstring($data);
+            $content = imagepng($im, $filePath);
+        } catch (Exception $e) {
+            Mage::throwException('Encoded image data is not valid');
         }
-        //
-        $data = base64_decode($data);
-        $im = imagecreatefromstring($data);
-        $content = imagepng($im, $filePath);
+
+
         return  $filePath;
     }
 
@@ -67,7 +73,7 @@ class DMS_Imagecreate_Helper_Image extends Mage_Core_Helper_Abstract
                     try {
                         $product->addImageToMediaGallery($imgPath, $mediaAttribute, false);
                     } catch (Exception $e) {
-                        Mage::logException($e);
+                        Mage::throwException('Cannot add image to product media gallery');
                     }
                 }
             }
