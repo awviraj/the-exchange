@@ -11,6 +11,7 @@
 class DMS_Imagecreate_IndexController extends Mage_Core_Controller_Front_Action {
 
     public function indexAction() {
+        $result = '';
         if ($this->getRequest()->isPost()) {
             $imageData = $this->getRequest()->getParam('imagedata');
 
@@ -23,6 +24,8 @@ class DMS_Imagecreate_IndexController extends Mage_Core_Controller_Front_Action 
                     $result = array('status_code' => 400, 'status' => 'failure', 'message' => $success);
                 }
             }
+        } else {
+            $result = array('status_code' => 400, 'status' => 'failure', 'message' => 'No valid data received');
         }
         $this->getResponse()->setBody(json_encode($result));
     }
