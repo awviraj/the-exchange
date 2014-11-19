@@ -18,9 +18,9 @@ class DMS_Imagecreate_IndexController extends Mage_Core_Controller_Front_Action 
                 $success = Mage::helper('dms_imagecreate/image')->importImage($imageData);
                 if ($success === true) {
                     //echo 'complete!';
-                    $result = array('status' => 200, 'message' => 'file uploaded');
+                    $result = array('status_code' => 200, 'status' => 'success',  'message' => 'file uploaded');
                 } else {
-                    $result = array('status' => 400, 'message' => $success);
+                    $result = array('status_code' => 400, 'status' => 'failure', 'message' => $success);
                 }
             }
         }
