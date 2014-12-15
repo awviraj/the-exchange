@@ -85,7 +85,7 @@ Default layout, loads most of the pages
 
         <reference name="top.links">
             <action method="addLink" translate="label title" module="customer">
-                <label>Home</label>
+                <label></label>
                 <url>/</url>
                 <title>Home</title>
                 <prepare/>

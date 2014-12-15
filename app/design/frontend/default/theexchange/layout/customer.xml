@@ -59,7 +59,7 @@ Load this update on every page when customer is logged in
 
     <customer_logged_in>
         <reference name="top.links">
-            <action method="addLink" translate="label title" module="customer"><label>My Account</label><url helper="customer/getAccountUrl"/><title>My Account</title><prepare/><urlParams/><position>10000</position><liParams/><aParams>class="top-link-customer logged-in"</aParams></action>
+            <action method="addLink" translate="label title" module="customer"><label></label><url helper="customer/getAccountUrl"/><title>My Account</title><prepare/><urlParams/><position>10000</position><liParams/><aParams>class="top-link-customer logged-in"</aParams></action>
         </reference>
         <reference name="topLinks_submenu">
             <action method="addLink" translate="label title" module="customer"><label>My Account</label><url helper="customer/getAccountUrl"/><title>My Account</title><prepare/><urlParams/><position>10000</position><liParams/><aParams>class="top-account-submenu logged-in"</aParams></action>
@@ -76,7 +76,7 @@ Load this update on every page when customer is logged out
 
     <customer_logged_out>
         <reference name="top.links">
-            <action method="addLink" translate="label title" module="customer"><label>My Account</label><url helper="customer/getAccountUrl"/><title>My Account</title><prepare/><urlParams/><position>10000</position><liParams/><aParams>class="top-link-customer"</aParams></action>
+            <action method="addLink" translate="label title" module="customer"><label></label><url helper="customer/getAccountUrl"/><title>My Account</title><prepare/><urlParams/><position>10000</position><liParams/><aParams>class="top-link-customer"</aParams></action>
         </reference>
         <reference name="footer_links">
             <action method="addLink" translate="label title" module="customer"><label>Login</label><url helper="customer/getLoginUrl"/><title>Login</title><prepare/><urlParams/><position>1</position></action>

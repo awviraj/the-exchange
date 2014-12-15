@@ -110,14 +110,35 @@
         text-indent: -3000px;
         width: 45px;
         height: 38px;
-        background: url("../images/sprite.png") no-repeat;
+       background: url("../images/sprite.png") no-repeat;
 
         &.top-link-home{
-          background-position: 16px -129px;
+         // background-position: 16px -129px;
+          &:before {
+            content: "\f015";
+            line-height: 42px;
+            font-family: fontawesome;
+            display: block;
+            text-indent: 0;
+            text-align: center;
+            font-size: 18px;
+            color: #fff;
+          }
         }
         &.top-link-cart{
-          background-position: 16px -89px;
           position: relative;
+
+
+          &:before {
+            content: "\f07a";
+            line-height: 42px;
+            font-family: fontawesome;
+            display: block;
+            text-indent: 0;
+            text-align: center;
+            font-size: 18px;
+            color: #fff;
+          }
 
           .cart-count{
             font-family: 'houschka_alt_probold';
@@ -136,10 +157,24 @@
           }
         }
         &.top-link-customer{
-          background-position: 16px -44px;
+          //background-position: 16px -44px;
+          &:before {
+            content: "\f007";
+            line-height: 42px;
+            font-family: fontawesome;
+            display: block;
+            text-indent: 0;
+            text-align: center;
+            font-size: 18px;
+            color: #fff;
+
+          }
 
           &.logged-in{
-            background-position: -18px -44px;
+            &:before{
+              color: #000000;
+            }
+           // background-position: -18px -44px;
           }
         }
         &:hover{
