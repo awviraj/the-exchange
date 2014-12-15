@@ -68,6 +68,7 @@ Default layout, loads most of the pages
                 <action method="addItem"><type>skin_css</type><name>css/main.css</name><media>common</media></action>
                 <action method="addItem"><type>skin_css</type><name>css/0-767.css</name><media>common</media></action>
                 <action method="addItem"><type>skin_css</type><name>css/768-1024.css</name><media>common</media></action>
+                <action method="addItem"><type>skin_css</type><name>css/font-awesome.css</name></action>
 
                 <action method="addItem"><type>skin_css</type><name>css/styles-ie.css</name><params/><if>lt IE 8</if></action>
                 <action method="addCss"><stylesheet>css/widgets.css</stylesheet></action>
