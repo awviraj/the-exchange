@@ -32,14 +32,20 @@ class DMS_Imagecreate_Helper_Image extends Mage_Core_Helper_Abstract
 
     public function saveImage($data, $filePath) {
 
-        if (strpos($data, ',')) {
-            $break = explode(',', $data);
-            $data = $break[1];
+        try {
+            if (strpos($data, ',')) {
+                $break = explode(',', $data);
+                $data = $break[1];
+            }
+            //
+            $data = base64_decode($data);
+            $im = imagecreatefromstring($data);
+            $content = imagepng($im, $filePath);
+        } catch (Exception $e) {
+            Mage::throwException('Encoded image data is not valid');
         }
-        //
-        $data = base64_decode($data);
-        $im = imagecreatefromstring($data);
-        $content = imagepng($im, $filePath);
+
+
         return  $filePath;
     }
 
@@ -51,27 +57,32 @@ class DMS_Imagecreate_Helper_Image extends Mage_Core_Helper_Abstract
     public  function addImageToProduct($sku, $imgPath){
         //$product = Mage::getModel('catalog/product')->load($sku, 'sku');
         $product = Mage::getModel('catalog/product')->loadByAttribute('sku', $sku);
-        if (!$product->getMediaGalleryImages()) {
-            $mediaAttribute = array (
-                'thumbnail',
-                'small_image',
-                'image'
-            );
-        } else {
-            $mediaAttribute = null;
-        }
+        if (!empty($product)) {
+            if (!$product->getMediaGalleryImages()) {
+                $mediaAttribute = array (
+                    'thumbnail',
+                    'small_image',
+                    'image'
+                );
+            } else {
+                $mediaAttribute = null;
+            }
 
-        if ($mediaAttribute) {
-            if ( file_exists($imgPath) ) {
-                try {
-                    $product->addImageToMediaGallery($imgPath, $mediaAttribute, false);
-                } catch (Exception $e) {
-                    Mage::logException($e);
+            if ($mediaAttribute) {
+                if ( file_exists($imgPath) ) {
+                    try {
+                        $product->addImageToMediaGallery($imgPath, $mediaAttribute, false);
+                    } catch (Exception $e) {
+                        Mage::throwException('Cannot add image to product media gallery');
+                    }
                 }
             }
+            Mage::app()->setCurrentStore(Mage_Core_Model_App::ADMIN_STORE_ID);
+            $product->save();
+        } else {
+            Mage::throwException('Invalid Product Code');
+            return false;
         }
-        Mage::app()->setCurrentStore(Mage_Core_Model_App::ADMIN_STORE_ID);
-        $product->save();
         return true;
     }
 }
