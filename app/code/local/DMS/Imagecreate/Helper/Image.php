@@ -85,4 +85,16 @@ class DMS_Imagecreate_Helper_Image extends Mage_Core_Helper_Abstract
         }
         return true;
     }
+
+    public function clearOutUploadedImages()
+    {
+        $dirPath = Mage::getBaseDir('var');
+        $path = $dirPath.'/import/images/';
+        $files = glob($path.'*'); // get all file names
+        foreach($files as $file){ // iterate files
+            if(is_file($file))
+                unlink($file); // delete file
+        }
+        return true;
+    }
 }
