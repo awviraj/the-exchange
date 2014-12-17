@@ -31,4 +31,17 @@
             </admin>
         </resources>
     </acl>
+    <menu>
+        <productrepairs translate="title" module="dms_productrepairs">
+            <title>Product Repairs</title>
+            <sort_order>15</sort_order>
+            <children>
+                <brands translate="title" module="dms_productrepairs">
+                    <title>Brands</title>
+                    <sort_order>1</sort_order>
+                    <action>productrepairs/adminhtml_index</action>
+                </brands>
+            </children>
+        </productrepairs>
+    </menu>
 </config>

@@ -1,14 +1,14 @@
 <config>
     <modules>
         <DMS_Productrepairs>
-            <version>0.0.0.1</version>
+            <version>0.0.0.2</version>
         </DMS_Productrepairs>
     </modules>
     <global>
         <models>
             <dms_productrepairs>
                 <class>DMS_Productrepairs_Model</class>
-                <resourceModel>productrepairs_resource</resourceModel>
+                <resourceModel>dms_productrepairs_resource</resourceModel>
             </dms_productrepairs>
             <dms_productrepairs_resource>
                 <class>DMS_Productrepairs_Model_Resource</class>
@@ -56,4 +56,24 @@
             </updates>
         </layout>
     </frontend>
+    <adminhtml>
+        <layout>
+            <updates>
+                <dms_productrepairs>
+                    <file>productrepairs.xml</file>
+                </dms_productrepairs>
+            </updates>
+        </layout>
+    </adminhtml>
+    <admin>
+        <routers>
+            <productrepairs>
+                <use>admin</use>
+                <args>
+                    <module>DMS_Productrepairs</module>
+                    <frontName>productrepairs</frontName>
+                </args>
+            </productrepairs>
+        </routers>
+    </admin>
 </config>

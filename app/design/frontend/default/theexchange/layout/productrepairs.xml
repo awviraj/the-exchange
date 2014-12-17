@@ -15,8 +15,27 @@
         </reference>
         <reference name="content">
             <block type="dms_productrepairs/form" name="dms.product.repairs.form" template="productrepairs/form.phtml">
-
-            </block>
+               </block>
         </reference>
     </dms_productrepairs_index_index>
+
+    <!--<dms_productrepairs_index_ajaxload>-->
+        <!--<reference name="root">-->
+            <!--<action method="setTemplate"><template>page/1column.phtml</template></action>-->
+        <!--</reference>-->
+        <!--<reference name="content">-->
+            <!--<block type="dms_productrepairs/form" name="dms.product.repairs.form" template="productrepairs/ajax_select.phtml">-->
+            <!--</block>-->
+        <!--</reference>-->
+    <!--</dms_productrepairs_index_ajaxload>-->
+
+    <dms_productrepairs_index_success>
+        <reference name="root">
+            <action method="setTemplate"><template>page/1column.phtml</template></action>
+        </reference>
+        <reference name="content">
+            <block type="dms_productrepairs/form" name="dms.product.repairs.form" template="productrepairs/success.phtml">
+            </block>
+        </reference>
+    </dms_productrepairs_index_success>
 </layout>
