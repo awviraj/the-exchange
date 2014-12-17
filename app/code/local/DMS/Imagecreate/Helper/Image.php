@@ -71,7 +71,7 @@ class DMS_Imagecreate_Helper_Image extends Mage_Core_Helper_Abstract
             if ($mediaAttribute) {
                 if ( file_exists($imgPath) ) {
                     try {
-                        $product->addImageToMediaGallery($imgPath, $mediaAttribute, false);
+                        $product->addImageToMediaGallery($imgPath, $mediaAttribute, false, false);
                     } catch (Exception $e) {
                         Mage::throwException('Cannot add image to product media gallery');
                     }
