@@ -1,0 +1,19 @@
+@import "mixins";
+.dms-productrepairs-index-index{
+  h1{
+    font-size: 42px;
+    @include Houschka_alt_bold_italic;
+    color: #fff;
+    float: left;
+    width: 100%;
+    border-bottom: 3px solid #fff;
+  }
+  .main.container{
+    background:$primary-red ;
+    padding: 20px 30px;
+
+    .img-wrapper{
+      margin-left: -30px;
+    }
+  }
+}

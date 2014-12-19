@@ -10,65 +10,68 @@
     <p class="page-description">
         <?php echo $this->getPageDescription(); ?>
     </p>
-    <div class="wrapper">
-        <div class="img-wrapper">
-            <img src="<?php echo Mage::getBaseUrl('media').'/wysiwyg/dms/productrepairs/repair-form.jpg'?>" alt="Repair Page"/>
-        </div>
-        <div class="repair-form">
-            <form name="product_repair_form" id="product_repair_form" method="POST" action="<?php echo $this->getUrl('phone-repairs/index/book');?>">
+    <div class="row">
+        <div class="wrapper">
+            <div class="img-wrapper col-lg-5">
+                <img src="<?php echo Mage::getBaseUrl('media').'/wysiwyg/dms/productrepairs/repair-form.jpg'?>" alt="Repair Page"/>
+            </div>
+            <div class="repair-form col-lg-6">
+                <form name="product_repair_form" id="product_repair_form" method="POST" action="<?php echo $this->getUrl('phone-repairs/index/book');?>">
 
-                <div class="form-group">
-                    <label for="repair_brand"><?php echo $this->__('Brand') ?><em>*</em></label>
-                    <select class="form-control required-entry"  name="brand" id="repair_brand">
-                        <?php foreach ($this->getBrands() as $brandId => $brand): ?>
-                            <option value="<?php echo $brand['value']; ?>"><?php echo $brand['label']; ?></option>
-                        <?php endforeach; ?>
-                    </select>
-
-                    <label for="repair_brand"><?php echo $this->__('Model') ?><em>*</em></label>
-                    <div id="repair_model_wrapper" class="repair_model_wrapper">
-                        <select class="form-control required-entry"  name="model" id="repair_model">
-
-                            <?php foreach ($this->getProductModelsFromBrand() as $modelId => $model): ?>
-                                <option value="<?php echo $modelId; ?>"><?php echo $model; ?></option>
+                    <div class="form-group">
+                        <label for="repair_brand"><?php echo $this->__('Brand') ?><em>*</em></label>
+                        <select class="form-control required-entry"  name="brand" id="repair_brand">
+                            <?php foreach ($this->getBrands() as $brandId => $brand): ?>
+                                <option value="<?php echo $brand['value']; ?>"><?php echo $brand['label']; ?></option>
                             <?php endforeach; ?>
                         </select>
+
+                        <label for="repair_brand"><?php echo $this->__('Model') ?><em>*</em></label>
+                        <div id="repair_model_wrapper" class="repair_model_wrapper">
+                            <select class="form-control required-entry"  name="model" id="repair_model">
+
+                                <?php foreach ($this->getProductModelsFromBrand() as $modelId => $model): ?>
+                                    <option value="<?php echo $modelId; ?>"><?php echo $model; ?></option>
+                                <?php endforeach; ?>
+                            </select>
+                        </div>
                     </div>
-                </div>
 
-                <div class="form-group">
-                    <label for="repair_fault"><?php echo $this->__('Fault') ?><em>*</em></label>
-                    <input type="text" class="form-control required-entry"  name="fault" id="repair_fault" placeholder="Fault" value="">
-                </div>
-
-                <div class="form-group">
-                    <label for="repair_fault_description"><?php echo $this->__('Fault Description') ?><em>*</em></label>
-                    <textarea class="form-control required-entry"  name="fault" id="repair_fault_description" placeholder="Fault Description" value=""></textarea>
-                </div>
-
-                <div class="form-group">
-                    <label for="repair_fullname"><?php echo $this->__('Full Name') ?><em>*</em></label>
-                    <input type="text" class="form-control required-entry"  name="full_name" id="repair_fullname" placeholder="Full Name" value="">
-
-                    <label for="repair_email"><?php echo $this->__('Email') ?><em>*</em></label>
-                    <input type="text" class="form-control required-entry"  name="email" id="repair_email" placeholder="Email" value="">
-                </div>
-
-                <div class="form-group">
-                    <label for="repair_contact"><?php echo $this->__('Contact No') ?><em>*</em></label>
-                    <input type="text" class="form-control required-entry"  name="contact_no" id="repair_contact" placeholder="Contact No" value="">
-
-                    <div class="submit-button-wrapper">
-                        <input type="submit" name="submit" value="Book Now" id="submit_repair_form">
+                    <div class="form-group">
+                        <label for="repair_fault"><?php echo $this->__('Fault') ?><em>*</em></label>
+                        <input type="text" class="form-control required-entry"  name="fault" id="repair_fault" placeholder="Fault" value="">
                     </div>
-                </div>
+
+                    <div class="form-group">
+                        <label for="repair_fault_description"><?php echo $this->__('Fault Description') ?><em>*</em></label>
+                        <textarea class="form-control required-entry"  name="fault" id="repair_fault_description" placeholder="Fault Description" value=""></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="repair_fullname"><?php echo $this->__('Full Name') ?><em>*</em></label>
+                        <input type="text" class="form-control required-entry"  name="full_name" id="repair_fullname" placeholder="Full Name" value="">
+
+                        <label for="repair_email"><?php echo $this->__('Email') ?><em>*</em></label>
+                        <input type="text" class="form-control required-entry"  name="email" id="repair_email" placeholder="Email" value="">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="repair_contact"><?php echo $this->__('Contact No') ?><em>*</em></label>
+                        <input type="text" class="form-control required-entry"  name="contact_no" id="repair_contact" placeholder="Contact No" value="">
+
+                        <div class="submit-button-wrapper">
+                            <input type="submit" name="submit" value="Book Now" id="submit_repair_form">
+                        </div>
+                    </div>
 
                 <span class="required-field-notification">
                     <?php echo $this->__('Required field'); ?><em>*</em>
                 </span>
-            </form>
+                </form>
+            </div>
         </div>
     </div>
+
 </div>
 <script>
     jQuery("#repair_brand").change(function() {
