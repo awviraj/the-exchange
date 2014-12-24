@@ -107,7 +107,7 @@
 .product-view .product-shop .price_wrapper .buy_price .price-know-more .price { font-family: 'houschka_alt_probold'; font-weight: normal; font-size: 30px; color: #ff0000; line-height: 30px; margin: 0; }
 .product-view .product-shop .price_wrapper .buy_price .price-know-more .know-more { float: right; text-align: right; }
 
-.product-collateral { background: none; padding: 0; }
+.product-collateral { margin-top: 10px; background: none; padding: 0; }
 .product-collateral .product-tabs { border-bottom: 3px solid #ff0000; background: #000; float: left; width: 100%; padding: 0; margin-bottom: 0; }
 .product-collateral .product-tabs li { border-left: none; border-right: none; }
 .product-collateral .product-tabs li.active { border: none; }

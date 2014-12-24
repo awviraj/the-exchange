@@ -9,6 +9,18 @@
     .product-img-box{
       float: left;
       width: 100%;
+
+      .product-image img{
+        max-height: 240px;
+      }
+    }
+
+    .product-shop {
+      .add-to-box {
+        .btn-cart{
+          margin-top: 20px;
+        }
+      }
     }
   }
 }

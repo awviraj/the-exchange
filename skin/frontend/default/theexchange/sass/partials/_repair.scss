@@ -10,10 +10,11 @@
   }
   .main.container{
     background:$primary-red ;
-    padding: 20px 30px;
+    padding: 20px 30px 0 30px;
 
     .img-wrapper{
       margin-left: -30px;
+      margin-bottom: -3px;
     }
   }
 }

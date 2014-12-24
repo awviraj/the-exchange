@@ -33,6 +33,7 @@
   .custom_footer_wrapper .custom_footer_static_block .custom_row1_col1, .custom_footer_wrapper .custom_footer_static_block .custom_row1_col2, .custom_footer_wrapper .custom_footer_static_block .custom_row1_col3 { width: 100%; margin-bottom: 10px; }
   .custom_footer_wrapper .custom_footer_static_block .custom_row1_col2 { text-align: center; }
   .custom_footer_wrapper .custom_footer_static_block .custom_row1_col2 img { max-width: 50px; }
+  .col1-layout .col-main { padding: 0 10px; }
   .footer-container .footer .custom_tweets { background: url("../images/twitter-mb.gif") no-repeat left top black; background-position: 30px 40px; padding-left: 85px; }
   .footer-container .footer .custom_tweets .qoute, .footer-container .footer .custom_tweets .custom_row2_col3 { display: none; }
   .footer-container .footer .footer_links_wrapper .footer_links_subwrapper > div { float: left; width: 100%; margin-bottom: 25px; }
@@ -54,6 +55,8 @@
   .page .product-view .mobile-title { display: block; }
   .page .product-view .mobile-title h2 { padding-left: 15px; }
   .page .product-view .product-img-box { float: left; width: 100%; }
+  .page .product-view .product-img-box .product-image img { max-height: 240px; }
+  .page .product-view .product-shop .add-to-box .btn-cart { margin-top: 20px; }
   .wrapper .menu-search-wrapper, .cms-index-index .wrapper .menu-search-wrapper { margin-top: -12px; box-sizing: border-box; -webkit-box-sizing: border-box; }
   .wrapper .menu-search-wrapper .cms-menu, .cms-index-index .wrapper .menu-search-wrapper .cms-menu { display: none; }
   .wrapper .menu-search-wrapper .search-box, .cms-index-index .wrapper .menu-search-wrapper .search-box { background-size: auto; padding-top: 30px; height: 100px; }
