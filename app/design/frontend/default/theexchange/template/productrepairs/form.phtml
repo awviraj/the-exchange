@@ -15,16 +15,19 @@
             <div class="img-wrapper col-lg-5">
                 <img src="<?php echo Mage::getBaseUrl('media').'/wysiwyg/dms/productrepairs/repair-form.jpg'?>" alt="Repair Page"/>
             </div>
-            <div class="repair-form col-lg-6">
+            <div class="repair-form col-lg-6 form-list">
                 <form name="product_repair_form" id="product_repair_form" method="POST" action="<?php echo $this->getUrl('phone-repairs/index/book');?>">
 
                     <div class="form-group">
-                        <label for="repair_brand"><?php echo $this->__('Brand') ?><em>*</em></label>
-                        <select class="form-control required-entry"  name="brand" id="repair_brand">
-                            <?php foreach ($this->getBrands() as $brandId => $brand): ?>
-                                <option value="<?php echo $brand['value']; ?>"><?php echo $brand['label']; ?></option>
-                            <?php endforeach; ?>
-                        </select>
+                        <div class="field">
+                            <label for="repair_brand"><?php echo $this->__('Brand') ?><em>*</em></label>
+                            <select class="form-control required-entry"  name="brand" id="repair_brand">
+                                <?php foreach ($this->getBrands() as $brandId => $brand): ?>
+                                    <option value="<?php echo $brand['value']; ?>"><?php echo $brand['label']; ?></option>
+                                <?php endforeach; ?>
+                            </select>
+                        </div>
+
 
                         <label for="repair_brand"><?php echo $this->__('Model') ?><em>*</em></label>
                         <div id="repair_model_wrapper" class="repair_model_wrapper">
