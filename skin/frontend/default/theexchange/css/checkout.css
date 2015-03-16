@@ -49,7 +49,7 @@ input:-webkit-autofill { -webkit-box-shadow: 0 0 0px 1000px white inset; }
 .checkout-onepage-index .main ol.opc li.section.active .step-title { background: none; border-bottom: 1px solid #cccccc; }
 .checkout-onepage-index .main ol.opc li.section.active .step-title h2 { color: #000000; }
 .checkout-onepage-index .main ol.opc li.section.active .step-title .number { background-position: 0 -1221px; }
-.checkout-onepage-index .main ol.opc li.section .step { padding: 25px 15px; border: 1px solid #cccccc; }
+.checkout-onepage-index .main ol.opc li.section .step { padding: 25px 15px; border: 1px solid #cccccc; float: left; width: 100%; }
 .checkout-onepage-index .main ol.opc li.section .step h3 { font-family: 'houschka_alt_promedium'; font-size: 18px; color: #000; margin-bottom: 14px; }
 .checkout-onepage-index .main ol.opc li.section .step p { font-family: 'houschka_alt_promedium'; font-size: 14px; color: #000; }
 .checkout-onepage-index .main ol.opc li.section .step p.required { color: #12b55b; }
@@ -67,7 +67,7 @@ input:-webkit-autofill { -webkit-box-shadow: 0 0 0px 1000px white inset; }
 .checkout-onepage-index .main input[type="text"]::-moz-placeholder, .checkout-onepage-index .main input[type="email"]::-moz-placeholder, .checkout-onepage-index .main input[type="password"]::-moz-placeholder { color: #aeaeae; font-size: 16px; font-family: 'houschkaalt-bold-italic-regular'; font-weight: normal; }
 .checkout-onepage-index .main input[type="text"]:-ms-input-placeholder, .checkout-onepage-index .main input[type="email"]:-ms-input-placeholder, .checkout-onepage-index .main input[type="password"]:-ms-input-placeholder { color: #aeaeae; font-size: 16px; font-family: 'houschkaalt-bold-italic-regular'; font-weight: normal; }
 .checkout-onepage-index .main .form-group label { color: red; text-transform: uppercase; font-size: 12px; font-family: 'houschka_alt_probold'; margin-bottom: 9px; }
-.checkout-onepage-index .main .form-group input[type="text"] { margin-top: 21px; }
+.checkout-onepage-index .main .form-group input[type="text"] { margin-top: 0px; width: 100%; }
 .checkout-onepage-index .main .form-group label + input[type="text"] { margin-top: 0; }
 .checkout-onepage-index .main .form-group select { border: 3px solid #dadada; border-radius: 0; display: block; width: 100%; height: 37px; padding: 6px 12px; font-size: 14px; line-height: 1.428571429; color: #555; background-color: #fff; background-image: none; -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s; transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s; }
 .checkout-onepage-index .main .field.name-lastname { margin-left: 20px; }

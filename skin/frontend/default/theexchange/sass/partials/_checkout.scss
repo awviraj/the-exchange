@@ -61,6 +61,8 @@
           .step{
             padding: 25px 15px;
             border:1px solid $primary-grey ;
+            float: left;
+            width: 100%;
 
             h3{
               font-family: 'houschka_alt_promedium';
@@ -191,7 +193,8 @@
         margin-bottom: 9px;
       }
       input[type="text"]{
-        margin-top: 21px;
+        margin-top: 0px;
+        width: 100%;
       }
       label+ input[type="text"]{
         margin-top: 0;
