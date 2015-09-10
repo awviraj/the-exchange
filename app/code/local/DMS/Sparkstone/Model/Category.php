@@ -51,6 +51,7 @@ class DMS_Sparkstone_Model_Category extends DMS_Sparkstone_Model_Abstract
 
 
     protected function _getMagentoCategoryData(){
+        Mage::app()->setCurrentStore(Mage_Core_Model_App::ADMIN_STORE_ID);
         $categories = null;
         $this->_magentoCategories  = Mage::getModel('catalog/category')
             ->getCollection()
