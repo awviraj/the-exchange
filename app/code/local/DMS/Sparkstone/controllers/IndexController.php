@@ -15,4 +15,9 @@ class DMS_Sparkstone_IndexController extends Mage_Core_Controller_Front_Action {
         $sparkStone->prepareStockFile();
         $sparkStone->importProducts();
     }
+
+    public function categoryAction() {
+        $sparkStone = Mage::getModel('sparkstone/category');
+        $sparkStone->importCategories();
+    }
 }
