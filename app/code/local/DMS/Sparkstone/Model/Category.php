@@ -13,9 +13,12 @@ class DMS_Sparkstone_Model_Category extends DMS_Sparkstone_Model_Abstract
     protected $_magentoCategories = array();
     protected $_magentoLeveledCategories = array();
     protected $_spkLeveledCategories = array();
+    protected $_categoryMap = array();
+    protected $_writeConnection = null;
 
     public function __construct(){
         $this->_getMagentoCategoryData();
+        $this->_writeConnection = Mage::getSingleton('core/resource')->getConnection('core_write');
     }
 
     public function importCategories() {
@@ -55,7 +58,7 @@ class DMS_Sparkstone_Model_Category extends DMS_Sparkstone_Model_Abstract
         $categories = null;
         $this->_magentoCategories  = Mage::getModel('catalog/category')
             ->getCollection()
-            ->removeAttributeToSelect('entity_id')
+            //->removeAttributeToSelect('entity_id')
             ->addAttributeToSelect('name')
             ->load()
             ->exportToArray();
@@ -103,6 +106,7 @@ class DMS_Sparkstone_Model_Category extends DMS_Sparkstone_Model_Abstract
                             $parentCategory = Mage::getModel('catalog/category')->load($parentId);
                             $category->setPath($parentCategory->getPath());
                             $category->save();
+                            $this->_categoryMap[$category->getEntityId()] = $spkLevelCategory['CategoryNumber'];
                             unset($category);
                         } catch (Exception $e) {
                             Mage::logException($e);
@@ -110,12 +114,14 @@ class DMS_Sparkstone_Model_Category extends DMS_Sparkstone_Model_Abstract
                     }
                 }
                 else{
+                    $this->_categoryMap[$this->_magentoLeveledCategories[$level+1][$spkLevelCategory['name_path']]['entity_id']] = $spkLevelCategory['CategoryNumber'];
                     continue;
                 }
             }
             $level++;
             $this->_getMagentoCategoryData();
         }
+        $this->_createCategoryMap();
     }
 
     protected function _getParentId($spkLevelCategory,$level){
@@ -152,6 +158,20 @@ class DMS_Sparkstone_Model_Category extends DMS_Sparkstone_Model_Abstract
                 }
             }
             $level++;
+        }
+    }
+
+    protected function _createCategoryMap(){
+        $insertQuery = '';
+        foreach($this->_categoryMap as $magID=>$spkID)
+        {
+            $insertQuery.= '("'.$magID.'","'.$spkID.'"),';
+        }
+        if(!empty($insertQuery)){
+            $insertQuery = "INSERT INTO dms_sparkstone_category_map VALUES ".$insertQuery;
+            $insertQuery = trim($insertQuery,',');
+            $this->_writeConnection-> query('DELETE FROM dms_sparkstone_category_map');
+            $this->_writeConnection-> query($insertQuery);
         }
     }
 
