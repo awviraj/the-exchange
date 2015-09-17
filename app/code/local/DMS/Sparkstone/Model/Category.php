@@ -106,7 +106,7 @@ class DMS_Sparkstone_Model_Category extends DMS_Sparkstone_Model_Abstract
                             $parentCategory = Mage::getModel('catalog/category')->load($parentId);
                             $category->setPath($parentCategory->getPath());
                             $category->save();
-                            $this->_categoryMap[$category->getEntityId()] = $spkLevelCategory['CategoryNumber'];
+                            $this->_categoryMap[$spkLevelCategory['CategoryNumber']] = $category->getEntityId();
                             unset($category);
                         } catch (Exception $e) {
                             Mage::logException($e);
@@ -114,7 +114,7 @@ class DMS_Sparkstone_Model_Category extends DMS_Sparkstone_Model_Abstract
                     }
                 }
                 else{
-                    $this->_categoryMap[$this->_magentoLeveledCategories[$level+1][$spkLevelCategory['name_path']]['entity_id']] = $spkLevelCategory['CategoryNumber'];
+                    $this->_categoryMap[$spkLevelCategory['CategoryNumber']] = $this->_magentoLeveledCategories[$level+1][$spkLevelCategory['name_path']]['entity_id'];
                     continue;
                 }
             }
@@ -165,7 +165,7 @@ class DMS_Sparkstone_Model_Category extends DMS_Sparkstone_Model_Abstract
         $insertQuery = '';
         foreach($this->_categoryMap as $magID=>$spkID)
         {
-            $insertQuery.= '("'.$magID.'","'.$spkID.'"),';
+            $insertQuery.= '("'.$spkID.'","'.$magID.'"),';
         }
         if(!empty($insertQuery)){
             $insertQuery = "INSERT INTO dms_sparkstone_category_map VALUES ".$insertQuery;

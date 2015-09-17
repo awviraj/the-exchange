@@ -8,8 +8,8 @@ $installer->startSetup();
 
 
 $installer->run('CREATE TABLE dms_sparkstone_category_map(
-magento_cat_id INT(11),
-spk_cat_id INT(11)
+spk_cat_id INT(11),
+magento_cat_id INT(11)
 )
 
 ');
