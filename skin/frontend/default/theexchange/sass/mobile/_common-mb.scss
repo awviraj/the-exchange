@@ -88,6 +88,9 @@
         .dl-menuwrapper {
           z-index: 9999;
           max-width: 218px;
+          .dl-submenu{
+            max-width: 247px;
+          }
           .dl-menu{
             margin: 3px 0 0 0;
             display: none;
