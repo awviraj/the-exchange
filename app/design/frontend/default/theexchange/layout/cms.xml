@@ -72,15 +72,15 @@ Default layout, loads most of the pages
                 </block>
             </block>
 
-            <block type="core/template" name="footer_brand_section" template="cms/footer_brands.phtml" translate="label">
-                <label>Footer Brands Section</label>
+            <!--<block type="core/template" name="footer_brand_section" template="cms/footer_brands.phtml" translate="label">-->
+                <!--<label>Footer Brands Section</label>-->
 
-                <block type="cms/block" name="footer_partner_list">
-                    <label>Footer Partner List</label>
-                    <action method="setBlockId"><block_id>footer_partner_list</block_id></action>
-                </block>
+                <!--<block type="cms/block" name="footer_partner_list">-->
+                    <!--<label>Footer Partner List</label>-->
+                    <!--<action method="setBlockId"><block_id>footer_partner_list</block_id></action>-->
+                <!--</block>-->
 
-            </block>
+            <!--</block>-->
         </reference>
 
         <reference name="top.links">

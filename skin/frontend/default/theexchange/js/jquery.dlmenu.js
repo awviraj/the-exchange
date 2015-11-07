@@ -204,6 +204,7 @@
 				$( this ).removeClass( 'dl-menu-toggle' );
 			} );
 			this.$trigger.addClass( 'dl-active' );
+            jQuery("#dl-menu .dl-menu").show();
 			this.open = true;
 		},
 		// resets the menu to its original state (first level of options)

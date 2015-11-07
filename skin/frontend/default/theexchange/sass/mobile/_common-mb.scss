@@ -90,6 +90,8 @@
           max-width: 218px;
           .dl-menu{
             margin: 3px 0 0 0;
+            display: none;
+            max-width: 247px;
             &.dl-subview{
               li{
                 &.title{
