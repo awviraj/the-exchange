@@ -26,6 +26,7 @@ class DMS_Sparkstone_Model_Category extends DMS_Sparkstone_Model_Abstract
         if ($categoryData) {
             $this->logger('Saving category data');
             $this->_importCategories($categoryData);
+            $this->logger('Save complete');
         }
     }
 
@@ -56,9 +57,8 @@ class DMS_Sparkstone_Model_Category extends DMS_Sparkstone_Model_Abstract
     protected function _getMagentoCategoryData(){
         Mage::app()->setCurrentStore(Mage_Core_Model_App::ADMIN_STORE_ID);
         $categories = null;
-        $this->_magentoCategories  = Mage::getModel('catalog/category')
+        $this->_magentoCategories = Mage::getModel('catalog/category')
             ->getCollection()
-            //->removeAttributeToSelect('entity_id')
             ->addAttributeToSelect('name')
             ->load()
             ->exportToArray();
@@ -163,7 +163,7 @@ class DMS_Sparkstone_Model_Category extends DMS_Sparkstone_Model_Abstract
 
     protected function _createCategoryMap(){
         $insertQuery = '';
-        foreach($this->_categoryMap as $magID=>$spkID)
+        foreach($this->_categoryMap as $spkID=>$magID)
         {
             $insertQuery.= '("'.$spkID.'","'.$magID.'"),';
         }

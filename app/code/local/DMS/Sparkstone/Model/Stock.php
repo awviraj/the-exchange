@@ -115,6 +115,9 @@ class DMS_Sparkstone_Model_Stock extends DMS_Sparkstone_Model_Abstract
                             if ($categoryIds) {
                                 $csvData[$counter][$mapped[0]] = implode(',', $categoryIds);
                             }
+                            else{
+                                $csvData[$counter][$mapped[0]] = '';
+                            }
                         }
                     }
                 }
@@ -156,15 +159,9 @@ class DMS_Sparkstone_Model_Stock extends DMS_Sparkstone_Model_Abstract
     public function fetchCategoryIds($xml, $mapped) {
         $categoryIds = array();
         $decoder = Mage::getSingleton('sparkstone/categoryDecoder');
-        $categoryFields = explode(',', $mapped[1]);
-        if (is_array($categoryFields)) {
-            foreach ($categoryFields as $label) {
-                $label = trim($label);
-                if (!empty($xml[$label])) {
-                    $categoryIds[] = $decoder->decode($xml[$label]);
-                }
-            }
-        }
+        $decoder->loadMappings();
+        $categoryFields = explode(',', $xml[$mapped[1]]);
+        $categoryIds = $decoder->decode($categoryFields);
         return $categoryIds;
     }
 }

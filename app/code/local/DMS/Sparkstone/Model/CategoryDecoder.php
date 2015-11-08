@@ -10,15 +10,24 @@
 
 class DMS_Sparkstone_Model_CategoryDecoder extends Mage_Core_Model_Abstract
 {
-    protected $_categorIds = array();
+    protected $_mappings = array();
+    protected $_readConnection = null;
 
-    public function decode($name) {
-        if (empty($this->_categorIds[$name])) {
-            $category = Mage::getModel('catalog/category')->load($name, 'name');
-            if ($category->getId()) {
-                $this->_categorIds[$name] = $category->getId();
+    public function __construct(){
+        $this->_readConnection = Mage::getSingleton('core/resource')->getConnection('core_read');
+    }
+
+    public function decode($spk_ids) {
+        $magento_cat_ids = array();
+        foreach($spk_ids as $spk_id){
+            if(isset($this->_mappings[$spk_id])){
+                $magento_cat_ids[] = $this->_mappings[$spk_id]['magento_cat_id'];
             }
         }
-        return !empty($this->_categorIds[$name]) ? $this->_categorIds[$name] : null;
+        return $magento_cat_ids;
+    }
+
+    public function loadMappings(){
+        $this->_mappings = $this->_readConnection->fetchAssoc('SELECT * FROM dms_sparkstone_category_map');
     }
 }
