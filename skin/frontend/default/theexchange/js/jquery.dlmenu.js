@@ -71,7 +71,7 @@
 			this.$menu = this.$el.children( 'ul.dl-menu' );
 			this.$menuitems = this.$menu.find( 'li:not(.dl-back)' );
 			this.$el.find( 'ul.dl-submenu' ).prepend( '<li class="dl-back"><a href="#">back</a></li>' );
-			this.$back = this.$menu.find( 'li.dl-back' );
+            this.$back = this.$menu.find( 'li.dl-back' );
 		},
 		_initEvents : function() {
 
@@ -204,6 +204,7 @@
 				$( this ).removeClass( 'dl-menu-toggle' );
 			} );
 			this.$trigger.addClass( 'dl-active' );
+            jQuery("#dl-menu .dl-menu").show();
 			this.open = true;
 		},
 		// resets the menu to its original state (first level of options)

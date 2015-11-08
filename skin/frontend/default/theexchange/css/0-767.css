@@ -16,7 +16,8 @@
   .wrapper .header-container .fixed-container .cms-menu .welcome-msg { display: block; float: right; width: -moz-calc(100% - 116px); width: -o-calc(100% - 116px); width: -webkit-calc(100% - 116px); width: calc(100% - 116px); }
   .wrapper .header-container .fixed-container .cms-menu .welcome-msg p { color: #fff; line-height: 47px; font-size: 15px; font-family: 'houschka_alt_promedium'; font-style: normal; font-weight: normal; }
   .wrapper .header-container .fixed-container .cms-menu .dl-menuwrapper { z-index: 9999; max-width: 218px; }
-  .wrapper .header-container .fixed-container .cms-menu .dl-menuwrapper .dl-menu { margin: 3px 0 0 0; }
+  .wrapper .header-container .fixed-container .cms-menu .dl-menuwrapper .dl-submenu { max-width: 247px; }
+  .wrapper .header-container .fixed-container .cms-menu .dl-menuwrapper .dl-menu { margin: 3px 0 0 0; display: none; max-width: 247px; }
   .wrapper .header-container .fixed-container .cms-menu .dl-menuwrapper .dl-menu.dl-subview li.title { display: block; }
   .wrapper .header-container .fixed-container .cms-menu .dl-menuwrapper button { background: #000; }
   .wrapper .header-container .fixed-container .cms-menu .dl-menuwrapper button:hover, .wrapper .header-container .fixed-container .cms-menu .dl-menuwrapper button .dl-active { background: #000; }
