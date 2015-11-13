@@ -93,7 +93,7 @@ class WP_CustomMenu_Block_Navigation extends Mage_Catalog_Block_Navigation
             if (count($activeChildren)) {
                 $columns = (int)Mage::getStoreConfig('custom_menu/columns/count');
                 $html[] = '<div class="block1">';
-                $html[] = '<div class="block_title">'.$this->__("Brands").'</div>';
+//                $html[] = '<div class="block_title">'.$this->__("Brands").'</div>';
                 $html[] = $this->drawColumns($activeChildren, $columns);
                 $html[] = '<div class="clearBoth"></div>';
                 $html[] = '</div>';

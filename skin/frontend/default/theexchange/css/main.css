@@ -304,7 +304,9 @@ body.overlay .search-label, body.overlay .search-inputs, body.overlay .filter-re
 #custommenu div.menu.active a { background: #000 !important; color: #e3e3e3 !important; position: relative; z-index: 20000; }
 #custommenu div.menu.active a:after { top: 100%; left: 50%; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: rgba(0, 0, 0, 0); border-top-color: #000; border-width: 15px; margin-left: -15px; }
 #custommenu div.wp-custom-menu-popup { background: #fff; padding: 33px 62px; box-sizing: border-box; top: 42px !important; }
-#custommenu div.wp-custom-menu-popup .block1, #custommenu div.wp-custom-menu-popup .block2 { float: left; width: 49%; }
+#custommenu div.wp-custom-menu-popup .itemMenu > a.itemMenuName { text-transform: uppercase; border-bottom: 1px solid #ff0000; padding-left: 0; padding-bottom: 7px; margin-bottom: 6px; }
+#custommenu div.wp-custom-menu-popup .itemMenu .itemSubMenu a.itemMenuName { border-bottom: none; text-transform: lowercase; padding-bottom: 3px; line-height: 20px; margin-bottom: 0; }
+#custommenu div.wp-custom-menu-popup .block1, #custommenu div.wp-custom-menu-popup .block2 { float: left; width: 100%; }
 #custommenu div.wp-custom-menu-popup .block2 { margin-left: 2%; }
 #custommenu div.wp-custom-menu-popup .block_title { font-family: 'houschkaalt-bold-italic-regular'; font-weight: normal; font-style: normal; font-size: 25px; color: #000; border-bottom: 1px solid #ff0000; margin-bottom: 20px; }
 #custommenu div.wp-custom-menu-popup .block1 .column { float: left; width: 32%; margin-left: 2%; }

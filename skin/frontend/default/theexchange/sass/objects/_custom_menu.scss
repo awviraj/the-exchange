@@ -54,10 +54,29 @@
       box-sizing: border-box;
       top:42px !important;
 
+      .itemMenu{
+        > a.itemMenuName{
+          text-transform: uppercase;
+          border-bottom: 1px solid #ff0000;
+          padding-left: 0;
+          padding-bottom: 7px;
+          margin-bottom: 6px;
+        }
+        .itemSubMenu{
+          a.itemMenuName{
+            border-bottom: none;
+            text-transform: lowercase;
+            padding-bottom: 3px;
+            line-height: 20px;
+            margin-bottom: 0;
+          }
+        }
+      }
+
 
       .block1,.block2{
         float: left;
-        width: 49%;
+        width: 100%;
 
       }
       .block2{
