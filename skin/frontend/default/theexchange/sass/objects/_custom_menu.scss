@@ -56,13 +56,29 @@
 
       .itemMenu{
         > a.itemMenuName{
-          text-transform: uppercase;
-          border-bottom: 1px solid #ff0000;
+         // border-bottom: 1px solid #fff;
           padding-left: 0;
           padding-bottom: 7px;
           margin-bottom: 6px;
+
+          span{
+            display: inline;
+            border-bottom: 1px solid #fff;
+          }
+
+          &:hover{
+            //border-bottom: 1px solid #ff0000;
+            background: none;
+            //color: #ff0000;
+            //text-decoration: underline;
+            span{
+              color: #ff0000;
+              border-bottom: 1px solid #ff0000;
+            }
+          }
         }
         .itemSubMenu{
+          display: none;
           a.itemMenuName{
             border-bottom: none;
             text-transform: lowercase;
