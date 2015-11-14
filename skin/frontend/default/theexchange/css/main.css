@@ -247,8 +247,8 @@ body.overlay .search-label, body.overlay .search-inputs, body.overlay .filter-re
 .qty-wrapper .qty { float: left; margin-right: 5px; border: none; max-width: 100px; margin-left: 0px; text-align: center; line-height: 30px; margin-top: 2px; font-family: 'houschka_alt_probold'; font-weight: normal; font-size: 18px; color: #000; }
 
 #list-items { float: left; width: 100%; border-top: 1px solid #ff0000; padding-top: 33px; }
-#list-items #slider-content { width: 100% !important; height: auto !important; background: #f1f2f2; border: none; }
-#list-items #slider-content #sl-screen { height: 171px !important; }
+#list-items #slider-content { width: 100% !important; height: auto !important; background: #ffffff; border: none; }
+#list-items #slider-content #sl-screen { height: 171px !important; padding-left: 0; }
 #list-items #slider-content #sl-screen #sl-view { height: auto !important; }
 #list-items #slider-content #sl-screen #left { background: url("../images/sprite.png") 9px -823px black; left: 0px; }
 #list-items #slider-content #sl-screen #right { background: url("../images/sprite.png") -55px -823px black; right: 0px; }

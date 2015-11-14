@@ -7,11 +7,12 @@
   #slider-content{
     width: 100% !important;
     height: auto !important;
-    background: #f1f2f2;
+    background: #ffffff;
     border: none;
 
     #sl-screen {
       height: 171px !important;
+      padding-left: 0;
       #sl-view{
         height: auto !important;
       }
