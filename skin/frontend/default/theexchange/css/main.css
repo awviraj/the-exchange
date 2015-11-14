@@ -67,7 +67,7 @@ body { background: url("../images/body-bg.png") repeat; font-size: 14px; font-fa
 .footer_brand_section ul li a { max-width: 87px; display: block; }
 .footer_brand_section ul li a img { max-width: 100%; }
 
-.footer-bottom { text-align: center; padding: 30px 0 15px; }
+.footer-bottom { float: left; width: 100%; text-align: center; padding: 30px 0 15px; }
 .footer-bottom .logo { width: 235px; margin: 0 auto; float: none; display: block; }
 .footer-bottom .logo img { max-width: 100%; }
 .footer-bottom .footer_copyright_links { padding-top: 20px; color: #6d6d6d; }

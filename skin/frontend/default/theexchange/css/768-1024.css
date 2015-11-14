@@ -5,4 +5,5 @@
   .wrapper .menu-search-wrapper .search-row { margin-right: 0; margin-left: 0; }
   .wrapper .menu-search-wrapper .search-box { max-width: 100%; }
   .wrapper .menu-search-wrapper:after, .wrapper .menu-search-wrapper:before { display: none; }
-  .wrapper .navbar-container .navbar { max-width: 100%; } }
+  .wrapper .navbar-container .navbar { max-width: 100%; }
+  .product-view .product-shop .add-to-box .add-to-cart { float: left !important; } }
