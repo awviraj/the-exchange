@@ -1,6 +1,41 @@
 @import "partials/variables";
 @import "partials/mixins";
 
+.col-left{
+  .block-account{
+    border: 3px solid red;
+    .block-title{
+      background-color: $primary-red;
+      height: 35px;
+      margin-bottom: 0;
+      h2,strong{
+        font-size: 16px;
+        color: #ffffff;
+        font-family: 'houschka_alt_probold';
+        line-height: 35px;
+        text-align: center;
+      }
+
+    }
+    li{
+      background:none;
+      //height: 38px;
+      line-height: 30px;
+      margin: 0;
+      border-bottom: 1px solid #e3e3e3;
+      color: #585858;
+      font-family: 'houschka_alt_promedium';
+      font-size: 14px;
+      font-weight: normal;
+
+      &:last-of-type{
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+
 .login-register{
   .page-title{
     border-bottom: none;
@@ -160,4 +195,7 @@ h2{
   .buttons-set{
     padding: 20px 15px;
   }
+}
+.my-account{
+  line-height: 20px;
 }

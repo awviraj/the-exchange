@@ -157,6 +157,12 @@ body { background: url("../images/body-bg.png") repeat; font-size: 14px; font-fa
 .qty-wrapper { background: url("../images/btn-sprite.png") no-repeat -11px -309px; width: 132px; height: 51px; float: left; }
 .qty-wrapper .qty { float: left; margin-right: 5px; border: none; max-width: 100px; margin-left: 0px; text-align: center; line-height: 30px; margin-top: 2px; font-family: 'houschka_alt_probold'; font-weight: normal; font-size: 18px; color: #000; }
 
+.col-left .block-account { border: 3px solid red; }
+.col-left .block-account .block-title { background-color: red; height: 35px; margin-bottom: 0; }
+.col-left .block-account .block-title h2, .col-left .block-account .block-title strong { font-size: 16px; color: #ffffff; font-family: 'houschka_alt_probold'; line-height: 35px; text-align: center; }
+.col-left .block-account li { background: none; line-height: 30px; margin: 0; border-bottom: 1px solid #e3e3e3; color: #585858; font-family: 'houschka_alt_promedium'; font-size: 14px; font-weight: normal; }
+.col-left .block-account li:last-of-type { border-bottom: none; }
+
 .login-register .page-title { border-bottom: none; }
 .login-register h2 { font-family: 'houschka_alt_probold'; font-weight: normal; color: #000; font-size: 18px; margin-bottom: 15px; }
 .login-register h3 { font-family: 'houschka_alt_promedium'; font-weight: bold; font-size: 18px; color: black; text-transform: none; margin-bottom: 15px; padding-left: 0; }
@@ -182,6 +188,8 @@ body { background: url("../images/body-bg.png") repeat; font-size: 14px; font-fa
 .account-create h2 { padding-left: 15px; }
 .account-create .login-info { margin-top: 30px; }
 .account-create .buttons-set { padding: 20px 15px; }
+
+.my-account { line-height: 20px; }
 
 .qty-wrapper { background: url("../images/btn-sprite.png") no-repeat -11px -309px; width: 132px; height: 51px; float: left; }
 .qty-wrapper .qty { float: left; margin-right: 5px; border: none; max-width: 100px; margin-left: 0px; text-align: center; line-height: 30px; margin-top: 2px; font-family: 'houschka_alt_probold'; font-weight: normal; font-size: 18px; color: #000; }
