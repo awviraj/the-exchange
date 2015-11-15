@@ -17,8 +17,12 @@
 
     .product-shop {
       .add-to-box {
+        .add-to-cart{
+          float: left !important;
+        }
         .btn-cart{
           margin-top: 20px;
+          clear: both;
         }
       }
     }
