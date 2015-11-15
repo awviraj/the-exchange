@@ -84,18 +84,14 @@ jQuery(document).ready(function(){
 
 
     jQuery('.wrapper').addClass('canvas');
-   createMobileMenu();
+   //createMobileMenu();
     if(jQuery(window).width() < 768){
-        //createMobileMenu();
-        console.log('11')
         if (jQuery('.m-menu-wrapper .navbar-container').length > 0){
             return;
         }
         else{
           createMobileMenu();
-            console.log('11')
         }
-
 
     }
 
@@ -110,16 +106,12 @@ jQuery(document).ready(function(){
         }
     })
 
-    jQuery(".navbar-container").clone().prependTo(".m-menu-wrapper");
-    jQuery(".menu-search-wrapper .cl-effect-21").clone().prependTo(".m-menu-wrapper");
-    console.log('222')
-    jQuery('<h2>Our products</h2>').prependTo("#custommenu");
+
 
     function createMobileMenu(){
-//        jQuery(".navbar-container").clone().prependTo(".m-menu-wrapper");
-//       jQuery(".cms-menu .cl-effect-21").clone().prependTo(".m-menu-wrapper");
-//        console.log('222')
-//        jQuery('<h2>Our products</h2>').prependTo("#custommenu");
+        jQuery(".navbar-container").clone().prependTo(".m-menu-wrapper");
+        jQuery(".menu-search-wrapper .cl-effect-21").clone().prependTo(".m-menu-wrapper");
+        jQuery('<h2>Our products</h2>').prependTo("#custommenu");
     }
     function menuReset(){
        // jQuery(".navbar-container").prependTo(".page")
