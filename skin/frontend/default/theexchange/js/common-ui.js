@@ -82,7 +82,7 @@ jQuery(document).ready(function(){
 
     ///////////mobile menu
     jQuery( '#dl-menu' ).dlmenu({
-        animationClasses : { in : 'dl-animate-in-4', out : 'dl-animate-out-4' }
+        animationClasses : { in : 'dl-animate-in-3', out : 'dl-animate-out-3' }
     });
 
     var docHeight= jQuery('body').height();
