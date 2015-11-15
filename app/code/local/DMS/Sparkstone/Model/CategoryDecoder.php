@@ -21,13 +21,13 @@ class DMS_Sparkstone_Model_CategoryDecoder extends Mage_Core_Model_Abstract
         $magento_cat_ids = array();
         foreach($spk_ids as $spk_id){
             if(isset($this->_mappings[$spk_id])){
-                $magento_cat_ids[] = $this->_mappings[$spk_id]['magento_cat_id'];
+                $magento_cat_ids[] = $this->_mappings[$spk_id]['entity_id'];
             }
         }
         return $magento_cat_ids;
     }
 
     public function loadMappings(){
-        $this->_mappings = $this->_readConnection->fetchAssoc('SELECT * FROM dms_sparkstone_category_map');
+        $this->_mappings = $this->_readConnection->fetchAssoc('SELECT spk_id, entity_id  FROM catalog_category_entity WHERE spk_id IS NOT NULL');
     }
 }

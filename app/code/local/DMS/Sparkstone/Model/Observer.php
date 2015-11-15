@@ -10,10 +10,18 @@ class DMS_Sparkstone_Model_Observer
 {
     public function sparkstoneProductImport()
     {
-        echo "Cron Job is Starting\r\n";
+        echo "Cron Job is Starting (product)\r\n";
         $sparkStone = Mage::getModel('sparkstone/stock');
         $sparkStone->prepareStockFile();
         $sparkStone->importProducts();
+        echo "Done\r\n";
+    }
+
+    public function sparkstoneCategoryImport()
+    {
+        echo "Cron Job is Starting (category)\r\n";
+        $sparkStone = Mage::getModel('sparkstone/category');
+        $sparkStone->importCategories();
         echo "Done\r\n";
     }
 }

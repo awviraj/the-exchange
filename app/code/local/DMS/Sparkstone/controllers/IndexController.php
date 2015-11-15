@@ -17,6 +17,7 @@ class DMS_Sparkstone_IndexController extends Mage_Core_Controller_Front_Action {
     }
 
     public function categoryAction() {
+        $sparkStone = Mage::getModel('sparkstone/categoryDecoder')->loadMappings();die;;
         $sparkStone = Mage::getModel('sparkstone/category');
         $sparkStone->importCategories();
     }

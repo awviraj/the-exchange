@@ -12,6 +12,7 @@ class DMS_Sparkstone_Model_Category extends DMS_Sparkstone_Model_Abstract
 {
     protected $_magentoCategories = array();
     protected $_magentoLeveledCategories = array();
+    protected $_magentoActiveCategories = array();
     protected $_spkLeveledCategories = array();
     protected $_categoryMap = array();
     protected $_writeConnection = null;
@@ -27,6 +28,9 @@ class DMS_Sparkstone_Model_Category extends DMS_Sparkstone_Model_Abstract
             $this->logger('Saving category data');
             $this->_importCategories($categoryData);
             $this->logger('Save complete');
+            $this->logger('Disabling Categories');
+            $this->_disableCategories();
+            $this->logger('Disable complete');
         }
     }
 
@@ -56,30 +60,20 @@ class DMS_Sparkstone_Model_Category extends DMS_Sparkstone_Model_Abstract
 
     protected function _getMagentoCategoryData(){
         Mage::app()->setCurrentStore(Mage_Core_Model_App::ADMIN_STORE_ID);
-        $categories = null;
         $this->_magentoCategories = Mage::getModel('catalog/category')
             ->getCollection()
             ->addAttributeToSelect('name')
+            ->addAttributeToFilter('name',array('nin'=>array('Root Catalog','Default Category')))
             ->load()
             ->exportToArray();
 
         foreach($this->_magentoCategories as $category)
         {
-            $namePath = $this->_createNamePath($category['path']);
-            $this->_magentoLeveledCategories[$category['level']] [$namePath]= $category;
-            $this->_magentoLeveledCategories[$category['level']] [$namePath]['name_path']= $namePath;
+            if(!empty($category['spk_path'])){
+                $this->_magentoLeveledCategories[$category['level']] [$category['spk_path']]= $category;
+                $this->_magentoLeveledCategories[$category['level']] [$category['spk_path']]['id_path']= $category['spk_path'];
+            }
         }
-        return $categories;
-    }
-
-    protected function _createNamePath($idPath){
-        $idPath = explode('/',$idPath);
-        foreach($idPath as $id){
-            $namePath[] = $this->_magentoCategories[(int)$id]['name'];
-        }
-        $namePath = implode('/',$namePath);
-        $namePath = str_replace(array('Root Catalog','/Default Category/','/Default Category'),'',$namePath);
-        return $namePath;
     }
 
     /**
@@ -91,7 +85,7 @@ class DMS_Sparkstone_Model_Category extends DMS_Sparkstone_Model_Abstract
         $allStores = Mage::app()->getStores();
         foreach($this->_spkLeveledCategories as $level=>$spkLevelCategories){
             foreach($spkLevelCategories as $spkLevelCategory){
-                if(!isset($this->_magentoLeveledCategories[$level+1]) || !isset($this->_magentoLeveledCategories[$level+1][$spkLevelCategory['name_path']])) {
+                if(!isset($this->_magentoLeveledCategories[$level+1]) || !isset($this->_magentoLeveledCategories[$level+1][$spkLevelCategory['id_path']])) {
                     foreach ($allStores as $store) {
                         try {
                             $category = Mage::getModel('catalog/category');
@@ -106,7 +100,9 @@ class DMS_Sparkstone_Model_Category extends DMS_Sparkstone_Model_Abstract
                             $parentCategory = Mage::getModel('catalog/category')->load($parentId);
                             $category->setPath($parentCategory->getPath());
                             $category->save();
-                            $this->_categoryMap[$spkLevelCategory['CategoryNumber']] = $category->getEntityId();
+                            $this->_categoryMap[$category->getEntityId()]['spk_id'] = $spkLevelCategory['CategoryNumber'];
+                            $this->_categoryMap[$category->getEntityId()]['spk_path'] = $spkLevelCategory['id_path'];
+                            $this->_magentoActiveCategories[$category->getEntityId()] = $category->getEntityId();
                             unset($category);
                         } catch (Exception $e) {
                             Mage::logException($e);
@@ -114,18 +110,38 @@ class DMS_Sparkstone_Model_Category extends DMS_Sparkstone_Model_Abstract
                     }
                 }
                 else{
-                    $this->_categoryMap[$spkLevelCategory['CategoryNumber']] = $this->_magentoLeveledCategories[$level+1][$spkLevelCategory['name_path']]['entity_id'];
-                    continue;
+                    foreach ($allStores as $store){
+                        if(isset($this->_magentoLeveledCategories[$level+1]) || isset($this->_magentoLeveledCategories[$level+1][$spkLevelCategory['id_path']]))
+                        {
+                            try {
+                                $category = Mage::getModel('catalog/category')->setStoreId($store->getStoreId())->load($this->_magentoLeveledCategories[$level+1][$spkLevelCategory['id_path']]['entity_id']);
+                                if($category->getName() != $spkLevelCategory['CategoryName'] || !$category->getIsActive()){
+                                    $category->setIsActive(1);
+                                    $category->setName($spkLevelCategory['CategoryName']);
+                                    $category->setStoreId($store->getStoreId());
+                                    $category->save();
+                                }
+                                $this->_magentoActiveCategories[$category->getEntityId()] = $category->getEntityId();
+                                unset($category);
+                            } catch (Exception $e) {
+                                Mage::logException($e);
+                            }
+                        }
+                        $this->_categoryMap[$this->_magentoLeveledCategories[$level+1][$spkLevelCategory['id_path']]['entity_id']]['spk_id']  = $spkLevelCategory['CategoryNumber'];
+                        $this->_categoryMap[$this->_magentoLeveledCategories[$level+1][$spkLevelCategory['id_path']]['entity_id']]['spk_path']  = $spkLevelCategory['id_path'];
+                    }
+                    //continue;
                 }
             }
+            $this->_createCategoryMap();
             $level++;
             $this->_getMagentoCategoryData();
         }
-        $this->_createCategoryMap();
+
     }
 
     protected function _getParentId($spkLevelCategory,$level){
-        $namePath = $this->_spkLeveledCategories[$level-1][$spkLevelCategory['ParentCategory']]['name_path'];
+        $namePath = $this->_spkLeveledCategories[$level-1][$spkLevelCategory['ParentCategory']]['id_path'];
         $id = $this->_magentoLeveledCategories[$level][$namePath]['entity_id'];
         return $id;
     }
@@ -140,7 +156,7 @@ class DMS_Sparkstone_Model_Category extends DMS_Sparkstone_Model_Abstract
         foreach($spkCategoryData as $key=>$spkCategory){
             if($spkCategory['ParentCategory']=='0'){
                 $this->_spkLeveledCategories[1][$spkCategory['CategoryNumber']] = $spkCategory;
-                $this->_spkLeveledCategories[1][$spkCategory['CategoryNumber']]['name_path'] = $spkCategory['CategoryName'];
+                $this->_spkLeveledCategories[1][$spkCategory['CategoryNumber']]['id_path'] = $spkCategory['CategoryNumber'];
                 unset($spkCategoryData[$key]);
             }
         }
@@ -152,7 +168,7 @@ class DMS_Sparkstone_Model_Category extends DMS_Sparkstone_Model_Abstract
             foreach($spkCategoryData as $key=>$spkCategory){
                 if(array_key_exists($spkCategory['ParentCategory'],$this->_spkLeveledCategories[$level-1])){
                     $this->_spkLeveledCategories[$level][$spkCategory['CategoryNumber']] =  $spkCategory;
-                    $this->_spkLeveledCategories[$level][$spkCategory['CategoryNumber']]['name_path'] = $this->_spkLeveledCategories[$level-1][$spkCategory['ParentCategory']]['name_path'].'/'.$spkCategory['CategoryName'];
+                    $this->_spkLeveledCategories[$level][$spkCategory['CategoryNumber']]['id_path'] = $this->_spkLeveledCategories[$level-1][$spkCategory['ParentCategory']]['id_path'].'/'.$spkCategory['CategoryNumber'];
                     unset($spkCategoryData[$key]);
                     $changes = true;
                 }
@@ -163,15 +179,36 @@ class DMS_Sparkstone_Model_Category extends DMS_Sparkstone_Model_Abstract
 
     protected function _createCategoryMap(){
         $insertQuery = '';
-        foreach($this->_categoryMap as $spkID=>$magID)
+        foreach($this->_categoryMap as $magID=>$spk)
         {
-            $insertQuery.= '("'.$spkID.'","'.$magID.'"),';
+            $insertQuery.= '("'.$magID.'","'.$spk['spk_id'].'","'.$spk['spk_path'].'"),';
         }
         if(!empty($insertQuery)){
-            $insertQuery = "INSERT INTO dms_sparkstone_category_map VALUES ".$insertQuery;
-            $insertQuery = trim($insertQuery,',');
-            $this->_writeConnection-> query('DELETE FROM dms_sparkstone_category_map');
+            $insertQuery = "INSERT INTO catalog_category_entity (entity_id,spk_id,spk_path) VALUES ".trim($insertQuery,',').
+                " ON DUPLICATE KEY UPDATE spk_id=VALUES(spk_id),spk_path=VALUES(spk_path);";
             $this->_writeConnection-> query($insertQuery);
+        }
+        $this->_categoryMap = array();
+    }
+
+    protected function _disableCategories(){
+        //not configured for stores.
+        $cats_to_disable = Mage::helper('sparkstone')->getStoreConfig('spk_cats_to_disable', 'sparkstone/api/');
+        $cats_to_disable = explode(",",$cats_to_disable);
+        $cats_to_disable = array_map('trim',$cats_to_disable);
+        foreach($this->_magentoCategories as $category)
+        {
+            if(in_array($category['spk_id'],$cats_to_disable) || (!empty($category['spk_path']) && !in_array($category['entity_id'],$this->_magentoActiveCategories))){
+                try{
+                    $cat = Mage::getModel('catalog/category')->load($category['entity_id']);
+                    if($cat->getIsActive()){
+                        $cat->setIsActive(0);
+                        $cat->save();
+                    }
+                } catch (Exception $e) {
+                    Mage::logException($e);
+                }
+            }
         }
     }
 

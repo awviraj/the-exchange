@@ -16,7 +16,7 @@
     </tabs>
     <sections>
         <sparkstone translate="label">
-            <label>Sparkstone Productimport</label>
+            <label>Sparkstone Product and Category Import</label>
             <tab>dms</tab>
             <frontend_type>text</frontend_type>
             <sort_order>1</sort_order>
@@ -26,7 +26,7 @@
 
             <groups>
                 <api translate="label">
-                    <label>API URL</label>
+                    <label>Import Settings</label>
                     <frontend_type>text</frontend_type>
                     <sort_order>0</sort_order>
                     <show_in_default>1</show_in_default>
@@ -127,6 +127,17 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </importpath>
+                        <spk_cats_to_disable>
+                            <label>Categories to disable</label>
+                            <comment>
+                                <![CDATA[Sparkstone category ids to disable after category import (comma separated)]]>
+                            </comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>300</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </spk_cats_to_disable>
                     </fields>
                 </api>
             </groups>
