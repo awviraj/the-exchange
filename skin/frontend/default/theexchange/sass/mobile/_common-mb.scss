@@ -1,6 +1,9 @@
 @import "../partials/mixins";
 
 .wrapper{
+  .page{
+    overflow: hidden;
+  }
   .header-container {
     .header{
       .top-quick-links,.call-us,.quick-access{
