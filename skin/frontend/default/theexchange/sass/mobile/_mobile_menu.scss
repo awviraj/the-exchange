@@ -1,0 +1,160 @@
+@import "../partials/mixins";
+.m-menu-wrapper{
+  display: block;
+}
+.navbar-container{
+  display: none;
+}
+#site-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  background: #000;
+}
+#site-canvas{
+  //  -webkit-transform: translateX(0);
+  //  transform: translateX(0);
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+}
+
+#site-wrapper.show-nav #site-canvas{
+  -webkit-transform: translateX(250px);
+  transform: translateX(250px);
+}
+.m-menu-wrapper{
+  padding-top: 36px;
+  display: block;
+  width: 250px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -250px;
+  background: #000;
+  padding: 15px;
+
+  .navbar-container{
+    display: block;
+    margin-top: 25px;
+    float: left;
+    width: 100%;
+
+    .menu{
+      border-bottom: 1px solid #212121;
+    }
+  }
+  .m-close{
+    position: absolute;
+    right: 0px;
+    padding: 10px;
+    top: 0;
+    color: #fff;
+    background: #333;
+    font-size: 16px;
+
+    &:hover{
+      color: #fff;
+      background: #999;
+    }
+  }
+  h2{
+    background: #e60000;
+    height: auto;
+    font-family: 'houschkaalt-bold-italic-regular';
+    line-height: 21px;
+    font-weight: normal;
+    font-size: 20px;
+    text-align: left;
+    color: #fff;
+    padding: 5px 20px;
+  }
+}
+.show-nav{
+  .page{
+    opacity: 0.175;
+  }
+  .m-close{
+  }
+}
+#site-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  background: #000;
+}
+#site-canvas {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+}
+#m-menu {
+  width: 250px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -250px;
+  background: #000;
+  padding: 15px;
+}
+#site-wrapper.show-nav #site-canvas {
+  -webkit-transform: translateX(250px);
+  transform: translateX(250px);
+}
+
+/*==================================================
+=            CUBIC - Custom Transitions            =
+==================================================*/
+/*
+* Cubic
+* Snappy Acceleration
+ */
+#site-canvas {
+  -webkit-transition: -webkit-transform .33s cubic-bezier(.694, .0482, .335, 1);
+  transition: -webkit-transform .33s cubic-bezier(.694, .0482, .335, 1);
+}
+#custommenu {
+  div.menu{
+    width: 100%;
+    a{
+      text-align: left;
+    }
+  }
+  div.wp-custom-menu-popup{
+    display: none !important;
+  }
+}
+#custommenu div.menu{
+  margin: 0 0;
+}
+#custommenu div.menu.active a:after{
+  display: none;
+}
+
+.cl-effect-21 {
+  a{
+    font-family: 'houschkaalt-medium-regular';
+    font-weight: normal;
+    text-transform: capitalize;
+    padding: 0px 20px 0px 20px;
+    color: #e3e3e3;
+    font-size: 16px;
+    text-align: left;
+    margin: 0;
+    float: left;
+    width: 100%;
+    display: block;
+    border-bottom: 1px solid #212121;
+    line-height: 29px;
+
+    &:hover,&:focus,&:active{
+      text-decoration: none;
+      background: #474646;
+
+      &:before,&:after{
+        content: "";
+        display: none;
+      }
+    }
+  }
+}

@@ -36,27 +36,31 @@
 </head>
 <body<?php echo $this->getBodyClass()?' class="'.$this->getBodyClass().'"':'' ?>>
 <?php echo $this->getChildHtml('after_body_start') ?>
-<div class="wrapper">
-    <?php echo $this->getChildHtml('global_notices') ?>
-    <div class="page">
-        <?php echo $this->getChildHtml('header') ?>
-        <div class="main-container col2-left-layout container">
-            <div class="main">
-                <?php echo $this->getChildHtml('breadcrumbs') ?>
-                <div class="row">
-                    <div class="col-left sidebar col-xs-12 col-sm-12 col-md-3"><?php echo $this->getChildHtml('left') ?></div>
-                    <div class="col-main col-xs-12 col-sm-12 col-md-9 fill">
-                        <?php echo $this->getChildHtml('global_messages') ?>
-                        <?php echo $this->getChildHtml('content') ?>
+<div class="wrapper" id="site-wrapper">
+    <div class="canvas" id="site-canvas">
+        <div class="m-menu-wrapper"><span class="m-close">X</span> </div>
+        <?php echo $this->getChildHtml('global_notices') ?>
+        <div class="page">
+            <?php echo $this->getChildHtml('header') ?>
+            <div class="main-container col2-left-layout container">
+                <div class="main">
+                    <?php echo $this->getChildHtml('breadcrumbs') ?>
+                    <div class="row">
+                        <div class="col-left sidebar col-xs-12 col-sm-12 col-md-3"><?php echo $this->getChildHtml('left') ?></div>
+                        <div class="col-main col-xs-12 col-sm-12 col-md-9 fill">
+                            <?php echo $this->getChildHtml('global_messages') ?>
+                            <?php echo $this->getChildHtml('content') ?>
+                        </div>
                     </div>
-                </div>
 
+                </div>
             </div>
+            <?php echo $this->getChildHtml('footer') ?>
+            <?php echo $this->getChildHtml('global_cookie_notice') ?>
+            <?php echo $this->getChildHtml('before_body_end') ?>
         </div>
-        <?php echo $this->getChildHtml('footer') ?>
-        <?php echo $this->getChildHtml('global_cookie_notice') ?>
-        <?php echo $this->getChildHtml('before_body_end') ?>
     </div>
+
 </div>
 <?php echo $this->getAbsoluteFooter() ?>
 </body>

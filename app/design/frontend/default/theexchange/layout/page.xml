@@ -55,11 +55,10 @@ Default layout, loads most of the pages
 
                 <action method="addItem"><type>skin_js</type><name>js/modernizr.js</name><group>js</group></action>
                 <action method="addItem"><type>skin_js</type><name>js/jquery.bxslider.min.js</name><group>js</group></action>
-                <action method="addItem"><type>skin_js</type><name>js/jquery.dlmenu.js</name><group>plugin</group></action>
+                <!--<action method="addItem"><type>skin_js</type><name>js/jquery.dlmenu.js</name><group>plugin</group></action>-->
                 <action method="addItem"><type>skin_js</type><name>js/common-ui.js</name><group>js</group></action>
 
                 <action method="addItem"><type>skin_css</type><name>css/component.css</name><media>plugin</media></action>
-                <action method="addItem"><type>skin_css</type><name>css/newcomponent.css</name><media>plugin</media></action>
                 <action method="addItem"><type>skin_css</type><name>css/component_menu.css</name><media>plugin</media></action>
                 <action method="addItem"><type>skin_css</type><name>css/normalize.css</name><media>plugin</media></action>
                 <action method="addItem"><type>skin_css</type><name>css/jquery.bxslider.css</name><media>plugin</media></action>

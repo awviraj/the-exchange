@@ -62,7 +62,7 @@
 .qty-wrapper { background: url("../images/btn-sprite.png") no-repeat -11px -309px; width: 132px; height: 51px; float: left; }
 .qty-wrapper .qty { float: left; margin-right: 5px; border: none; max-width: 100px; margin-left: 0px; text-align: center; line-height: 30px; margin-top: 2px; font-family: 'houschka_alt_probold'; font-weight: normal; font-size: 18px; color: #000; }
 
-.col1-layout .col-main { width: 100%; max-width: 966px; margin: 0 auto; }
+.col1-layout .col-main { width: 100%; max-width: 1200px; margin: 0 auto; }
 
 .product-view .mobile-title { display: none; }
 .product-view .product-name h2 { font-size: 29px; font-family: 'houschka_alt_probold'; font-weight: normal; text-transform: capitalize; font-style: normal; line-height: 150%; }

@@ -22,22 +22,22 @@ body { background: url("../images/body-bg.png") repeat; font-size: 14px; font-fa
 
 .wrapper { min-width: 0; width: 100%; }
 
-.menu-search-wrapper { width: 100%; max-width: 1024px; margin: 0 auto; color: #fff; position: relative; }
+.menu-search-wrapper { width: 100%; max-width: 1260px; margin: 0 auto; color: #fff; position: relative; }
 .menu-search-wrapper:after { content: ''; line-height: 0; font-size: 0; width: 0; height: 0; border-top: 67px solid #000; border-bottom: 0px solid transparent; border-left: 0px solid transparent; border-right: 30px solid transparent; position: absolute; top: 0; right: 1px; }
 .menu-search-wrapper:before { content: ''; line-height: 0; font-size: 0; width: 0; height: 0; border-top: 67px solid #000; border-bottom: 0px solid transparent; border-left: 30px solid transparent; border-right: 0px solid transparent; position: absolute; top: 0; left: 0; }
 
-.navbar { max-width: 966px; margin: 0 auto; border-radius: 0; min-height: 42px; background: #000; }
+.navbar { max-width: 1200px; margin: 0 auto; border-radius: 0; min-height: 42px; background: #000; }
 .navbar .container { width: 100%; padding: 0; }
 .navbar .container #nav { width: 100%; }
 .navbar .container #nav li { width: 10%; margin: 0 1%; }
 .navbar .container #nav li:hover { background: #342323; }
 .navbar .container #nav li a { font-family: 'houschkaalt-medium-regular'; font-weight: normal; line-height: 29px; padding: 5px 20px 6px 20px; color: #e3e3e3; font-size: 16px; }
 
-.main { width: 100%; max-width: 966px; box-sizing: border-box; padding: 20px 1%; background: #ffffff; min-height: 0; }
+.main { width: 100%; max-width: 1200px; box-sizing: border-box; padding: 20px 1%; background: #ffffff; min-height: 0; }
 
 .footer-container { width: 100%; }
 .footer-container .footer { width: 100%; box-sizing: border-box; padding: 0; min-height: 0; }
-.footer-container .footer .custom_tweets { max-width: 966px; margin: 0 auto; background: #000; width: 100%; box-sizing: border-box; padding: 20px 65px; color: #fff; }
+.footer-container .footer .custom_tweets { max-width: 1200px; margin: 0 auto; background: #000; width: 100%; box-sizing: border-box; padding: 20px 65px; color: #fff; }
 .footer-container .footer .custom_tweets h3 { font-family: 'houschkaalt-bold-italic-regular'; font-weight: normal; color: #ff0000; font-size: 16px; font-style: normal; text-align: left; }
 .footer-container .footer .custom_tweets p { font-family: 'houschka_alt_prodemibold'; font-size: 14px; text-align: left; line-height: 18px; padding: 10px 0; }
 .footer-container .footer .custom_tweets .date { font-family: 'houschka_alt_promedium'; font-style: normal; font-weight: normal; float: left; font-size: 12px; }
@@ -45,7 +45,7 @@ body { background: url("../images/body-bg.png") repeat; font-size: 14px; font-fa
 .footer-container .footer .custom_tweets .qoute span { font-family: 'houschkaalt-heavy-italic-regular'; font-size: 27px; line-height: 30px; font-style: normal; font-weight: normal; position: relative; }
 .footer-container .footer .custom_tweets .qoute span:before { content: url("../images/open-qoute.png"); position: absolute; left: -23px; top: -8px; }
 .footer-container .footer .custom_tweets .qoute span:after { content: url("../images/close-qoute.png"); float: right; position: absolute; right: -22px; top: 7px; }
-.footer-container .footer .custom_red_triangle { margin: 0 auto; max-width: 966px; width: 100%; position: relative; }
+.footer-container .footer .custom_red_triangle { margin: 0 auto; max-width: 1200px; width: 100%; position: relative; }
 .footer-container .footer .custom_red_triangle img { width: 100%; max-width: 100%; }
 .footer-container .footer .custom_red_triangle .call_us { position: absolute; bottom: 0; left: 50%; bottom: 54px; margin-left: -70px; width: 140px; text-align: center; }
 .footer-container .footer .custom_red_triangle .call_us .custom_x_logo { width: 142px; height: 96px; background: url("../images/sprite.png") no-repeat 0 -562px transparent; text-align: left; text-indent: -3000px; }
@@ -53,7 +53,7 @@ body { background: url("../images/body-bg.png") repeat; font-size: 14px; font-fa
 .footer-container .footer .custom_red_triangle .call_us .phone_no { font-family: 'houschka_alt_probold'; font-weight: normal; color: #fff; font-size: 15px; }
 
 .footer_links_wrapper { margin-top: 58px; width: 100%; border-top: 4px solid #ff0000; background: #fff; float: left; padding-bottom: 20px; }
-.footer_links_wrapper .footer_links_subwrapper { padding: 23px 5% 32px; margin: 0 auto; max-width: 966px; width: 100%; box-sizing: border-box; }
+.footer_links_wrapper .footer_links_subwrapper { padding: 23px 5% 32px; margin: 0 auto; max-width: 1200px; width: 100%; box-sizing: border-box; }
 .footer_links_wrapper .footer_links_subwrapper .block-content, .footer_links_wrapper .footer_links_subwrapper .block { background: transparent; border: none; }
 .footer_links_wrapper .footer_links_col2, .footer_links_wrapper .footer_links_col2, .footer_links_wrapper .config_footer_links { float: left; width: 16%; text-align: left; }
 .footer_links_wrapper .footer_links_col2 ul li, .footer_links_wrapper .footer_links_col2 ul li, .footer_links_wrapper .config_footer_links ul li { display: block; float: left; width: 100%; }
@@ -103,7 +103,7 @@ body { background: url("../images/body-bg.png") repeat; font-size: 14px; font-fa
 .breadcrumbs li a { color: #ff0000; }
 
 .header-container { background: url("../images/page-bg.png") repeat-x top; padding-top: 2px; }
-.header-container .header { width: 100%; height: 160px; margin-top: -3px; max-width: 1024px; padding: 0 30px 0 30px; background: url("../images/header-bg.png") repeat-x bottom white; box-shadow: 0 0 0px 0px white, 0 -9px 0px 0px white, 12px 0 15px -4px rgba(204, 204, 204, 0.8), -12px 0 15px -4px rgba(204, 204, 204, 0.8); border-bottom: 4px solid #da0000; border-top: 1px solid #d8d9d9; box-sizing: border-box; }
+.header-container .header { width: 100%; height: 160px; margin-top: -3px; max-width: 1260px; padding: 0 30px 0 30px; background: url("../images/header-bg.png") repeat-x bottom white; box-shadow: 0 0 0px 0px white, 0 -9px 0px 0px white, 12px 0 15px -4px rgba(204, 204, 204, 0.8), -12px 0 15px -4px rgba(204, 204, 204, 0.8); border-bottom: 4px solid #da0000; border-top: 1px solid #d8d9d9; box-sizing: border-box; }
 .header-container .header .call-us { float: left; margin-top: 105px; font-family: 'houschkaalt-medium-regular'; font-weight: normal; font-weight: normal; font-size: 12px; color: #282727; text-align: left; }
 .header-container .header .call-us h2 { font-family: 'houschka_alt_probold'; font-weight: normal; color: #ff0000; font-size: 20px; }
 .header-container .header .logo-div { max-width: 420px; width: 100%; margin: 0 auto; margin-top: 34px; float: none; }
@@ -226,7 +226,7 @@ input:-webkit-autofill { -webkit-box-shadow: 0 0 0px 1000px white inset; }
 .cms-index-index .search-box .form-search .search-inputs #search.overlay { z-index: 99999; position: relative; }
 .cms-index-index .search-box .form-search .filter-results { display: none; color: #fff; font-family: 'houschkaalt-bold-regular'; font-weight: normal; font-size: 15px; text-decoration: underline; margin-top: 13px; display: inline-block; }
 
-.search-box { position: relative; max-width: 966px; margin: 0 auto; float: none; height: 86px; background: url("../images/search-box-bg.jpg") no-repeat; background-size: 100%; }
+.search-box { position: relative; max-width: 1200px; margin: 0 auto; float: none; height: 86px; background: url("../images/search-box-bg.jpg") no-repeat; background-size: 100%; }
 .search-box .black-arrow { position: absolute; left: 50%; margin-left: -32px; width: 64px; top: 0; height: 14px; background: url("../images/sprite.png") no-repeat 0 -186px; }
 .search-box .form-search { padding-top: 25px; position: relative; }
 .search-box .form-search .search-close { display: none; position: absolute; top: 10px; right: 10px; width: 13px; height: 13px; background: url("../images/sprite.png") no-repeat -62px -987px; text-align: left; text-indent: -3000px; }
@@ -385,7 +385,9 @@ body.overlay .search-label, body.overlay .search-inputs, body.overlay .filter-re
 .qty-wrapper { background: url("../images/btn-sprite.png") no-repeat -11px -309px; width: 132px; height: 51px; float: left; }
 .qty-wrapper .qty { float: left; margin-right: 5px; border: none; max-width: 100px; margin-left: 0px; text-align: center; line-height: 30px; margin-top: 2px; font-family: 'houschka_alt_probold'; font-weight: normal; font-size: 18px; color: #000; }
 
-.cms-menu { background: #000; padding: 1px 26px; max-width: 964px; margin: 0 auto; }
+.cms-menu { background: #000; padding: 1px 26px; max-width: 1200px; margin: 0 auto; }
+
+.m-menu-wrapper { display: none; }
 
 .cms-menu .cl-effect-21 a { color: #fff; font-size: 15px; font-family: 'houschkaalt-bold-regular'; font-weight: normal; font-weight: normal; text-decoration: none; margin: 15px 38px; }
 .cms-menu .cl-effect-21 a:hover { text-decoration: none; }
@@ -403,7 +405,7 @@ body.overlay .search-label, body.overlay .search-inputs, body.overlay .filter-re
 .fixed-container .header .quick-access { margin-top: 0; }
 .fixed-container .menu-search-wrapper { max-width: 100%; }
 .fixed-container .menu-search-wrapper:after, .fixed-container .menu-search-wrapper:before { border: none; }
-.fixed-container .cms-menu { background: transparent; max-width: 966px; }
+.fixed-container .cms-menu { background: transparent; max-width: 1200px; }
 .fixed-container .cms-menu nav { float: left; }
 .fixed-container .cms-menu nav a { line-height: 10px; padding: 9px 10px; margin: 10px 10px; }
 .fixed-container .small-x-logo { display: block; }

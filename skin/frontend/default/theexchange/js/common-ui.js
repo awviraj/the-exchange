@@ -81,9 +81,75 @@ jQuery(document).ready(function(){
     })
 
     ///////////mobile menu
-    jQuery( '#dl-menu' ).dlmenu({
-        animationClasses : { in : 'dl-animate-in-3', out : 'dl-animate-out-3' }
+
+
+    jQuery('.wrapper').addClass('canvas');
+   createMobileMenu();
+    if(jQuery(window).width() < 768){
+        //createMobileMenu();
+        console.log('11')
+        if (jQuery('.m-menu-wrapper .navbar-container').length > 0){
+            return;
+        }
+        else{
+          createMobileMenu();
+            console.log('11')
+        }
+
+
+    }
+
+    jQuery(window).resize(function(){
+        if(jQuery(window).width() < 768){
+            if (jQuery('.m-menu-wrapper .navbar-container').length > 0){
+               return;
+            }
+            else{
+                createMobileMenu();
+            }
+        }
+    })
+
+    jQuery(".navbar-container").clone().prependTo(".m-menu-wrapper");
+    jQuery(".menu-search-wrapper .cl-effect-21").clone().prependTo(".m-menu-wrapper");
+    console.log('222')
+    jQuery('<h2>Our products</h2>').prependTo("#custommenu");
+
+    function createMobileMenu(){
+//        jQuery(".navbar-container").clone().prependTo(".m-menu-wrapper");
+//       jQuery(".cms-menu .cl-effect-21").clone().prependTo(".m-menu-wrapper");
+//        console.log('222')
+//        jQuery('<h2>Our products</h2>').prependTo("#custommenu");
+    }
+    function menuReset(){
+       // jQuery(".navbar-container").prependTo(".page")
+    }
+    function closeMMenu(){
+
+    }
+    jQuery('.m-nav-menu-link').click(function() {
+        // Calling a function in case you want to expand upon this.
+        toggleNav();
     });
+    jQuery('.m-close').click(function(){
+        toggleNav();
+    })
+
+    function toggleNav() {
+
+        if (jQuery('#site-wrapper').hasClass('show-nav')) {
+            // Do things on Nav Close
+            jQuery('#site-wrapper').removeClass('show-nav');
+        } else {
+            // Do things on Nav Open
+            jQuery('#site-wrapper').addClass('show-nav');
+        }
+
+    }
+
+//    jQuery( '#dl-menu' ).dlmenu({
+//        animationClasses : { in : 'dl-animate-in-3', out : 'dl-animate-out-3' }
+//    });
 
     var docHeight= jQuery('body').height();
     var bodyWidth= jQuery('.wrapper').width();
@@ -111,7 +177,6 @@ jQuery(document).ready(function(){
         auto: true,
         autoControls: false,
         pause: 3000,
-        pager:false,
         controls: true,
         pager:true
 

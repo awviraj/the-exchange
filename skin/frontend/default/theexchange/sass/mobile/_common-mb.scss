@@ -9,7 +9,7 @@
       .top-quick-links,.call-us,.quick-access{
         display: none;
       }
-      height: 113px;
+      height:70px;
       border-bottom: none;
       position: static !important;
       top: auto !important;
@@ -17,6 +17,13 @@
       border-top: 2px Solid #000;
       .logo-div{
         margin-top: 18px;
+      }
+      .logo-div a.logo{
+        text-align: center;
+        img{
+          max-width: 60%;
+          margin: 0 auto;
+        }
       }
     }
     .fixed-container{
@@ -204,7 +211,7 @@
     }
   }
 .navbar-container{
-  display: none;
+  //display: none;
 }
   #list-items {
     #slider-content{
