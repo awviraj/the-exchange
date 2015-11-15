@@ -87,7 +87,7 @@ jQuery(document).ready(function(){
 
     var docHeight= jQuery('body').height();
     var bodyWidth= jQuery('.wrapper').width();
-    jQuery('.dl-menuwrapper ul').height(docHeight);
+   // jQuery('.dl-menuwrapper ul').height(docHeight);
     jQuery('.dl-menuwrapper ul').width(bodyWidth - 45);
 
 
