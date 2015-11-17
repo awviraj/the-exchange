@@ -17,6 +17,7 @@
       border-top: 2px Solid #000;
       .logo-div{
         margin-top: 18px;
+        width: 100%;
       }
       .logo-div a.logo{
         text-align: center;
@@ -296,7 +297,11 @@
 @media (max-width: 340px){
 
   .wrapper .header-container .header .logo-div {
-    margin-top: 30px;
+    margin-top: 13px;
+
+    a.logo img{
+      max-width: 80%;
+    }
   }
 }
 

@@ -3,7 +3,7 @@
   .wrapper .page { overflow: hidden; }
   .wrapper .header-container .header { height: 70px; border-bottom: none; position: static !important; top: auto !important; z-index: 9999; border-top: 2px Solid #000; }
   .wrapper .header-container .header .top-quick-links, .wrapper .header-container .header .call-us, .wrapper .header-container .header .quick-access { display: none; }
-  .wrapper .header-container .header .logo-div { margin-top: 18px; }
+  .wrapper .header-container .header .logo-div { margin-top: 18px; width: 100%; }
   .wrapper .header-container .header .logo-div a.logo { text-align: center; }
   .wrapper .header-container .header .logo-div a.logo img { max-width: 60%; margin: 0 auto; }
   .wrapper .header-container .fixed-container { position: relative !important; display: block !important; top: auto !important; z-index: 9999; }
@@ -87,7 +87,7 @@
   .m-menu-wrapper { padding-top: 36px; display: block; width: 250px; height: 100%; position: absolute; top: 0; left: -250px; background: #000; padding: 15px; }
   .m-menu-wrapper .navbar-container { display: block; margin-top: 25px; float: left; width: 100%; }
   .m-menu-wrapper .navbar-container .menu { border-bottom: 1px solid #212121; }
-  .m-menu-wrapper .m-close { position: absolute; right: 0px; padding: 10px; top: 0; color: #fff; background: #333; font-size: 16px; }
+  .m-menu-wrapper .m-close { position: absolute; right: 0px; padding: 10px; top: 0; color: #fff; background: #e60000; font-size: 16px; }
   .m-menu-wrapper .m-close:hover { color: #fff; background: #999; }
   .m-menu-wrapper h2 { background: #e60000; height: auto; font-family: 'houschkaalt-bold-italic-regular'; line-height: 21px; font-weight: normal; font-size: 20px; text-align: left; color: #fff; padding: 5px 20px; }
   .show-nav .page { opacity: 0.175; }
@@ -103,7 +103,9 @@
   #custommenu div.wp-custom-menu-popup { display: none !important; }
   #custommenu div.menu { margin: 0 0; }
   #custommenu div.menu.active a:after { display: none; }
-  .cl-effect-21 a { font-family: 'houschkaalt-medium-regular'; font-weight: normal; text-transform: capitalize; padding: 0px 20px 0px 20px; color: #e3e3e3; font-size: 16px; text-align: left; margin: 0; float: left; width: 100%; display: block; border-bottom: 1px solid #212121; line-height: 29px; }
+  .cl-effect-21 { margin-top: 22px; }
+  .cl-effect-21 a { font-family: 'houschkaalt-medium-regular'; font-weight: normal; text-transform: capitalize; padding: 0px 20px 0px 20px; color: #e3e3e3; font-size: 16px; text-align: left; margin: 0; float: left; width: 100%; display: block; border-bottom: 1px solid #212121; line-height: 39px; letter-spacing: 0; }
   .cl-effect-21 a:hover, .cl-effect-21 a:focus, .cl-effect-21 a:active { text-decoration: none; background: #474646; }
   .cl-effect-21 a:hover:before, .cl-effect-21 a:hover:after, .cl-effect-21 a:focus:before, .cl-effect-21 a:focus:after, .cl-effect-21 a:active:before, .cl-effect-21 a:active:after { content: ""; display: none; } }
-@media (min-width: 0px) and (max-width: 767px) and (max-width: 340px) { .wrapper .header-container .header .logo-div { margin-top: 30px; } }
+@media (min-width: 0px) and (max-width: 767px) and (max-width: 340px) { .wrapper .header-container .header .logo-div { margin-top: 13px; }
+  .wrapper .header-container .header .logo-div a.logo img { max-width: 80%; } }

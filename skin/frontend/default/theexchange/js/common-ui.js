@@ -129,12 +129,14 @@ jQuery(document).ready(function(){
 
     function toggleNav() {
 
+
         if (jQuery('#site-wrapper').hasClass('show-nav')) {
             // Do things on Nav Close
             jQuery('#site-wrapper').removeClass('show-nav');
         } else {
             // Do things on Nav Open
             jQuery('#site-wrapper').addClass('show-nav');
+            jQuery('<div class="overlay"></div> ').prependTo(".page");
         }
 
     }
