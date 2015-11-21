@@ -48,7 +48,7 @@ $_helper = $this->helper('catalog/output');
         <?php $counter = 0;foreach ($_productCollection as $_product): ?>
             <?php
             if(!$_product->getSku()){
-                $newProduct = Mage::getModel('catalog/product')->load($entityId);
+                $newProduct = Mage::getModel('catalog/product')->load($_product->getId());
                 $sku = $newProduct->getSku();
                 $_product->setData("sku",$sku);
             }
@@ -123,7 +123,7 @@ $_helper = $this->helper('catalog/output');
     <?php $counter = 0;foreach ($_productCollection as $_product): ?>
         <?php
         if(!$_product->getSku()){
-            $newProduct = Mage::getModel('catalog/product')->load($entityId);
+            $newProduct = Mage::getModel('catalog/product')->load($_product->getId());
             $sku = $newProduct->getSku();
             $_product->setData("sku",$sku);
         }
