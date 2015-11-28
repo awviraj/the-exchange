@@ -45,8 +45,8 @@ class DMS_Productrepairs_IndexController extends Mage_Core_Controller_Front_Acti
             $store = Mage::app()->getStore()->getId();
             Mage::getModel('core/email_template')
                 ->sendTransactional($emailTemplate, 'support', $senderEmail, $senderName, $data, $store);
-
-            $this->_forward('*/*/success');
+            Mage::getSingleton( 'customer/session' )->setRepairId($repairId);
+            $this->_redirect('*/*/success');
         }
     }
 

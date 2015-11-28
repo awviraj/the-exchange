@@ -48,4 +48,9 @@ class DMS_Productrepairs_Block_Form extends Mage_Core_Block_Template
 
         return $optionsArray;
     }
+
+    public function getRepairId()
+    {
+        return Mage::getSingleton( 'customer/session' )->getRepairId();
+    }
 }

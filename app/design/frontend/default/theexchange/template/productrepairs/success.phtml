@@ -1,0 +1,9 @@
+<?php
+$_repairId = $this->getRepairId();
+?>
+
+<?php if (!empty($_repairId)):?>
+    <?php echo $this->__('Thanks for your inquiry.')?>
+    <?php echo $this->__('Your reference number is - ').$_repairId?>
+    <?php echo $this->__('We will get back to you soon.')?>
+<?php endif;?>
