@@ -49,14 +49,17 @@
                             <show_in_website>0</show_in_website>
                             <show_in_store>0</show_in_store>
                         </page-description>
-                        <repair-id translate="label">
-                            <label>Repair Id (Auto Increment)</label>
-                            <frontend_type>text</frontend_type>
-                            <sort_order>1</sort_order>
-                            <show_in_default>1</show_in_default>
-                            <show_in_website>1</show_in_website>
-                            <show_in_store>0</show_in_store>
-                        </repair-id>
+                        <!--<repair-id translate="label">-->
+                            <!--<label>Repair Id (Auto Increment)</label>-->
+                            <!--<frontend_type>text</frontend_type>-->
+                            <!--<comment>-->
+                                <!--<![CDATA[Last repair ID used. Don't change this value. Next repair ID is going to be based on this.]]>-->
+                            <!--</comment>-->
+                            <!--<sort_order>1</sort_order>-->
+                            <!--<show_in_default>1</show_in_default>-->
+                            <!--<show_in_website>1</show_in_website>-->
+                            <!--<show_in_store>0</show_in_store>-->
+                        <!--</repair-id>-->
                         <email-template translate="label">
                             <label>Email Template </label>
                             <frontend_type>select</frontend_type>
