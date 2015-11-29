@@ -37,13 +37,13 @@ class DMS_Productrepairs_IndexController extends Mage_Core_Controller_Front_Acti
             }
 
             $emailTemplate = Mage::getStoreConfig('dms_productrepairs/productrepairs/email-template');
-            $senderName = Mage::getStoreConfig('trans_email/ident_custom1/name');
-            $senderEmail = Mage::getStoreConfig('trans_email/ident_custom1/email');
+            $receiverName = Mage::getStoreConfig('trans_email/ident_custom1/name');
+            $receiverEmail = Mage::getStoreConfig('trans_email/ident_custom1/email');
             $data['booking_no'] = Mage::helper('dms_productrepairs')->getBookingNumber();
             $store = Mage::app()->getStore()->getId();
             Mage::getModel('core/email_template')
-                ->sendTransactional($emailTemplate, 'support', $senderEmail, $senderName, $data, $store);
-            Mage::getSingleton( 'customer/session' )->setRepairId($repairId);
+                ->sendTransactional($emailTemplate, array('name'=>$data['full_name'],'email'=>$data['email']), $receiverEmail, $receiverName, $data, $store);
+            Mage::getSingleton( 'customer/session' )->setRepairId($data['booking_no']);
             $this->_redirect('*/*/success');
         }
     }
