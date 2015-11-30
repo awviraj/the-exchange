@@ -9,7 +9,10 @@
   position: relative;
   overflow: hidden;
   width: 100%;
-  background: #000;
+  background: #ffffff;
+  &.show-nav{
+    background: #000;
+  }
 }
 #site-canvas{
   //  -webkit-transform: translateX(0);
@@ -80,7 +83,6 @@
   position: relative;
   overflow: hidden;
   width: 100%;
-  background: #000;
 }
 #site-canvas {
   width: 100%;

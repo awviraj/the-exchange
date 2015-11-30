@@ -32,7 +32,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->getLang() ?>" lang="<?php echo $this->getLang() ?>">
 <head>
-    <?php echo $this->getChildHtml('head') ?>
+<?php echo $this->getChildHtml('head') ?>
 </head>
 <body<?php echo $this->getBodyClass()?' class="'.$this->getBodyClass().'"':'' ?>>
 <?php echo $this->getChildHtml('after_body_start') ?>
@@ -42,17 +42,17 @@
         <?php echo $this->getChildHtml('global_notices') ?>
         <div class="page">
             <?php echo $this->getChildHtml('header') ?>
-            <div class="main-container col2-right-layout container">
+            <div class="main-container col3-layout">
                 <div class="main">
                     <?php echo $this->getChildHtml('breadcrumbs') ?>
-                    <div class="row">
-                        <div class="col-main col-xs-12 col-sm-12 col-md-9 fill">
+                    <div class="col-wrapper">
+                        <div class="col-main">
                             <?php echo $this->getChildHtml('global_messages') ?>
                             <?php echo $this->getChildHtml('content') ?>
                         </div>
-                        <div class="col-right sidebar col-xs-12 col-sm-12 col-md-3 pull-right"><?php echo $this->getChildHtml('right') ?></div>
+                        <div class="col-left sidebar"><?php echo $this->getChildHtml('left') ?></div>
                     </div>
-
+                    <div class="col-right sidebar"><?php echo $this->getChildHtml('right') ?></div>
                 </div>
             </div>
             <?php echo $this->getChildHtml('footer') ?>

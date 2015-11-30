@@ -81,7 +81,8 @@
   .qty-wrapper .qty { float: left; margin-right: 5px; border: none; max-width: 100px; margin-left: 0px; text-align: center; line-height: 30px; margin-top: 2px; font-family: 'houschka_alt_probold'; font-weight: normal; font-size: 18px; color: #000; }
   .m-menu-wrapper { display: block; }
   .navbar-container { display: none; }
-  #site-wrapper { position: relative; overflow: hidden; width: 100%; background: #000; }
+  #site-wrapper { position: relative; overflow: hidden; width: 100%; background: #ffffff; }
+  #site-wrapper.show-nav { background: #000; }
   #site-canvas { -webkit-transition: .3s ease all; transition: .3s ease all; }
   #site-wrapper.show-nav #site-canvas { -webkit-transform: translateX(250px); transform: translateX(250px); }
   .m-menu-wrapper { padding-top: 36px; display: block; width: 250px; height: 100%; position: absolute; top: 0; left: -250px; background: #000; padding: 15px; }
@@ -91,7 +92,7 @@
   .m-menu-wrapper .m-close:hover { color: #fff; background: #999; }
   .m-menu-wrapper h2 { background: #e60000; height: auto; font-family: 'houschkaalt-bold-italic-regular'; line-height: 21px; font-weight: normal; font-size: 20px; text-align: left; color: #fff; padding: 5px 20px; }
   .show-nav .page { opacity: 0.175; }
-  #site-wrapper { position: relative; overflow: hidden; width: 100%; background: #000; }
+  #site-wrapper { position: relative; overflow: hidden; width: 100%; }
   #site-canvas { width: 100%; height: 100%; position: relative; }
   #m-menu { width: 250px; height: 100%; position: absolute; top: 0; left: -250px; background: #000; padding: 15px; }
   #site-wrapper.show-nav #site-canvas { -webkit-transform: translateX(250px); transform: translateX(250px); }
