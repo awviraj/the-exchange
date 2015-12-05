@@ -208,6 +208,8 @@ input:-webkit-autofill { -webkit-box-shadow: 0 0 0px 1000px white inset; }
 
 .required em { color: #12b55b; }
 
+.search-row { margin-right: 0; }
+
 .cms-index-index .search-box { margin: 0 auto; float: none; height: 197px; }
 .cms-index-index .search-box #search_mini_form .input-box { float: none; clear: both; max-width: 532px; }
 .cms-index-index .search-box #search_mini_form .input-box:after { right: -21px; width: 41px; content: ""; height: 40px; top: 7px; }
@@ -238,7 +240,7 @@ input:-webkit-autofill { -webkit-box-shadow: 0 0 0px 1000px white inset; }
 .qty-wrapper .qty { float: left; margin-right: 5px; border: none; max-width: 100px; margin-left: 0px; text-align: center; line-height: 30px; margin-top: 2px; font-family: 'houschka_alt_probold'; font-weight: normal; font-size: 18px; color: #000; }
 
 #list-items { float: left; width: 100%; border-top: 1px solid #ff0000; padding-top: 33px; }
-#list-items #slider-content { width: 100% !important; height: auto !important; background: #ffffff; border: none; }
+#list-items #slider-content { width: 100% !important; height: auto !important; background: #ffffff; border: none; overflow: hidden; padding-bottom: 0; }
 #list-items #slider-content #sl-screen { height: 171px !important; padding-left: 0; }
 #list-items #slider-content #sl-screen #sl-view { height: auto !important; }
 #list-items #slider-content #sl-screen #left { background: url("../images/sprite.png") 9px -823px black; left: 0px; }
