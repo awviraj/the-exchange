@@ -208,7 +208,7 @@ input:-webkit-autofill { -webkit-box-shadow: 0 0 0px 1000px white inset; }
 
 .required em { color: #12b55b; }
 
-.search-row { margin-right: 0; }
+.search-row { margin-right: 0; margin-left: 0; }
 
 .cms-index-index .search-box { margin: 0 auto; float: none; height: 197px; }
 .cms-index-index .search-box #search_mini_form .input-box { float: none; clear: both; max-width: 532px; }

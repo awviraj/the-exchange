@@ -77,6 +77,11 @@
   .wrapper .menu-search-wrapper .search-box .form-search .mobile-search-label, .cms-index-index .wrapper .menu-search-wrapper .search-box .form-search .mobile-search-label { display: block; padding-bottom: 5px; padding-top: 5px; font-size: 28px; float: none; width: 100%; text-align: center; line-height: 33px; font-family: 'houschkaalt-light-regular'; font-weight: normal; }
   .wrapper .menu-search-wrapper .search-box .black-arrow, .cms-index-index .wrapper .menu-search-wrapper .search-box .black-arrow { display: none; }
   .wrapper .menu-search-wrapper:after, .wrapper .menu-search-wrapper:before, .cms-index-index .wrapper .menu-search-wrapper:after, .cms-index-index .wrapper .menu-search-wrapper:before { display: none; }
+  .cms-index-index .search-box #search_mini_form .input-box { max-width: 87%; }
+  .cms-index-index .search-box #search_mini_form .input-box:after { right: -15px; width: 28px; content: ""; height: 28px; top: 4px; }
+  .cms-index-index .search-box #search_mini_form .input-box #search { max-width: 100%; height: 36px; }
+  .cms-index-index .search-box #search_mini_form button { height: 36px; background-position: -60px -214px; }
+  .cms-index-index .search-box #search_mini_form button:hover { background-position: -60px -214px; }
   .qty-wrapper { background: url("../images/btn-sprite.png") no-repeat -11px -309px; width: 132px; height: 51px; float: left; }
   .qty-wrapper .qty { float: left; margin-right: 5px; border: none; max-width: 100px; margin-left: 0px; text-align: center; line-height: 30px; margin-top: 2px; font-family: 'houschka_alt_probold'; font-weight: normal; font-size: 18px; color: #000; }
   .m-menu-wrapper { display: block; }
