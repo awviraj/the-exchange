@@ -6,7 +6,7 @@ html* .search-sec .adv-form-search button, .search-sec .form-search button {widt
 #search-container #searchResult{ border-top:2px solid #eadc07; margin:0 2px;}
 
 #search-autocomplete{    position: absolute;
-    z-index: 999;
+    z-index: 99999;
     right: 0px !important;
     top: 44px;
     width: 100%;}
@@ -17,13 +17,30 @@ html* .search-sec .adv-form-search button, .search-sec .form-search button {widt
     width: 100%;
 }
 /*#autocomplete-content{border-top: 2px solid #C4C6C8;border-bottom: 2px solid #C4C6C8;margin: 0;padding: 5px;border-image: url('none') 100% 100% 100% 100% 1 1 1 1 0 0 0 0 stretch stretch;background-color: #FFFFFF;width: 300px;position:relative;}*/
-#autocomplete-content{background-color: #FFF;border:solid 1px #cccccc;padding: 2px;margin:0; width: 100%;position:relative;}
+#autocomplete-content{float:left;background-color: #FFF;margin:0; width: 100%;position:relative;    border-top: solid 1px #cccccc;}
 
 /* Start: Added New CSS Code for List View */
 #search-result ul#search_hidden{display:none;}
 #search-result ul{background-color:#ffffff;border:none; margin: 15px 0px 15px;}
-#search-result ul.products-list{background-color:#ffffff;border:none; margin:5px 0px 5px;}
-#search-result ul.products-list > li{cursor:pointer;min-height:80px;color:#2F2F2F;border-bottom: 1px solid #e1e1e1;margin:0 0 10px 0; padding:5px;}
+#search-result ul.products-list{background-color:#ffffff;border:none; margin:5px 0px 0px; float: left; width: 100%;}
+#search-result ul.products-list > li{width:100%; float:left;cursor:pointer;min-height:80px;color:#2F2F2F;border-bottom: 1px solid #d3d3d3;margin:0 0 0px 0; padding:5px;}
+#search-result ul.products-list > li:hover{
+    background: #fdf0f0;
+}
+#search-autocomplete .view-all-bar{
+    float: left;
+    width: 100%;
+    text-align: center;
+    background: #ff0000;
+    height: 33px;
+}
+#search-autocomplete .view-all-bar a{
+    font-family: "houschka_alt_probold";
+    font-size: 18px;
+    font-weight: normal;
+    color: #ffffff;
+    line-height: 33px;
+}
 #search-result ul > li.notice-message{min-height:0px;border-bottom:none;text-align:center;margin:0px;}
 #search-result ul > li.autocomplete_hidden{background-color: white;border: medium none;margin: 0;padding: 0;display: none;}
 .img-box-area {float: left;}
@@ -40,3 +57,17 @@ html* .search-sec .adv-form-search button, .search-sec .form-search button {widt
 #search-result ul.products-grid .content-box-area h3{text-align:center !important;font-size:12px !important;padding-top:10px;}
 .header .form-search-autocomplete{padding:1px 0 0 40px !important;right: 5px !important;}
 /* End: Added New CSS Code for Grid View */
+
+
+#search-result .products-list .content-box-area h3{
+    font-size: 18px;
+    font-family: "houschka_alt_probold";
+    color: #2c2c2c;
+    line-height: 24px;
+    padding-left: 8px;
+}
+#search-result .products-list .content-box-area .price-box .regular-price .price{
+    color: #ff0000;
+    font-size: 19px;
+    font-family: "houschka_alt_probold";
+}
