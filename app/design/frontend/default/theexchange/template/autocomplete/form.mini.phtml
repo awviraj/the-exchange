@@ -30,7 +30,7 @@
 <form id="search_mini_form" action="<?php echo $catalogSearchHelper->getResultUrl() ?>" method="get">
 	<div class="form-search form-search-autocomplete">
         <h2 class="search-label"><?php echo $this->__('Search The Exchange') ?></h2>
-        <div class="input-box">
+        <div class="input-box" id="searchInputBox">
             <input id="search" type="text" name="<?php echo $catalogSearchHelper->getQueryParamName() ?>" value="<?php echo $catalogSearchHelper->getEscapedQueryText() ?>" class="input-text " maxlength="<?php echo $catalogSearchHelper->getMaxQueryLength();?>" />
             <button class="button" id="basic-search" type="submit" title="<?php echo $this->__('Search') ?>">
                 <?php echo $this->__('Search') ?>

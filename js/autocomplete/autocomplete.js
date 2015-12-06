@@ -48,7 +48,8 @@ Autocomplete.prototype = {
             this.element.setStyle({
                 backgroundImage: 'url("'+progressImage+'")',
                 backgroundRepeat: 'no-repeat',
-                backgroundPosition: 'right'
+                backgroundPosition: '96% 50%',
+                zIndex: '999'
             });
         }
         autocompleter.stopIndicator = function(){

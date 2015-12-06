@@ -34,7 +34,7 @@
 
 		document.observe('dom:loaded',function(){
 			//require(["autocomplete"], function(){
-				$$('.form-search')[0].insert({
+				$$('#search')[0].insert({
 					after:'<div id="search-autocomplete"><div id="searchr-result-containter"><div id="autocomplete-content"><div id="search-result"></div></div></div></div>'
 				});
 				$('searchr-result-containter').hide();
