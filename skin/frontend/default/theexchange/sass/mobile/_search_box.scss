@@ -1,5 +1,7 @@
 .wrapper,.cms-index-index .wrapper{
   .menu-search-wrapper{
+    padding-left: 0;
+    padding-right: 0;
     margin-top: -12px;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -118,7 +120,7 @@
       max-width: 87%;
 
       &:after{
-        right: -15px;
+        right: -13px;
         width: 28px;
         content: "";
         height: 28px;
@@ -138,5 +140,7 @@
       }
     }
   }
-
+  #search-autocomplete{
+    top: 36px;
+  }
 }
