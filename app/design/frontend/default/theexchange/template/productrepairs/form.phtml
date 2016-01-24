@@ -19,25 +19,18 @@
                 <form name="product_repair_form" id="product_repair_form" method="POST" action="<?php echo $this->getUrl('phone-repairs/index/book');?>">
 
                     <div class="form-group">
-                        <div class="field">
-                            <label for="repair_brand"><?php echo $this->__('Brand') ?><em>*</em></label>
+                        <label for="repair_brand"><?php echo $this->__('Brand') ?><em>*</em></label>
                             <select class="form-control required-entry"  name="brand" id="repair_brand">
-                                <?php foreach ($this->getBrands() as $brandId => $brand): ?>
-                                    <option value="<?php echo $brand['value']; ?>"><?php echo $brand['label']; ?></option>
+                                <option value=""><?php echo $this->__('Select Your Brand...'); ?></option>
+                                <?php foreach ($this->getBrands() as $brand): ?>
+                                    <option value="<?php echo $brand->getName(); ?>"><?php echo $brand->getName(); ?></option>
                                 <?php endforeach; ?>
                             </select>
-                        </div>
+                    </div>
 
-
-                        <label for="repair_brand"><?php echo $this->__('Model') ?><em>*</em></label>
-                        <div id="repair_model_wrapper" class="repair_model_wrapper">
-                            <select class="form-control required-entry"  name="model" id="repair_model">
-
-                                <?php foreach ($this->getProductModelsFromBrand() as $modelId => $model): ?>
-                                    <option value="<?php echo $modelId; ?>"><?php echo $model; ?></option>
-                                <?php endforeach; ?>
-                            </select>
-                        </div>
+                    <div class="form-group">
+                        <label for="repair_model"><?php echo $this->__('Model') ?><em>*</em></label>
+                        <input type="text" class="form-control required-entry"  name="model" id="repair_model" placeholder="Model" value="">
                     </div>
 
                     <div class="form-group">
@@ -53,7 +46,9 @@
                     <div class="form-group">
                         <label for="repair_fullname"><?php echo $this->__('Full Name') ?><em>*</em></label>
                         <input type="text" class="form-control required-entry"  name="full_name" id="repair_fullname" placeholder="Full Name" value="">
+                    </div>
 
+                    <div class="form-group">
                         <label for="repair_email"><?php echo $this->__('Email') ?><em>*</em></label>
                         <input type="text" class="form-control required-entry"  name="email" id="repair_email" placeholder="Email" value="">
                     </div>
@@ -61,7 +56,9 @@
                     <div class="form-group">
                         <label for="repair_contact"><?php echo $this->__('Contact No') ?><em>*</em></label>
                         <input type="text" class="form-control required-entry"  name="contact_no" id="repair_contact" placeholder="Contact No" value="">
+                    </div>
 
+                    <div class="form-group">
                         <div class="submit-button-wrapper">
                             <input type="submit" name="submit" value="Book Now" id="submit_repair_form">
                         </div>
@@ -76,19 +73,9 @@
     </div>
 
 </div>
-<script>
-    jQuery("#repair_brand").change(function() {
-        jQuery.ajax({
-            type:"POST",
-            url : "<?php echo Mage::getUrl('dms_productrepairs/index/ajaxload'); ?>",
-            data : "selected_brand="+jQuery(this).val(),
-            async: true,
-            success : function(response) {
-                jQuery('#repair_model_wrapper').replaceWith(response);
-            },
-            error: function() {
-                alert('Error occured');
-            }
-        });
-    });
+
+<script type="text/javascript">
+    //< ![CDATA[
+    var customForm = new VarienForm('product_repair_form');
+    //]]>
 </script>

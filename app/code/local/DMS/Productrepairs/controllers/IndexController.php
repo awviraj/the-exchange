@@ -24,25 +24,26 @@ class DMS_Productrepairs_IndexController extends Mage_Core_Controller_Front_Acti
     }
 
     public function bookAction() {
-        $email = null;
         if ($this->getRequest()->isPost()) {
             $data = $this->getRequest()->getParams();
-            if ($brand = $this->getRequest()->getParam('brand')) {
-
-                $attribute = Mage::getSingleton('eav/config')->getAttribute('catalog_product', 'brand');
-                if ($attribute->usesSource()) {
-                    $brandLabel = $attribute->getSource()->getOptionText($brand);
-                }
-                $data['brand'] = $brandLabel;
-            }
-
-            $emailTemplate = Mage::getStoreConfig('dms_productrepairs/productrepairs/email-template');
+            $emailTemplateForAdmin = Mage::getStoreConfig('dms_productrepairs/productrepairs/email-template-for-admin');
+            $emailTemplateForCustomer = Mage::getStoreConfig('dms_productrepairs/productrepairs/email-template-for-customer');
             $receiverName = Mage::getStoreConfig('trans_email/ident_custom1/name');
             $receiverEmail = Mage::getStoreConfig('trans_email/ident_custom1/email');
+            $customerSupportName = Mage::getStoreConfig('trans_email/ident_support/name');
+            $customerSupportEmail = Mage::getStoreConfig('trans_email/ident_support/email');
             $data['booking_no'] = Mage::helper('dms_productrepairs')->getBookingNumber();
             $store = Mage::app()->getStore()->getId();
-            Mage::getModel('core/email_template')
-                ->sendTransactional($emailTemplate, array('name'=>$data['full_name'],'email'=>$data['email']), $receiverEmail, $receiverName, $data, $store);
+            try{
+                Mage::getModel('core/email_template')
+                    ->sendTransactional($emailTemplateForAdmin, array('name'=>$data['full_name'],'email'=>$data['email']), $receiverEmail, $receiverName, $data, $store);
+                Mage::getModel('core/email_template')
+                    ->sendTransactional($emailTemplateForCustomer, array('name'=>$customerSupportName,'email'=>$customerSupportEmail), $data['email'], $data['full_name'], $data, $store);
+            }
+            catch(Exception $e){
+                Mage::logException($e);
+            }
+
             Mage::getSingleton( 'customer/session' )->setRepairId($data['booking_no']);
             $this->_redirect('*/*/success');
         }

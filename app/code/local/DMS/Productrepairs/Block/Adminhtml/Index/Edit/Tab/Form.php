@@ -7,13 +7,6 @@ class DMS_Productrepairs_Block_Adminhtml_Index_Edit_Tab_Form extends Mage_Adminh
         $this->setForm($form);
         $fieldset = $form->addFieldset('brand_form',
             array('legend'=>'Brand Information'));
-        $fieldset->addField('brand_id', 'text',
-            array(
-                'label' => 'Brand Id',
-                'class' => 'required-entry',
-                'required' => true,
-                'name' => 'brand_id',
-            ));
         $fieldset->addField('name', 'text',
             array(
                 'label' => 'Name',

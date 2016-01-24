@@ -8,11 +8,12 @@
 class DMS_Productrepairs_Block_Form extends Mage_Core_Block_Template
 {
     public function getBrands() {
-        $attribute = Mage::getSingleton('eav/config')->getAttribute('catalog_product', 'brand');
-        if ($attribute->usesSource()) {
-            $options = $attribute->getSource()->getAllOptions(false);
-            array_unshift($options, array('label' => $this->__('(Please select the brand)'), 'value' => ''));
-        }
+//        $attribute = Mage::getSingleton('eav/config')->getAttribute('catalog_product', 'brand');
+//        if ($attribute->usesSource()) {
+//            $options = $attribute->getSource()->getAllOptions(false);
+//            array_unshift($options, array('label' => $this->__('(Please select the brand)'), 'value' => ''));
+//        }
+        $options = Mage::getModel('dms_productrepairs/brand')->getCollection();
         return $options;
         //return $options ? $options array('' => '(Please Select)');
     }
