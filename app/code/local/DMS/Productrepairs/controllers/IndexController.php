@@ -35,16 +35,18 @@ class DMS_Productrepairs_IndexController extends Mage_Core_Controller_Front_Acti
             $data['booking_no'] = Mage::helper('dms_productrepairs')->getBookingNumber();
             $store = Mage::app()->getStore()->getId();
             try{
-//                Mage::getModel('core/email_template')
-//                    ->sendTransactional($emailTemplateForCustomer, array('name'=>$customerSupportName,'email'=>$customerSupportEmail), $data['email'], $data['full_name'], $data, $store);
+                Mage::getModel('core/email_template')
+                    ->sendTransactional($emailTemplateForCustomer, array('name'=>$customerSupportName,'email'=>$customerSupportEmail), $data['email'], $data['full_name'], $data, $store);
                 $mail = Mage::getModel('core/email_template');
-                $mail->getMail()->createAttachment(
-                    file_get_contents($_FILES["image"]["tmp_name"]),
-                    Zend_Mime::TYPE_OCTETSTREAM,
-                    Zend_Mime::DISPOSITION_ATTACHMENT,
-                    Zend_Mime::ENCODING_BASE64,
-                    'attachment.jpeg'
-                );
+                if(isset($_FILES["image"]) && $_FILES["image"]['size'] >0 && $_FILES["image"]['size'] <1048577 && in_array($_FILES["image"]['type'],array('image/jpeg','image/png'))){
+                    $mail->getMail()->createAttachment(
+                        file_get_contents($_FILES["image"]["tmp_name"]),
+                        Zend_Mime::TYPE_OCTETSTREAM,
+                        Zend_Mime::DISPOSITION_ATTACHMENT,
+                        Zend_Mime::ENCODING_BASE64,
+                        'attachment.jpeg'
+                    );
+                }
                 $mail->sendTransactional($emailTemplateForAdmin, array('name'=>$data['full_name'],'email'=>$data['email']), $receiverEmail, $receiverName, $data, $store);
             }
             catch(Exception $e){
