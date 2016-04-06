@@ -11,7 +11,7 @@
 <config>
     <modules>
         <DMS_Imagecreate>
-            <active>true</active>
+            <active>false</active>
             <codePool>local</codePool>
         </DMS_Imagecreate>
     </modules>
