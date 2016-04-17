@@ -50,6 +50,7 @@
     .form-search{
       padding-top: 30px;
       .search-label{
+        display: inline-block !important;
         margin-left: 0 !important;
         float: left;
         width: 100%;
@@ -82,6 +83,7 @@
     }
   }
 }
+//internal serach box
 .search-box{
   position: relative;
   max-width: 1200px;
@@ -104,7 +106,7 @@
       max-width: 395px;
       position: relative;
       margin: 0 auto;
-      float: left;
+      float: none;
       clear: none;
       border:2px solid #000000;
       border-right: none;
@@ -171,6 +173,7 @@
 
     }
     .search-label{
+      display: none;
       float: left;
       //width: 100%;
       text-align: center;
