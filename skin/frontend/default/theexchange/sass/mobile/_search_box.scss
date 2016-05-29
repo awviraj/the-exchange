@@ -13,6 +13,8 @@
       background-size: auto;
       padding-top: 30px;
       height: 100px;
+      padding-right: 34px;
+      padding-left: 34px;
 
       .form-search {
         padding-top: 0px;
@@ -84,7 +86,7 @@
           }
         }
         .search-label{
-          display: none;
+          display: none !important;
         }
         .search-close{
           display: block;
@@ -145,3 +147,9 @@
     top: 36px;
   }
 }
+.search-label{
+  display: none !important;
+}
+//.search-box #search_mini_form #search{
+//  width: 308px;
+//}
