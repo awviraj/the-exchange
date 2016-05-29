@@ -68,15 +68,15 @@
 .product-view .product-name h2 { font-size: 29px; font-family: 'houschka_alt_probold'; font-weight: normal; text-transform: capitalize; font-style: normal; line-height: 150%; }
 .product-view .rating-row { float: left; width: 100%; }
 .product-view .rating-row .ratings { float: left; }
-.product-view .product-img-box .product-image { padding: 20px 1%; border: 1px solid #dedede; text-align: center; position: relative; height: 300px; width: 100%; }
-.product-view .product-img-box .product-image img { max-width: 100%; }
+.product-view .product-img-box .product-image { padding: 10px 1%; border: 1px solid #dedede; text-align: center; position: relative; height: 320px; width: 100%; }
+.product-view .product-img-box .product-image img { max-width: 100%; position: relative; margin: 0 auto; max-height: 300px; }
 .product-view .product-img-box .zoom-notice { position: absolute; bottom: 2px; left: 12px; width: 16px; height: 18px; background: url("../images/sprite.png") 0 -2270px; text-align: left; text-indent: -3000px; z-index: 9999; }
 .product-view .product-img-box .more-views { position: relative; }
 .product-view .product-img-box .more-views h2 { display: none; }
 .product-view .product-img-box .more-views ul { margin-left: 0; }
 .product-view .product-img-box .more-views ul li { margin-right: 12px; border: 1px solid #dedede; float: left; }
 .product-view .product-img-box .more-views ul li:first-child { margin-left: 0; }
-.product-view .product-img-box .more-views ul li a { width: 100%; height: 81px; overflow: hidden; display: block; text-align: center; padding: 5px; box-sizing: border-box; }
+.product-view .product-img-box .more-views ul li a { width: 100%; height: 66px; overflow: hidden; display: block; text-align: center; padding: 5px; box-sizing: border-box; }
 .product-view .product-img-box .more-views ul li a img { max-width: 100%; margin: 0 auto; }
 .product-view .product-img-box .more-views .more-views-control { display: block; position: absolute; height: 32px; width: 32px; z-index: 100; }
 .product-view .product-img-box .more-views .more-views-control a { display: block; height: 32px; width: 32px; background: url("../images/sprite.png") 9px -823px black; text-align: left; text-indent: -3000px; }
