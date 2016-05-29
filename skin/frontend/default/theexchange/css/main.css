@@ -290,7 +290,7 @@ input:-webkit-autofill { -webkit-box-shadow: 0 0 0px 1000px white inset; }
 .qty-wrapper { background: url("../images/btn-sprite.png") no-repeat -11px -309px; width: 132px; height: 51px; float: left; }
 .qty-wrapper .qty { float: left; margin-right: 5px; border: none; max-width: 100px; margin-left: 0px; text-align: center; line-height: 30px; margin-top: 2px; font-family: 'houschka_alt_probold'; font-weight: normal; font-size: 18px; color: #000; }
 
-#custommenu div.menu { width: 10.5%; margin: 0 1%; }
+#custommenu div.menu { width: 14%; margin: 0 1%; }
 #custommenu div.menu a { font-family: 'houschkaalt-medium-regular'; font-weight: normal; text-transform: capitalize; padding: 0px 20px 0px 20px; color: #e3e3e3; font-size: 16px; }
 #custommenu div.menu a:hover { background: #474646; }
 #custommenu div.menu a span { color: #fff; line-height: 40px; padding-top: 0; height: auto; }
