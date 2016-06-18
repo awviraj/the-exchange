@@ -44,6 +44,7 @@
   .footer-container .footer .footer_brand_section ul li { float: left; width: 42%; margin-bottom: 25px; }
   .footer-container .footer .custom_red_triangle { background: url("../images/footer-red-traingle.png") top center no-repeat; min-height: 324px; }
   .footer-container .footer .custom_red_triangle img { display: none; }
+  #list-items #slider-hover-details .price-name-wrapper { width: 100%; }
   .qty-wrapper { background: url("../images/btn-sprite.png") no-repeat -11px -309px; width: 132px; height: 51px; float: left; }
   .qty-wrapper .qty { float: left; margin-right: 5px; border: none; max-width: 100px; margin-left: 0px; text-align: center; line-height: 30px; margin-top: 2px; font-family: 'houschka_alt_probold'; font-weight: normal; font-size: 18px; color: #000; }
   .catalog-category-view .main-container { padding: 0; }
@@ -79,7 +80,7 @@
   .wrapper .menu-search-wrapper:after, .wrapper .menu-search-wrapper:before, .cms-index-index .wrapper .menu-search-wrapper:after, .cms-index-index .wrapper .menu-search-wrapper:before { display: none; }
   .cms-index-index .search-box #search_mini_form .input-box { max-width: 87%; }
   .cms-index-index .search-box #search_mini_form .input-box:after { right: -13px; width: 28px; content: ""; height: 28px; top: 4px; }
-  .cms-index-index .search-box #search_mini_form .input-box #search { max-width: 100%; height: 36px; }
+  .cms-index-index .search-box #search_mini_form .input-box #search { max-width: 100%; height: 36px; border-radius: 0 !important; }
   .cms-index-index .search-box #search_mini_form button { height: 36px; background-position: -60px -214px; }
   .cms-index-index .search-box #search_mini_form button:hover { background-position: -60px -214px; }
   .cms-index-index .search-box #search-autocomplete { top: 36px; }

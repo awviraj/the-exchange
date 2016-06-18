@@ -4,6 +4,7 @@
 
 body{
  // background: url("../images/body-bg.png") repeat;
+  background: #eee;
   font-size: 14px;
   font-family: arial, helvetica, "sans serif";
   -webkit-font-smoothing: antialiased;
@@ -206,6 +207,14 @@ body{
         }
       }
     }
+    .copyright-div{
+      float: left;
+      width: 100%;
+      padding-top: 18px;
+    }
+    address{
+      color: #6d6d6d;
+    }
 
   }
 }
@@ -303,6 +312,7 @@ body{
   }
 }
 .footer-bottom{
+  background: #fff;
   float: left;
   width:100%;
   text-align: center;
@@ -486,14 +496,23 @@ body{
   font-size: 12px;
   padding: 1em;
   display: none;
+  z-index: 9999;
   &:hover {
     color: #999999;
   }
 }
 .breadcrumbs{
+  ul{
+    background-color: #fff;
+  }
   li{
     a{
       color: #ff0000;
     }
+  }
+}
+table{
+  .label{
+    color: #333333;
   }
 }

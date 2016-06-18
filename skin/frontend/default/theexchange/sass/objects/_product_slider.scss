@@ -34,7 +34,7 @@
       li {
         max-width: 120px;
         margin: 0 16px;
-        height: 186px !important;
+        height: 195px !important;
         .item button{
           &.btn-cart{
             display: none;
@@ -63,6 +63,7 @@
           }
           .product-info{
             text-align: center;
+            padding-right: 0px;
 
             .price-name-wrapper{
               .desc{
@@ -111,7 +112,7 @@
 //              width: 94px;
 //              box-sizing: border-box;
               position: relative;
-              background:#ff0000;
+              background: #ff0000;
               padding: 0 5px;
               height: 58px;
               z-index: 999;
@@ -121,8 +122,9 @@
               width: 94px;
               box-sizing: border-box;
               bottom: 0px;
-              -webkit-animation: moveUp 1s;
-              -moz-animation: moveUp 1s;
+              -webkit-animation: moveUp 0.5s;
+              -moz-animation: moveUp 0.5s;
+              left: 15px;
               @-webkit-keyframes moveUp/* Safari and Chrome */
               {
                 from {bottom: -77px;}
@@ -145,8 +147,8 @@
                 pointer-events: none;
                 border-color: rgba(255, 0, 0, 0);
                 border-bottom-color: #ff0000;
-                border-width: 0 48.5px 28px 48.5px;
-                margin-left: -49px;
+                border-width: 0 47.5px 28px 47.5px;
+                margin-left: -47px;
               }
               .product-name-wrapper{
                 display: none;
