@@ -17,4 +17,17 @@
       margin-bottom: -3px;
     }
   }
+  .page-description{
+    float: left;
+    width: 100%;
+    color: #fff;
+    font-size: 20px;
+    @include Houschka_alt_med;
+    padding-top: 20px;
+  }
+  .form-group label{
+    color: #fff;
+    font-family: 'houschka_alt_probold';
+    font-size: 14px;
+  }
 }

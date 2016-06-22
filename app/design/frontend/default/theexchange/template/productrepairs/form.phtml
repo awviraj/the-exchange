@@ -17,23 +17,22 @@
             </div>
             <div class="repair-form col-lg-6 form-list">
                 <form name="product_repair_form" id="product_repair_form" method="POST" action="<?php echo $this->getUrl('phone-repairs/index/book');?>" enctype='multipart/form-data'>
-
-                    <div class="form-group">
-                        <label for="repair_brand"><?php echo $this->__('Brand') ?><em>*</em></label>
+                    <div class="col2-set">
+                        <div class="form-group col-1 col-lg-6 col-md-6 col-xs-12">
+                            <label for="repair_brand"><?php echo $this->__('Brand') ?><em>*</em></label>
                             <select class="form-control required-entry"  name="brand" id="repair_brand">
                                 <option value=""><?php echo $this->__('Select Your Brand...'); ?></option>
                                 <?php foreach ($this->getBrands() as $brand): ?>
                                     <option value="<?php echo $brand->getName(); ?>"><?php echo $brand->getName(); ?></option>
                                 <?php endforeach; ?>
                             </select>
+                        </div>
+                        <div class="form-group col-1 col-lg-6 col-md-6 col-xs-12">
+                            <label for="repair_model"><?php echo $this->__('Model') ?><em>*</em></label>
+                            <input type="text" class="form-control required-entry"  name="model" id="repair_model" placeholder="Model" value="">
+                        </div>
                     </div>
-
-                    <div class="form-group">
-                        <label for="repair_model"><?php echo $this->__('Model') ?><em>*</em></label>
-                        <input type="text" class="form-control required-entry"  name="model" id="repair_model" placeholder="Model" value="">
-                    </div>
-
-                    <div class="form-group">
+                    <div class="form-group ">
                         <label for="repair_fault"><?php echo $this->__('Fault') ?><em>*</em></label>
                         <input type="text" class="form-control required-entry"  name="fault" id="repair_fault" placeholder="Fault" value="">
                     </div>
