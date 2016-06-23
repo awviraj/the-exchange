@@ -32,45 +32,56 @@
                             <input type="text" class="form-control required-entry"  name="model" id="repair_model" placeholder="Model" value="">
                         </div>
                     </div>
-                    <div class="form-group ">
+                    <div class="form-group col-1 col-lg-12 col-md-12 col-xs-12">
                         <label for="repair_fault"><?php echo $this->__('Fault') ?><em>*</em></label>
                         <input type="text" class="form-control required-entry"  name="fault" id="repair_fault" placeholder="Fault" value="">
                     </div>
-
-                    <div class="form-group">
+                    <div class="form-group col-1 col-lg-12 col-md-12 col-xs-12">
                         <label for="repair_fault_description"><?php echo $this->__('Fault Description') ?><em>*</em></label>
                         <textarea class="form-control required-entry"  name="fault" id="repair_fault_description" placeholder="Fault Description" value=""></textarea>
                     </div>
+                    <div class="col2-set">
+                        <div class="form-group col-1 col-lg-6 col-md-6 col-xs-12">
+                            <label for="repair_fullname"><?php echo $this->__('Full Name') ?><em>*</em></label>
+                            <input type="text" class="form-control required-entry"  name="full_name" id="repair_fullname" placeholder="Full Name" value="">
+                        </div>
 
-                    <div class="form-group">
-                        <label for="repair_fullname"><?php echo $this->__('Full Name') ?><em>*</em></label>
-                        <input type="text" class="form-control required-entry"  name="full_name" id="repair_fullname" placeholder="Full Name" value="">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="repair_email"><?php echo $this->__('Email') ?><em>*</em></label>
-                        <input type="text" class="form-control required-entry validate-email"  name="email" id="repair_email" placeholder="Email" value="">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="repair_contact"><?php echo $this->__('Contact No') ?><em>*</em></label>
-                        <input type="text" class="form-control required-entry validate-number"  name="contact_no" id="repair_contact" placeholder="Contact No" value="">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="repair_image"><?php echo $this->__('Attachment (jpg or png less than 1MB)') ?></label>
-                        <input type="file" class="form-control"  name="image" id="repair_image" value="">
-                    </div>
-
-                    <div class="form-group">
-                        <div class="submit-button-wrapper">
-                            <input type="submit" name="submit" value="Book Now" id="submit_repair_form">
+                        <div class="form-group col-1 col-lg-6 col-md-6 col-xs-12">
+                            <label for="repair_email"><?php echo $this->__('Email') ?><em>*</em></label>
+                            <input type="text" class="form-control required-entry validate-email"  name="email" id="repair_email" placeholder="Email" value="">
                         </div>
                     </div>
 
-                <span class="required-field-notification">
-                    <?php echo $this->__('Required field'); ?><em>*</em>
-                </span>
+
+
+                    <div class="col2-set">
+                        <div class="form-group col-1 col-lg-6 col-md-12 col-xs-12">
+                            <label for="repair_contact"><?php echo $this->__('Contact No') ?><em>*</em></label>
+                            <input type="text" class="form-control required-entry validate-number"  name="contact_no" id="repair_contact" placeholder="Contact No" value="">
+                        </div>
+                        <div class="form-group col-1 col-lg-6 col-md-6 col-xs-12 file-attach">
+                            <label for="repair_image"><?php echo $this->__('Attachment (jpg or png less than 1MB)') ?></label>
+                            <input type="file" class="form-control"  name="image" id="repair_image" value="">
+
+                        </div>
+                    </div>
+
+                    <div class=row">
+                        <div class="submit-button-wrapper col-lg-12">
+                            <div class="button-set">
+                                <button type="submit" name="submit" id="submit_repair_form" >Book Now</button>
+                            <span class="required-field-notification">
+                                <?php echo $this->__('Required field'); ?><em>*</em>
+                            </span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+
                 </form>
             </div>
         </div>

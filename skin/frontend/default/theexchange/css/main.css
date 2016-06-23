@@ -204,11 +204,27 @@ table .label { color: #333333; }
 .dms-productrepairs-index-index .main.container .img-wrapper { margin-left: -30px; margin-bottom: -3px; }
 .dms-productrepairs-index-index .page-description { float: left; width: 100%; color: #fff; font-size: 20px; font-family: 'houschkaalt-medium-regular'; font-weight: normal; padding-top: 20px; }
 .dms-productrepairs-index-index .form-group label { color: #fff; font-family: 'houschka_alt_probold'; font-size: 14px; }
+.dms-productrepairs-index-index button { margin-top: 13px; color: #fff; font-family: 'houschka_alt_probold'; font-size: 16px; border-radius: 0; float: right; margin-right: 0; background: url("../images/sprite.png") no-repeat 0 -1347px; width: 130px; height: 34px; border: none; margin-bottom: 10px; }
+.dms-productrepairs-index-index .button-set { float: left; }
+.dms-productrepairs-index-index .button-set span { display: inline-block; float: left; color: #fff; clear: both; }
+.dms-productrepairs-index-index input[type="file"] { display: block; max-width: 240px; }
+.dms-productrepairs-index-index .repair-form { padding-bottom: 20px; }
 
 .form-group label { color: red; text-transform: uppercase; font-size: 12px; font-family: 'houschka_alt_probold'; margin-bottom: 9px; }
 .form-group input[type="text"] { margin-top: 0px; width: 100%; }
 .form-group label + input[type="text"] { margin-top: 0; }
 .form-group select { border: 3px solid #dadada; border-radius: 0; display: block; width: 100%; height: 37px; padding: 6px 12px; font-size: 14px; line-height: 1.428571429; color: #555; background-color: #fff; background-image: none; -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s; transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s; }
+.form-group input[type="radio"] { display: none; }
+.form-group input[type="radio"] + label { font-size: 16px; color: #000; font-family: 'houschka_alt_probold'; cursor: pointer; line-height: 20px; display: block; }
+.form-group input[type="radio"] + label span { display: inline-block; margin: -2px 18px 0 0; vertical-align: middle; background: url("../images/selects.png") no-repeat -3px -1px; width: 18px; height: 18px; cursor: pointer; background-size: 22px 100px; }
+.form-group input[type="radio"]:checked + label span { background: url("../images/selects.png") no-repeat -2px -20px; background-size: 22px 100px; width: 18px; height: 18px; }
+.form-group input[type="text"], .form-group input[type="email"], .form-group input[type="password"] { border-radius: 0; border: 3px solid #dadada; height: 37px; line-height: 37px; padding-left: 15px; }
+.form-group input[type="text"]:-webkit-autofill, .form-group input[type="email"]:-webkit-autofill, .form-group input[type="password"]:-webkit-autofill { background-color: transparent !important; }
+.form-group input[type="text"]::-webkit-input-placeholder, .form-group input[type="email"]::-webkit-input-placeholder, .form-group input[type="password"]::-webkit-input-placeholder { color: #aeaeae; font-size: 16px; font-family: 'houschkaalt-bold-italic-regular'; font-weight: normal; }
+.form-group input[type="text"]:-moz-placeholder, .form-group input[type="email"]:-moz-placeholder, .form-group input[type="password"]:-moz-placeholder { color: #aeaeae; font-size: 16px; font-family: 'houschkaalt-bold-italic-regular'; font-weight: normal; }
+.form-group input[type="text"]::-moz-placeholder, .form-group input[type="email"]::-moz-placeholder, .form-group input[type="password"]::-moz-placeholder { color: #aeaeae; font-size: 16px; font-family: 'houschkaalt-bold-italic-regular'; font-weight: normal; }
+.form-group input[type="text"]:-ms-input-placeholder, .form-group input[type="email"]:-ms-input-placeholder, .form-group input[type="password"]:-ms-input-placeholder { color: #aeaeae; font-size: 16px; font-family: 'houschkaalt-bold-italic-regular'; font-weight: normal; }
+.form-group textarea { border-radius: 0; border: 3px solid #dadada; min-height: 99px; line-height: 37px; padding-left: 15px; }
 
 .qty-wrapper { background: url("../images/btn-sprite.png") no-repeat -11px -309px; width: 132px; height: 51px; float: left; }
 .qty-wrapper .qty { float: left; margin-right: 5px; border: none; max-width: 100px; margin-left: 0px; text-align: center; line-height: 30px; margin-top: 2px; font-family: 'houschka_alt_probold'; font-weight: normal; font-size: 18px; color: #000; }
