@@ -120,4 +120,5 @@
   .wrapper .header-container .header .logo-div a.logo img { max-width: 80%; } }
 @media (min-width: 0px) and (max-width: 375px) { .search-box #search_mini_form #search { width: 251px; } }
 @media (min-width: 375px) and (max-width: 414px) { .search-box #search_mini_form #search { width: 308px; } }
-@media (min-width: 413px) and (max-width: 736px) { .search-box #search_mini_form #search { width: 342px; } }
+@media (min-width: 413px) and (max-width: 736px) { .search-box #search_mini_form #search { width: 342px; }
+  .search-box #search_mini_form .input-box { max-width: 346px; } }

@@ -226,6 +226,15 @@ table .label { color: #333333; }
 .form-group input[type="text"]:-ms-input-placeholder, .form-group input[type="email"]:-ms-input-placeholder, .form-group input[type="password"]:-ms-input-placeholder { color: #aeaeae; font-size: 16px; font-family: 'houschkaalt-bold-italic-regular'; font-weight: normal; }
 .form-group textarea { border-radius: 0; border: 3px solid #dadada; min-height: 99px; line-height: 37px; padding-left: 15px; }
 
+.page-title h1 { font-size: 30px; font-family: 'houschka_alt_probold'; font-weight: normal; text-transform: capitalize; font-style: normal; line-height: 150%; }
+
+.std { padding-left: 15px; }
+.std ul.disc { margin-bottom: 20px; }
+.std ul.disc li { line-height: 22px; }
+.std dl dt { margin-bottom: 12px; }
+.std dl dd { padding-left: 0; margin-bottom: 25px; line-height: 22px; }
+.std p { line-height: 24px; }
+
 .qty-wrapper { background: url("../images/btn-sprite.png") no-repeat -11px -309px; width: 132px; height: 51px; float: left; }
 .qty-wrapper .qty { float: left; margin-right: 5px; border: none; max-width: 100px; margin-left: 0px; text-align: center; line-height: 30px; margin-top: 2px; font-family: 'houschka_alt_probold'; font-weight: normal; font-size: 18px; color: #000; }
 
