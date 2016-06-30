@@ -15,8 +15,12 @@
         </reference>
         <reference name="content">
             <block type="dms_productrepairs/form" name="dms.product.repairs.form" template="productrepairs/form.phtml">
+                <block type="cms/block" name="repair_image" before="-">
+                    <action method="setBlockId"><block_id>repair_image</block_id></action>
+                </block>
                </block>
         </reference>
+
     </dms_productrepairs_index_index>
 
     <!--<dms_productrepairs_index_ajaxload>-->

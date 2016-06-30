@@ -150,7 +150,7 @@ table .label { color: #333333; }
 .youama-slider-block { box-shadow: 0px -2px 5px #9B9B9B; float: left; width: 100%; }
 
 .custom_footer_wrapper { margin-top: 5px; padding-top: 38px; float: left; width: 100%; background: #fff; }
-.custom_footer_wrapper .custom_footer_static_block { background: #f1f2f2; padding: 38px 65px 20px 65px; width: 100%; box-sizing: border-box; border-top: 1px solid #000; position: relative; float: left; width: 100%; }
+.custom_footer_wrapper .custom_footer_static_block { padding: 38px 65px 20px 65px; width: 100%; box-sizing: border-box; border-top: 1px solid #000; position: relative; float: left; width: 100%; }
 .custom_footer_wrapper .custom_footer_static_block h2 { position: absolute; top: -25px; left: 0; background: #000000; color: #fff; padding: 0 42px 0 70px; line-height: 46px; font-family: 'houschkaalt-light-regular'; font-weight: normal; font-size: 30px; }
 .custom_footer_wrapper .custom_footer_static_block h2:after { left: 100%; top: 50%; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: rgba(0, 0, 0, 0); border-left-color: #000000; border-width: 23px 0 23px 11px; margin-top: -23px; }
 .custom_footer_wrapper .custom_footer_static_block h3 { font-family: 'houschka_alt_probold'; font-weight: normal; color: #000; font-size: 18px; margin-bottom: 15px; }

@@ -13,7 +13,8 @@
     <div class="row">
         <div class="wrapper">
             <div class="img-wrapper col-lg-5">
-                <img src="<?php echo Mage::getBaseUrl('media').'/wysiwyg/dms/productrepairs/repair-form.jpg'?>" alt="Repair Page"/>
+                <?php echo $this->getChildHtml('repair_image') ?>
+<!--                <img src="--><?php //echo Mage::getBaseUrl('media').'/wysiwyg/dms/productrepairs/repair-form.jpg'?><!--" alt="Repair Page"/>-->
             </div>
             <div class="repair-form col-lg-6 form-list">
                 <form name="product_repair_form" id="product_repair_form" method="POST" action="<?php echo $this->getUrl('phone-repairs/index/book');?>" enctype='multipart/form-data'>
