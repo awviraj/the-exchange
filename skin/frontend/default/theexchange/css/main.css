@@ -251,7 +251,7 @@ input:-webkit-autofill { -webkit-box-shadow: 0 0 0px 1000px white inset; }
 .cms-index-index .search-box #search_mini_form .input-box { float: none; clear: both; max-width: 532px; }
 .cms-index-index .search-box #search_mini_form .input-box:after { right: -21px; width: 41px; content: ""; height: 40px; top: 7px; }
 .cms-index-index .search-box #search_mini_form #search { max-width: 530px; height: 54px; width: 100%; }
-.cms-index-index .search-box #search_mini_form button { width: 36px; background-color: transparent; background: url("../images/sprite.png") 0 -206px transparent no-repeat; position: absolute; right: 1px; text-align: left; text-indent: -3000px; height: 54px; top: 0; bottom: 0; margin: 0 auto; z-index: 100; }
+.cms-index-index .search-box #search_mini_form button { width: 36px; background-color: transparent; background: url("../images/sprite.png") 0 -206px transparent no-repeat; position: absolute; right: 1px; text-align: left; text-indent: -3000px; height: 54px; top: 0; bottom: 0; margin: 0 auto; z-index: 100; max-width: 45px; }
 .cms-index-index .search-box #search_mini_form button:hover { background-position: -60px -206px; }
 .cms-index-index .search-box .form-search { padding-top: 30px; }
 .cms-index-index .search-box .form-search .search-label { display: inline-block !important; margin-left: 0 !important; float: left; width: 100%; text-align: center; line-height: 43px; font-size: 30px; font-family: 'houschkaalt-light-regular'; font-weight: normal; }
@@ -263,7 +263,7 @@ input:-webkit-autofill { -webkit-box-shadow: 0 0 0px 1000px white inset; }
 .search-box #search_mini_form #search { width: 392px; }
 .search-box #search_mini_form .input-box { max-width: 395px; position: relative; margin: 0 auto; float: none; clear: none; border: 2px solid #000000; border-right: none; }
 .search-box #search_mini_form .input-box:after { position: absolute; right: -17px; border: 2px solid #000; width: 33px; content: ""; height: 34px; display: block; top: 5px; border-left: none; border-bottom: none; background: #fff; z-index: 99; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); }
-.search-box #search_mini_form button { background: url("../images/sprite.png") 11px -211px transparent no-repeat; position: absolute; right: 1px; text-align: left; text-indent: -3000px; height: 44px; top: 0; bottom: 0; margin: 0 auto; z-index: 100; }
+.search-box #search_mini_form button { background: url("../images/sprite.png") 11px -211px transparent no-repeat; position: absolute; right: 1px; text-align: left; text-indent: -3000px; height: 44px; top: 0; bottom: 0; margin: 0 auto; z-index: 100; max-width: 45px; }
 .search-box #search_mini_form button:hover { background-position: 11px -211px; }
 .search-box #search_mini_form #search { width: 392px; position: relative; float: none; margin: 0 auto; border: none; height: 44px; line-height: 32px; padding: 5px 1%; font-weight: normal; font-family: 'houschkaalt-heavy-italic-regular'; color: #aeaeae; font-size: 18px; font-style: normal; text-align: center; }
 .search-box #search_mini_form #search:focus { box-shadow: none; border-color: transparent; }
