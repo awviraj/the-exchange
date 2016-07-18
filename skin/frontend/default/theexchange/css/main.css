@@ -283,7 +283,7 @@ input:-webkit-autofill { -webkit-box-shadow: 0 0 0px 1000px white inset; }
 #list-items #slider-content #sl-screen #left { background: url("../images/sprite.png") 9px -823px black; left: 0px; }
 #list-items #slider-content #sl-screen #right { background: url("../images/sprite.png") -55px -823px black; right: 0px; }
 #list-items #slider-content #sl-screen .jq-ss-crop { width: 100% !important; }
-#list-items #slider-content #sl-images li { max-width: 120px; margin: 0 16px; height: 195px !important; }
+#list-items #slider-content #sl-images li { max-width: 118px; margin: 0 16px; height: 195px !important; }
 #list-items #slider-content #sl-images li .item button.btn-cart { display: none; }
 #list-items #slider-content #sl-images li .item { width: 100% !important; }
 #list-items #slider-content #sl-images li .item .product-img { width: 100% !important; }
