@@ -55,10 +55,12 @@
   .catalog-category-view .main-container .main .col-main .category-products .toolbar-bottom .toolbar .pager { float: left; width: 100%; }
   .catalog-category-view .main-container .main .col-main .category-products .products-grid li.item .product_quickview { display: none !important; }
   .catalog-category-view .main-container .main .col-main .category-products .products-grid li.item .prod-image img { opacity: 1 !important; }
+  .catalog-category-view .category-title h1 { padding-top: 15px; }
   .page .product-view .mobile-title { display: block; }
   .page .product-view .mobile-title h2 { padding-left: 15px; }
   .page .product-view .product-img-box { float: left; width: 100%; }
   .page .product-view .product-img-box .product-image img { max-height: 240px; }
+  .page .product-view .product-shop { padding: 0 25px; }
   .page .product-view .product-shop .add-to-box .add-to-cart { float: left !important; }
   .page .product-view .product-shop .add-to-box .btn-cart { margin-top: 20px; clear: both; }
   .wrapper .menu-search-wrapper, .cms-index-index .wrapper .menu-search-wrapper { padding-left: 0; padding-right: 0; margin-top: -12px; box-sizing: border-box; -webkit-box-sizing: border-box; }
