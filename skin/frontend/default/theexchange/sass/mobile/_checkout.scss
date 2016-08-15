@@ -1,0 +1,26 @@
+body.checkout-onepage-index .main {
+  .field.name-lastname{
+    margin-left: 0;
+    float: right;
+  }
+  .col2-set {
+    .col-1, .col-2{
+      width: 100%;
+    }
+
+  }
+  #checkout-step-login ul.dash-list{
+    padding-left: 0;
+  }
+  #checkout-step-login .register-div button.btn-register, #checkout-step-login .register-div button.btn-continue{
+    margin-left: 0;
+  }
+  #checkout-step-login .login-div h4{
+    margin-top: 20px;
+  }
+  #checkout-step-login .login-div a.fogot-pw-link{
+    float: left;
+    display: block;
+    width: 100%;
+  }
+}

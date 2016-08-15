@@ -117,7 +117,13 @@
   .cl-effect-21 { margin-top: 22px; }
   .cl-effect-21 a { font-family: 'houschkaalt-medium-regular'; font-weight: normal; text-transform: capitalize; padding: 0px 20px 0px 20px; color: #e3e3e3; font-size: 16px; text-align: left; margin: 0; float: left; width: 100%; display: block; border-bottom: 1px solid #212121; line-height: 39px; letter-spacing: 0; }
   .cl-effect-21 a:hover, .cl-effect-21 a:focus, .cl-effect-21 a:active { text-decoration: none; background: #474646; }
-  .cl-effect-21 a:hover:before, .cl-effect-21 a:hover:after, .cl-effect-21 a:focus:before, .cl-effect-21 a:focus:after, .cl-effect-21 a:active:before, .cl-effect-21 a:active:after { content: ""; display: none; } }
+  .cl-effect-21 a:hover:before, .cl-effect-21 a:hover:after, .cl-effect-21 a:focus:before, .cl-effect-21 a:focus:after, .cl-effect-21 a:active:before, .cl-effect-21 a:active:after { content: ""; display: none; }
+  body.checkout-onepage-index .main .field.name-lastname { margin-left: 0; float: right; }
+  body.checkout-onepage-index .main .col2-set .col-1, body.checkout-onepage-index .main .col2-set .col-2 { width: 100%; }
+  body.checkout-onepage-index .main #checkout-step-login ul.dash-list { padding-left: 0; }
+  body.checkout-onepage-index .main #checkout-step-login .register-div button.btn-register, body.checkout-onepage-index .main #checkout-step-login .register-div button.btn-continue { margin-left: 0; }
+  body.checkout-onepage-index .main #checkout-step-login .login-div h4 { margin-top: 20px; }
+  body.checkout-onepage-index .main #checkout-step-login .login-div a.fogot-pw-link { float: left; display: block; width: 100%; } }
 @media (min-width: 0px) and (max-width: 767px) and (max-width: 340px) { .wrapper .header-container .header .logo-div { margin-top: 13px; }
   .wrapper .header-container .header .logo-div a.logo img { max-width: 80%; } }
 @media (min-width: 0px) and (max-width: 375px) { .search-box #search_mini_form #search { width: 251px; } }
