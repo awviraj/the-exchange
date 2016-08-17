@@ -50,3 +50,29 @@
   }
 
 }
+#checkoutSteps{
+  select{
+    padding: 5px 10px;
+    border: 1px solid #d1d1d1;
+    margin-top: 10px;
+    max-width: 92%;
+  }
+  .step.a-item{
+    padding-left: 15px;
+  }
+  .payment_form{
+    label{
+     // float: left;
+     // width: 100%;
+      margin-top: 8px;
+      //margin-bottom: 7px;
+    }
+    .col2-set .col-1{
+      //width: 100%;
+      .input-text{
+        width: 100%;
+        max-width: 350px;
+      }
+    }
+  }
+}

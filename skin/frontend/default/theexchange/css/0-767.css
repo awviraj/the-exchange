@@ -123,7 +123,8 @@
   body.checkout-onepage-index .main #checkout-step-login ul.dash-list { padding-left: 0; }
   body.checkout-onepage-index .main #checkout-step-login .register-div button.btn-register, body.checkout-onepage-index .main #checkout-step-login .register-div button.btn-continue { margin-left: 0; }
   body.checkout-onepage-index .main #checkout-step-login .login-div h4 { margin-top: 20px; }
-  body.checkout-onepage-index .main #checkout-step-login .login-div a.fogot-pw-link { float: left; display: block; width: 100%; } }
+  body.checkout-onepage-index .main #checkout-step-login .login-div a.fogot-pw-link { float: left; display: block; width: 100%; }
+  body.checkout-onepage-index .main #checkout-step-billing #co-billing-form .control.radio-li { width: 100%; float: left; } }
 @media (min-width: 0px) and (max-width: 767px) and (max-width: 340px) { .wrapper .header-container .header .logo-div { margin-top: 13px; }
   .wrapper .header-container .header .logo-div a.logo img { max-width: 80%; } }
 @media (min-width: 0px) and (max-width: 375px) { .search-box #search_mini_form #search { width: 251px; } }

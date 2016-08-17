@@ -78,7 +78,7 @@ input:-webkit-autofill { -webkit-box-shadow: 0 0 0px 1000px white inset; }
 .checkout-onepage-index .main #checkout-step-billing { padding: 25px 0; }
 .checkout-onepage-index .main #checkout-step-billing #co-billing-form { padding: 0 15px; }
 .checkout-onepage-index .main #checkout-step-billing #co-billing-form .buttons-set { border-right: none; border-left: none; }
-.checkout-onepage-index .main #checkout-step-billing #co-billing-form .control.radio-li { float: left; width: 45%; text-align: right; margin-bottom: 20px; }
+.checkout-onepage-index .main #checkout-step-billing #co-billing-form .control.radio-li { float: left; width: 45%; text-align: left; margin-bottom: 20px; }
 .checkout-onepage-index .main #checkout-step-billing p.required { float: left; text-align: left; }
 .checkout-onepage-index .main #checkout-step-billing .buttons-set { border: 1px solid #cccccc; padding: 15px 0; }
 .checkout-onepage-index .main #checkout-step-billing .buttons-set button.btn { margin-top: 0; }
@@ -106,3 +106,8 @@ input:-webkit-autofill { -webkit-box-shadow: 0 0 0px 1000px white inset; }
 .opc-block-progress dt .changelink { display: none; }
 .opc-block-progress dd { border: none; font-family: 'houschka_alt_promedium'; background: none; font-size: 14px; color: #000; }
 .opc-block-progress dd address { line-height: 18px; }
+
+#checkoutSteps select { padding: 5px 10px; border: 1px solid #d1d1d1; margin-top: 10px; max-width: 92%; }
+#checkoutSteps .step.a-item { padding-left: 15px; }
+#checkoutSteps .payment_form label { margin-top: 8px; }
+#checkoutSteps .payment_form .col2-set .col-1 .input-text { width: 100%; max-width: 350px; }
