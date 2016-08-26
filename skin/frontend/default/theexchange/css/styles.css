@@ -1413,11 +1413,11 @@ tr.summary-details-excluded { font-style:italic; }
 .opc .gift-messages-form { margin:0 -30px; background:#f6f1eb; border:1px solid #e9e4de; border-width:1px 0; padding:22px 24px 22px 30px; }
 .opc .gift-messages-form .inner-box { padding:5px; height:260px; overflow:auto; }
 
-#opc-review .step { border:0; padding:0; }
-#opc-review .product-name { font-weight:bold; color:#0a263c; }
-#opc-review .item-options { margin:5px 0 0; }
-#opc-review .buttons-set { padding:20px 30px;  border-width:0 1px 1px; }
-#opc-review .buttons-set p { margin:0; line-height:40px; }
+#opc-review .step { }
+#opc-review .product-name {  }
+#opc-review .item-options {}
+#opc-review .buttons-set { }
+#opc-review .buttons-set p { }
 #opc-review .buttons-set .please-wait { height:40px; line-height:40px; }
 #opc-review .authentication { margin:0 auto; width:570px; }
 #opc-review .warning-message { color:#222; font-weight:bold; text-align:center; padding:10px 10px 0; }

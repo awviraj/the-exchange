@@ -111,3 +111,9 @@ input:-webkit-autofill { -webkit-box-shadow: 0 0 0px 1000px white inset; }
 #checkoutSteps .step.a-item { padding-left: 15px; }
 #checkoutSteps .payment_form label { margin-top: 8px; }
 #checkoutSteps .payment_form .col2-set .col-1 .input-text { width: 100%; max-width: 350px; }
+
+#checkout-review-table-wrapper table thead { border-bottom: 3px solid #ff0000; border-top: 3px solid #ff0000; }
+#checkout-review-table-wrapper table thead th { font-size: 16px; font-family: 'houschka_alt_probold'; color: #000; }
+#checkout-review-table-wrapper table tbody { border-bottom: 3px solid #ff0000; }
+
+button.btn-checkout { margin-top: 13px; color: #fff; font-family: 'houschka_alt_probold'; font-size: 16px; border-radius: 0; float: right; margin-right: 20px; background: url("../images/sprite.png") no-repeat 0 -1307px; width: 130px; height: 34px; }
