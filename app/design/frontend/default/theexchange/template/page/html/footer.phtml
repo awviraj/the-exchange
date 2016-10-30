@@ -30,14 +30,10 @@
         <?php echo $this->getChildHtml() ?>
         <div class="footer-bottom">
             <a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><img src="<?php echo $this->getSkinUrl('images/logo.png') ?>" /></a>
-            <div class="footer_copyright_links">
-                <ul>
-                    <li><a href="/terms_and_conditions"><?php echo $this->__('Terms & Conditions') ?></a></li>
-                    <li><a href="/privacy_policy"><?php echo $this->__('Privacy Policy') ?></a></li>
-                </ul>
+            <?php $this->getChildHtml('footer_copyright_links') ?>
+            <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('footer_copyright_links')->toHtml();
+            ?>
 
-
-            </div>
         </div>
             <div class="copyright-div">
                 <address><?php echo $this->getCopyright() ?></address>
