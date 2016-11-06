@@ -413,7 +413,7 @@ input:-webkit-autofill { -webkit-box-shadow: 0 0 0px 1000px white inset; }
 
 .m-menu-wrapper { display: none; }
 
-.cms-menu .cl-effect-21 a { color: #fff; font-size: 15px; font-family: 'houschkaalt-bold-regular'; font-weight: normal; font-weight: normal; text-decoration: none; margin: 15px 38px; }
+.cms-menu .cl-effect-21 a { color: #fff; font-size: 15px; font-family: 'houschkaalt-bold-regular'; font-weight: normal; font-weight: normal; text-decoration: none; margin: 15px 38px; position: relative; display: inline-block; outline: 0; text-transform: uppercase; letter-spacing: 1px; }
 .cms-menu .cl-effect-21 a:hover { text-decoration: none; }
 .cms-menu .cl-effect-21 a:before { background: #fff; height: 1px; }
 .cms-menu .cl-effect-21 a:after { background: #fff; height: 1px; }
