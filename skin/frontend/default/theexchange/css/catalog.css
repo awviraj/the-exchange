@@ -83,7 +83,7 @@
 .product-view .product-img-box .more-views .more-views-control.more-views-prev { top: 50%; left: 0; margin-top: -16px; }
 .product-view .product-img-box .more-views .more-views-control.more-views-next { top: 50%; right: 7px; margin-top: -16px; }
 .product-view .product-img-box .more-views .more-views-control.more-views-next a { background-position: -55px -823px; }
-.product-view .product-shop .add-to-box { float: left; width: 100%; }
+.product-view .product-shop .add-to-box { float: left; width: 100%; margin: 26px 0; }
 .product-view .product-shop .add-to-box .add-to-cart { float: right; }
 .product-view .product-shop .add-to-box .add-to-cart label { line-height: 51px; font-family: 'houschka_alt_probold'; font-weight: normal; font-size: 20px; text-transform: uppercase; color: #2f2f2f; }
 .product-view .product-shop .add-to-box .qty-wrapper { background: url("../images/btn-sprite.png") no-repeat -11px -309px; width: 132px; height: 51px; float: left; }
@@ -92,7 +92,7 @@
 .product-view .product-shop .add-to-box .btn-cart:hover { opacity: 0.8; }
 .product-view .product-shop .short-description { margin: 0; font-family: arial, helvetica; font-size: 14px; line-height: 19px; float: left; width: 100%; padding: 20px 0; }
 .product-view .product-shop .short-description p { margin-bottom: 15px; }
-.product-view .product-shop .price_wrapper { float: left; width: 100%; border-top: 4px solid #ff1414; border-bottom: 4px solid #ff1414; padding: 8px 0; }
+.product-view .product-shop .price_wrapper { float: left; width: 100%; border-top: 4px solid #ff1414; border-bottom: 4px solid #ff1414; padding: 15px 0; }
 .product-view .product-shop .price_wrapper .sell_price { float: left; width: 49%; }
 .product-view .product-shop .price_wrapper .sell_price label { float: left; line-height: 29px; font-size: 18px; font-family: 'houschka_alt_probold'; font-weight: normal; color: #000; }
 .product-view .product-shop .price_wrapper .sell_price .price-stock { float: left; margin-left: 5px; }
@@ -107,7 +107,7 @@
 .product-view .product-shop .price_wrapper .buy_price .price-know-more .price { font-family: 'houschka_alt_probold'; font-weight: normal; font-size: 30px; color: #ff0000; line-height: 30px; margin: 0; }
 .product-view .product-shop .price_wrapper .buy_price .price-know-more .know-more { float: right; text-align: right; }
 
-.product-collateral { margin-top: 10px; background: none; padding: 0; }
+.product-collateral { margin-top: 20px; background: none; padding: 0; }
 .product-collateral .product-tabs { border-bottom: 3px solid #ff0000; background: #000; float: left; width: 100%; padding: 0; margin-bottom: 0; }
 .product-collateral .product-tabs li { border-left: none; border-right: none; }
 .product-collateral .product-tabs li.active { border: none; }
