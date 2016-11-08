@@ -1,48 +1,55 @@
 @import "../partials/mixins";
-.catalog-category-view{
-  .main-container{
-    padding:0;
 
-    .main{
-      .row{
-        margin: 0;
-      }
-      .col-main{
-        .category-products {
-          padding: 15px 0;
-          .toolbar{
-            display: none;
-          }
-          .toolbar-bottom{
-            .toolbar{
-              display: block;
+.catalog-category-view {
+    .main-container {
+        padding: 0;
 
-              .pager{
-                float: left;
-                width: 100%;
-
-              }
+        .main {
+            .row {
+                margin: 0;
             }
-          }
-          .products-grid {
-            li{
-              &.item {
-                .product_quickview{
-                  display: none !important;
+
+            .col-main {
+                .category-products {
+                    padding: 15px 0;
+
+                    .toolbar {
+                        display: none;
+                    }
+
+                    .toolbar-bottom {
+                        .toolbar {
+                            display: block;
+
+                            .pager {
+                                float: left;
+                                width: 100%;
+
+                            }
+                        }
+                    }
+
+                    .products-grid {
+                        li {
+                            &.item {
+                                .product_quickview {
+                                    display: none !important;
+                                }
+
+                                .prod-image {
+                                    img {
+                                        opacity: 1 !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
-                .prod-image {
-                  img{
-                    opacity: 1 !important;
-                  }
-                }
-              }
             }
-          }
         }
-      }
     }
-  }
-  .category-title h1{
-    padding-top: 15px;
-  }
+
+    .category-title h1 {
+        padding-top: 15px;
+    }
 }

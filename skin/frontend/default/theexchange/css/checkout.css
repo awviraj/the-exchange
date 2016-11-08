@@ -40,7 +40,7 @@ input:-webkit-autofill { -webkit-box-shadow: 0 0 0px 1000px white inset; }
 .checkout-cart-index .cart .cart-collaterals .checkout-types button { width: 290px; height: 50px; font-family: 'houschka_alt_probold'; color: #fff; font-size: 18px; font-style: normal; font-weight: normal; background: url("../images/btn-sprite.png") no-repeat 0 -458px; }
 .checkout-cart-index .cart .cart-collaterals .checkout-types button:hover { opacity: 0.8; }
 
-.checkout-onepage-index .main .page-title { border-bottom: 3px solid red; }
+.checkout-onepage-index .main .page-title { border-bottom: 3px solid #ff0000; }
 .checkout-onepage-index .main h1 { font-family: 'houschka_alt_prodemiBdIt'; color: #000; font-size: 29px; padding-bottom: 15px; }
 .checkout-onepage-index .main ol.opc .step-title { border: 1px solid #cccccc; border-bottom: none; height: 35px; }
 .checkout-onepage-index .main ol.opc .step-title h2 { color: #717171; font-size: 20px; font-family: 'houschka_alt_prodemibold'; background: none; line-height: 35px; }
@@ -70,7 +70,7 @@ input:-webkit-autofill { -webkit-box-shadow: 0 0 0px 1000px white inset; }
 .checkout-onepage-index .main input[type="text"]:-moz-placeholder, .checkout-onepage-index .main input[type="email"]:-moz-placeholder, .checkout-onepage-index .main input[type="password"]:-moz-placeholder { color: #aeaeae; font-size: 16px; font-family: 'houschkaalt-bold-italic-regular'; font-weight: normal; }
 .checkout-onepage-index .main input[type="text"]::-moz-placeholder, .checkout-onepage-index .main input[type="email"]::-moz-placeholder, .checkout-onepage-index .main input[type="password"]::-moz-placeholder { color: #aeaeae; font-size: 16px; font-family: 'houschkaalt-bold-italic-regular'; font-weight: normal; }
 .checkout-onepage-index .main input[type="text"]:-ms-input-placeholder, .checkout-onepage-index .main input[type="email"]:-ms-input-placeholder, .checkout-onepage-index .main input[type="password"]:-ms-input-placeholder { color: #aeaeae; font-size: 16px; font-family: 'houschkaalt-bold-italic-regular'; font-weight: normal; }
-.checkout-onepage-index .main .form-group label { color: red; text-transform: uppercase; font-size: 12px; font-family: 'houschka_alt_probold'; margin-bottom: 9px; }
+.checkout-onepage-index .main .form-group label { color: #ff0000; text-transform: uppercase; font-size: 12px; font-family: 'houschka_alt_probold'; margin-bottom: 9px; }
 .checkout-onepage-index .main .form-group input[type="text"] { margin-top: 0px; width: 100%; }
 .checkout-onepage-index .main .form-group label + input[type="text"] { margin-top: 0; }
 .checkout-onepage-index .main .form-group select { border: 3px solid #dadada; border-radius: 0; display: block; width: 100%; height: 37px; padding: 6px 12px; font-size: 14px; line-height: 1.428571429; color: #555; background-color: #fff; background-image: none; -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s; transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s; }
@@ -87,22 +87,22 @@ input:-webkit-autofill { -webkit-box-shadow: 0 0 0px 1000px white inset; }
 #checkout-step-login .form-list { padding-top: 15px; padding-bottom: 23px; }
 #checkout-step-login .form-list li:last-of-type { margin-bottom: 0; }
 #checkout-step-login .form-list li:last-of-type .form-group { margin-bottom: 0; }
-#checkout-step-login h4 { font-family: 'houschka_alt_probold'; padding-left: 20px; font-size: 14px; color: red; text-transform: uppercase; margin-bottom: 20px; }
+#checkout-step-login h4 { font-family: 'houschka_alt_probold'; padding-left: 20px; font-size: 14px; color: #ff0000; text-transform: uppercase; margin-bottom: 20px; }
 #checkout-step-login ul.dash-list { padding-left: 20px; padding-bottom: 33px; }
 #checkout-step-login ul.dash-list li { list-style: none; font-family: 'houschka_alt_promedium'; color: #6b6b6b; font-size: 14px; margin-bottom: 12px; }
 #checkout-step-login ul.dash-list li:before { content: "-"; margin-right: 5px; }
 #checkout-step-login .register-div button.btn-register, #checkout-step-login .register-div button.btn-continue { float: left; margin-left: 20px; }
-#checkout-step-login .login-div h4 { font-family: 'houschka_alt_promedium'; font-weight: bold; font-size: 18px; color: black; text-transform: none; margin-bottom: 15px; padding-left: 0; }
-#checkout-step-login .login-div .login-form .form-group label { color: red; text-transform: uppercase; font-size: 12px; font-family: 'houschka_alt_probold'; margin-bottom: 9px; }
+#checkout-step-login .login-div h4 { font-family: 'houschka_alt_promedium'; font-weight: bold; font-size: 18px; color: #000000; text-transform: none; margin-bottom: 15px; padding-left: 0; }
+#checkout-step-login .login-div .login-form .form-group label { color: #ff0000; text-transform: uppercase; font-size: 12px; font-family: 'houschka_alt_probold'; margin-bottom: 9px; }
 #checkout-step-login .login-div a.fogot-pw-link { text-decoration: underline; font-family: 'houschka_alt_promedium'; color: #000; }
 #checkout-step-login .login-div p.required { color: #12b55b; }
 
-.opc-block-progress { border: 3px solid red; padding: 0; }
-.opc-block-progress .block-title { background-color: red; height: 35px; margin-bottom: 0; }
+.opc-block-progress { border: 3px solid #ff0000; padding: 0; }
+.opc-block-progress .block-title { background-color: #ff0000; height: 35px; margin-bottom: 0; }
 .opc-block-progress .block-title h2 { font-size: 16px; color: #ffffff; font-family: 'houschka_alt_probold'; line-height: 35px; text-align: center; }
 .opc-block-progress dt { background: none; line-height: 38px; padding: 0 0 0 15px; margin: 0; border-bottom: 1px solid #e3e3e3; color: #585858; font-family: 'houschka_alt_promedium'; font-size: 18px; font-weight: normal; }
 .opc-block-progress dt:last-of-type { border-bottom: none; }
-.opc-block-progress dt.complete { background: none; color: red; }
+.opc-block-progress dt.complete { background: none; color: #ff0000; }
 .opc-block-progress dt .changelink { display: none; }
 .opc-block-progress dd { border: none; font-family: 'houschka_alt_promedium'; background: none; font-size: 14px; color: #000; }
 .opc-block-progress dd address { line-height: 18px; }

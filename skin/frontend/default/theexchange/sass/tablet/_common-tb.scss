@@ -1,57 +1,77 @@
 @import "../partials/mixins";
 
-.wrapper{
-  .header-container {
-    .header{
-      .top-quick-links,.call-us,.quick-access{
-       // display: none;
-      }
-
+.catalog-category-view {
+    .col-main {
+        padding-left: 0;
     }
-    .fixed-container{
-      .cms-menu{
-        .small-x-logo{
-
-        }
-      }
-
-      nav{
-
-      }
-    }
-
-  }
-  .menu-search-wrapper{
-    max-width: 100%;
-    padding: 0;
-    .cms-menu{
-      max-width: 100%;
-      //display: none;
-
-      .cl-effect-21{
-        a{
-          margin: 15px 25px;
-        }
-      }
-    }
-    .search-row{
-      margin-right: 0;
-      margin-left: 0;
-    }
-    .search-box{
-      max-width: 100%;
-    }
-    &:after,&:before{
-      display: none;
-    }
-
-  }
-  .navbar-container{
-    .navbar{
-      max-width: 100%;
-    }
-  }
 }
-.product-view .product-shop .add-to-box .add-to-cart{
-  float: left !important;
+
+.wrapper {
+    .header-container {
+        .header {
+            .call-us,
+            .quick-access,
+            .top-quick-links {
+                // display: none;
+            }
+
+        }
+
+        .fixed-container {
+            .cms-menu {
+                .small-x-logo {}
+            }
+
+            nav {}
+        }
+    }
+
+    .menu-search-wrapper {
+        max-width: 100%;
+        padding: 0;
+
+        .cms-menu {
+            max-width: 100%;
+            //display: none;
+
+            .cl-effect-21 {
+                a {
+                    margin: 15px 25px;
+                }
+            }
+        }
+
+        .search-row {
+            margin-right: 0;
+            margin-left: 0;
+        }
+
+        .search-box {
+            max-width: 100%;
+        }
+
+        &:after,
+        &:before {
+            display: none;
+        }
+
+    }
+
+    .navbar-container {
+        .navbar {
+            max-width: 100%;
+        }
+    }
+}
+
+.product-view .product-shop .add-to-box .add-to-cart {
+    //float: left !important;
+}
+
+.product-shop {
+    width: 68%;
+}
+
+.product-img-box {
+    width: 32%;
 }

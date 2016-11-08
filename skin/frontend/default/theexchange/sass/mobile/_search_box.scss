@@ -1,155 +1,166 @@
-.wrapper,
-.cms-index-index .wrapper{
-  .menu-search-wrapper{
-    padding-left: 0;
-    padding-right: 0;
-    margin-top: -12px;
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    .cms-menu{
-      display: none;
-    }
-    .search-box{
-      background-size: auto;
-      padding-top: 30px;
-      height: 100px;
-      padding-right: 34px;
-      padding-left: 34px;
+.cms-index-index .wrapper,
+.wrapper {
+    .menu-search-wrapper {
+        padding-left: 0;
+        padding-right: 0;
+        margin-top: -12px;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
 
-      .form-search {
-        padding-top: 0px;
-
-
-
-        .filter-results{
-          display: none;
+        .cms-menu {
+            display: none;
         }
-        .search-inputs{
-          max-width: 82%;
-          width: 82%;
-          float: none;
-          margin: 0 auto;
-          position: relative;
-          background: #fff;
-          border: 2px solid #000000;
-          display:inline-block;
-          height: 42px;
-          //background:url("../images/serach-input-bg.png") repeat-x left top #fff;
-          border: 2px solid #000000;
-          position: relative;
-          border-right: 0;
 
-          &:after,&:before{
-            left: 100%;
-            top: 50%;
-            border: solid transparent;
-            content: " ";
-            height: 0;
-            width: 0;
-            position: absolute;
-            pointer-events: none;
-          }
+        .search-box {
+            background-size: auto;
+            padding-top: 30px;
+            height: 100px;
+            padding-right: 34px;
+            padding-left: 34px;
+            background-color: white;
 
+            .form-search {
+                padding-top: 0;
 
-          &:after{
-            border-color: rgba(255, 255, 255, 0);
-            border-left-color: #fff;
-            border-width: 18px;
-            margin-top: -18px;
-          }
-          &:before{
-            border-color: rgba(0, 0, 0, 0);
-            border-left-color: #000;
-            border-width: 21px;
-            margin-top: -21px;
-          }
+                .filter-results {
+                    display: none;
+                }
 
+                .search-inputs {
+                    max-width: 82%;
+                    width: 82%;
+                    float: none;
+                    margin: 0 auto;
+                    position: relative;
+                    background: #fff;
+                    border: 2px solid #000000;
+                    display: inline-block;
+                    height: 42px;
+                    //background:url("../images/serach-input-bg.png") repeat-x left top #fff;
+                    border: 2px solid #000000;
+                    position: relative;
+                    border-right: 0;
 
-          input{
-            float: left;
-            width: 95%;
-            @include calc (width,'98% - 40px');
-            border:none;
-            height: 37px;
-            line-height: 32px;
-            padding: 5px 1%;
-            //background:url("../images/serach-input-bg.png") repeat-x left top #fff;
+                    &:after,
+                    &:before {
+                        left: 100%;
+                        top: 50%;
+                        border: solid transparent;
+                        content: " ";
+                        height: 0;
+                        width: 0;
+                        position: absolute;
+                        pointer-events: none;
+                    }
 
-            &:focus{
-              box-shadow: none;
-              border-color: transparent;
+                    &:after {
+                        border-color: rgba(255, 255, 255, 0);
+                        border-left-color: #fff;
+                        border-width: 18px;
+                        margin-top: -18px;
+                    }
+
+                    &:before {
+                        border-color: rgba(0, 0, 0, 0);
+                        border-left-color: #000;
+                        border-width: 21px;
+                        margin-top: -21px;
+                    }
+
+                    input {
+                        float: left;
+                        width: 95%;
+                        @include calc (width,'98% - 40px');
+                        border: none;
+                        height: 37px;
+                        line-height: 32px;
+                        padding: 5px 1%;
+                        //background:url("../images/serach-input-bg.png") repeat-x left top #fff;
+                        &:focus {
+                            box-shadow: none;
+                            border-color: transparent;
+                        }
+
+                    }
+
+                    .input-group-btn {
+                        margin-top: 8px;
+                    }
+                }
+
+                .search-label {
+                    display: none !important;
+                }
+
+                .search-close {
+                    display: block;
+                }
+
+                .mobile-search-label {
+                    display: block;
+                    padding-bottom: 5px;
+                    padding-top: 5px;
+                    font-size: 28px;
+                    float: none;
+                    width: 100%;
+                    text-align: center;
+                    line-height: 33px;
+                    font-family: 'houschkaalt-light-regular';
+                    font-weight: normal;
+                }
             }
 
-          }
-          .input-group-btn{
-            margin-top: 8px;
-          }
+            .black-arrow {
+                display: none;
+            }
         }
-        .search-label{
-          display: none !important;
-        }
-        .search-close{
-          display: block;
-        }
-        .mobile-search-label{
-          display: block;
-          padding-bottom: 5px;
-          padding-top: 5px;
-          font-size: 28px;
-          float: none;
-          width: 100%;
-          text-align: center;
-          line-height: 33px;
-          font-family: 'houschkaalt-light-regular';
-          font-weight: normal;
-        }
-      }
 
-      .black-arrow{
-        display: none;
-      }
-    }
-    &:after,&:before{
-      display: none;
-    }
+        &:after,
+        &:before {
+            display: none;
+        }
 
-  }
+    }
 
 }
 
-.cms-index-index .search-box{
-  #search_mini_form {
-    .input-box{
-      max-width: 87%;
+.cms-index-index .search-box {
+    #search_mini_form {
+        .input-box {
+            max-width: 87%;
 
-      &:after{
-        right: -13px;
-        width: 28px;
-        content: "";
-        height: 28px;
-        top: 4px;
-      }
+            &:after {
+                right: -13px;
+                width: 28px;
+                content: "";
+                height: 28px;
+                top: 4px;
+            }
 
-      #search{
-        max-width: 100%;
-        height: 36px;
-        border-radius:0 !important;
-      }
+            #search {
+                max-width: 100%;
+                height: 36px;
+                border-radius: 0 !important;
+            }
+        }
+
+        button {
+            height: 36px;
+            background-position: -60px -214px;
+
+            &:hover {
+                background-position: -60px -214px;
+            }
+        }
     }
-    button{
-      height: 36px;
-      background-position: -60px -214px;
-      &:hover{
-        background-position: -60px -214px;
-      }
+
+    #search-autocomplete {
+        top: 36px;
     }
-  }
-  #search-autocomplete{
-    top: 36px;
-  }
 }
-.search-label{
-  display: none !important;
+
+.search-label {
+    display: none !important;
 }
 //.search-box #search_mini_form #search{
 //  width: 308px;
