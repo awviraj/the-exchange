@@ -38,7 +38,7 @@
   .custom_footer_wrapper .custom_footer_static_block .custom_row1_col2 { text-align: center; }
   .custom_footer_wrapper .custom_footer_static_block .custom_row1_col2 img { max-width: 50px; }
   .col1-layout .col-main { padding: 0; }
-  .footer-container .footer .custom_tweets { background: url("../images/twitter-mb.gif") no-repeat left top black; background-position: 30px 40px; padding-left: 85px; }
+  .footer-container .footer .custom_tweets { background: url("../images/twitter-mb.gif") no-repeat left top #000; background-position: 30px 40px; padding-left: 85px; }
   .footer-container .footer .custom_tweets .custom_row2_col3, .footer-container .footer .custom_tweets .qoute { display: none; }
   .footer-container .footer .footer_links_wrapper .footer_links_subwrapper > div { float: left; width: 100%; margin-bottom: 25px; }
   .footer-container .footer .footer_links_wrapper .footer_links_subwrapper > div ul li { float: left; width: 49%; margin-left: 1%; }
@@ -46,8 +46,10 @@
   .footer-container .footer .footer_brand_section ul li { float: left; width: 42%; margin-bottom: 25px; }
   .footer-container .footer .custom_red_triangle { background: url("../images/footer-red-traingle.png") top center no-repeat; min-height: 324px; }
   .footer-container .footer .custom_red_triangle img { display: none; }
-  #list-items #slider-hover-details .price-name-wrapper { width: 100%; }
-  .qty-wrapper { background: url("../images/btn-sprite.png") no-repeat -11px -309px; width: 132px; height: 51px; float: left; }
+  #list-items #slider-hover-details .price-name-wrapper { width: 100%; } }
+@media (min-width: 0px) and (max-width: 767px) and (max-width: 340px) { .wrapper .header-container .header .logo-div { margin-top: 13px; }
+  .wrapper .header-container .header .logo-div a.logo img { max-width: 80%; } }
+@media (min-width: 0px) and (max-width: 767px) { .qty-wrapper { background: url("../images/btn-sprite.png") no-repeat -11px -309px; width: 132px; height: 51px; float: left; }
   .qty-wrapper .qty { float: left; margin-right: 5px; border: none; max-width: 100px; margin-left: 0px; text-align: center; line-height: 30px; margin-top: 2px; font-family: 'houschka_alt_probold'; font-weight: normal; font-size: 18px; color: #000; }
   .catalog-category-view .main-container { padding: 0; }
   .catalog-category-view .main-container .main .row { margin: 0; }
@@ -61,7 +63,7 @@
   .page .product-view .mobile-title { display: block; }
   .page .product-view .mobile-title h2 { padding-left: 0; padding-bottom: 15px; line-height: 35px; }
   .page .product-view .product-img-box { float: left; width: 100%; padding: 0; }
-  .page .product-view .product-img-box .product-image img { max-height: 240px; }
+  .page .product-view .product-img-box .product-image img { max-height: 100%; }
   .page .product-view .product-essential { margin: 0; }
   .page .product-view .product-shop { padding: 0; }
   .page .product-view .product-shop .product-name { display: none; }
@@ -76,7 +78,7 @@
   .cms-index-index .wrapper .menu-search-wrapper .search-box .form-search .search-inputs, .wrapper .menu-search-wrapper .search-box .form-search .search-inputs { max-width: 82%; width: 82%; float: none; margin: 0 auto; position: relative; background: #fff; border: 2px solid #000000; display: inline-block; height: 42px; border: 2px solid #000000; position: relative; border-right: 0; }
   .cms-index-index .wrapper .menu-search-wrapper .search-box .form-search .search-inputs:after, .cms-index-index .wrapper .menu-search-wrapper .search-box .form-search .search-inputs:before, .wrapper .menu-search-wrapper .search-box .form-search .search-inputs:after, .wrapper .menu-search-wrapper .search-box .form-search .search-inputs:before { left: 100%; top: 50%; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; }
   .cms-index-index .wrapper .menu-search-wrapper .search-box .form-search .search-inputs:after, .wrapper .menu-search-wrapper .search-box .form-search .search-inputs:after { border-color: rgba(255, 255, 255, 0); border-left-color: #fff; border-width: 18px; margin-top: -18px; }
-  .cms-index-index .wrapper .menu-search-wrapper .search-box .form-search .search-inputs:before, .wrapper .menu-search-wrapper .search-box .form-search .search-inputs:before { border-color: rgba(0, 0, 0, 0); border-left-color: #000; border-width: 21px; margin-top: -21px; }
+  .cms-index-index .wrapper .menu-search-wrapper .search-box .form-search .search-inputs:before, .wrapper .menu-search-wrapper .search-box .form-search .search-inputs:before { border-color: transparent; border-left-color: #000; border-width: 21px; margin-top: -21px; }
   .cms-index-index .wrapper .menu-search-wrapper .search-box .form-search .search-inputs input, .wrapper .menu-search-wrapper .search-box .form-search .search-inputs input { float: left; width: 95%; width: -moz-calc(98% - 40px); width: -o-calc(98% - 40px); width: -webkit-calc(98% - 40px); width: calc(98% - 40px); border: none; height: 37px; line-height: 32px; padding: 5px 1%; }
   .cms-index-index .wrapper .menu-search-wrapper .search-box .form-search .search-inputs input:focus, .wrapper .menu-search-wrapper .search-box .form-search .search-inputs input:focus { box-shadow: none; border-color: transparent; }
   .cms-index-index .wrapper .menu-search-wrapper .search-box .form-search .search-inputs .input-group-btn, .wrapper .menu-search-wrapper .search-box .form-search .search-inputs .input-group-btn { margin-top: 8px; }
@@ -130,8 +132,6 @@
   body.checkout-onepage-index .main #checkout-step-login .login-div h4 { margin-top: 20px; }
   body.checkout-onepage-index .main #checkout-step-login .login-div a.fogot-pw-link { float: left; display: block; width: 100%; }
   body.checkout-onepage-index .main #checkout-step-billing #co-billing-form .control.radio-li { width: 100%; float: left; } }
-@media (min-width: 0px) and (max-width: 767px) and (max-width: 340px) { .wrapper .header-container .header .logo-div { margin-top: 13px; }
-  .wrapper .header-container .header .logo-div a.logo img { max-width: 80%; } }
 @media (min-width: 0px) and (max-width: 375px) { .search-box #search_mini_form #search { width: 251px; } }
 @media (min-width: 375px) and (max-width: 414px) { .search-box #search_mini_form #search { width: 308px; } }
 @media (min-width: 413px) and (max-width: 736px) { .search-box #search_mini_form #search { width: 342px; }
