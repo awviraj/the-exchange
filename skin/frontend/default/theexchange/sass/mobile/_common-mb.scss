@@ -344,6 +344,59 @@
     }
 }
 
+.cart-table {
+    colgroup,
+    thead {
+        display: none;
+    }
+
+    tr {
+        display: table;
+
+        td:nth-last-child(1) {
+            display: table-header-group !important;
+            border-bottom: 0 !important;
+
+            .btn-remove {
+                float: right;
+                position: relative;
+                right: 10px;
+                top: 10px;
+            }
+        }
+
+        td {
+            width: 100%;
+            display: inline-block;
+            white-space: normal !important;
+            border-bottom: 1px solid #ddd;
+            border-top: 0 !important;
+            padding: 10px !important;
+            text-align: center;
+
+        }
+
+    }
+
+}
+
+.cart {
+    .totals {
+        width: 100% !important;
+    }
+
+    .btn-checkout {
+        width: 100% !important;
+        background-image: none !important;
+        background-color: red !important;
+        margin-right: 0 !important;
+    }
+
+    .discount {
+        display: none;
+    }
+}
+
 #list-items #slider-hover-details .price-name-wrapper {
     width: 100%;
 }
