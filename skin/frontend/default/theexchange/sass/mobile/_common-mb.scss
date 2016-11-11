@@ -8,6 +8,43 @@
 
 .main {
     padding: 20px;
+
+}
+
+.account-drop-down {
+    z-index: -1;
+    width: 320px !important;
+    right: -5px !important;
+    left: inherit !important;
+
+    ul li {
+        width: 50%;
+        float: left;
+        display: inline-block;
+
+        a {
+            padding: 8px 15px;
+        }
+    }
+}
+
+.account-create {
+    .col-1,
+    .col-2 {
+        width: 100%;
+    }
+
+    .col-xs-12 {
+        padding: 0;
+    }
+
+    .col-lg-6 {
+        padding: 0;
+    }
+}
+
+.new-users {
+    padding-bottom: 20px;
 }
 
 .wrapper {
@@ -22,7 +59,7 @@
             .top-quick-links {
                 display: none;
             }
-            height: 70px;
+            height: 90px;
             border-bottom: none;
             position: static !important;
             top: auto !important;
@@ -30,7 +67,7 @@
             border-top: 2px Solid #000;
 
             .logo-div {
-                margin-top: 18px;
+                margin-top: 26px;
                 width: 100%;
             }
 
@@ -53,6 +90,7 @@
 
             .quick-access {
                 width: 116px;
+                float: right;
 
                 .links {
                     li {
@@ -109,8 +147,9 @@
 
                 .welcome-msg {
                     display: block;
-                    float: right;
-                    @include calc(width,'100% - 116px');
+                    float: left;
+                    padding-right: 10px;
+                    //@include calc(width,'100% - 116px');
 
                     p {
                         color: #fff;
@@ -301,6 +340,12 @@
         }
 
         .footer_links_wrapper {
+            .footer_social_newsletter {
+                li {
+                    margin-left: 1%;
+                }
+            }
+
             .footer_links_subwrapper {
                 > div {
                     float: left;
@@ -311,7 +356,6 @@
                         li {
                             float: left;
                             width: 49%;
-                            margin-left: 1%;
 
                         }
                     }
@@ -406,6 +450,17 @@
 
         a.logo img {
             max-width: 80%;
+        }
+    }
+}
+
+.product-tabs {
+    li {
+        width: 50%;
+        text-align: center;
+
+        a {
+            font-size: 13px !important;
         }
     }
 }

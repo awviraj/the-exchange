@@ -7,10 +7,10 @@
 .main-container .col-main .category-products .products-grid li.item { margin-bottom: 30px; }
 .main-container .col-main .category-products .products-grid li.item .prod-image { position: relative; }
 .main-container .col-main .category-products .products-grid li.item .prod-image .product-image { height: 233px; text-align: center; }
-.main-container .col-main .category-products .products-grid li.item .prod-image img { max-width: 100%; transition: opacity 1s ease-in-out; }
+.main-container .col-main .category-products .products-grid li.item .prod-image img { max-height: 100%; transition: opacity 1s ease-in-out; }
 .main-container .col-main .category-products .products-grid li.item .product-name { margin-top: 10px; text-align: center; height: 42px; overflow: hidden; }
 .main-container .col-main .category-products .products-grid li.item .product-name h2 { font-family: 'houschka_alt_prodemibold'; font-weight: normal; color: #000; font-size: 15px; line-height: 150%; }
-.main-container .col-main .category-products .products-grid li.item .price-box { border-top: 1px solid #dbdbdb; border-bottom: 1px solid #dbdbdb; padding: 10px 10px; width: 100%; margin: 0; text-align: center; }
+.main-container .col-main .category-products .products-grid li.item .price-box { border-top: 1px solid #dbdbdb; border-bottom: 1px solid #dbdbdb; padding: 10px; width: 100%; margin: 0; text-align: center; }
 .main-container .col-main .category-products .products-grid li.item .price-box span { font-size: 22px; font-family: 'houschka_alt_probold'; font-weight: normal; color: #ff0000; }
 .main-container .col-main .category-products .products-grid li.item .product_quickview { display: block; height: 43px; width: 50px; text-align: left; text-indent: -3333px; background: url("../images/sprite.png") no-repeat 0 -930px; left: 50%; margin-left: -25px; margin-top: -21px; position: absolute; top: 50%; opacity: 0; transition: opacity 0.5s ease-in-out; }
 .main-container .col-main .category-products .products-grid li.item .product_quickview:hover { background-position: -90px -930px; }
@@ -27,7 +27,7 @@
 .main-container .col-main .category-products .toolbar .pager .pagination { float: right; width: 49%; margin: 0; }
 .main-container .col-main .category-products .toolbar .pager .pagination .amount, .main-container .col-main .category-products .toolbar .pager .pagination .pages { float: left; width: 100%; }
 .main-container .col-main .category-products .toolbar .pager .pagination .amount { font-family: 'houschka_alt_promedium_italic'; font-style: normal; font-weight: normal; font-size: 12px; color: #000; text-align: right; }
-.main-container .col-main .category-products .toolbar .pager .pagination .pages { margin: 4px 0 0 0; }
+.main-container .col-main .category-products .toolbar .pager .pagination .pages { margin: 4px 0 0; }
 .main-container .col-main .category-products .toolbar .pager .pagination .pages strong { display: none; }
 .main-container .col-main .category-products .toolbar .pager .pagination .pages ol { float: right; }
 .main-container .col-main .category-products .toolbar .pager .pagination .pages ol li { background: #fff; font-size: 10px; font-family: 'houschka_alt_promedium'; display: block; float: left; line-height: 13px; text-align: center; }
@@ -115,6 +115,9 @@
 .product-collateral .product-tabs a { line-height: 44px; font-family: 'houschka_alt_probold'; font-weight: normal; font-size: 15px; color: #fff; text-transform: uppercase; }
 .product-collateral .product-tabs-content { font-size: 14px; line-height: 20px; float: left; width: 100%; padding: 30px 24px; border: 1px solid #dbdbdb; }
 .product-collateral .product-tabs-content p { margin-bottom: 20px; }
+
+.data-table td, .data-table th { padding: 10px; }
+.data-table th { display: block; font-size: 100%; text-align: left; vertical-align: middle; white-space: normal; }
 
 .box-collateral.box-reviews h2 { font-size: 16px; font-family: 'houschka_alt_probold'; font-weight: normal; text-transform: capitalize; font-style: normal; line-height: 150%; color: #000; }
 .box-collateral.box-reviews .form-list .form-group { width: 100%; max-width: 300px; }
