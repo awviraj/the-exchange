@@ -1,85 +1,97 @@
-#checkout-step-login{
-  width: 100%;
-  float:left;
-  .form-list{
-    padding-top: 15px;
-    padding-bottom: 23px;
-    li{
-      &:last-of-type{
-        margin-bottom: 0;
+#checkout-step-login {
+    width: 100%;
+    float: left;
 
-        .form-group{
-          margin-bottom: 0;
+    .form-list {
+        padding-top: 15px;
+        padding-bottom: 23px;
+
+        li {
+            &:last-of-type {
+                margin-bottom: 0;
+
+                .form-group {
+                    margin-bottom: 0;
+                }
+            }
         }
-      }
     }
-  }
-  h4{
-    font-family: 'houschka_alt_probold';
-    padding-left: 20px;
-    font-size: 14px;
-    color: $primary-red;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-  }
-  ul{
-    &.dash-list{
-      padding-left: 20px;
-      padding-bottom: 33px;
-      li{
-        list-style: none;
-        font-family: 'houschka_alt_promedium';
-        color: #6b6b6b;
+
+    h4 {
+        font-family: 'houschka_alt_probold';
+        padding-left: 20px;
         font-size: 14px;
-        margin-bottom: 12px;
-        &:before{
-          content: "-";
-          margin-right: 5px;
-        }
-      }
+        color: $primary-red;
+        text-transform: uppercase;
+        margin-bottom: 20px;
     }
-  }
-  .register-div{
-    button{
-        &.btn-register,&.btn-continue{
-          float: left;
-          margin-left: 20px;
 
+    ul {
+        &.dash-list {
+            padding-left: 20px;
+            padding-bottom: 33px;
+
+            li {
+                list-style: none;
+                font-family: 'houschka_alt_promedium';
+                color: #6b6b6b;
+                font-size: 14px;
+                margin-bottom: 12px;
+
+                &:before {
+                    content: "-";
+                    margin-right: 5px;
+                }
+            }
         }
     }
-  }
-  .login-div{
-    h4{
-      font-family: 'houschka_alt_promedium';
-      font-weight: bold;
-      font-size: 18px;
-      color: $black;
-      text-transform: none;
-      margin-bottom: 15px;
-      padding-left: 0;
-    }
-    .login-form{
-      .form-group{
-        label{
-          color: $primary-red;
-          text-transform: uppercase;
-          font-size: 12px;
-          font-family: 'houschka_alt_probold';
-          margin-bottom: 9px;
+
+    .register-div {
+        button {
+            &.btn-continue,
+            &.btn-register {
+                float: left;
+                margin-left: 20px;
+
+            }
         }
-      }
     }
-    a{
-      &.fogot-pw-link{
-        text-decoration: underline;
-        font-family: 'houschka_alt_promedium';
-        color: #000;
-      }
+
+    .login-div {
+        h4 {
+            font-family: 'houschka_alt_promedium';
+            font-weight: bold;
+            font-size: 18px;
+            color: $black;
+            text-transform: none;
+            margin-bottom: 15px;
+            padding-left: 0;
+        }
+
+        .login-form {
+            .form-group {
+                label {
+                    color: $primary-red;
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    font-family: 'houschka_alt_probold';
+                    margin-bottom: 9px;
+                }
+            }
+        }
+
+        a {
+            &.fogot-pw-link {
+                text-decoration: underline;
+                font-family: 'houschka_alt_promedium';
+                color: #000;
+            }
+        }
+
+        p {
+            &.required {
+                color: #12b55b;
+            }
+        }
     }
-    p{
-      &.required{
-        color: #12b55b;
-      }
-    }
-  }
 }

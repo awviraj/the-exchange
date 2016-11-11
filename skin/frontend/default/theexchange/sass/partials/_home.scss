@@ -1,130 +1,142 @@
 @import "compass/css3";
 @import "mixins";
 
-
-.cms-index-index{
-  .page-title{
-    display: none;
-  }
-  .main{
-    padding: 0;
-    #product-slider{
-      margin-bottom: 0;
-      float: left;
-      width: 100%;
-      padding-top: 38px;
-     // background: #f1f2f2;
-      margin-top: 5px;
-      position:relative;
-
-      .head{
-        h2{
-          position: absolute;
-          top: 14px;
-          left: 0;
-         // background: url("../images/btn-sprite.png") no-repeat 0 -86px transparent;
-          background: #ff0000;
-          color: #fff;
-          padding: 0 42px 0 70px;
-          line-height: 46px;
-          font-family: 'houschkaalt-light-regular';
-          font-weight: normal;
-          font-size: 30px;
-          z-index: 300;
-
-          &:after {
-            left: 100%;
-            top: 50%;
-            border: solid transparent;
-            content: " ";
-            height: 0;
-            width: 0;
-            position: absolute;
-            pointer-events: none;
-            border-color: rgba(255, 0, 0, 0);
-            border-left-color: #ff0000;
-            border-width: 23px 0 23px 11px;
-            margin-top: -23px;
-          }
-        }
-      }
-
-
-    }
-  }
-}
-.youama-slider-block{
-  //margin-top: 5px;
-  box-shadow:  0px -2px 5px #9B9B9B;
-  float: left;
-  width: 100%;
-}
-
-
-.custom_footer_wrapper{
-  margin-top: 5px;
-  padding-top: 38px;
-//  box-shadow:  0px -2px 5px #9B9B9B;
-  float: left;
-  width: 100%;
-  background: #fff;
-  .custom_footer_static_block{
-   // background: #f1f2f2;
-    padding: 38px 65px 20px 65px;
-    width: 100%;
-    box-sizing: border-box;
-    border-top: 1px solid #000;
+.form-search {
     position: relative;
+    z-index: 50000;
+}
+
+.cms-index-index {
+    .page-title {
+        display: none;
+    }
+
+    .main {
+        padding: 0;
+
+        #product-slider {
+            margin-bottom: 0;
+            float: left;
+            width: 100%;
+            padding-top: 38px;
+            // background: #f1f2f2;
+            margin-top: 5px;
+            position: relative;
+
+            .head {
+                h2 {
+                    position: absolute;
+                    top: 14px;
+                    left: 0;
+                    // background: url("../images/btn-sprite.png") no-repeat 0 -86px transparent;
+                    background: #ff0000;
+                    color: #fff;
+                    padding: 0 42px 0 70px;
+                    line-height: 46px;
+                    font-family: 'houschkaalt-light-regular';
+                    font-weight: normal;
+                    font-size: 30px;
+                    z-index: 300;
+
+                    &:after {
+                        left: 100%;
+                        top: 50%;
+                        border: solid transparent;
+                        content: " ";
+                        height: 0;
+                        width: 0;
+                        position: absolute;
+                        pointer-events: none;
+                        border-color: rgba(255, 0, 0, 0);
+                        border-left-color: #ff0000;
+                        border-width: 23px 0 23px 11px;
+                        margin-top: -23px;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+.youama-slider-block {
+    //margin-top: 5px;
+    box-shadow: 0 -2px 5px #9B9B9B;
     float: left;
     width: 100%;
+}
 
-    h2{
-      position: absolute;
-      top: -25px;
-      left: 0;
-      //background:url("../images/btn-sprite.png") no-repeat 0 0 transparent;
-      background: #000000;
-      color: #fff;
-      padding: 0 42px 0 70px;
-      line-height: 46px;
-      @include Houschka_alt_light;
-      font-size: 30px;
+.custom_footer_wrapper {
+    margin-top: 5px;
+    padding-top: 38px;
+    //  box-shadow:  0px -2px 5px #9B9B9B;
+    float: left;
+    width: 100%;
+    background: #fff;
 
-      &:after {
-        left: 100%;
-        top: 50%;
-        border: solid transparent;
-        content: " ";
-        height: 0;
-        width: 0;
-        position: absolute;
-        pointer-events: none;
-        border-color: rgba(0, 0, 0, 0);
-        border-left-color: #000000;
-        border-width: 23px 0 23px 11px;
-        margin-top: -23px;
-      }
-    }
-    h3{
-      @include Houschka_pro_bold;
-      color: #000;
-      font-size: 18px;
-      margin-bottom: 15px;
-    }
+    .custom_footer_static_block {
+        // background: #f1f2f2;
+        padding: 38px 65px 20px;
+        width: 100%;
+        box-sizing: border-box;
+        border-top: 1px solid #000;
+        position: relative;
+        float: left;
+        width: 100%;
 
-    .custom_row1_col1,.custom_row1_col2,.custom_row1_col3{
-      float: left;
-      width: 25%;
+        h2 {
+            position: absolute;
+            top: -25px;
+            left: 0;
+            //background:url("../images/btn-sprite.png") no-repeat 0 0 transparent;
+            background: #000000;
+            color: #fff;
+            padding: 0 42px 0 70px;
+            line-height: 46px;
+            @include Houschka_alt_light;
+            font-size: 30px;
+
+            &:after {
+                left: 100%;
+                top: 50%;
+                border: solid transparent;
+                content: " ";
+                height: 0;
+                width: 0;
+                position: absolute;
+                pointer-events: none;
+                border-color: rgba(0, 0, 0, 0);
+                border-left-color: #000000;
+                border-width: 23px 0 23px 11px;
+                margin-top: -23px;
+            }
+        }
+
+        h3 {
+            @include Houschka_pro_bold;
+            color: #000;
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        .custom_row1_col1,
+        .custom_row1_col2,
+        .custom_row1_col3 {
+            float: left;
+            width: 25%;
+        }
+
+        .custom_row1_col1 {
+            width: 52%;
+        }
+
+        .custom_row1_col2 {
+            width: 16%;
+            text-align: center;
+        }
+
+        .custom_row1_col3 {
+            width: 32%;
+        }
     }
-    .custom_row1_col1{
-      width: 52%;
-    }
-    .custom_row1_col2{
-      width: 16%;
-      text-align: center;
-    }
-    .custom_row1_col3{
-      width: 32%;
-    }
-  }
 }

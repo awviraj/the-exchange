@@ -1,107 +1,120 @@
-.opc-block-progress{
-  border: 3px solid $primary-red;
-  padding: 0 ;
+.opc-block-progress {
+    border: 3px solid $primary-red;
+    padding: 0;
 
-  .block-title{
-    background-color: $primary-red;
-    height: 35px;
-    margin-bottom: 0;
-    h2{
-      font-size: 16px;
-      color: #ffffff;
-      font-family: 'houschka_alt_probold';
-      line-height: 35px;
-      text-align: center;
-    }
-  }
-  dt{
-    background:none;
-    //height: 38px;
-    line-height: 38px;
-    padding: 0 0 0 15px;
-    margin: 0;
-    border-bottom: 1px solid #e3e3e3;
-    color: #585858;
-    font-family: 'houschka_alt_promedium';
-    font-size: 18px;
-    font-weight: normal;
+    .block-title {
+        background-color: $primary-red;
+        height: 35px;
+        margin-bottom: 0;
 
-    &:last-of-type{
-      border-bottom: none;
+        h2 {
+            font-size: 16px;
+            color: #ffffff;
+            font-family: 'houschka_alt_probold';
+            line-height: 35px;
+            text-align: center;
+        }
     }
 
-    &.complete{
-      background: none;
-      color: $primary-red;
-    }
-    .changelink{
-      display: none;
-    }
-  }
-  dd{
-    border: none;
-    font-family: 'houschka_alt_promedium';
-    background: none;
-    font-size: 14px;
-    color: #000;
-    address{
-      line-height: 18px;
-    }
-  }
+    dt {
+        background: none;
+        //height: 38px;
+        line-height: 38px;
+        padding: 0 0 0 15px;
+        margin: 0;
+        border-bottom: 1px solid #e3e3e3;
+        color: #585858;
+        font-family: 'houschka_alt_promedium';
+        font-size: 18px;
+        font-weight: normal;
 
-}
-#checkoutSteps{
-  select{
-    padding: 5px 10px;
-    border: 1px solid #d1d1d1;
-    margin-top: 10px;
-    max-width: 92%;
-  }
-  .step.a-item{
-    padding-left: 15px;
-  }
-  .payment_form{
-    label{
-     // float: left;
-     // width: 100%;
-      margin-top: 8px;
-      //margin-bottom: 7px;
+        &:last-of-type {
+            border-bottom: none;
+        }
+
+        &.complete {
+            background: none;
+            color: $primary-red;
+        }
+
+        .changelink {
+            display: none;
+        }
     }
-    .col2-set .col-1{
-      //width: 100%;
-      .input-text{
-        width: 100%;
-        max-width: 350px;
-      }
-    }
-  }
-}
-#checkout-review-table-wrapper {
-  table{
-    thead{
-      border-bottom: 3px solid #ff0000;
-      border-top: 3px solid #ff0000;
-      th{
-        font-size: 16px;
-        font-family: 'houschka_alt_probold';
+
+    dd {
+        border: none;
+        font-family: 'houschka_alt_promedium';
+        background: none;
+        font-size: 14px;
         color: #000;
-      }
+
+        address {
+            line-height: 18px;
+        }
     }
 
-    tbody{
-      border-bottom: 3px solid #ff0000;
-    }
-  }
 }
-button.btn-checkout, button.success-btn{
-  margin-top: 13px;
-  color: #fff;
-  font-family: 'houschka_alt_probold';
-  font-size: 16px;
-  border-radius: 0;
-  float: right;
-  margin-right: 20px;
-  background:url("../images/sprite.png") no-repeat 0 -1307px;
-  width: 130px;
-  height: 34px;
+
+#checkoutSteps {
+    select {
+        padding: 5px 10px;
+        border: 1px solid #d1d1d1;
+        margin-top: 10px;
+        max-width: 92%;
+    }
+
+    .step.a-item {
+        padding-left: 15px;
+    }
+
+    .payment_form {
+        label {
+            // float: left;
+            // width: 100%;
+            margin-top: 8px;
+            //margin-bottom: 7px;
+        }
+
+        .col2-set .col-1 {
+            //width: 100%;
+            .input-text {
+                width: 100%;
+                max-width: 350px;
+            }
+        }
+    }
+}
+
+#checkout-review-table-wrapper {
+    table {
+        thead {
+            border-bottom: 3px solid #ff0000;
+            border-top: 3px solid #ff0000;
+
+            th {
+                font-size: 16px;
+                font-family: 'houschka_alt_probold';
+                color: #000;
+            }
+        }
+
+        tbody {
+            border-bottom: 3px solid #ff0000;
+        }
+    }
+}
+
+button.btn-checkout,
+button.success-btn {
+    margin-top: 13px;
+    color: #fff;
+    font-family: 'houschka_alt_probold';
+    font-size: 16px;
+    border-radius: 0;
+    float: right;
+    margin-right: 20px;
+    background: url("../images/sprite.png") no-repeat 0 -1307px;
+    width: 130px;
+    height: 34px;
 }

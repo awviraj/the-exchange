@@ -22,12 +22,12 @@
 .login-register input[type="checkbox"] + label { font-size: 16px; color: #000; font-family: 'houschka_alt_probold'; cursor: pointer; line-height: 20px; display: block; }
 .login-register input[type="checkbox"] + label span { display: inline-block; margin: -2px 18px 0 0; vertical-align: middle; background: url("../images/selects.png") no-repeat -2px -40px; background-size: 22px 100px; width: 18px; height: 17px; cursor: pointer; }
 .login-register input[type="checkbox"]:checked + label span { background: url("../images/selects.png") no-repeat -2px -64px; background-size: 22px 100px; width: 18px; height: 18px; }
-.login-register input[type="text"], .login-register input[type="email"], .login-register input[type="password"] { border-radius: 0; background: none; border: 3px solid #dadada; height: 37px; line-height: 20px; padding-left: 15px; }
-.login-register input[type="text"]:-webkit-autofill, .login-register input[type="email"]:-webkit-autofill, .login-register input[type="password"]:-webkit-autofill { background-color: transparent !important; }
-.login-register input[type="text"]::-webkit-input-placeholder, .login-register input[type="email"]::-webkit-input-placeholder, .login-register input[type="password"]::-webkit-input-placeholder { color: #aeaeae; font-size: 16px; font-family: 'houschkaalt-bold-italic-regular'; font-weight: normal; }
-.login-register input[type="text"]:-moz-placeholder, .login-register input[type="email"]:-moz-placeholder, .login-register input[type="password"]:-moz-placeholder { color: #aeaeae; font-size: 16px; font-family: 'houschkaalt-bold-italic-regular'; font-weight: normal; }
-.login-register input[type="text"]::-moz-placeholder, .login-register input[type="email"]::-moz-placeholder, .login-register input[type="password"]::-moz-placeholder { color: #aeaeae; font-size: 16px; font-family: 'houschkaalt-bold-italic-regular'; font-weight: normal; }
-.login-register input[type="text"]:-ms-input-placeholder, .login-register input[type="email"]:-ms-input-placeholder, .login-register input[type="password"]:-ms-input-placeholder { color: #aeaeae; font-size: 16px; font-family: 'houschkaalt-bold-italic-regular'; font-weight: normal; }
+.login-register input[type="email"], .login-register input[type="password"], .login-register input[type="text"] { border-radius: 0; background: none; border: 3px solid #dadada; height: 37px; line-height: 20px; padding-left: 15px; }
+.login-register input[type="email"]:-webkit-autofill, .login-register input[type="password"]:-webkit-autofill, .login-register input[type="text"]:-webkit-autofill { background-color: transparent !important; }
+.login-register input[type="email"]::-webkit-input-placeholder, .login-register input[type="password"]::-webkit-input-placeholder, .login-register input[type="text"]::-webkit-input-placeholder { color: #aeaeae; font-size: 16px; font-family: 'houschkaalt-bold-italic-regular'; font-weight: normal; }
+.login-register input[type="email"]:-moz-placeholder, .login-register input[type="password"]:-moz-placeholder, .login-register input[type="text"]:-moz-placeholder { color: #aeaeae; font-size: 16px; font-family: 'houschkaalt-bold-italic-regular'; font-weight: normal; }
+.login-register input[type="email"]::-moz-placeholder, .login-register input[type="password"]::-moz-placeholder, .login-register input[type="text"]::-moz-placeholder { color: #aeaeae; font-size: 16px; font-family: 'houschkaalt-bold-italic-regular'; font-weight: normal; }
+.login-register input[type="email"]:-ms-input-placeholder, .login-register input[type="password"]:-ms-input-placeholder, .login-register input[type="text"]:-ms-input-placeholder { color: #aeaeae; font-size: 16px; font-family: 'houschkaalt-bold-italic-regular'; font-weight: normal; }
 .login-register .form-group label { color: #ff0000; text-transform: uppercase; font-size: 12px; font-family: 'houschka_alt_probold'; margin-bottom: 9px; }
 .login-register a.fogot-pw-link { text-decoration: underline; font-family: 'houschka_alt_promedium'; color: #000; padding: 10px 0; }
 .login-register p.required { color: #12b55b; }
@@ -37,3 +37,9 @@
 .account-create .buttons-set { padding: 20px 15px; }
 
 .my-account { line-height: 20px; }
+
+.customer-account-index .my-account .box-account { border: 3px solid red; }
+.customer-account-index .my-account .box-account .box-head { background-color: #ff0000; height: 35px; margin-bottom: 0; }
+.customer-account-index .my-account .box-account .box-head h2 { font-size: 16px; color: #ffffff; font-family: 'houschka_alt_probold'; line-height: 35px; text-align: center; }
+.customer-account-index .block-title { background-color: #ff0000; height: 35px; margin-bottom: 0; }
+.customer-account-index .block-title strong { font-size: 16px; color: #ffffff; font-family: 'houschka_alt_probold'; line-height: 35px; text-align: center; padding: 0; }
