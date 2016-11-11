@@ -355,3 +355,18 @@
         }
     }
 }
+
+.data-table {
+    td,
+    th {
+        padding: 10px;
+    }
+
+    th {
+        display: block;
+        font-size: 100%;
+        text-align: left;
+        vertical-align: middle;
+        white-space: normal;
+    }
+}
