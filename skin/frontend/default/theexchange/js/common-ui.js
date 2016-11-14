@@ -28,7 +28,7 @@ jQuery(document).ready(function() {
     ///my account drop down
 
     jQuery("a.top-link-customer").click(function(event) {
-        jQuery('.account-drop-down').slideToggle(300);
+        jQuery('.account-drop-down').fadeToggle(300);
         jQuery(this).toggleClass('clicked');
         event.preventDefault();
     })
@@ -124,6 +124,14 @@ jQuery(document).ready(function() {
         jQuery(".navbar-container").clone().prependTo(".m-menu-wrapper");
         jQuery(".menu-search-wrapper .cl-effect-21").clone().prependTo(".m-menu-wrapper");
         jQuery('<h2>Our products</h2>').prependTo("#custommenu");
+        //jQuery('#custommenu div').removeClass('menu');
+        //jQuery('.parentMenu a').attr('href', jQuery(this).attr('rel'));
+
+        jQuery('.parentMenu a').each(function() {
+            //console.log(jQuery(this).attr('rel'));
+            jQuery(this).attr('href', jQuery(this).attr('rel'));
+        });
+
     }
 
     function menuReset() {
@@ -189,6 +197,7 @@ jQuery(document).ready(function() {
     }
 
     jQuery('.home-slider').bxSlider({
+
         auto: true,
         autoControls: false,
         pause: 3000,

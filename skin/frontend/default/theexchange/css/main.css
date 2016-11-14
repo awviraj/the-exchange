@@ -137,10 +137,10 @@ table .label { color: #333333; }
 .link-wishlist { color: #ff0000 !important; font-size: 16px; font-family: 'houschka_alt_probold'; font-weight: normal; }
 
 .header-container { background: url("../images/page-bg.png") repeat-x top; padding-top: 2px; }
-.header-container .header { width: 100%; height: 160px; margin-top: -3px; max-width: 1260px; padding: 0 30px 0 30px; background: url("../images/header-bg.png") repeat-x bottom #fff; box-shadow: 0 0 0px 0px white, 0 -9px 0px 0px white, 12px 0 15px -4px rgba(204, 204, 204, 0.8), -12px 0 15px -4px rgba(204, 204, 204, 0.8); border-bottom: 4px solid #da0000; border-top: 1px solid #d8d9d9; box-sizing: border-box; }
+.header-container .header { width: 100%; height: 160px; margin-top: -3px; max-width: 1260px; padding: 0 30px; background: url("../images/header-bg.png") repeat-x bottom #fff; box-shadow: 0 0 0 0 white, 0 -9px 0 0 white, 23px 0 15px -15px rgba(204, 204, 204, 0.8), -12px 0 15px -4px rgba(204, 204, 204, 0.8); border-bottom: 4px solid #ff0000; border-top: 1px solid #d8d9d9; box-sizing: border-box; }
 .header-container .header .call-us { float: left; margin-top: 105px; font-family: 'houschkaalt-medium-regular'; font-weight: normal; font-weight: normal; font-size: 12px; color: #282727; text-align: left; }
 .header-container .header .call-us h2 { font-family: 'houschka_alt_probold'; font-weight: normal; color: #ff0000; font-size: 20px; }
-.header-container .header .logo-div { max-width: 420px; width: 100%; margin: 0 auto; margin-top: 34px; float: none; }
+.header-container .header .logo-div { max-width: 420px; width: 100%; margin: 34px auto 0; float: none; }
 .header-container .header .logo-div a.logo { width: 100%; margin: 0; }
 .header-container .header .logo-div a.logo img { max-width: 100%; }
 .header-container .header .top-quick-links { position: absolute; right: 30px; top: 15px; width: AUTO; }
@@ -161,7 +161,7 @@ table .label { color: #333333; }
 .quick-access .links li a.top-link-customer.logged-in:before { color: #000000; }
 .quick-access .links li a:hover { text-decoration: none; }
 .quick-access .links-wrapper { float: left; width: 100%; position: relative; }
-.quick-access .account-drop-down { background: #000; position: absolute; top: 42px; left: 0; width: 100%; box-shadow: -1px 1px 4px #4d4c4c; }
+.quick-access .account-drop-down { background: #000; position: absolute; top: 42px; left: 0; width: 100%; box-shadow: -1px 1px 4px #4d4c4c; z-index: -1; }
 .quick-access .account-drop-down ul li { margin-bottom: 1px; }
 .quick-access .account-drop-down ul li:not(:last-of-type) { border-bottom: 1px solid #212121; }
 .quick-access .account-drop-down ul li a { display: block; line-height: 16px; padding: 12px 15px; font-family: 'houschka_alt_prodemibold'; text-transform: capitalize; color: #e3e3e3; font-size: 13px; text-align: left; font-weight: normal; }
@@ -468,14 +468,14 @@ input:-webkit-autofill { -webkit-box-shadow: 0 0 0px 1000px white inset; }
 .fixed-container .menu-search-wrapper:after, .fixed-container .menu-search-wrapper:before { border: none; }
 .fixed-container .cms-menu { background: transparent; max-width: 1200px; }
 .fixed-container .cms-menu nav { float: left; }
-.fixed-container .cms-menu nav a { line-height: 10px; padding: 9px 10px; margin: 10px 10px; }
+.fixed-container .cms-menu nav a { line-height: 10px; padding: 9px 10px; margin: 10px; }
 .fixed-container .small-x-logo { display: block; }
 .fixed-container .fixed-nav-links { display: block; }
 .fixed-container .quick-buttons { float: right; margin-top: 0; }
 .fixed-container .quick-access { float: left; width: 159px; }
 .fixed-container .quick-access .links li { float: left; background: url("../images/sprite.png") no-repeat 0 -290px; width: 48px; height: 57px; padding: 0; margin-left: 7px; }
 .fixed-container .quick-access .links li:first-child { margin-left: 0; }
-.fixed-container .quick-access .links li a { text-align: left; display: block; float: left; text-indent: -3000px; width: 48px; height: 38px; background: url("../images/sprite.png") no-repeat; }
+.fixed-container .quick-access .links li a { text-align: left; display: block; float: left; text-indent: -3000px; width: 48px; height: 38px; background: none !important; }
 .fixed-container .quick-access .links li a.top-link-cart { position: relative; }
 .fixed-container .quick-access .links li a.top-link-cart .cart-count { font-family: 'houschka_alt_probold'; display: block; width: 13px; height: 13px; background: #000; position: absolute; right: 8px; text-indent: 0; font-size: 12px; color: #fff; top: 10px; line-height: 13px; text-align: center; }
 .fixed-container .action-btns-div { float: left; width: 106px; margin-left: 4px; }
@@ -484,14 +484,17 @@ input:-webkit-autofill { -webkit-box-shadow: 0 0 0px 1000px white inset; }
 .fixed-container .action-btns-div ul li.search a { display: block; width: 100%; height: 56px; background: none; background-position: 13px -438px; }
 .fixed-container .action-btns-div ul li.search a:before { content: "\f002"; line-height: 46px; font-family: fontawesome; display: block; text-indent: 0; text-align: center; font-size: 18px; color: #000; }
 .fixed-container .action-btns-div ul li.search a:hover { text-decoration: none; }
-.fixed-container .action-btns-div ul li .f-nav-menu-link { margin-top: 3px; display: block; width: 100%; height: 45px; cursor: pointer; }
-.fixed-container .action-btns-div ul li .f-nav-menu-link i { line-height: 44px; font-size: 24px; display: block; color: #fff; }
-.fixed-container .action-btns-div ul li .f-nav-menu-link:hover { background-color: #ccc; color: #fff; text-decoration: none i; text-decoration-color: #fff; }
+.fixed-container .action-btns-div ul li .f-nav-menu-link { margin-top: 4px; display: block; width: 100%; height: 42px; cursor: pointer; }
+.fixed-container .action-btns-div ul li .f-nav-menu-link i { line-height: 43px; font-size: 24px; display: block; color: #fff; }
+.fixed-container .action-btns-div ul li .f-nav-menu-link:hover { background-color: #4c4c4c; display: block; color: #4c4c4c; }
+.fixed-container .action-btns-div ul li .f-nav-menu-link:hover text-decoration:none i { color: #fff; }
 .fixed-container .welcome-msg { display: none; }
 
 .navbar-container.f-nav-sub { position: fixed; top: 47px; width: 100%; max-width: 100%; z-index: 1000; }
 
 .f-nav .fixed-container .quick-access .links li a { background-color: #ff0000; }
+
+.m-nav-menu-link { display: none; }
 
 .bx-wrapper { margin-bottom: 0; }
 .bx-wrapper .bx-prev { background: url("../images/sprite.png") no-repeat 3px -1113px; }

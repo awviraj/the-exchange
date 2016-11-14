@@ -1,7 +1,26 @@
 .checkout-onepage-index {
+    .page {
+        .main-container {
+            width: inherit;
+            padding: 0;
+        }
+    }
+
     .main {
         .page-title {
             border-bottom: 3px solid $primary-red;
+        }
+
+        .row {
+            margin: 0;
+
+            .col-main {
+                padding-left: 0;
+            }
+
+            .col-right {
+                padding: 0;
+            }
         }
 
         h1 {
@@ -75,8 +94,7 @@
                                 margin-bottom: 14px;
                             }
 
-                            h4 {
-                                }
+                            h4 {}
 
                             p {
                                 font-family: 'houschka_alt_promedium';
