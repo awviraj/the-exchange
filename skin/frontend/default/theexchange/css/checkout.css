@@ -40,7 +40,11 @@ input:-webkit-autofill { -webkit-box-shadow: 0 0 0px 1000px white inset; }
 .checkout-cart-index .cart .cart-collaterals .checkout-types button { width: 290px; height: 50px; font-family: 'houschka_alt_probold'; color: #fff; font-size: 18px; font-style: normal; font-weight: normal; background: url("../images/btn-sprite.png") no-repeat 0 -458px; }
 .checkout-cart-index .cart .cart-collaterals .checkout-types button:hover { opacity: 0.8; }
 
+.checkout-onepage-index .page .main-container { width: inherit; padding: 0; }
 .checkout-onepage-index .main .page-title { border-bottom: 3px solid #ff0000; }
+.checkout-onepage-index .main .row { margin: 0; }
+.checkout-onepage-index .main .row .col-main { padding-left: 0; }
+.checkout-onepage-index .main .row .col-right { padding: 0; }
 .checkout-onepage-index .main h1 { font-family: 'houschka_alt_prodemiBdIt'; color: #000; font-size: 29px; padding-bottom: 15px; }
 .checkout-onepage-index .main ol.opc .step-title { border: 1px solid #cccccc; border-bottom: none; height: 35px; }
 .checkout-onepage-index .main ol.opc .step-title h2 { color: #717171; font-size: 20px; font-family: 'houschka_alt_prodemibold'; background: none; line-height: 35px; }

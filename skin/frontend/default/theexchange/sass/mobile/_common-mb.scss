@@ -13,19 +13,37 @@
 
 .account-drop-down {
     z-index: -1;
-    width: 320px !important;
-    right: -5px !important;
-    left: inherit !important;
+    width: 192px !important;
+    left: -187px !important;
+    top: 8px !important;
+    box-shadow: none !important;
+    z-index: 500000;
+    //left: inherit !important;
 
-    ul li {
-        width: 50%;
+    li {
         float: left;
         display: inline-block;
+        text-align: center;
+
+        &:nth-child(1) {
+            padding: 0 13px;
+            border-bottom: none !important;
+        }
+
+        &:last-child {
+            padding: 0 13px;
+        }
 
         a {
-            padding: 8px 15px;
+            padding: 8px 0 !important;
+            text-align: center !important;
+
+            &:hover {
+                background-color: #000000 !important;
+            }
         }
     }
+
 }
 
 .account-create {
@@ -54,6 +72,8 @@
 
     .header-container {
         .header {
+            box-shadow: none !important;
+
             .call-us,
             .quick-access,
             .top-quick-links {
@@ -103,7 +123,7 @@
             }
 
             .cms-menu {
-                padding: 1px 5px;
+                padding: 1px 0;
 
                 .small-x-logo {
                     display: none;
@@ -111,20 +131,31 @@
                 }
 
                 .m-nav-menu-link {
-                    margin-top: 3px;
+
+                    margin-top: 4px;
                     display: block;
-                    width: 47px;
-                    height: 45px;
-                    background: url("../images/sprite.png") no-repeat;
-                    background-position: 13px -865px;
+                    width: 45px;
+                    height: 42px;
+                    //background: url("../images/sprite.png") no-repeat;
+                    //background-position: 13px -865px;
                     cursor: pointer;
                     float: left;
 
-                    &:focus,
-                    &:hover,
-                    :active {
-                        opacity: 0.5;
-                        outline: #fff;
+                    i {
+                        line-height: 43px;
+                        font-size: 24px;
+                        display: block;
+                        color: #fff;
+                    }
+
+                    &:hover {
+                        background-color: #4c4c4c;
+                        display: block;
+                        color: #4c4c4c;
+
+                        text-decoration:none i {
+                            color: #fff;
+                        }
                     }
                 }
 
@@ -325,6 +356,12 @@
         padding: 0;
     }
 }
+
+.col2-left-layout {
+    .col-main {
+        padding-left: 0;
+    }
+}
 /////////////////////////////footer////////////////////
 .footer-container {
     .footer {
@@ -446,7 +483,7 @@
 }
 @media (max-width: 340px) {
     .wrapper .header-container .header .logo-div {
-        margin-top: 13px;
+        //margin-top: 13px;
 
         a.logo img {
             max-width: 80%;

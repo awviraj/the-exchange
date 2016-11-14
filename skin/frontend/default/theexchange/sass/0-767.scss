@@ -1,33 +1,32 @@
-
-@media (min-width: 0px) and (max-width: 767px){
-@import "mobile/_common-mb"; /////////////////common responsive style changes for mobiles
-@import "mobile/cat_listing"; ////////////////mobile style for category list page
-@import "mobile/prod_detail_mob";  ////////////////Mobile styles for product detail page
-@import "mobile/search_box";
-@import "mobile/mobile_menu";
-@import "mobile/checkout";
-
-
-}//end of media query
-@media (min-width: 0px) and (max-width: 375px){
-  .search-box #search_mini_form #search {
-    width: 251px;
-  }
+@media (min-width: 0px) and (max-width: 767px) {
+     @import"mobile/_common-mb"; /////////////////common responsive style changes for mobiles
+    @import "mobile/cat_listing"; ////////////////mobile style for category list page
+    @import "mobile/prod_detail_mob";
+    ////////////////Mobile styles for product detail page
+    @import "mobile/search_box";
+    @import "mobile/mobile_menu";
+    @import "mobile/checkout";
 
 }
-@media (min-width: 375px) and (max-width: 414px){
-  .search-box #search_mini_form #search {
-    width: 308px;
-  }
+//end of media query
+@media (min-width: 0px) and (max-width: 375px) {
+    .search-box #search_mini_form #search {
+        width: 251px;
+    }
 
 }
-@media (min-width: 413px) and (max-width: 736px){
-  .search-box #search_mini_form #search {
-    width: 342px;
-  }
-  .search-box #search_mini_form .input-box{
-    max-width: 346px;
-  }
+@media (min-width: 375px) and (max-width: 414px) {
+    .search-box #search_mini_form #search {
+        width: 308px;
+    }
+
 }
+@media (min-width: 413px) and (max-width: 736px) {
+    .search-box #search_mini_form #search {
+        width: 342px;
+    }
 
-
+    .search-box #search_mini_form .input-box {
+        max-width: 346px;
+    }
+}
