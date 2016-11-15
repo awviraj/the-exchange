@@ -2,7 +2,7 @@
   .qty-wrapper .qty { float: left; margin-right: 5px; border: none; max-width: 100px; margin-left: 0px; text-align: center; line-height: 30px; margin-top: 2px; font-family: 'houschka_alt_probold'; font-weight: normal; font-size: 18px; color: #000; }
   .catalog-category-view .col-main { padding-left: 0; }
   .main { padding: 20px; }
-  .account-drop-down { z-index: -1; width: 192px !important; left: -187px !important; top: 8px !important; box-shadow: none !important; z-index: 500000; }
+  .account-drop-down { z-index: 1 !important; width: 192px !important; left: -187px !important; top: 8px !important; box-shadow: none !important; z-index: 500000; }
   .account-drop-down li { float: left; display: inline-block; text-align: center; }
   .account-drop-down li:nth-child(1) { padding: 0 13px; border-bottom: none !important; }
   .account-drop-down li:last-child { padding: 0 13px; }
@@ -156,6 +156,10 @@
   body.checkout-onepage-index .main .col-xs-12 { padding: 0; }
   body.checkout-onepage-index .main .field.name-lastname { margin-left: 0; float: right; }
   body.checkout-onepage-index .main .col2-set .col-1, body.checkout-onepage-index .main .col2-set .col-2 { width: 100%; }
+  body.checkout-onepage-index .main .register-div .col-lg-12 { padding: 0; }
+  body.checkout-onepage-index .main .register-div .dash-list { padding-bottom: 0 !important; }
+  body.checkout-onepage-index .main .register-div h4 { padding-left: 0 !important; }
+  body.checkout-onepage-index .main #checkout-step-billing { padding: 15px !important; }
   body.checkout-onepage-index .main #checkout-step-login ul.dash-list { padding-left: 0; }
   body.checkout-onepage-index .main #checkout-step-login .register-div button.btn-continue, body.checkout-onepage-index .main #checkout-step-login .register-div button.btn-register { margin-left: 0; }
   body.checkout-onepage-index .main #checkout-step-login .login-div h4 { margin-top: 20px; }

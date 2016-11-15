@@ -57,7 +57,7 @@ input:-webkit-autofill { -webkit-box-shadow: 0 0 0px 1000px white inset; }
 .checkout-onepage-index .main ol.opc li.section .step h3 { font-family: 'houschka_alt_promedium'; font-size: 18px; color: #000; margin-bottom: 14px; }
 .checkout-onepage-index .main ol.opc li.section .step p { font-family: 'houschka_alt_promedium'; font-size: 14px; color: #000; }
 .checkout-onepage-index .main ol.opc li.section .step p.required { color: #12b55b; }
-.checkout-onepage-index .main ol.opc li.section button.btn { margin-top: 13px; color: #fff; font-family: 'houschka_alt_probold'; font-size: 16px; border-radius: 0; float: right; margin-right: 20px; background: url("../images/sprite.png") no-repeat 0 -1307px; width: 130px; height: 34px; }
+.checkout-onepage-index .main ol.opc li.section button.btn { margin-top: 13px; color: #fff; font-family: 'houschka_alt_probold'; font-size: 16px; border-radius: 0; float: right; background: url("../images/sprite.png") no-repeat 0 -1307px; width: 130px; height: 34px; }
 .checkout-onepage-index .main ol.opc li:last-of-type .step-title { border-bottom: 1px solid #cccccc; }
 .checkout-onepage-index .main .buttons-set { width: 100%; float: left; border: none; }
 .checkout-onepage-index .main input[type="radio"] { display: none; }
@@ -79,13 +79,20 @@ input:-webkit-autofill { -webkit-box-shadow: 0 0 0px 1000px white inset; }
 .checkout-onepage-index .main .form-group label + input[type="text"] { margin-top: 0; }
 .checkout-onepage-index .main .form-group select { border: 3px solid #dadada; border-radius: 0; display: block; width: 100%; height: 37px; padding: 6px 12px; font-size: 14px; line-height: 1.428571429; color: #555; background-color: #fff; background-image: none; -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; }
 .checkout-onepage-index .main .field.name-lastname { margin-left: 20px; }
-.checkout-onepage-index .main #checkout-step-billing { padding: 25px 0; }
-.checkout-onepage-index .main #checkout-step-billing #co-billing-form { padding: 0 15px; }
-.checkout-onepage-index .main #checkout-step-billing #co-billing-form .buttons-set { border-right: none; border-left: none; }
-.checkout-onepage-index .main #checkout-step-billing #co-billing-form .control.radio-li { float: left; width: 45%; text-align: left; margin-bottom: 20px; }
-.checkout-onepage-index .main #checkout-step-billing p.required { float: left; text-align: left; }
-.checkout-onepage-index .main #checkout-step-billing .buttons-set { border: 1px solid #cccccc; padding: 15px 0; }
-.checkout-onepage-index .main #checkout-step-billing .buttons-set button.btn { margin-top: 0; }
+.checkout-onepage-index .main #checkout-step-billing, .checkout-onepage-index .main #checkout-step-shipping { padding: 20px !important; }
+.checkout-onepage-index .main #checkout-step-billing .col-lg-6, .checkout-onepage-index .main #checkout-step-shipping .col-lg-6 { padding: 0; }
+.checkout-onepage-index .main #checkout-step-billing #billing-buttons-container, .checkout-onepage-index .main #checkout-step-billing #shipping-buttons-container, .checkout-onepage-index .main #checkout-step-shipping #billing-buttons-container, .checkout-onepage-index .main #checkout-step-shipping #shipping-buttons-container { border: none; }
+.checkout-onepage-index .main #checkout-step-billing label, .checkout-onepage-index .main #checkout-step-shipping label { float: none; }
+.checkout-onepage-index .main #checkout-step-billing .input-box, .checkout-onepage-index .main #checkout-step-shipping .input-box { padding: 0; margin-top: 15px; margin-bottom: 15px; border: 1px solid #ccc; width: 100%; border-radius: 10px; overflow: hidden; background-color: #fff; background: #fff; position: relative; min-height: 50px; }
+.checkout-onepage-index .main #checkout-step-billing .input-box:after, .checkout-onepage-index .main #checkout-step-shipping .input-box:after { top: 50%; right: 15px; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: transparent; border-top-color: #000000; border-width: 5px; margin-top: -2px; z-index: 100; }
+.checkout-onepage-index .main #checkout-step-billing .input-box .address-select, .checkout-onepage-index .main #checkout-step-shipping .input-box .address-select { padding: 5px 15px; width: 100%; border: none; box-shadow: none; background-color: transparent; background-image: none; -webkit-appearance: none; -moz-appearance: none; appearance: none; max-width: none; margin-top: 0; min-height: 50px; white-space: pre-wrap; line-height: 17px; }
+.checkout-onepage-index .main #checkout-step-billing .select-style .address-select:focus, .checkout-onepage-index .main #checkout-step-shipping .select-style .address-select:focus { outline: none; }
+.checkout-onepage-index .main #checkout-step-billing #co-billing-form, .checkout-onepage-index .main #checkout-step-shipping #co-billing-form { padding: 0 15px; }
+.checkout-onepage-index .main #checkout-step-billing #co-billing-form .buttons-set, .checkout-onepage-index .main #checkout-step-shipping #co-billing-form .buttons-set { border-right: none; border-left: none; }
+.checkout-onepage-index .main #checkout-step-billing #co-billing-form .control.radio-li, .checkout-onepage-index .main #checkout-step-shipping #co-billing-form .control.radio-li { float: left; width: 45%; text-align: left; margin-bottom: 20px; }
+.checkout-onepage-index .main #checkout-step-billing p.required, .checkout-onepage-index .main #checkout-step-shipping p.required { float: left; text-align: left; }
+.checkout-onepage-index .main #checkout-step-billing .buttons-set, .checkout-onepage-index .main #checkout-step-shipping .buttons-set { border: 1px solid #cccccc; padding: 15px 0; }
+.checkout-onepage-index .main #checkout-step-billing .buttons-set button.btn, .checkout-onepage-index .main #checkout-step-shipping .buttons-set button.btn { margin-top: 0; }
 
 #checkout-step-login { width: 100%; float: left; }
 #checkout-step-login .form-list { padding-top: 15px; padding-bottom: 23px; }
@@ -111,7 +118,7 @@ input:-webkit-autofill { -webkit-box-shadow: 0 0 0px 1000px white inset; }
 .opc-block-progress dd { border: none; font-family: 'houschka_alt_promedium'; background: none; font-size: 14px; color: #000; }
 .opc-block-progress dd address { line-height: 18px; }
 
-#checkoutSteps select { padding: 5px 10px; border: 1px solid #d1d1d1; margin-top: 10px; max-width: 92%; }
+#checkoutSteps select { padding: 5px 10px; border: 1px solid #d1d1d1; margin-top: 10px; }
 #checkoutSteps .step.a-item { padding-left: 15px; }
 #checkoutSteps .payment_form label { margin-top: 8px; }
 #checkoutSteps .payment_form .col2-set .col-1 .input-text { width: 100%; max-width: 350px; }

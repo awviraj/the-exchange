@@ -16,6 +16,24 @@ body.checkout-onepage-index .main {
 
     }
 
+    .register-div {
+        .col-lg-12 {
+            padding: 0;
+        }
+
+        .dash-list {
+            padding-bottom: 0 !important;
+        }
+
+        h4 {
+            padding-left: 0 !important;
+        }
+    }
+
+    #checkout-step-billing {
+        padding: 15px !important;
+    }
+
     #checkout-step-login ul.dash-list {
         padding-left: 0;
     }
