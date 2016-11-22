@@ -32,8 +32,45 @@
             font-size: 14px;
             font-weight: normal;
 
+            &.current {
+                color: $primary-red;
+            }
+
+            a {
+                color: #585858;
+
+                &:hover {
+                    color: $primary-red;
+                }
+            }
+
             &:last-of-type {
                 border-bottom: none;
+            }
+        }
+    }
+
+    .block-reorder {
+        ol {
+            li {
+                .product-name a {
+                    color: #585858;
+                }
+                color: #585858;
+            }
+        }
+
+    }
+
+    .actions {
+        a {
+            color: $primary-red;
+        }
+
+        .btn-cart {
+            span {
+                background: $primary-red;
+                height: auto;
             }
         }
     }
@@ -230,10 +267,30 @@
 
             border: 3px solid red;
 
+            .data-table {
+                .nobr a {
+                    color: $primary-red !important;
+                }
+            }
+
+            .box-content,
+            .box-title {
+                a {
+                    color: $primary-red;
+                }
+            }
+
             .box-head {
                 background-color: #ff0000;
                 height: 35px;
-                margin-bottom: 0;
+                margin-bottom: 15px;
+
+                a {
+                    color: #fff;
+                    padding-right: 15px;
+                    margin-top: 8px;
+                    float: right;
+                }
 
                 h2 {
                     font-size: 16px;
