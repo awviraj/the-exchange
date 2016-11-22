@@ -1,196 +1,206 @@
 @import "../partials/mixins";
 
-#custommenu{
-  div{
-    &.menu{
-      width: 14.6%;
-      margin: 0 1%;
+#custommenu {
+    div {
+        &.menu {
+            width: 18%;
+            margin: 0 1%;
 
-      a{
-        @include Houschka_alt_med;
-        text-transform: capitalize;
-        padding: 0px 20px 0px 20px;
-        color: #e3e3e3;
-        font-size: 16px;
+            a {
+                @include Houschka_alt_med;
+                text-transform: capitalize;
+                padding: 0 20px;
+                color: #e3e3e3;
+                font-size: 16px;
 
+                &:hover {
+                    background: #474646;
+                }
 
-        &:hover{
-          background: #474646;
-        }
-
-        span{
-          color: #fff;
-          line-height: 40px;
-          padding-top: 0;
-          height: auto;
-        }
-      }
-      &.active a{
-        background: #000 !important;
-        color: #e3e3e3 !important;
-        position: relative;
-        z-index: 20000;
-
-        &:after{
-          top: 100%;
-          left: 50%;
-          border: solid transparent;
-          content: " ";
-          height: 0;
-          width: 0;
-          position: absolute;
-          pointer-events: none;
-          border-color: rgba(0, 0,0, 0);
-          border-top-color: #000;
-          border-width: 15px;
-          margin-left: -15px;
-        }
-      }
-
-    }
-    &.wp-custom-menu-popup{
-      background: #fff;
-      padding: 33px 62px;
-      box-sizing: border-box;
-      top:42px !important;
-
-      .itemMenu{
-        > a.itemMenuName{
-         // border-bottom: 1px solid #fff;
-          padding-left: 0;
-          padding-bottom: 7px;
-          margin-bottom: 6px;
-
-          span{
-            display: inline;
-            border-bottom: 1px solid #fff;
-          }
-
-          &:hover{
-            //border-bottom: 1px solid #ff0000;
-            background: none;
-            //color: #ff0000;
-            //text-decoration: underline;
-            span{
-              color: #ff0000;
-              border-bottom: 1px solid #ff0000;
+                span {
+                    color: #fff;
+                    line-height: 40px;
+                    padding-top: 0;
+                    height: auto;
+                }
             }
-          }
-        }
-        .itemSubMenu{
-          display: none;
-          a.itemMenuName{
-            border-bottom: none;
-            text-transform: lowercase;
-            padding-bottom: 3px;
-            line-height: 20px;
-            margin-bottom: 0;
-          }
-        }
-      }
 
+            &.active a {
+                background: #000 !important;
+                color: #e3e3e3 !important;
+                position: relative;
+                z-index: 20000;
 
-      .block1,.block2{
-        float: left;
-        width: 100%;
-
-      }
-      .block2{
-        margin-left: 2%;
-      }
-      .block_title{
-        font-family: 'houschkaalt-bold-italic-regular';
-        font-weight: normal;
-        font-style: normal;
-        font-size: 25px;
-        color: #000;
-        border-bottom: 1px solid #ff0000;
-        margin-bottom: 20px;
-      }
-      .block1{
-        .column{
-          float: left;
-          width: 32%;
-          margin-left: 2%;
-
-          &.first{
-            margin-left: 0;
-          }
-          .itemMenu{
-            a{
-              color: #000;
-              font-family: 'houschka_alt_prodemibold';
-              font-size: 15px;
-              font-weight: normal;
+                &:after {
+                    top: 100%;
+                    left: 50%;
+                    border: solid transparent;
+                    content: " ";
+                    height: 0;
+                    width: 0;
+                    position: absolute;
+                    pointer-events: none;
+                    border-color: rgba(0, 0,0, 0);
+                    border-top-color: #000;
+                    border-width: 15px;
+                    margin-left: -15px;
+                }
             }
-          }
+
         }
-      }
-    }
-  }
-  .best-seller{
-    .productScrollWrap{
-      float: left;
-      width: 100%;
 
-      .bestseller_wrapper{
-        li{
-          float: left;
-          width: 33%;
-          padding-left: 10px;
-          padding-right: 10px;
+        &.wp-custom-menu-popup {
+            background: #fff;
+            padding: 33px 62px;
+            box-sizing: border-box;
+            top: 42px !important;
 
-          a{
-            img{
-              max-width: 100%;
+            .itemMenu {
+                > a.itemMenuName {
+                    // border-bottom: 1px solid #fff;
+                    padding-left: 0;
+                    padding-bottom: 7px;
+                    margin-bottom: 6px;
+
+                    span {
+                        display: inline;
+                        border-bottom: 1px solid #fff;
+                    }
+
+                    &:hover {
+                        //border-bottom: 1px solid #ff0000;
+                        background: none;
+                        //color: #ff0000;
+                        //text-decoration: underline;
+                        span {
+                            color: #ff0000;
+                            border-bottom: 1px solid #ff0000;
+                        }
+                    }
+                }
+
+                .itemSubMenu {
+                    display: none;
+
+                    a.itemMenuName {
+                        border-bottom: none;
+                        text-transform: lowercase;
+                        padding-bottom: 3px;
+                        line-height: 20px;
+                        margin-bottom: 0;
+                    }
+                }
             }
-          }
-        }
-      }
 
-      .bx-wrapper{
-        .bx-viewport{
-          height: 280px !important;
-        }
-      }
-    }
-    .product-details{
+            .block1,
+            .block2 {
+                float: left;
+                width: 100%;
 
-      a{
-        text-align: center;
-        font-family: 'houschka_alt_prodemibold';
-        font-size: 14px;
-        line-height: 120%;
-        color: #000;
-        display: block;
-        height: 40px;
-        padding: 5px 0;
-        overflow: hidden;
-      }
-      .bestseller_price{
-        display: block;
-        border-top: 1px solid #bbbbbb;
-        float: left;
-        width: 100%;
-        @include Houschka_alt_bold;
-        color: #ff0000;
-        text-align: center;
-        padding: 8px 5px;
-        line-height: 120%;
-
-        .price-box{
-          .regular-price{
-            @include Houschka_alt_bold;
-            color: #ff0000;
-            span{
-              @include Houschka_alt_bold;
-              color: #ff0000;
-              font-size: 22px;
-              font-weight: normal;
             }
-          }
+
+            .block2 {
+                margin-left: 2%;
+            }
+
+            .block_title {
+                font-family: 'houschkaalt-bold-italic-regular';
+                font-weight: normal;
+                font-style: normal;
+                font-size: 25px;
+                color: #000;
+                border-bottom: 1px solid #ff0000;
+                margin-bottom: 20px;
+            }
+
+            .block1 {
+                .column {
+                    float: left;
+                    width: 32%;
+                    margin-left: 2%;
+
+                    &.first {
+                        margin-left: 0;
+                    }
+
+                    .itemMenu {
+                        a {
+                            color: #000;
+                            font-family: 'houschka_alt_prodemibold';
+                            font-size: 15px;
+                            font-weight: normal;
+                        }
+                    }
+                }
+            }
         }
-      }
     }
-  }
+
+    .best-seller {
+        .productScrollWrap {
+            float: left;
+            width: 100%;
+
+            .bestseller_wrapper {
+                li {
+                    float: left;
+                    width: 33%;
+                    padding-left: 10px;
+                    padding-right: 10px;
+
+                    a {
+                        img {
+                            max-width: 100%;
+                        }
+                    }
+                }
+            }
+
+            .bx-wrapper {
+                .bx-viewport {
+                    height: 280px !important;
+                }
+            }
+        }
+
+        .product-details {
+            a {
+                text-align: center;
+                font-family: 'houschka_alt_prodemibold';
+                font-size: 14px;
+                line-height: 120%;
+                color: #000;
+                display: block;
+                height: 40px;
+                padding: 5px 0;
+                overflow: hidden;
+            }
+
+            .bestseller_price {
+                display: block;
+                border-top: 1px solid #bbbbbb;
+                float: left;
+                width: 100%;
+                @include Houschka_alt_bold;
+                color: #ff0000;
+                text-align: center;
+                padding: 8px 5px;
+                line-height: 120%;
+
+                .price-box {
+                    .regular-price {
+                        @include Houschka_alt_bold;
+                        color: #ff0000;
+
+                        span {
+                            @include Houschka_alt_bold;
+                            color: #ff0000;
+                            font-size: 22px;
+                            font-weight: normal;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

@@ -8,7 +8,14 @@
 .col-left .block-account .block-title { background-color: #ff0000; height: 35px; margin-bottom: 0; }
 .col-left .block-account .block-title h2, .col-left .block-account .block-title strong { font-size: 16px; color: #ffffff; font-family: 'houschka_alt_probold'; line-height: 35px; text-align: center; }
 .col-left .block-account li { background: none; line-height: 30px; margin: 0; border-bottom: 1px solid #e3e3e3; color: #585858; font-family: 'houschka_alt_promedium'; font-size: 14px; font-weight: normal; }
+.col-left .block-account li.current { color: #ff0000; }
+.col-left .block-account li a { color: #585858; }
+.col-left .block-account li a:hover { color: #ff0000; }
 .col-left .block-account li:last-of-type { border-bottom: none; }
+.col-left .block-reorder ol li { color: #585858; }
+.col-left .block-reorder ol li .product-name a { color: #585858; }
+.col-left .actions a { color: #ff0000; }
+.col-left .actions .btn-cart span { background: #ff0000; height: auto; }
 
 .login-register .page-title { border-bottom: none; }
 .login-register h2 { font-family: 'houschka_alt_probold'; font-weight: normal; color: #000; font-size: 18px; margin-bottom: 15px; }
@@ -39,7 +46,10 @@
 .my-account { line-height: 20px; }
 
 .customer-account-index .my-account .box-account { border: 3px solid red; }
-.customer-account-index .my-account .box-account .box-head { background-color: #ff0000; height: 35px; margin-bottom: 0; }
+.customer-account-index .my-account .box-account .data-table .nobr a { color: #ff0000 !important; }
+.customer-account-index .my-account .box-account .box-content a, .customer-account-index .my-account .box-account .box-title a { color: #ff0000; }
+.customer-account-index .my-account .box-account .box-head { background-color: #ff0000; height: 35px; margin-bottom: 15px; }
+.customer-account-index .my-account .box-account .box-head a { color: #fff; padding-right: 15px; margin-top: 8px; float: right; }
 .customer-account-index .my-account .box-account .box-head h2 { font-size: 16px; color: #ffffff; font-family: 'houschka_alt_probold'; line-height: 35px; text-align: center; }
 .customer-account-index .block-title { background-color: #ff0000; height: 35px; margin-bottom: 0; }
 .customer-account-index .block-title strong { font-size: 16px; color: #ffffff; font-family: 'houschka_alt_probold'; line-height: 35px; text-align: center; padding: 0; }
