@@ -100,13 +100,11 @@ body { background: url("../images/body-bg.png") repeat; font-size: 14px; font-fa
 .footer_social_newsletter .footer_social_links { text-align: left; }
 .footer_social_newsletter .footer_social_links h4 { float: left; display: block; line-height: 30px; margin-bottom: 0; }
 .footer_social_newsletter .footer_social_links ul { float: left; padding-left: 22px; }
-.footer_social_newsletter .footer_social_links ul li { float: left; width: 25px; height: 25px; margin-left: 10px; padding: 0; }
+.footer_social_newsletter .footer_social_links ul li { float: left; width: 25px; height: 25px; margin-left: 10px; padding: 0 10px 0 0; }
 .footer_social_newsletter .footer_social_links ul li:first-child { margin-left: 0; }
-.footer_social_newsletter .footer_social_links ul li a { display: block; text-align: left; text-indent: -3000px; background: url("../images/sprite.png") no-repeat 3px -790px; height: 25px; width: 25px; }
-.footer_social_newsletter .footer_social_links ul li.fb a { background-position: 3px -790px; }
-.footer_social_newsletter .footer_social_links ul li.fb a:hover { background-position: -63px -790px; }
-.footer_social_newsletter .footer_social_links ul li.twitter a { background-position: -26px -790px; }
-.footer_social_newsletter .footer_social_links ul li.twitter a:hover { background-position: -96px -790px; }
+.footer_social_newsletter .footer_social_links ul li a { display: block; text-align: left; height: 25px; width: 25px; font-size: 24px; color: #ff0000; }
+.footer_social_newsletter .footer_social_links ul li a:hover { color: #7c7c7c; }
+.footer_social_newsletter .footer_social_links ul li.twitter a { font-size: 26px; }
 
 .col2-left-layout .main { padding: 20px; background: #ffffff; }
 .col2-left-layout .main .row { margin: 0; }
@@ -246,17 +244,28 @@ table .label { color: #333333; }
 .qty-wrapper { background: url("../images/btn-sprite.png") no-repeat -11px -309px; width: 132px; height: 51px; float: left; }
 .qty-wrapper .qty { float: left; margin-right: 5px; border: none; max-width: 100px; margin-left: 0px; text-align: center; line-height: 30px; margin-top: 2px; font-family: 'houschka_alt_probold'; font-weight: normal; font-size: 18px; color: #000; }
 
-.dms-productrepairs-index-index h1 { font-size: 42px; font-family: 'houschkaalt-bold-italic-regular'; font-weight: normal; color: #fff; float: left; width: 100%; border-bottom: 3px solid #fff; }
-.dms-productrepairs-index-index .main.container { background: #ff0000; padding: 20px 30px 0 30px; }
-.dms-productrepairs-index-index .main.container .img-wrapper { margin-left: -30px; margin-bottom: -3px; }
-.dms-productrepairs-index-index .page-description { float: left; width: 100%; color: #fff; font-size: 20px; font-family: 'houschkaalt-medium-regular'; font-weight: normal; padding-top: 20px; }
-.dms-productrepairs-index-index .form-group label { color: #fff; font-family: 'houschka_alt_probold'; font-size: 14px; }
-.dms-productrepairs-index-index button { margin-top: 13px; color: #fff; font-family: 'houschka_alt_probold'; font-size: 16px; border-radius: 0; float: right; margin-right: 0; background: url("../images/sprite.png") no-repeat 0 -1347px; width: 130px; height: 34px; border: none; margin-bottom: 10px; }
+.dms-productrepairs-index-index h1 { font-size: 42px; font-family: 'houschkaalt-bold-italic-regular'; font-weight: normal; color: #ff0000; float: left; width: 100%; border-bottom: 3px solid #ff0000; }
+.dms-productrepairs-index-index .main.container { background: #fff; padding: 20px 30px 0; }
+.dms-productrepairs-index-index .main.container .img-wrapper { text-align: center; }
+.dms-productrepairs-index-index .main.container .img-wrapper img { width: 296px; margin-top: 41px; }
+.dms-productrepairs-index-index .page-description { float: left; width: 100%; color: #ff0000; font-size: 20px; font-family: 'houschkaalt-medium-regular'; font-weight: normal; padding-top: 20px; padding-bottom: 20px; }
+.dms-productrepairs-index-index .form-group label { color: #ff0000; font-family: 'houschka_alt_probold'; font-size: 14px; }
 .dms-productrepairs-index-index .button-set { float: left; }
-.dms-productrepairs-index-index .button-set span { display: inline-block; float: left; color: #fff; clear: both; }
+.dms-productrepairs-index-index .button-set button { margin-top: 0; color: #fff; font-family: 'houschka_alt_probold'; font-size: 16px; border-radius: 0; float: right; margin-right: 0; background: url("../images/sprite.png") no-repeat 0 -1347px; width: 130px; height: 34px; border: none; margin-bottom: 10px; }
+.dms-productrepairs-index-index .button-set span { display: inline-block; float: left; color: #ff0000; clear: both; }
 .dms-productrepairs-index-index input[type="file"] { display: block; max-width: 240px; }
 .dms-productrepairs-index-index .repair-form { padding-bottom: 20px; }
 
+@media (min-width: 0px) and (max-width: 767px) { .dms-productrepairs-index-index .main.container .img-wrapper { display: none; }
+  .dms-productrepairs-index-index .main.container .col-1 { width: 100%; padding: 0; }
+  .dms-productrepairs-index-index .button-set { float: none; }
+  .dms-productrepairs-index-index .button-set button { float: right; margin-bottom: 20px; }
+  .dms-productrepairs-index-index .button-set span { float: left; clear: none; color: #ff0000; margin-top: 20px; }
+  .dms-productrepairs-index-index input[type="file"] { max-width: 100%; } }
+@media (min-width: 768px) and (max-width: 1200px) { .dms-productrepairs-index-index .main.container .img-wrapper { display: none; }
+  .dms-productrepairs-index-index .button-set { float: none; }
+  .dms-productrepairs-index-index .button-set button { float: right; margin-bottom: 20px; }
+  .dms-productrepairs-index-index .button-set span { float: left; clear: none; color: #ff0000; margin-top: 20px; } }
 .form-group label { color: #ff0000; text-transform: uppercase; font-size: 12px; font-family: 'houschka_alt_probold'; margin-bottom: 9px; }
 .form-group input[type="text"] { margin-top: 0px; width: 100%; }
 .form-group label + input[type="text"] { margin-top: 0; }
@@ -300,8 +309,8 @@ input:-webkit-autofill { -webkit-box-shadow: 0 0 0px 1000px white inset; }
 .cms-index-index .search-box #search_mini_form .input-box { float: none; clear: both; max-width: 532px; }
 .cms-index-index .search-box #search_mini_form .input-box:after { right: -21px; width: 41px; content: ""; height: 40px; top: 7px; }
 .cms-index-index .search-box #search_mini_form #search { max-width: 530px; height: 54px; width: 100%; }
-.cms-index-index .search-box #search_mini_form button { width: 36px; background-color: transparent; background: url("../images/sprite.png") 0 -206px transparent no-repeat; position: absolute; right: 1px; text-align: left; text-indent: -3000px; height: 54px; top: 0; bottom: 0; margin: 0 auto; z-index: 100; max-width: 45px; }
-.cms-index-index .search-box #search_mini_form button:hover { background-position: -60px -206px; }
+.cms-index-index .search-box #search_mini_form button { width: 36px; background-color: transparent; background: url("../images/magnifer_2.svg") transparent no-repeat; position: absolute; right: 1px; text-align: left; text-indent: -3000px; height: 54px; top: 8px; bottom: 0; margin: 0 auto; z-index: 100; max-width: 45px; }
+.cms-index-index .search-box #search_mini_form button:hover { opacity: 0.5; }
 .cms-index-index .search-box .form-search { padding-top: 30px; }
 .cms-index-index .search-box .form-search .search-label { display: inline-block !important; margin-left: 0 !important; float: left; width: 100%; text-align: center; line-height: 43px; font-size: 30px; font-family: 'houschkaalt-light-regular'; font-weight: normal; }
 .cms-index-index .search-box .form-search .arrow_box:after, .cms-index-index .search-box .form-search .arrow_box:before { left: 100%; top: 50%; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; }
@@ -312,8 +321,8 @@ input:-webkit-autofill { -webkit-box-shadow: 0 0 0px 1000px white inset; }
 .search-box #search_mini_form #search { width: 392px; }
 .search-box #search_mini_form .input-box { max-width: 395px; position: relative; margin: 0 auto; float: none; clear: none; border: 2px solid #000000; border-right: none; }
 .search-box #search_mini_form .input-box:after { position: absolute; right: -17px; border: 2px solid #000; width: 33px; content: ""; height: 34px; display: block; top: 5px; border-left: none; border-bottom: none; background: #fff; z-index: 99; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); }
-.search-box #search_mini_form button { background: url("../images/sprite.png") 11px -211px transparent no-repeat; position: absolute; right: 1px; text-align: left; text-indent: -3000px; height: 44px; top: 0; bottom: 0; margin: 0 auto; z-index: 100; max-width: 45px; }
-.search-box #search_mini_form button:hover { background-position: 11px -211px; }
+.search-box #search_mini_form button { background: url("../images/magnifer_2.svg") transparent no-repeat; position: absolute; right: 1px; text-align: left; text-indent: -3000px; height: 35px; top: 4px; bottom: 0; margin: 0 auto; z-index: 100; max-width: 35px; }
+.search-box #search_mini_form button:hover { opacity: 0.5; }
 .search-box #search_mini_form #search { width: 392px; position: relative; float: none; margin: 0 auto; border: none; height: 44px; line-height: 32px; padding: 5px 1%; font-weight: normal; font-family: 'houschkaalt-heavy-italic-regular'; color: #aeaeae; font-size: 18px; font-style: normal; text-align: center; }
 .search-box #search_mini_form #search:focus { box-shadow: none; border-color: transparent; }
 .search-box #search_mini_form .search-label { display: none; float: left; text-align: center; line-height: 43px; font-size: 30px; font-family: 'houschkaalt-light-regular'; font-weight: normal; margin-left: 127px; }

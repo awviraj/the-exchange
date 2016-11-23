@@ -1,71 +1,149 @@
 @import "mixins";
-.dms-productrepairs-index-index{
-  h1{
-    font-size: 42px;
-    @include Houschka_alt_bold_italic;
-    color: #fff;
-    float: left;
-    width: 100%;
-    border-bottom: 3px solid #fff;
-  }
-  .main.container{
-    background:$primary-red ;
-    padding: 20px 30px 0 30px;
 
-    .img-wrapper{
-      margin-left: -30px;
-      margin-bottom: -3px;
+.dms-productrepairs-index-index {
+    h1 {
+        font-size: 42px;
+        @include Houschka_alt_bold_italic;
+        color: $primary-red;
+        float: left;
+        width: 100%;
+        border-bottom: 3px solid $primary-red;
     }
-  }
-  .page-description{
-    float: left;
-    width: 100%;
-    color: #fff;
-    font-size: 20px;
-    @include Houschka_alt_med;
-    padding-top: 20px;
-  }
-  .form-group label{
-    color: #fff;
-    font-family: 'houschka_alt_probold';
-    font-size: 14px;
-  }
-  button{
-    margin-top: 13px;
-    color: #fff;
-    font-family: 'houschka_alt_probold';
-    font-size: 16px;
-    border-radius: 0;
-    float: right;
-    margin-right: 0;
-    background:url("../images/sprite.png") no-repeat 0 -1347px;
-    width: 130px;
-    height: 34px;
-    border: none;
-    margin-bottom: 10px;
-  }
-  .button-set{
-    float: left;
-    //max-width: 130px;
-    span{
-      display: inline-block;
-      float: left;
-      color: #fff;
-      clear: both;
 
+    .main.container {
+        background: #fff;
+        padding: 20px 30px 0;
+
+        .img-wrapper {
+            //margin-left: -30px;
+            //margin-bottom: -3px;
+            text-align: center;
+
+            img {
+                width: 296px;
+                margin-top: 41px;
+            }
+        }
     }
-  }
-  .file-attach{
-    //max-width: 200px;
-    //float: left;
-   // clear: both;
-  }
-  input[type="file"] {
-    display: block;
-    max-width: 240px;
-    //margin-bottom: 20px;
-  }
-  .repair-form{
-    padding-bottom: 20px;
-  }
+
+    .page-description {
+        float: left;
+        width: 100%;
+        color: $primary-red;
+        font-size: 20px;
+        @include Houschka_alt_med;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .form-group label {
+        color: $primary-red;
+        font-family: 'houschka_alt_probold';
+        font-size: 14px;
+    }
+
+    .button-set {
+        float: left;
+        //max-width: 130px;
+        button {
+            margin-top: 0;
+            color: #fff;
+            font-family: 'houschka_alt_probold';
+            font-size: 16px;
+            border-radius: 0;
+            float: right;
+            margin-right: 0;
+            background: url("../images/sprite.png") no-repeat 0 -1347px;
+            width: 130px;
+            height: 34px;
+            border: none;
+            margin-bottom: 10px;
+        }
+
+        span {
+            display: inline-block;
+            float: left;
+            color: $primary-red;
+            clear: both;
+
+        }
+    }
+
+    .file-attach {
+        //max-width: 200px;
+        //float: left;
+        // clear: both;
+    }
+
+    input[type="file"] {
+        display: block;
+        max-width: 240px;
+        //margin-bottom: 20px;
+    }
+
+    .repair-form {
+        padding-bottom: 20px;
+    }
+}
+@media (min-width: 0px) and (max-width: 767px) {
+    .dms-productrepairs-index-index {
+        .main.container {
+            .img-wrapper {
+                display: none;
+            }
+
+            .col-1 {
+                width: 100%;
+                padding: 0;
+            }
+        }
+
+        .button-set {
+            float: none;
+
+            button {
+                float: right;
+                margin-bottom: 20px;
+            }
+
+            span {
+                float: left;
+                clear: none;
+                color: $primary-red;
+                margin-top: 20px;
+            }
+        }
+
+        input[type="file"] {
+            max-width: 100%;
+        }
+    }
+
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+    .dms-productrepairs-index-index {
+        .main.container {
+            .img-wrapper {
+                display: none;
+            }
+
+        }
+
+        .button-set {
+            float: none;
+
+            button {
+                float: right;
+                margin-bottom: 20px;
+            }
+
+            span {
+                float: left;
+                clear: none;
+                color: $primary-red;
+                margin-top: 20px;
+            }
+        }
+    }
+
 }

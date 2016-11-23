@@ -33,13 +33,13 @@
             button {
                 width: 36px;
                 background-color: transparent;
-                background: url('../images/sprite.png')0 -206px transparent no-repeat;
+                background: url('../images/magnifer_2.svg') transparent no-repeat;
                 position: absolute;
                 right: 1px;
                 text-align: left;
                 text-indent: -3000px;
                 height: 54px;
-                top: 0;
+                top: 8px;
                 bottom: 0;
                 margin: 0 auto;
                 z-index: 100;
@@ -47,8 +47,8 @@
 
                 &:hover {
                     // background: none;
-                    background-position: -60px -206px;
-
+                    //background-position: -60px -206px;
+                    opacity: 0.5;
                 }
             }
         }
@@ -140,21 +140,20 @@
         }
 
         button {
-            background: url('../images/sprite.png')11px -211px transparent no-repeat;
+            background: url('../images/magnifer_2.svg') transparent no-repeat;
             position: absolute;
             right: 1px;
             text-align: left;
             text-indent: -3000px;
-            height: 44px;
-            top: 0;
+            height: 35px;
+            top: 4px;
             bottom: 0;
             margin: 0 auto;
             z-index: 100;
-            max-width: 45px;
+            max-width: 35px;
 
             &:hover {
-                // background: none;
-                background-position: 11px -211px;
+                opacity: 0.5;
 
             }
         }
