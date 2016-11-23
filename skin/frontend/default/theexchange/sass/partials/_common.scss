@@ -478,7 +478,7 @@ body {
                 width: 25px;
                 height: 25px;
                 margin-left: 10px;
-                padding: 0;
+                padding: 0 10px 0 0;
 
                 &:first-child {
                     margin-left: 0;
@@ -487,33 +487,25 @@ body {
                 a {
                     display: block;
                     text-align: left;
-                    text-indent: -3000px;
-                    background: url("../images/sprite.png") no-repeat 3px -790px;
+                    //text-indent: -3000px;
+                    //  background: url("../images/sprite.png") no-repeat 3px -790px;
                     height: 25px;
                     width: 25px;
+                    font-size: 24px;
+                    color: #ff0000;
 
-                }
-
-                &.fb {
-                    a {
-                        background-position: 3px -790px;
-
-                        &:hover {
-                            background-position: -63px -790px;
-                        }
+                    &:hover {
+                        color: #7c7c7c;
                     }
-
                 }
 
                 &.twitter {
                     a {
-                        background-position: -26px -790px;
-
-                        &:hover {
-                            background-position: -96px -790px;
-                        }
+                        font-size: 26px;
                     }
+
                 }
+
             }
         }
     }
