@@ -182,7 +182,6 @@
 }
 
 .cl-effect-21 {
-    display: none;
     margin-top: 22px;
 
     a {
@@ -214,4 +213,7 @@
             }
         }
     }
+}
+.fixed-container .cms-menu nav, .fixed-container .cms-menu .cl-effect-21{
+    display: none;
 }
