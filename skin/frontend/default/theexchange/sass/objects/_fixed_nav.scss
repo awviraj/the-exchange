@@ -42,8 +42,10 @@
         background: transparent;
         max-width: 1200px;
 
-        nav {
+        > div ,
+        nav , .cl-effect-21{
             float: left;
+            display: block;
 
             a {
                 line-height: 10px;
