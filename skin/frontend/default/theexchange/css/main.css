@@ -486,8 +486,8 @@ input:-webkit-autofill { -webkit-box-shadow: 0 0 0px 1000px white inset; }
 .fixed-container .menu-search-wrapper { max-width: 100%; }
 .fixed-container .menu-search-wrapper:after, .fixed-container .menu-search-wrapper:before { border: none; }
 .fixed-container .cms-menu { background: transparent; max-width: 1200px; }
-.fixed-container .cms-menu nav, .fixed-container .cms-menu > div, .fixed-container .cms-menu .cl-effect-21 { float: left; display: block;}
-.fixed-container .cms-menu nav a { line-height: 10px; padding: 9px 10px; margin: 10px; }
+.fixed-container .cms-menu nav, .fixed-container .cms-menu .cl-effect-21 { float: left; display: block;}
+.fixed-container .cms-menu .cl-effect-21 a { line-height: 10px; padding: 9px 10px; margin: 10px; }
 .fixed-container .small-x-logo { display: block; }
 .fixed-container .fixed-nav-links { display: block; }
 .fixed-container .quick-buttons { float: right; margin-top: 0; }
