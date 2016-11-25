@@ -150,7 +150,7 @@
   #custommenu div.wp-custom-menu-popup { display: none !important; }
   #custommenu div.menu { margin: 0; }
   #custommenu div.menu.active a:after { display: none; }
-  .cl-effect-21 { margin-top: 22px; }
+  .cl-effect-21 { margin-top: 22px; display: none; }
   .cl-effect-21 a { font-family: 'houschkaalt-medium-regular'; font-weight: normal; text-transform: capitalize; padding: 0 20px; color: #e3e3e3; font-size: 16px; text-align: left; margin: 0; float: left; width: 100%; display: block; border-bottom: 1px solid #212121; line-height: 39px; letter-spacing: 0; }
   .cl-effect-21 a:active, .cl-effect-21 a:focus, .cl-effect-21 a:hover { text-decoration: none; background: #474646; }
   .cl-effect-21 a:active:after, .cl-effect-21 a:active:before, .cl-effect-21 a:focus:after, .cl-effect-21 a:focus:before, .cl-effect-21 a:hover:after, .cl-effect-21 a:hover:before { content: ""; display: none; }
