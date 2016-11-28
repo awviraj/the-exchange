@@ -1,16 +1,20 @@
-#contactForm{
+.cms-contact-us{
+  h2{
+    font-family: 'houschka_alt_promedium';
+    font-size:22px;
+    color: #000;
+    margin-bottom: 14px;
+  }
+}
+.contact-form{
+  padding-top: 46px;
   .form-list{
     padding-left: 0;
     .field {
       padding-left: 0;
     }
   }
-  h2{
-    font-family: 'houschka_alt_promedium';
-    font-size: 18px;
-    color: #000;
-    margin-bottom: 14px;
-  }
+
   textarea{
     float: left;
     width: 100%;

@@ -41,7 +41,7 @@ input:-webkit-autofill { -webkit-box-shadow: 0 0 0px 1000px white inset; }
 .checkout-cart-index .cart .cart-collaterals .checkout-types button:hover { opacity: 0.8; }
 
 .checkout-onepage-index .page .main-container { width: inherit; padding: 0; }
-.checkout-onepage-index .main .page-title { border-bottom: 3px solid red; }
+.checkout-onepage-index .main .page-title { border-bottom: 3px solid #ff0000; }
 .checkout-onepage-index .main .row { margin: 0; }
 .checkout-onepage-index .main .row .col-main { padding-left: 0; }
 .checkout-onepage-index .main .row .col-right { padding: 0; }
@@ -74,7 +74,7 @@ input:-webkit-autofill { -webkit-box-shadow: 0 0 0px 1000px white inset; }
 .checkout-onepage-index .main input[type="email"]:-moz-placeholder, .checkout-onepage-index .main input[type="password"]:-moz-placeholder, .checkout-onepage-index .main input[type="text"]:-moz-placeholder { color: #aeaeae; font-size: 16px; font-family: 'houschkaalt-bold-italic-regular'; font-weight: normal; }
 .checkout-onepage-index .main input[type="email"]::-moz-placeholder, .checkout-onepage-index .main input[type="password"]::-moz-placeholder, .checkout-onepage-index .main input[type="text"]::-moz-placeholder { color: #aeaeae; font-size: 16px; font-family: 'houschkaalt-bold-italic-regular'; font-weight: normal; }
 .checkout-onepage-index .main input[type="email"]:-ms-input-placeholder, .checkout-onepage-index .main input[type="password"]:-ms-input-placeholder, .checkout-onepage-index .main input[type="text"]:-ms-input-placeholder { color: #aeaeae; font-size: 16px; font-family: 'houschkaalt-bold-italic-regular'; font-weight: normal; }
-.checkout-onepage-index .main .form-group label { color: red; text-transform: uppercase; font-size: 12px; font-family: 'houschka_alt_probold'; margin-bottom: 9px; }
+.checkout-onepage-index .main .form-group label { color: #ff0000; text-transform: uppercase; font-size: 12px; font-family: 'houschka_alt_probold'; margin-bottom: 9px; }
 .checkout-onepage-index .main .form-group input[type="text"] { margin-top: 0; width: 100%; }
 .checkout-onepage-index .main .form-group label + input[type="text"] { margin-top: 0; }
 .checkout-onepage-index .main .form-group select { border: 3px solid #dadada; border-radius: 0; display: block; width: 100%; height: 37px; padding: 6px 12px; font-size: 14px; line-height: 1.428571429; color: #555; background-color: #fff; background-image: none; -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; }
@@ -84,7 +84,7 @@ input:-webkit-autofill { -webkit-box-shadow: 0 0 0px 1000px white inset; }
 .checkout-onepage-index .main #checkout-step-billing #billing-buttons-container, .checkout-onepage-index .main #checkout-step-billing #shipping-buttons-container, .checkout-onepage-index .main #checkout-step-shipping #billing-buttons-container, .checkout-onepage-index .main #checkout-step-shipping #shipping-buttons-container { border: none; }
 .checkout-onepage-index .main #checkout-step-billing label, .checkout-onepage-index .main #checkout-step-shipping label { float: none; }
 .checkout-onepage-index .main #checkout-step-billing .input-box, .checkout-onepage-index .main #checkout-step-shipping .input-box { padding: 0; margin-top: 15px; margin-bottom: 15px; border: 1px solid #ccc; width: 100%; border-radius: 10px; overflow: hidden; background-color: #fff; background: #fff; position: relative; min-height: 50px; }
-.checkout-onepage-index .main #checkout-step-billing .input-box:after, .checkout-onepage-index .main #checkout-step-shipping .input-box:after { top: 50%; right: 15px; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: rgba(0, 0, 0, 0); border-top-color: #000000; border-width: 5px; margin-top: -2px; z-index: 100; }
+.checkout-onepage-index .main #checkout-step-billing .input-box:after, .checkout-onepage-index .main #checkout-step-shipping .input-box:after { top: 50%; right: 15px; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: transparent; border-top-color: #000000; border-width: 5px; margin-top: -2px; z-index: 100; }
 .checkout-onepage-index .main #checkout-step-billing .input-box .address-select, .checkout-onepage-index .main #checkout-step-shipping .input-box .address-select { padding: 5px 15px; width: 100%; border: none; box-shadow: none; background-color: transparent; background-image: none; -webkit-appearance: none; -moz-appearance: none; appearance: none; max-width: none; margin-top: 0; min-height: 50px; white-space: pre-wrap; line-height: 17px; }
 .checkout-onepage-index .main #checkout-step-billing .select-style .address-select:focus, .checkout-onepage-index .main #checkout-step-shipping .select-style .address-select:focus { outline: none; }
 .checkout-onepage-index .main #checkout-step-billing #co-billing-form, .checkout-onepage-index .main #checkout-step-shipping #co-billing-form { padding: 0 15px; }
@@ -98,24 +98,24 @@ input:-webkit-autofill { -webkit-box-shadow: 0 0 0px 1000px white inset; }
 #checkout-step-login .form-list { padding-top: 15px; padding-bottom: 23px; }
 #checkout-step-login .form-list li:last-of-type { margin-bottom: 0; }
 #checkout-step-login .form-list li:last-of-type .form-group { margin-bottom: 0; }
-#checkout-step-login h4 { font-family: 'houschka_alt_probold'; padding-left: 20px; font-size: 14px; color: red; text-transform: uppercase; margin-bottom: 20px; }
+#checkout-step-login h4 { font-family: 'houschka_alt_probold'; padding-left: 20px; font-size: 14px; color: #ff0000; text-transform: uppercase; margin-bottom: 20px; }
 #checkout-step-login ul.dash-list { padding-left: 20px; padding-bottom: 33px; }
 #checkout-step-login ul.dash-list li { list-style: none; font-family: 'houschka_alt_promedium'; color: #6b6b6b; font-size: 14px; margin-bottom: 12px; }
 #checkout-step-login ul.dash-list li:before { content: "-"; margin-right: 5px; }
 #checkout-step-login .register-div button.btn-continue, #checkout-step-login .register-div button.btn-register { float: left; margin-left: 20px; }
-#checkout-step-login .login-div h4 { font-family: 'houschka_alt_promedium'; font-weight: bold; font-size: 18px; color: black; text-transform: none; margin-bottom: 15px; padding-left: 0; }
-#checkout-step-login .login-div .login-form .form-group label { color: red; text-transform: uppercase; font-size: 12px; font-family: 'houschka_alt_probold'; margin-bottom: 9px; }
+#checkout-step-login .login-div h4 { font-family: 'houschka_alt_promedium'; font-weight: bold; font-size: 18px; color: #000000; text-transform: none; margin-bottom: 15px; padding-left: 0; }
+#checkout-step-login .login-div .login-form .form-group label { color: #ff0000; text-transform: uppercase; font-size: 12px; font-family: 'houschka_alt_probold'; margin-bottom: 9px; }
 #checkout-step-login .login-div a.fogot-pw-link { text-decoration: underline; font-family: 'houschka_alt_promedium'; color: #000; }
 #checkout-step-login .login-div p.required { color: #12b55b; }
 
 p.required { width: 100%; }
 
-.opc-block-progress { border: 3px solid red; padding: 0; }
-.opc-block-progress .block-title { background-color: red; height: 35px; margin-bottom: 0; }
+.opc-block-progress { border: 3px solid #ff0000; padding: 0; }
+.opc-block-progress .block-title { background-color: #ff0000; height: 35px; margin-bottom: 0; }
 .opc-block-progress .block-title h2 { font-size: 16px; color: #ffffff; font-family: 'houschka_alt_probold'; line-height: 35px; text-align: center; }
 .opc-block-progress dt { background: none; line-height: 38px; padding: 0 0 0 15px; margin: 0; border-bottom: 1px solid #e3e3e3; color: #585858; font-family: 'houschka_alt_promedium'; font-size: 18px; font-weight: normal; }
 .opc-block-progress dt:last-of-type { border-bottom: none; }
-.opc-block-progress dt.complete { background: none; color: red; }
+.opc-block-progress dt.complete { background: none; color: #ff0000; }
 .opc-block-progress dt .changelink { display: none; }
 .opc-block-progress dd { border: none; font-family: 'houschka_alt_promedium'; background: none; font-size: 14px; color: #000; }
 .opc-block-progress dd address { line-height: 18px; }
@@ -131,4 +131,6 @@ p.required { width: 100%; }
 
 button.btn-checkout, button.success-btn { margin-top: 13px; color: #fff; font-family: 'houschka_alt_probold'; font-size: 16px; border-radius: 0; float: right; margin-right: 20px; background: url("../images/sprite.png") no-repeat 0 -1307px; width: 130px; height: 34px; }
 
-.back-link a { background-color: red !important; width: auto; font-family: 'houschkaalt-medium-regular'; font-weight: normal; font-size: 16px; color: #fff; height: 34px; display: block; padding: 8px 15px 0 !important; }
+.back-link a { background-color: #ff0000 !important; width: auto; font-family: 'houschkaalt-medium-regular'; font-weight: normal; font-size: 16px; color: #fff; height: 34px; display: block; padding: 8px 15px 0 !important; }
+
+/*# sourceMappingURL=checkout.css.map */
