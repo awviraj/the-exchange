@@ -19,6 +19,22 @@
                 // display: none;
             }
 
+            .call-us h2 {
+                &:last-child {
+                    position: absolute;
+                }
+            }
+
+            .logo-div {
+                max-width: 300px;
+
+                a {
+                    img {
+                        margin-top: 20px;
+                    }
+                }
+            }
+
         }
 
         .fixed-container {
