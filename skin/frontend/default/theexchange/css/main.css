@@ -104,6 +104,7 @@ body { background: url("../images/body-bg.png") repeat; font-size: 14px; font-fa
 .footer_social_newsletter .footer_social_links ul li:first-child { margin-left: 0; }
 .footer_social_newsletter .footer_social_links ul li a { display: block; text-align: left; height: 25px; width: 25px; font-size: 24px; color: #ff0000; }
 .footer_social_newsletter .footer_social_links ul li a:hover { color: #7c7c7c; }
+.footer_social_newsletter .footer_social_links ul li.twitter { width: 31% !important; }
 .footer_social_newsletter .footer_social_links ul li.twitter a { font-size: 26px; }
 
 .col2-left-layout .main { padding: 20px; background: #ffffff; }
@@ -136,7 +137,7 @@ table .label { color: #333333; }
 
 .header-container { background: url("../images/page-bg.png") repeat-x top; padding-top: 2px; }
 .header-container .header { width: 100%; height: 160px; margin-top: -3px; max-width: 1260px; padding: 0 30px; background: url("../images/header-bg.png") repeat-x bottom #fff; box-shadow: 0 0 0 0 white, 0 -9px 0 0 white, 23px 0 15px -15px rgba(204, 204, 204, 0.8), -12px 0 15px -4px rgba(204, 204, 204, 0.8); border-bottom: 4px solid #ff0000; border-top: 1px solid #d8d9d9; box-sizing: border-box; }
-.header-container .header .call-us { float: left; margin-top: 105px; font-family: 'houschkaalt-medium-regular'; font-weight: normal; font-weight: normal; font-size: 12px; color: #282727; text-align: left; }
+.header-container .header .call-us { float: left; margin-top: 55px; font-family: 'houschkaalt-medium-regular'; font-weight: normal; font-weight: normal; font-size: 12px; color: #282727; text-align: left; }
 .header-container .header .call-us h2 { font-family: 'houschka_alt_probold'; font-weight: normal; color: #ff0000; font-size: 20px; }
 .header-container .header .logo-div { max-width: 420px; width: 100%; margin: 34px auto 0; float: none; }
 .header-container .header .logo-div a.logo { width: 100%; margin: 0; }

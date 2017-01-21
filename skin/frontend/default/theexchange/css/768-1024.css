@@ -2,6 +2,9 @@
   .qty-wrapper .qty { float: left; margin-right: 5px; border: none; max-width: 100px; margin-left: 0px; text-align: center; line-height: 30px; margin-top: 2px; font-family: 'houschka_alt_probold'; font-weight: normal; font-size: 18px; color: #000; }
   .catalog-category-view .col-main { padding-left: 0; }
   .new-users { padding-bottom: 20px; }
+  .wrapper .header-container .header .call-us h2:last-child { position: absolute; }
+  .wrapper .header-container .header .logo-div { max-width: 300px; }
+  .wrapper .header-container .header .logo-div a img { margin-top: 20px; }
   .wrapper .menu-search-wrapper { max-width: 100%; padding: 0; }
   .wrapper .menu-search-wrapper .cms-menu { max-width: 100%; }
   .wrapper .menu-search-wrapper .cms-menu .cl-effect-21 a { margin: 15px 25px; }
@@ -12,5 +15,3 @@
   .product-shop { width: 68%; }
   .product-img-box { width: 32%; } }
 @media (min-width: 468px) and (max-width: 800px) { .header-container .header .logo-div { max-width: 320px; } }
-
-/*# sourceMappingURL=768-1024.css.map */

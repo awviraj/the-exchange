@@ -124,6 +124,8 @@ jQuery(document).ready(function() {
         jQuery(".navbar-container").clone().prependTo(".m-menu-wrapper");
         jQuery(".menu-search-wrapper .cl-effect-21").clone().prependTo(".m-menu-wrapper");
         jQuery('<h2>Our products</h2>').prependTo("#custommenu");
+        jQuery(".mobile-callus").insertBefore(".m-menu-wrapper .cl-effect-21");
+
         //jQuery('#custommenu div').removeClass('menu');
         //jQuery('.parentMenu a').attr('href', jQuery(this).attr('rel'));
 
@@ -251,7 +253,7 @@ function searchOverlay(elm) {
     var overlay = jQuery('<div id="overlay"> </div>');
 
     overlay.appendTo(document.body)
-        //jQuery('#overlay').fadeIn(10);
+    //jQuery('#overlay').fadeIn(10);
 
     //  jQuery('#overlay').addClass('overAnim');
 
