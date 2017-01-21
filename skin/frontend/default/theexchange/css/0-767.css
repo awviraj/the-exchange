@@ -55,6 +55,8 @@
   .footer-container .footer .custom_tweets { background: url("../images/G_1.png") no-repeat left top #000; background-size: contain; background-position: -80px 0; padding: 25px; }
   .footer-container .footer .custom_tweets .qoute { padding-bottom: 20px; }
   .footer-container .footer .footer_links_wrapper .footer_social_newsletter li { margin-left: 1%; }
+  .footer-container .footer .footer_links_wrapper .footer_social_newsletter .footer_social_links ul li.fb { width: 28% !important; }
+  .footer-container .footer .footer_links_wrapper .footer_social_newsletter .footer_social_links ul li.twitter { width: 36% !important; }
   .footer-container .footer .footer_links_wrapper .footer_links_subwrapper > div { float: left; width: 100%; margin-bottom: 25px; }
   .footer-container .footer .footer_links_wrapper .footer_links_subwrapper > div ul li { float: left; width: 49%; }
   .footer-container .footer .footer_links_wrapper .footer_links_subwrapper .footer_social_newsletter { float: left; width: 100%; }

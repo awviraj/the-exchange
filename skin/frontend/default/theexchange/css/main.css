@@ -104,6 +104,7 @@ body { background: url("../images/body-bg.png") repeat; font-size: 14px; font-fa
 .footer_social_newsletter .footer_social_links ul li:first-child { margin-left: 0; }
 .footer_social_newsletter .footer_social_links ul li a { display: block; text-align: left; height: 25px; width: 25px; font-size: 24px; color: #ff0000; }
 .footer_social_newsletter .footer_social_links ul li a:hover { color: #7c7c7c; }
+.footer_social_newsletter .footer_social_links ul li.twitter { width: 31% !important; }
 .footer_social_newsletter .footer_social_links ul li.twitter a { font-size: 26px; }
 
 .col2-left-layout .main { padding: 20px; background: #ffffff; }

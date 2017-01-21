@@ -132,5 +132,3 @@ p.required { width: 100%; }
 button.btn-checkout, button.success-btn { margin-top: 13px; color: #fff; font-family: 'houschka_alt_probold'; font-size: 16px; border-radius: 0; float: right; margin-right: 20px; background: url("../images/sprite.png") no-repeat 0 -1307px; width: 130px; height: 34px; }
 
 .back-link a { background-color: #ff0000 !important; width: auto; font-family: 'houschkaalt-medium-regular'; font-weight: normal; font-size: 16px; color: #fff; height: 34px; display: block; padding: 8px 15px 0 !important; }
-
-/*# sourceMappingURL=checkout.css.map */
