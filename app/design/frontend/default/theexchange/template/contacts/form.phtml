@@ -30,28 +30,27 @@
 </div>
 <div class="row">
     <div class="col-md-12 map-wrapper">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.5391498971608!2d-0.12173168459418338!3d51.50332397963441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604b900d26973%3A0x4291f3172409ea92!2sLondon+Eye!5e0!3m2!1sen!2slk!4v1480296118956" width="100%" height="370" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9915.420165594589!2d-0.17303738366699223!3d51.58922006509254!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xee90e5eb2d37ca9f!2sThe+Exchange+UK!5e0!3m2!1sen!2suk!4v1485108776178" width="100%" height="370" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
 </div>
 
 <div class="row">
     <div class="col-lg-12 col-xs-12 contact-detail">
         <h2 class="legend"><?php echo Mage::helper('contacts')->__('Contact Information') ?></h2>
+        <br>
         <div class="address">
             <div class="postal" itemscope="" itemtype="http://schema.org/Organization">
-                <span itemprop="name">company name</span>
+                <span itemprop="name">The Exchange UK Limited</span>
                 <div itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
-                    <span itemprop="streetAddress">street1</span>
-                    <span itemprop="streetAddress">street1</span>
-                    <span itemprop="streetAddress">street1,</span>
-                    <span itemprop="addressRegion">County,</span>
-                    <span itemprop="postalCode">post code</span>
+                    <span itemprop="streetAddress">54 High Road</span>
+                    <span itemprop="streetAddress">East Finchley</span>
+                    <span itemprop="streetAddress">London</span>
+                    <span itemprop="postalCode">N2 9PN</span>
                 </div>
             </div>
             <div class="other-contacts">
-                <span itemprop="telephone">tel</span>
-                <span itemprop="faxNumber">fax</span>
-                <a itemprop="email" href="mailto:info@dasa-umbrella.co.uk" class="email">email</a>
+                <span itemprop="telephone"><i class="fa fa-phone" aria-hidden="true"></i>    <?php echo Mage::getStoreConfig('general/store_information/phone'); ?></span>
+                <a itemprop="email" href="mailto:<?php echo Mage::getStoreConfig('trans_email/ident_support/email'); ?>" class="email"> <i class="fa fa-envelope" aria-hidden="true"> </i><?php echo Mage::getStoreConfig('trans_email/ident_support/email'); ?></a>
             </div>
         </div>
     </div>

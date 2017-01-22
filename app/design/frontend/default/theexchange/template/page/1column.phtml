@@ -42,15 +42,16 @@
 
           <div class="call-us mobile-callus">
 
-              <p><?php echo $this->__('Call us on') ?></p>
+            <p><?php echo $this->__('Call us on') ?></p>
 
-              <h2><?php echo $this->helper('commonrewrites')->getStoreConfig('phone'); ?></h2>
+            <h2><a href="tel:<?php echo $this->helper('commonrewrites')->getStoreConfig('phone'); ?>"><?php echo $this->helper('commonrewrites')->getStoreConfig('phone'); ?></a></h2>
 
-              <br>
+            <br>
 
-              <p><?php echo $this->__('Email us on') ?></p>
+            <p><?php echo $this->__('Email us on') ?></p>
 
-              <h2><?php echo Mage::getStoreConfig('trans_email/ident_sales/email'); ?></h2>
+            <h2><a href="mailto:<?php echo Mage::getStoreConfig('trans_email/ident_sales/email'); ?>"><?php echo Mage::getStoreConfig('trans_email/ident_sales/email'); ?></a></h2>
+
           </div>
 
 

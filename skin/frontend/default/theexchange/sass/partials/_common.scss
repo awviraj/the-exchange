@@ -9,6 +9,21 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+a {
+    color: #ff0000;
+    transition: color 0.4s;
+    text-decoration: none;
+
+    &:hover {
+        color: #000;
+        text-decoration: none;
+    }
+}
+
+input {
+    font-family: 'houschka_alt_promedium';
+}
+
 .wrapper {
     min-width: 0;
     width: 100%;
@@ -45,7 +60,7 @@ body {
         border-top: 67px solid #000;
         border-bottom: 0 solid transparent;
         border-left: 30px solid transparent;
-        border-right: 0 solid transparent;
+        border-right: 1px solid #000;
         position: absolute;
         top: 0;
         left: 0;
@@ -246,6 +261,7 @@ body {
             float: left;
             width: 100%;
             padding-top: 18px;
+            @include Houschka_pro_med;
         }
 
         address {
@@ -262,6 +278,14 @@ body {
     background: #fff;
     float: left;
     padding-bottom: 20px;
+
+    a {
+        &:focus,
+        &:hover {
+            color: #ff0000;
+            text-decoration: none;
+        }
+    }
 
     .footer_links_subwrapper {
         padding: 23px 5% 32px;
@@ -376,6 +400,8 @@ body {
     .footer_copyright_links {
         padding-top: 20px;
         color: #6d6d6d;
+        font-size: 12px;
+        @include Houschka_pro_med;
 
         ul {
             li {
@@ -443,7 +469,7 @@ body {
             padding: 7px 6%;
             color: #aaaaaa;
             font-size: 14px;
-            font-family: arial;
+            @include Houschka_pro_med;
             font-style: normal;
             line-height: 14px;
             position: relative;
@@ -574,7 +600,7 @@ body {
     z-index: 9999;
 
     &:hover {
-        color: #999999;
+        color: #fff;
     }
 }
 

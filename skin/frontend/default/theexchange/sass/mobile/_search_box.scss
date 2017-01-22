@@ -3,7 +3,7 @@
     .menu-search-wrapper {
         padding-left: 0;
         padding-right: 0;
-        margin-top: -12px;
+        margin-top: -13px;
         box-sizing: border-box;
         -webkit-box-sizing: border-box;
 
@@ -80,7 +80,6 @@
                             box-shadow: none;
                             border-color: transparent;
                         }
-
                     }
 
                     .input-group-btn {
@@ -119,9 +118,7 @@
         &:before {
             display: none;
         }
-
     }
-
 }
 
 .cms-index-index .search-box {
@@ -146,10 +143,10 @@
 
         button {
             height: 36px;
-            background-position: -60px -214px;
-
+            top: 4px;
+            //  background-position: -60px -214px;
             &:hover {
-                background-position: -60px -214px;
+                //  background-position: -60px -214px;
             }
         }
     }

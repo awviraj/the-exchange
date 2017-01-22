@@ -20,20 +20,20 @@
 
             .contact-detail {
                 padding: 0 20px 30px;
+
+                h2 {
+                    font-family: 'houschka_alt_promedium';
+                    font-size: 22px;
+                    color: #000;
+                    margin-bottom: 14px;
+                    text-align: center;
+                }
             }
 
             .map-wrapper {
                 padding: 0;
             }
         }
-    }
-
-    h2 {
-        font-family: 'houschka_alt_promedium';
-        font-size: 22px;
-        color: #000;
-        margin-bottom: 14px;
-        text-align: center;
     }
 
     .map-wrapper {
@@ -96,6 +96,8 @@
 }
 
 .contact-detail {
+    font-family: 'houschka_alt_promedium';
+
     .address {
         .postal {
             background: url("../images/sprite-contact.png") no-repeat 0 -245px;
@@ -111,6 +113,12 @@
             width: 100%;
             margin-bottom: 10px;
             font-size: 14px;
+
+            &[itemprop="name"] {
+                color: #ff0000;
+                font-weight: bold;
+                font-size: 15px;
+            }
         }
     }
 
@@ -118,13 +126,15 @@
         float: left;
         width: 100%;
         margin-top: 23px;
+        margin-bottom: 20px;
+        font-family: 'houschka_alt_promedium';
 
         a,
         span {
             display: block;
             //float: left;
             width: 100%;
-            height: 24px;
+            //height: 24px;
             //padding-left: 36px;
             text-align: center;
             padding-top: 6px;
@@ -134,9 +144,15 @@
                 // color: $link-color-blue;
             }
 
+            i {
+                font-size: 20px;
+                color: #ff0000;
+                font-style: normal !important;
+                padding-right: 10px;
+            }
+
             &[itemprop="telephone"] {
                 //background: url("../images/sprite-contact.png") no-repeat 0 -3px;
-
             }
 
             &[itemprop="faxNumber"] {
@@ -145,10 +161,9 @@
 
             &[itemprop="email"] {
                 //background: url("../images/sprite-contact.png") no-repeat 0 -159px;
-                margin-top: 2px;
-                padding-top: 4px;
+                //margin-top: 2px;
+                //padding-top: 4px;
             }
-
         }
     }
 }

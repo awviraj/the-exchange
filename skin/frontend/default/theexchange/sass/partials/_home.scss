@@ -31,7 +31,7 @@
                     // background: url("../images/btn-sprite.png") no-repeat 0 -86px transparent;
                     background: #ff0000;
                     color: #fff;
-                    padding: 0 42px 0 70px;
+                    padding: 0 42px 0 30px;
                     line-height: 46px;
                     font-family: 'houschkaalt-light-regular';
                     font-weight: normal;
@@ -54,7 +54,6 @@
                     }
                 }
             }
-
         }
     }
 }
@@ -91,7 +90,7 @@
             //background:url("../images/btn-sprite.png") no-repeat 0 0 transparent;
             background: #000000;
             color: #fff;
-            padding: 0 42px 0 70px;
+            padding: 0 42px 0 30px;
             line-height: 46px;
             @include Houschka_alt_light;
             font-size: 30px;
