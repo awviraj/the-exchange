@@ -23,13 +23,15 @@
             color: #282727;
             text-align: left;
             //margin-left: 20px;
-
             h2 {
                 @include Houschka_pro_bold;
                 color: #ff0000;
                 font-size: 20px;
-            }
 
+                &:hover {
+                    text-decoration: none;
+                }
+            }
         }
 
         .logo-div {
@@ -48,7 +50,6 @@
                     }
                 }
             }
-
         }
 
         .top-quick-links {
@@ -67,7 +68,6 @@
                         border-right: 1px solid #000;
                         padding-right: 5px;
                         margin-right: 5px;
-
                     }
 
                     a {
@@ -76,6 +76,10 @@
                         color: #000;
                         font-weight: normal;
                         text-transform: uppercase;
+
+                        &:hover {
+                            color: #ff0000;
+                        }
                     }
                 }
             }
@@ -169,7 +173,6 @@
                         text-align: center;
                         font-size: 18px;
                         color: #fff;
-
                     }
 
                     &.logged-in {

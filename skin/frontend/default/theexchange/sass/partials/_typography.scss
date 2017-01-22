@@ -1,38 +1,45 @@
 .page-title {
-  h1{
-    font-size: 30px;
-    font-family: 'houschka_alt_probold';
-    font-weight: normal;
-    text-transform: capitalize;
-    font-style: normal;
-    line-height: 150%;
-  }
+    h1 {
+        font-size: 30px;
+        font-family: 'houschka_alt_probold';
+        font-weight: normal;
+        text-transform: capitalize;
+        font-style: normal;
+        line-height: 150%;
+        color: #ff0000;
+    }
 }
-.std {
-  padding-left: 15px;
-  ul.disc{
-    margin-bottom: 20px;
-    li{
-      line-height: 22px;
 
+.std {
+    padding-left: 15px;
+
+    ul.disc {
+        margin-bottom: 20px;
+
+        li {
+            line-height: 22px;
+        }
     }
-  }
-  dl {
-    dt{
-      margin-bottom: 12px;
+
+    dl {
+        dt {
+            margin-bottom: 12px;
+        }
+
+        dd {
+            padding-left: 0;
+            margin-bottom: 25px;
+            line-height: 22px;
+        }
     }
-    dd{
-      padding-left: 0;
-      margin-bottom: 25px;
-      line-height: 22px;
+
+    p {
+        line-height: 24px;
     }
-  }
-  p{
-    line-height: 24px;
-  }
 }
-.cms-index-index{
-  .std{
-    padding-left: 0;
-  }
+
+.cms-index-index {
+    .std {
+        padding-left: 0;
+    }
 }

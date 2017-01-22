@@ -38,7 +38,24 @@
 <?php echo $this->getChildHtml('after_body_start') ?>
 <div class="wrapper" id="site-wrapper">
     <div class="canvas" id="site-canvas">
-        <div class="m-menu-wrapper"><span class="m-close">X</span> </div>
+        <div class="m-menu-wrapper">
+
+          <div class="call-us mobile-callus">
+
+            <p><?php echo $this->__('Call us on') ?></p>
+
+            <h2><a href="tel:<?php echo $this->helper('commonrewrites')->getStoreConfig('phone'); ?>"><?php echo $this->helper('commonrewrites')->getStoreConfig('phone'); ?></a></h2>
+
+            <br>
+
+            <p><?php echo $this->__('Email us on') ?></p>
+
+            <h2><a href="mailto:<?php echo Mage::getStoreConfig('trans_email/ident_sales/email'); ?>"><?php echo Mage::getStoreConfig('trans_email/ident_sales/email'); ?></a></h2>
+
+          </div>
+
+
+          <span class="m-close">X</span> </div>
         <?php echo $this->getChildHtml('global_notices') ?>
         <div class="page">
             <?php echo $this->getChildHtml('header') ?>
