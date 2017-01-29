@@ -522,8 +522,8 @@ input:-webkit-autofill { -webkit-box-shadow: 0 0 0px 1000px white inset; }
 .fixed-container .menu-search-wrapper { max-width: 100%; }
 .fixed-container .menu-search-wrapper:after, .fixed-container .menu-search-wrapper:before { border: none; }
 .fixed-container .cms-menu { background: transparent; max-width: 1200px; }
-.fixed-container .cms-menu nav, .fixed-container .cms-menu .cl-effect-21 { float: left; display: block; }
-.fixed-container .cms-menu nav a, .fixed-container .cms-menu .cl-effect-21 a { line-height: 10px; padding: 9px 10px; margin: 10px; }
+.fixed-container .cms-menu .cl-effect-21, .fixed-container .cms-menu nav { float: left; display: block; }
+.fixed-container .cms-menu .cl-effect-21 a, .fixed-container .cms-menu nav a { line-height: 10px; padding: 9px 10px; margin: 10px; }
 .fixed-container .small-x-logo { display: block; }
 .fixed-container .fixed-nav-links { display: block; }
 .fixed-container .quick-buttons { float: right; margin-top: 0; }
@@ -545,7 +545,8 @@ input:-webkit-autofill { -webkit-box-shadow: 0 0 0px 1000px white inset; }
 .fixed-container .action-btns-div ul li .f-nav-menu-link:hover text-decoration:none i { color: #fff; }
 .fixed-container .welcome-msg { display: none; }
 
-.navbar-container.f-nav-sub { position: fixed; top: 47px; width: 100%; max-width: 100%; z-index: 1000; }
+.navbar-container.f-nav-sub { position: fixed; top: 46px; width: 100%; max-width: 100%; z-index: 1000; }
+.navbar-container.f-nav-sub .navbar { background-color: #1e1e1e; }
 
 .f-nav .fixed-container .quick-access .links li a { background-color: #ff0000; }
 

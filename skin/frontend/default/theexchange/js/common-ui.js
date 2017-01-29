@@ -60,8 +60,8 @@ jQuery(document).ready(function() {
         var top = jQuery(window).scrollTop();
         var header = jQuery('.header-container');
         jQuery('.navbar-container').removeClass('f-nav-sub');
-        if (top > 400) {
-            if (top >= 691) {
+        if (top > header.height()) {
+            if (top >  header.height() ) {
                 event.preventDefault();
             }
             header.addClass('f-nav');
@@ -210,7 +210,7 @@ jQuery(document).ready(function() {
 
     jQuery(document).on("click", ".f-nav-menu-link", function() {
         //jQuery('.f-nav-menu-link').live('click', function() {
-        if (jQuery(window).scrollTop() >= 500) {
+        if (jQuery(window).scrollTop() >= jQuery('.header-container').height()) {
             jQuery('.navbar-container').toggleClass('f-nav-sub');
         }
     });
