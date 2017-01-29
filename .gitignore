@@ -1,4 +1,11 @@
 .htaccess
+.gitignore
 var/
 media/
 app/etc/local.xml
+app/etc/config.xml
+skin/frontend/default/theexchange/node_modules
+skin/frontend/default/theexchange/gulpfile.js
+skin/frontend/default/theexchange/package.json
+skin/frontend/default/theexchange/_backup
+skin/frontend/default/theexchange/.sass-cache

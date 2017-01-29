@@ -1,5 +1,5 @@
-@import "../partials/mixins";
-///////////////fixed header ////////////////////////////////
+@import "../partials/mixins"; ///////////////fixed header ////////////////////////////////
+
 .fixed-container {
     position: fixed;
     display: none;
@@ -42,8 +42,8 @@
         background: transparent;
         max-width: 1200px;
 
-
-        nav , .cl-effect-21{
+        .cl-effect-21,
+        nav {
             float: left;
             display: block;
 
@@ -53,7 +53,6 @@
                 margin: 10px;
             }
         }
-
     }
 
     .small-x-logo {
@@ -123,12 +122,10 @@
 
                     &.top-link-customer {
                         // background-position: 16px -44px;
-
                         &.logged-in {
                             // background-position: -18px -44px;
                         }
                     }
-
                 }
             }
         }
@@ -212,18 +209,20 @@
     .welcome-msg {
         display: none;
     }
-
 }
-
 ///////////sub nav fixed/////////////////
 
 .navbar-container {
     &.f-nav-sub {
         position: fixed;
-        top: 47px;
+        top: 46px;
         width: 100%;
         max-width: 100%;
         z-index: 1000;
+
+        .navbar {
+            background-color: #1e1e1e;
+        }
     }
 }
 
@@ -234,5 +233,4 @@
 .m-nav-menu-link {
     display: none;
 }
-
 //////////////////////////////////////////////////////////////

@@ -34,11 +34,16 @@
                     }
                 }
             }
-
         }
 
         .fixed-container {
             .cms-menu {
+                .cl-effect-21 {
+                    a {
+                        margin: 10px 6px;
+                    }
+                }
+
                 .small-x-logo {}
             }
 
@@ -53,7 +58,6 @@
         .cms-menu {
             max-width: 100%;
             //display: none;
-
             .cl-effect-21 {
                 a {
                     margin: 15px 25px;
@@ -74,7 +78,6 @@
         &:before {
             display: none;
         }
-
     }
 
     .navbar-container {

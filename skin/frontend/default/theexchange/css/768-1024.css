@@ -5,6 +5,7 @@
   .wrapper .header-container .header .call-us h2:last-child { position: absolute; }
   .wrapper .header-container .header .logo-div { max-width: 300px; }
   .wrapper .header-container .header .logo-div a img { margin-top: 20px; }
+  .wrapper .header-container .fixed-container .cms-menu .cl-effect-21 a { margin: 10px 6px; }
   .wrapper .menu-search-wrapper { max-width: 100%; padding: 0; }
   .wrapper .menu-search-wrapper .cms-menu { max-width: 100%; }
   .wrapper .menu-search-wrapper .cms-menu .cl-effect-21 a { margin: 15px 25px; }
