@@ -3,9 +3,8 @@
 #custommenu {
     div {
         &.menu {
-            width: 18%;
-            margin: 0 1%;
-
+            width: 20%;
+            //margin: 0 1%;
             a {
                 @include Houschka_alt_med;
                 text-transform: capitalize;
