@@ -28,7 +28,6 @@
                         //width: 22%;
                         //float: left;
                         //margin: 1%;
-
                         .prod-image {
                             position: relative;
 
@@ -72,7 +71,6 @@
                                 font-family: 'houschka_alt_probold';
                                 font-weight: normal;
                                 color: #ff0000;
-
                             }
                         }
 
@@ -94,7 +92,6 @@
                             &:hover {
                                 background-position: -90px -930px;
                             }
-
                         }
 
                         &.active {
@@ -113,7 +110,7 @@
             }
 
             .toolbar {
-                padding: 0 0 20px;
+                padding: 20px 0;
 
                 select {
                     padding: 5px 10px;
@@ -203,9 +200,9 @@
                                         font-family: 'houschka_alt_promedium';
                                         font-weight: normal;
                                         border-radius: 0;
-                                        padding: 0;
-                                        width: 15px;
-                                        height: 15px;
+                                        padding: 3px 0 0;
+                                        width: 20px;
+                                        height: 20px;
                                         display: block;
                                         line-height: 13px;
                                         border: 1px solid #d1d1d1;
@@ -213,7 +210,7 @@
 
                                         &.next {
                                             border: none;
-                                            background: url("../images/sprite.png") no-repeat -17px -987px;
+                                            background: url("../images/sprite.png") no-repeat -17px -985px;
 
                                             img {
                                                 display: none;
@@ -232,12 +229,12 @@
 
                                     &.current {
                                         background: #ff0000;
-                                        border: 1px solid #d1d1d1;
-                                        width: 15px;
-                                        height: 15px;
+                                        // border: 1px solid #d1d1d1;
+                                        width: 20px;
+                                        height: 20px;
                                         color: #fff;
+                                        padding-top: 3px;
                                     }
-
                                 }
                             }
                         }
