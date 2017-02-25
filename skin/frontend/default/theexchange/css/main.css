@@ -374,8 +374,8 @@ input:-webkit-autofill { -webkit-box-shadow: 0 0 0px 1000px white inset; }
 #list-items #slider-content { width: 100% !important; height: auto !important; background: #ffffff; border: none; overflow: hidden; padding-bottom: 0; }
 #list-items #slider-content #sl-screen { height: 171px !important; padding-left: 0; }
 #list-items #slider-content #sl-screen #sl-view { height: auto !important; }
-#list-items #slider-content #sl-screen #left { background: url("../images/sprite.png") 9px -823px #000000; left: 0px; }
-#list-items #slider-content #sl-screen #right { background: url("../images/sprite.png") -55px -823px #000000; right: 0px; }
+#list-items #slider-content #sl-screen #left { background: url("../images/sprite.png") 9px -823px #000000; left: 0; }
+#list-items #slider-content #sl-screen #right { background: url("../images/sprite.png") -55px -823px #000000; right: 0; }
 #list-items #slider-content #sl-screen .jq-ss-crop { width: 100% !important; }
 #list-items #slider-content #sl-images li { max-width: 118px; margin: 0 16px; height: 195px !important; }
 #list-items #slider-content #sl-images li .item button.btn-cart { display: none; }
@@ -384,18 +384,18 @@ input:-webkit-autofill { -webkit-box-shadow: 0 0 0px 1000px white inset; }
 #list-items #slider-content #sl-images li .item .product-img .product-image { width: 100% !important; background: none; }
 #list-items #slider-content #sl-images li .item .product-img .product-image a { display: block; width: 100%; height: 100%; text-align: center; }
 #list-items #slider-content #sl-images li .item .product-img .product-image a img { max-width: 100%; margin: 0 auto; height: 100%; }
-#list-items #slider-content #sl-images li .item .product-info { text-align: center; padding-right: 0px; }
+#list-items #slider-content #sl-images li .item .product-info { text-align: center; padding-right: 0; }
 #list-items #slider-content #sl-images li .item .product-info .price-name-wrapper .desc { display: none; }
 #list-items #slider-content #sl-images li .item .product-info .product-name { height: 31px; overflow: hidden; }
-#list-items #slider-content #sl-images li .item .product-info .product-name a { font-family: 'houschka_alt_prodemibold'; font-weight: normal; font-size: 12px; color: #000; width: 100%; line-height: 15px; display: block; text-transform: lowercase; }
+#list-items #slider-content #sl-images li .item .product-info .product-name a { font-family: 'houschka_alt_prodemibold'; font-weight: normal; font-size: 12px; color: #000; width: 100%; line-height: 15px; display: block; }
 #list-items #slider-content #sl-images li .item .product-info .price-box span { font-size: 22px; font-family: 'houschka_alt_probold'; font-weight: normal; }
 #list-items #slider-content #sl-images li .item .product-info .price-box span.regular-price { color: #ff0000; }
 #list-items #slider-content #sl-images li .item .product-info .slider-action-wrapper { display: none; }
-#list-items #slider-content #sl-images li .item .product-info.selected { position: relative; background: #ff0000; padding: 0 5px; height: 58px; z-index: 999; padding-right: 5px; color: #fff; margin: 0; width: 94px; box-sizing: border-box; bottom: 0px; -webkit-animation: moveUp 0.5s; -moz-animation: moveUp 0.5s; left: 15px; }
-@-webkit-keyframes moveUp/* Safari and Chrome */ { from { bottom: -77px; }
-  to { bottom: 0px; } }
-@-moz-keyframes moveUp/* Mozilla */ { from { bottom: -77px; }
-  to { bottom: 0px; } }
+#list-items #slider-content #sl-images li .item .product-info.selected { position: relative; background: #ff0000; padding: 0 5px; height: 58px; z-index: 999; padding-right: 5px; color: #fff; margin: 0; width: 94px; box-sizing: border-box; bottom: 0; -webkit-animation: moveUp 0.5s; -moz-animation: moveUp 0.5s; left: 15px; /* Safari and Chrome */ /* Mozilla */ }
+@-webkit-keyframes moveUp { from { bottom: -77px; }
+  to { bottom: 0; } }
+@-moz-keyframes moveUp { from { bottom: -77px; }
+  to { bottom: 0; } }
 #list-items #slider-content #sl-images li .item .product-info.selected:after { bottom: 100%; left: 50%; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: rgba(255, 0, 0, 0); border-bottom-color: #ff0000; border-width: 0 47.5px 28px 47.5px; margin-left: -47px; }
 #list-items #slider-content #sl-images li .item .product-info.selected .product-name-wrapper { display: none; }
 #list-items #slider-content #sl-images li .item .product-info.selected .price-name-wrapper { margin-top: 16px; }
