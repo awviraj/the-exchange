@@ -142,6 +142,12 @@ table .label { color: #333333; }
 
 .link-wishlist { color: #ff0000 !important; font-size: 16px; font-family: 'houschka_alt_probold'; font-weight: normal; }
 
+.custom_row1_col1 p { line-height: 1.3; }
+
+.creare-twitter li { line-height: 1.3; }
+.creare-twitter li span { color: #ff0000; }
+.creare-twitter li:last-child { margin-top: 10px; }
+
 .header-container { background: url("../images/page-bg.png") repeat-x top; padding-top: 2px; }
 .header-container .header { width: 100%; height: 160px; margin-top: -3px; max-width: 1260px; padding: 0 30px; background: url("../images/header-bg.png") repeat-x bottom #fff; box-shadow: 0 0 0 0 white, 0 -9px 0 0 white, 23px 0 15px -15px rgba(204, 204, 204, 0.8), -12px 0 15px -4px rgba(204, 204, 204, 0.8); border-bottom: 4px solid #ff0000; border-top: 1px solid #d8d9d9; box-sizing: border-box; }
 .header-container .header .call-us { float: left; margin-top: 55px; font-family: 'houschkaalt-medium-regular'; font-weight: normal; font-weight: normal; font-size: 12px; color: #282727; text-align: left; }
