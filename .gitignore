@@ -2,6 +2,7 @@
 .gitignore
 var/
 media/
+downloader/
 app/etc/local.xml
 app/etc/config.xml
 skin/frontend/default/theexchange/node_modules

@@ -1,5 +1,9 @@
 <div class="custom_footer_wrapper">
     <div class="custom_footer_static_block">
         <?php echo $this->getChildHtml('home_who_we_are'); ?>
+        <div class="custom_row1_col3">
+          <?php echo Mage::app()->getLayout()->createBlock('latesttweet/latesttweet')->setTemplate('creare/latesttweet/blank.phtml')->toHtml(); ?>
+</div>
+
     </div>
 </div>

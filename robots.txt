@@ -11,7 +11,7 @@ User-agent: *
 # Crawl-delay: 30
 
 # # Magento sitemap: URL to your sitemap file in Magento
-# Sitemap: http://theexchangeuk.com/sitemap.xml
+# Sitemap: https://theexchangeuk.com/sitemap.xml
 
 # # Settings that relate to the UNDER CONSTRUCTION
 
